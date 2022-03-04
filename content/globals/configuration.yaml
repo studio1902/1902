@@ -1,6 +1,7 @@
 title: Configuration
 data:
-  copyright_since: 2020
-  privacy_statement_type: none
-  404_title: 'Page not found'
-  404_text: 'The page you were looking for is not available (anymore).'
+  copyright_since: 2017
+  privacy_statement_type: entry
+  privacy_statement_entry: 8994808d-fbd1-41bf-bd07-26b6b5782fee
+  404_title: 'Pagina niet gevonden'
+  404_text: 'De pagina waar je naar zocht is helaas niet (meer) beschikbaar.'
