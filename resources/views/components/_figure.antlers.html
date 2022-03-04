@@ -1,0 +1,37 @@
+{{#
+	@name Figure
+	@desc The figure component. A sizeable image rendered in a figure tag with optional caption.
+    @set page.article.figure
+#}}
+
+<!-- /components/_figure.antlers.html -->
+<figure
+    class="
+        not-prose
+        {{ switch(
+            (size == 'md') => 'size-md',
+            (size == 'lg') => 'size-lg',
+            (size == 'xl') => 'size-xl',
+            () => 'size-md'
+        )}}
+    "
+>
+    {{
+        partial:components/picture
+        :image="image"
+        class="w-full"
+        cover="false"
+        lazy="true"
+        sizes="
+            {{ switch(
+                (size == 'md') => '(min-width: 768px) 55vw, 90vw',
+                (size == 'lg') => '(min-width: 768px) 75vw, 90vw',
+                (size == 'xl') => '90vw',
+                () => '100vw'
+            )}}
+        "
+    }}
+
+    {{ partial:typography/caption as="figcaption" }}
+</figure>
+<!-- End: /components/_figure.antlers.html -->

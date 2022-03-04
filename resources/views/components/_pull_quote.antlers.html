@@ -1,0 +1,28 @@
+{{#
+	@name Pull quote
+	@desc The pull quote component. A pull quote with an optional author.
+    @set page.article.pull_quote
+#}}
+
+<!-- /components/_pull_quote.antlers.html -->
+<div
+    class="
+        not-prose
+        {{ switch(
+            (size == 'md') => 'size-md',
+            (size == 'lg') => 'size-lg',
+            (size == 'xl') => 'size-xl',
+            () => 'size-md'
+        )}}
+    "
+>
+    <div class="p-0 m-0 text-primary italic text-3xl leading-snug">
+        {{ quote | nl2br }}
+    </div>
+    {{ if author }}
+        <span class="block mt-4 font-bold text-neutral">
+            {{ author }}
+        </span>
+    {{ /if }}
+</div>
+<!-- End: /components/_pull_quote.antlers.html -->
