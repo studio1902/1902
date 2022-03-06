@@ -16,7 +16,7 @@ module.exports = {
     require('./tailwind.config.site.js'),
   ],
   // Uncomment the next line to enable class based dark mode: https://peak.studio1902.nl/features/dark-mode.html.
-  // darkMode: 'class',
+  darkMode: 'class',
   mode: 'jit',
   // Configure Purge CSS.
   content: [
