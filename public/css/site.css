@@ -1220,8 +1220,8 @@ html {
 .bottom-\[1rem\] {
   bottom: 1rem;
 }
-.top-1 {
-  top: 0.25rem;
+.bottom-1 {
+  bottom: 0.25rem;
 }
 .right-1 {
   right: 0.25rem;
@@ -1240,9 +1240,6 @@ html {
 }
 .left-8 {
   left: 2rem;
-}
-.bottom-1 {
-  bottom: 0.25rem;
 }
 .z-50 {
   z-index: 50;
@@ -1291,12 +1288,6 @@ html {
 .mr-3 {
   margin-right: 0.75rem;
 }
-.mt-2 {
-  margin-top: 0.5rem;
-}
-.-ml-3 {
-  margin-left: -0.75rem;
-}
 .ml-3 {
   margin-left: 0.75rem;
 }
@@ -1305,6 +1296,12 @@ html {
 }
 .mr-2 {
   margin-right: 0.5rem;
+}
+.mt-2 {
+  margin-top: 0.5rem;
+}
+.-ml-3 {
+  margin-left: -0.75rem;
 }
 .mt-auto {
   margin-top: auto;
@@ -1493,15 +1490,15 @@ html {
   margin-right: calc(1rem * var(--tw-space-x-reverse));
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
-.space-x-1 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(0.25rem * var(--tw-space-x-reverse));
-  margin-left: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)));
-}
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
   margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+.space-x-1 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.25rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)));
 }
 .space-x-8 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
@@ -1639,9 +1636,6 @@ html {
 .p-6 {
   padding: 1.5rem;
 }
-.p-1 {
-  padding: 0.25rem;
-}
 .p-2 {
   padding: 0.5rem;
 }
@@ -1653,6 +1647,9 @@ html {
 }
 .p-8 {
   padding: 2rem;
+}
+.p-1 {
+  padding: 0.25rem;
 }
 .py-8 {
   padding-top: 2rem;
@@ -1766,11 +1763,11 @@ html {
 .tracking-widest {
   letter-spacing: 0.1em;
 }
-.tracking-wide {
-  letter-spacing: 0.025em;
-}
 .tracking-wider {
   letter-spacing: 0.05em;
+}
+.tracking-wide {
+  letter-spacing: 0.025em;
 }
 .text-neutral {
   --tw-text-opacity: 1;
