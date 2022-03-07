@@ -14,7 +14,7 @@
         <script src="{{ mix src='/js/site.js' }}" defer></script>
         {{ partial:snippets/seo }}
         {{ partial:snippets/browser_appearance }}
-        {{ yield:theme_toggle }}
+        {{ stack:header_scripts }}
     </head>
     <body class="flex flex-col min-h-screen bg-white dark:bg-[#414035] selection:bg-primary selection:text-white">
         {{ partial:snippets/noscript }}

@@ -145,7 +145,7 @@
 <!-- End: /components/_theme_toggle.antlers.html -->
 
 {{# The actual toggle yielded in the `resources/views/navigation/_main.antlers.html`. #}}
-{{ section:theme_toggle }}
+{{ push:header_scripts }}
     <!-- /components/_theme_toggle.antlers.html -->
     {{# We can't use Alpine logic here since this has to run before anything else. #}}
     <script>
@@ -173,4 +173,4 @@
         window.matchMedia('(prefers-color-scheme: dark)').addListener(e => e.matches && (!localStorage.theme || localStorage.theme === '"system"') && setThemeDark())
     </script>
     <!-- End: /components/_theme_toggle.antlers.html -->
-{{ /section:theme_toggle }}
+{{ /push:header_scripts }}
