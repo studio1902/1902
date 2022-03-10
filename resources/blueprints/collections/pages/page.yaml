@@ -34,8 +34,8 @@ sections:
         handle: slug
         field:
           type: slug
-          required: true
           localizable: true
+          required: true
           generate: true
           listable: hidden
           display: Slug
