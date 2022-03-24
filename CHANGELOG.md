@@ -1,5 +1,24 @@
 # Changelog
 
+## v4.6 (2022-03-24)
+
+### What's fixed
+- Make OG images job compatible with Statamic 3.3. 3dddf9fe by @robdekort
+
+### What's improved
+- Set CSRF token on form header and disable token field on the form partial. #206 by @robdekort
+- Simplify syntax in call to action. cc78ee87 by @robdekort
+- Improve readability in button partial. 0dbbbbda and fbd3edd2 by @robdekort
+
+## v4.5 (2022-03-23)
+
+### What's fixed
+- 419 errors on form submission. b87e674c by @robdekort
+
+### What's improved
+- Don't ask about mounts for non public collections when using `peak:add-collection`. 7bb0dc5f by @robdekort
+- Remove unused paragraph partial (it's renamed to `p`). a1e2589d by @robdekort
+
 ## v4.4 (2022-03-22)
 
 ### What's fixed
