@@ -1,5 +1,21 @@
 # Changelog
 
+## v4.8 (2022-03-30)
+
+### What's improved
+- Use base strategy for TW forms. 8e8657d8 by @robdekort
+
+### What's fixed
+- Previous social images now get purged and don't trigger an error. f5eaa8b9 by @robdekort
+
+## v4.7 (2022-03-27)
+
+### What's new
+- Add Norwegian Nynorsk translation. #207 by @hgrimelid
+
+### What's improved
+- Improve Norwegian Nynorsk translation. #208 by @hgrimelid
+
 ## v4.6 (2022-03-24)
 
 ### What's fixed
