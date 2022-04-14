@@ -1,9 +1,19 @@
 # Changelog
 
+## Unreleased
+
+### What's fixed
+- A typo in the globals blueprint. #213 by @tricki
+
+## v4.10 (2022-04-08)
+
+### What's new
+- Add a section field and partial to the form builder. 19732c0f by @robdekort
+
 ## v4.9 (2022-04-08)
 
 ### What's improved
-- Remove old meta and generate new upon social image creation. #210 by @PunchRockgroin
+- Remove old meta and generate new upon social image creation. 3c3e7918 by @PunchRockgroin and @robdekort
 - Revert earlier decision and ignore assets by default again. I got tired of `git -rm -f` on each and every project when I forgot to uncomment those lines. 6878248e by @robdekort
 
 ## v4.8 (2022-03-30)
