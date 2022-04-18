@@ -48,13 +48,13 @@ module.exports = {
       sans: [
         // Use a custom sans serif font for this site by changing 'Gaultier' to the
         // font name you want and uncommenting the following line.
-        // 'Gaultier',
+        'BreveSansText',
         ...defaultTheme.fontFamily.sans,
       ],
-      serif: [
+      title: [
         // Use a custom serif font for this site by changing 'Lavigne' to the
         // font name you want and uncommenting the following line.
-        // 'Lavigne',
+        'BreveDisplay',
         ...defaultTheme.fontFamily.serif,
       ],
     },
@@ -62,11 +62,11 @@ module.exports = {
     fontWeight: {
       // hairline: 100,
       // thin: 200,
-      // light: 300,
+      light: 300,
       normal: 400,
-      // medium: 500,
-      // semibold: 600,
-      bold: 700,
+      medium: 500,
+      semibold: 600,
+      // bold: 700,
       // extrabold: 800,
       // black: 900,
     },
@@ -87,6 +87,7 @@ module.exports = {
             //--------------------------------------------------------------------------
             // fontFamily: theme('fontFamily.mono'),
             fontFamily: theme('fontFamily.sans'),
+            fontWeight: theme('fontWeight.medium'),
             // fontFamily: theme('fontFamily.serif'),
         },
       })

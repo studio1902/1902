@@ -1,0 +1,14 @@
+disable_telephone_detection: false
+disable_email_detection: false
+disable_address_detection: false
+use_theme_color: true
+use_theme_color_dark_mode: true
+theme_color: '#ffffff'
+theme_color_dark_mode: '#414035'
+apple_mobile_web_app: false
+apple_status_bar_black: false
+android_mobile_web_app: false
+use_favicons: true
+svg: favicon.svg
+safari_color: '#13E87C'
+ios_color: '#FFFFFF'

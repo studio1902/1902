@@ -1,7 +1,68 @@
 /* If you don't want to use the JS in CSS syntax from `tailwind.config.site.js` you can add your own custom CSS here. Use different layers to make sure your CSS either get's purged or not: https://tailwindcss.com/docs/functions-and-directives#layer. CSS in the base layer won't get purged. */
 
 @layer base {
+    @font-face {
+        font-family: 'BreveDisplay';
+        src: url('/fonts/BreveDisplay-Regular.woff2') format('woff2'),
+             url('/fonts/BreveDisplay-Regular.woff') format('woff');
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+    }
 
+    @font-face {
+        font-family: 'BreveSansText';
+        src: url('/fonts/BreveSansText-Light.woff2') format('woff2'),
+             url('/fonts/BreveSansText-Light.woff') format('woff');
+        font-weight: 300;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: 'BreveSansText';
+        src: url('/fonts/BreveSansText-LightItalic.woff2') format('woff2'),
+             url('/fonts/BreveSansText-LightItalic.woff') format('woff');
+        font-weight: 300;
+        font-style: italic;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: 'BreveSansText';
+        src: url('/fonts/BreveSansText-Medium.woff2') format('woff2'),
+             url('/fonts/BreveSansText-Medium.woff') format('woff');
+        font-weight: 500;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: 'BreveSansText';
+        src: url('/fonts/BreveSansText-MediumItalic.woff2') format('woff2'),
+             url('/fonts/BreveSansText-MediumItalic.woff') format('woff');
+        font-weight: 500;
+        font-style: italic;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: 'BreveSansText';
+        src: url('/fonts/BreveSansText-SemiBold.woff2') format('woff2'),
+             url('/fonts/BreveSansText-SemiBold.woff') format('woff');
+        font-weight: 600;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: 'BreveSansText';
+        src: url('/fonts/BreveSansText-SemiBoldItalic.woff2') format('woff2'),
+             url('/fonts/BreveSansText-SemiBoldItalic.woff') format('woff');
+        font-weight: 600;
+        font-style: italic;
+        font-display: swap;
+    }
 }
 
 @layer components {

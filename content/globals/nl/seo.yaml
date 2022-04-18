@@ -1,0 +1,29 @@
+title_separator: '~'
+noindex_local: true
+noindex_staging: true
+noindex_production: false
+collection_defaults:
+  -
+    collection: pages
+    fallback: page_builder
+hreflang_auto: true
+json_ld_type: organization
+organization_name: Studio1902
+organization_logo: branding/studio1902-logo.png
+breadcrumbs: false
+use_social_image_generation: true
+social_images_collections:
+  - pages
+twitter_handle: studio1902
+sitemap_collections:
+  - pages
+trackers_local: false
+trackers_staging: false
+trackers_production: true
+use_google_site_verification: false
+use_fathom: false
+fathom_use_custom_domain: false
+use_cloudflare_web_analytics: false
+tracker_type: none
+anonymize_ip: false
+use_cookie_banner: false
