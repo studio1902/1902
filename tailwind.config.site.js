@@ -21,9 +21,9 @@ module.exports = {
       // Neutrals: neutral colors, with a default fallback if you don't need shades. Always set a DEFAULT when you use shades.
       neutral: '#414036',
       // Primary: primary brand color with a default fallback if you don't need shades. Always set a DEFAULT when you use shades.
-      primary: '#13E87C',
-      secondary: '#FF0274',
-      tertiary: '#0098F1',
+      primary: 'var(--color-primary)',
+      secondary: 'var(--color-secondary)',
+      tertiary: 'var(--color-tertiary)',
     },
     extend: {
       // Set default transition durations and easing when using the transition utilities.

@@ -6,9 +6,11 @@
 <!-- /components/_logo.antlers.html -->
 <a
 	class="p-2 -m-2 hover:scale-125 hover:rotate-2 motion-safe:transition-transform focus:outline-none focus-visible:ring-2 ring-primary"
-	aria-label="Logo {{ config:app:name }}"
+	aria-label="{{ trans:strings.home }}"
 	href="{{ site:url }}"
 >
-    <img src="/visuals/studio1902-logo.svg" class="select-none {{ class }}" width="{{ width }}" alt="{{ config:app:name }}"/>
+	<span class="" aria-label="{{ config:app:name }} logo" role="img">
+    	{{ svg:logo class="select-none text-primary dark:text-secondary {{ class }}" width="{{ width }}" aria-hidden="true" }}
+	</span>
 </a>
 <!-- End: /components/_logo.antlers.html -->
