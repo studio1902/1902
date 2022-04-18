@@ -17,12 +17,7 @@
                 class="relative leading-none"
             >
                 <a
-                    class="
-                        p-1 -m-1 flex items-center font-bold text-xs uppercase tracking-wide hover:text-primary focus:outline-none focus-visible:ring-2 ring-primary
-                        {{ is_current || is_parent
-                            ? 'text-primary'
-                            : 'text-neutral' }}
-                    "
+                    class="relative p-1 -m-1 flex items-center font-medium text-base uppercase tracking-widest text-neutral hover:text-primary focus:outline-none focus-visible:ring-2 ring-primary {{ is_current || is_parent ?= 'after:absolute after:h-1 after:-inset-x-1 after:bg-primary dark:after:bg-secondary' }}"
                     {{ if children }}
                         href="#"
                         @click.prevent="subnavOpen = !subnavOpen"

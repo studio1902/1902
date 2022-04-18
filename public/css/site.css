@@ -1378,6 +1378,9 @@ html {
 .h-32 {
   height: 8rem;
 }
+.h-12 {
+  height: 3rem;
+}
 .min-h-screen {
   min-height: 100vh;
 }
@@ -1404,6 +1407,9 @@ html {
 }
 .w-16 {
   width: 4rem;
+}
+.w-auto {
+  width: auto;
 }
 .min-w-\[580px\] {
   min-width: 580px;
@@ -1741,6 +1747,9 @@ html {
 .font-normal {
   font-weight: 400;
 }
+.font-medium {
+  font-weight: 500;
+}
 .uppercase {
   text-transform: uppercase;
 }
@@ -1981,6 +1990,24 @@ html {
   --tw-text-opacity: 1;
   color: rgb(19 232 124 / var(--tw-text-opacity));
 }
+.after\:absolute::after {
+  content: var(--tw-content);
+  position: absolute;
+}
+.after\:-inset-x-1::after {
+  content: var(--tw-content);
+  left: -0.25rem;
+  right: -0.25rem;
+}
+.after\:h-1::after {
+  content: var(--tw-content);
+  height: 0.25rem;
+}
+.after\:bg-primary::after {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(19 232 124 / var(--tw-bg-opacity));
+}
 .last\:mb-0:last-child {
   margin-bottom: 0px;
 }
@@ -2204,6 +2231,11 @@ html {
 .dark .dark\:text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.dark .dark\:after\:bg-secondary::after {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 2 116 / var(--tw-bg-opacity));
 }
 @media (min-width: 768px) {
 
