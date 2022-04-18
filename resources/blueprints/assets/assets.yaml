@@ -6,6 +6,25 @@ sections:
       -
         handle: alt
         field:
-          display: 'Alt Text'
+          display: 'Alt Text Dutch'
           type: text
-          instructions: 'Description of the image'
+          instructions: 'Description of the image in Dutch'
+          instructions_position: above
+          listable: hidden
+          read_only: false
+          input_type: text
+          antlers: false
+          validate:
+            - required
+      -
+        handle: alt_en
+        field:
+          input_type: text
+          antlers: false
+          display: 'Alt Text English'
+          instructions: 'Description of the image in English, falls back to the Dutch description.'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          read_only: false

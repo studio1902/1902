@@ -5,10 +5,15 @@
 
 <!-- /components/_picture.antlers.html -->
 {{ if image }}
+    {{ localized_alt = 'alt_{locale}' | ensure_right('.') }}
     <picture>
         {{ asset :url="image" }}
             {{ if extension == 'svg' || extension == 'gif' }}
-                <img class="{{ class }}" src="{{ url }}" alt="{{ alt }}" />
+                <img
+                    class="{{ class }}"
+                    src="{{ url }}"
+                    alt="{{ @localized_alt ?? alt | ensure_right('.') }}"
+                />
             {{ else }}
                 <source
                     srcset="
@@ -40,7 +45,7 @@
                         class="{{ class }}"
                     {{ /if }}
                     src="{{ glide:image preset='lg' }}"
-                    alt="{{ alt ensure_right='.' }}"
+                    alt="{{ @localized_alt ?? alt | ensure_right('.') }}"
                     width="{{ image.width }}"
                     height="{{ image.height }}"
                     {{ if lazy }}

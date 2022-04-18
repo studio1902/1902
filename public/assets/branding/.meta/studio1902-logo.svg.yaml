@@ -1,7 +1,8 @@
-data: {  }
-size: 7883
-last_modified: 1646422076
-width: '156.333333'
+data:
+  alt: 'Studio1902 Logo'
+size: 3257
+last_modified: 1646422109
+width: '156.333'
 height: '40'
 mime_type: image/svg+xml
 duration: null

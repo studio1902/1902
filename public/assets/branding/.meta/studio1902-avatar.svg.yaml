@@ -1,6 +1,7 @@
-data: {  }
-size: 13527
-last_modified: 1646422073
+data:
+  alt: 'Studio1902 Avatar'
+size: 5381
+last_modified: 1646422100
 width: '500'
 height: '500'
 mime_type: image/svg+xml
