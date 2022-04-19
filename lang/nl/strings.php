@@ -42,8 +42,7 @@ return [
     'on'                                => 'op',
 
     // Language picker
-    'language_open'                     => 'Open taalselector. De huidige taal :current_language',
-    'language_close'                    => 'Sluit taalselector',
+    'language'                          => 'Bezoek de website in het :language',
 
     // Navigation
     'close'                             => 'Sluit',

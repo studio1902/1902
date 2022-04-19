@@ -1295,6 +1295,14 @@ html {
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
 }
+.-my-1 {
+  margin-top: -0.25rem;
+  margin-bottom: -0.25rem;
+}
+.-mx-2 {
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -1752,6 +1760,10 @@ html {
   padding-left: 2rem;
   padding-right: 2rem;
 }
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
 .pr-10 {
   padding-right: 2.5rem;
 }
@@ -1954,6 +1966,10 @@ html {
 .ring-offset-white {
   --tw-ring-offset-color: #fff;
 }
+.grayscale {
+  --tw-grayscale: grayscale(100%);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
 .transition-none {
   transition-property: none;
 }
@@ -2103,6 +2119,10 @@ html {
 .hover\:text-tertiary:hover {
   color: var(--color-tertiary);
 }
+.hover\:text-neutral:hover {
+  --tw-text-opacity: 1;
+  color: rgb(65 64 54 / var(--tw-text-opacity));
+}
 .hover\:opacity-100:hover {
   opacity: 1;
 }
@@ -2136,6 +2156,24 @@ html {
 .focus-visible\:border-red-600:focus-visible {
   --tw-border-opacity: 1;
   border-color: rgb(220 38 38 / var(--tw-border-opacity));
+}
+.focus-visible\:text-primary.focus-visible {
+  color: var(--color-primary);
+}
+.focus-visible\:text-primary:focus-visible {
+  color: var(--color-primary);
+}
+.focus-visible\:text-secondary.focus-visible {
+  color: var(--color-secondary);
+}
+.focus-visible\:text-secondary:focus-visible {
+  color: var(--color-secondary);
+}
+.focus-visible\:text-tertiary.focus-visible {
+  color: var(--color-tertiary);
+}
+.focus-visible\:text-tertiary:focus-visible {
+  color: var(--color-tertiary);
 }
 .focus-visible\:opacity-100.focus-visible {
   opacity: 1;
@@ -2195,6 +2233,40 @@ html {
 .group:hover .group-hover\:text-neutral {
   --tw-text-opacity: 1;
   color: rgb(65 64 54 / var(--tw-text-opacity));
+}
+.group:hover .group-hover\:grayscale-0 {
+  --tw-grayscale: grayscale(0);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+.group.focus-visible .group-focus-visible\:text-primary {
+  color: var(--color-primary);
+}
+.group:focus-visible .group-focus-visible\:text-primary {
+  color: var(--color-primary);
+}
+.group.focus-visible .group-focus-visible\:text-secondary {
+  color: var(--color-secondary);
+}
+.group:focus-visible .group-focus-visible\:text-secondary {
+  color: var(--color-secondary);
+}
+.group.focus-visible .group-focus-visible\:text-tertiary {
+  color: var(--color-tertiary);
+}
+.group:focus-visible .group-focus-visible\:text-tertiary {
+  color: var(--color-tertiary);
+}
+.group.focus-visible .group-focus-visible\:grayscale-0 {
+  --tw-grayscale: grayscale(0);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+.group:focus-visible .group-focus-visible\:grayscale-0 {
+  --tw-grayscale: grayscale(0);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+.group:active .group-active\:grayscale-0 {
+  --tw-grayscale: grayscale(0);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 .prose-headings\:font-title :is(:where(h1, h2, h3, h4, th):not(:where([class~="not-prose"] *))) {
   font-family: BreveDisplay, ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
@@ -2322,9 +2394,16 @@ html {
   --tw-text-opacity: 1;
   color: rgb(65 64 54 / var(--tw-text-opacity));
 }
+.dark .dark\:ring-secondary {
+  --tw-ring-color: var(--color-secondary);
+}
 .dark .dark\:after\:bg-secondary::after {
   content: var(--tw-content);
   background-color: var(--color-secondary);
+}
+.dark .dark\:hover\:text-neutral:hover {
+  --tw-text-opacity: 1;
+  color: rgb(65 64 54 / var(--tw-text-opacity));
 }
 @media (min-width: 768px) {
 

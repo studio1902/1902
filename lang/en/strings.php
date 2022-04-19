@@ -42,8 +42,7 @@ return [
     'on'                                => 'on',
 
     // Language picker
-    'language_open'                     => 'Open language picker. Current language is :current_language',
-    'language_close'                    => 'Close language picker',
+    'language'                          => 'Visit the site in :language',
 
     // Navigation
     'close'                             => 'Close',

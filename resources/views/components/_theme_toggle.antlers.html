@@ -10,23 +10,24 @@
     <div class="w-[13ch] font-light text-xs uppercase tracking-wider">
         <button
             x-bind="toggle"
-            class="py-2 px-3 flex items-center rounded-full hover:shadow-top hover:bg-white focus:outline-none focus-visible:ring-2 ring-primary motion-safe:transition group"
+            class="py-2 px-3 flex items-center rounded-full hover:shadow-top hover:bg-white focus:outline-none focus-visible:ring-2 ring-primary dark:ring-secondary motion-safe:transition group"
         >
-            {{ icon_classes = 'w-4 h-4 fill-current overflow-visible' }}
+            {{ icon_classes = 'w-3 h-3 fill-current overflow-visible' }}
             {{ label_classes = 'ml-2 font-light text-neutral dark:text-white group-hover:text-neutral text-xs uppercase tracking-wider motion-safe:transition-colors' }}
-            <div x-show="theme === 'light'" class="flex items-center text-neutral dark:text-white group-hover:text-primary motion-safe:transition-colors">
+            {{ wrapper_classes = 'flex items-center text-neutral dark:text-white motion-safe:transition-colors' }}
+            <div x-show="theme === 'light'" class="{{ wrapper_classes }} group-focus-visible:text-primary group-hover:text-primary">
                 {{ svg:sun class="{icon_classes}" alt="" aria-hidden="true" }}
                 <span class="{{ label_classes }}">
                     {{ trans:strings.theme_toggle_light_short }}
                 </span>
             </div>
-            <div x-show="theme === 'dark'" class="flex items-center text-neutral dark:text-white group-hover:text-secondary motion-safe:transition-colors">
+            <div x-show="theme === 'dark'" class="{{ wrapper_classes }} group-focus-visible:text-secondary group-hover:text-secondary">
                 {{ svg:moon class="{icon_classes}" alt="" aria-hidden="true" }}
                 <span class="{{ label_classes }}">
                     {{ trans:strings.theme_toggle_dark_short }}
                 </span>
             </div>
-            <div x-show="theme === 'system'" class="flex items-center text-neutral dark:text-white group-hover:text-tertiary motion-safe:transition-colors">
+            <div x-show="theme === 'system'" class="{{ wrapper_classes }} group-focus-visible:text-tertiary group-hover:text-tertiary">
                 {{ svg:sun x-show="preferredColorScheme === 'light'" class="{icon_classes} opacity-50" alt="" aria-hidden="true" }}
                 {{ svg:moon x-show="preferredColorScheme === 'dark'" class="{icon_classes} opacity-50" alt="" aria-hidden="true" }}
                 <span class="{{ label_classes }}">
@@ -41,15 +42,15 @@
         x-ref="panel"
         class="absolute left-0 mt-1 py-2 bg-white rounded-xl shadow-top"
     >
-        {{ button_classes = 'py-2 px-3 w-full flex items-center space-x-2 text-neutral focus:outline-none focus-visible:ring-2 ring-primary motion-safe:transition-colors' }}
-        {{ icon_classes = 'w-4 h-4 fill-current overflow-visible' }}
+        {{ button_classes = 'py-2 px-3 w-full flex items-center space-x-2 text-neutral focus:outline-none focus-visible:ring-2 ring-primary dark:ring-secondary motion-safe:transition-colors' }}
+        {{ icon_classes = 'w-3 h-3 fill-current overflow-visible' }}
         {{ label_classes = 'font-light text-neutral text-xs uppercase tracking-wider' }}
         <button
             @click="themeLight()"
             :class="{ 'text-primary bg-neutral-light': theme === 'light' }"
             aria-label="{{ trans:strings.theme_toggle_light }}"
             title="{{ trans:strings.theme_toggle_light }}"
-            class="{{ button_classes }} hover:text-primary"
+            class="{{ button_classes }} focus-visible:text-primary hover:text-primary"
         >
             {{ svg:sun class="{icon_classes}" alt="" aria-hidden="true" }}
             <span class="{{ label_classes }}">{{ trans:strings.theme_toggle_light_short }}</span>
@@ -59,7 +60,7 @@
             :class="{ 'text-secondary bg-neutral-light': theme === 'dark' }"
             aria-label="{{ trans:strings.theme_toggle_dark }}"
             title="{{ trans:strings.theme_toggle_dark }}"
-            class="{{ button_classes }} hover:text-secondary"
+            class="{{ button_classes }} focus-visible:text-secondary hover:text-secondary"
         >
             {{ svg:moon class="{icon_classes}" alt="" aria-hidden="true" }}
             <span class="{{ label_classes }}">{{ trans:strings.theme_toggle_dark_short }}</span>
@@ -69,7 +70,7 @@
             :class="{ 'text-tertiary bg-neutral-light': theme === 'system' }"
             aria-label="{{ trans:strings.theme_toggle_system }}"
             title="{{ trans:strings.theme_toggle_system }}"
-            class="{{ button_classes }} hover:text-tertiary"
+            class="{{ button_classes }} focus-visible:text-tertiary hover:text-tertiary"
         >
             {{ svg:system class="{icon_classes}" alt="" aria-hidden="true" }}
             <span class="{{ label_classes }}">{{ trans:strings.theme_toggle_system_short }}</span>

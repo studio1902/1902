@@ -6,48 +6,17 @@
 
 <!-- /navigation/_language_picker.antlers.html -->
 <li
-    x-data="{ languagePickerOpen: false }"
-    @keyup.escape.stop.prevent="languagePickerOpen = false"
-    @focusin.window="!$refs.picker.contains($event.target) && (languagePickerOpen = false)"
     class="relative leading-none"
-    x-cloak
 >
-    <a
-        href="#"
-        @click.prevent="languagePickerOpen = !languagePickerOpen"
-        :aria-label="languagePickerOpen
-            ? '{{ trans:strings.language_close }}'
-            : '{{ trans:strings.language_open :current_language="site:name" }}'"
-        :aria-expanded="languagePickerOpen"
-        class="p-1 -m-1 flex items-center font-bold text-xs text-neutral dark:text-white uppercase tracking-wide hover:text-primary focus:outline-none focus-visible:ring-2 ring-primary"
-
-    >
-        {{ site:short_locale }}
-        <svg class="w-2 ml-1 overflow-visible stroke-current text-neutral"
-            :class="{ 'rotate-180': languagePickerOpen }"
-            aria-hidden="true"
-            stroke-width="16"
-            viewBox="0 0 140 140"><path d="M135.625 42.648l-62.533 62.527a4.37 4.37 0 01-6.184 0L4.375 42.648" fill="none" stroke-linecap="round" stroke-linejoin="round"
-        /></svg>
-    </a>
-    <ul
-        x-show="languagePickerOpen"
-        x-ref="picker"
-        class="absolute mt-2 -ml-3 py-2 px-3 bg-white border border-neutral/10 rounded shadow"
-        @click.outside="languagePickerOpen = false"
-        x-transition
-    >
-        {{ locales all="true" self="false"  }}
-            <li>
-                <a
-                    href="{{ permalink }}"
-                    aria-label="{{ locale:name }}"
-                    class="uppercase tracking-wide whitespace-nowrap py-2 px-1 -mx-1 block text-xs font-bold hover:text-primary focus:outline-none focus-visible:ring-2 ring-primary"
-                >
-                    {{ locale:short }}
-                </a>
-            </li>
-        {{ /locales }}
-    </ul>
+    {{ locales all="true" self="false"  }}
+        <a
+            href="{{ permalink }}"
+            aria-label="{{ trans:strings.language :language="locale:name" }}"
+            class="flex items-center space-x-2 py-2 px-3 font-light rounded-full hover:bg-white hover:text-neutral hover:shadow-top uppercase text-xs text-neutral dark:text-white dark:hover:text-neutral tracking-wider whitespace-nowrap focus:outline-none focus-visible:ring-2 ring-primary dark:ring-secondary motion-safe:transition-all group"
+        >
+            {{ svg src="{locale:short}" class="w-3 h-3 rounded-full grayscale group-focus-visible:grayscale-0 group-hover:grayscale-0 motion-safe:transition" }}
+            <span>{{ locale:short }}</span>
+        </a>
+    {{ /locales }}
 </li>
 <!-- End: /navigation/_language_picker.antlers.html -->
