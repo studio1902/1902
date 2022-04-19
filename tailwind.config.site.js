@@ -29,8 +29,27 @@ module.exports = {
       tertiary: 'var(--color-tertiary)',
     },
     extend: {
+      animation: {
+        'down': 'down .3s ease-in 1 forwards',
+        'up': 'up .3s ease-out 1 forwards'
+      },
       boxShadow: {
         top: '0 1px 5px rgba(65, 64, 54 ,0.3)'
+      },
+      keyframes: {
+        down: {
+          '0%': { transform: 'translateY(-100%)', opacity: 0 },
+          '20%, 100%': { opacity: 1 },
+          '30%': { transform: 'translateY(15%)' },
+          '50%': { transform: 'translateY(-10%)' },
+          '70%': { transform: 'translateY(5%)' },
+          '90%': { transform: 'translateY(-4%)' },
+          '100%': { transform: 'translateY(0)', },
+        },
+        up: {
+          '0%': { transform: 'translateY(0)', opacity: 1 },
+          '100%': { transform: 'translateY(-100%)', opacity: 0 },
+        }
       },
       // Set default transition durations and easing when using the transition utilities.
       transitionDuration: {
