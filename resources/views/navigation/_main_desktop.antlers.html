@@ -5,7 +5,7 @@
 
 <!-- /navigation/_main_desktop.antlers.html -->
 <nav class="hidden md:block" aria-label="{{ trans:strings.main_navigation }}">
-    <ul class="flex items-center space-x-8">
+    <ul class="flex items-center space-x-12">
         {{ nav:main max_depth="2" include_home="true" }}
             <li
                 {{ if children }}
@@ -66,8 +66,6 @@
                 {{ /if }}
             </li>
         {{ /nav:main }}
-        {{ partial:navigation/language_picker }}
-        {{ partial:components/theme_toggle }}
     </ul>
 </nav>
 <!-- End: /navigation/_main_desktop.antlers.html -->

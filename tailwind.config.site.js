@@ -19,13 +19,19 @@ module.exports = {
       black:   '#000',
       white:  '#fff',
       // Neutrals: neutral colors, with a default fallback if you don't need shades. Always set a DEFAULT when you use shades.
-      neutral: '#414036',
+      neutral: {
+        DEFAULT: '#414036',
+        light: '#F4F4F1',
+      },
       // Primary: primary brand color with a default fallback if you don't need shades. Always set a DEFAULT when you use shades.
       primary: 'var(--color-primary)',
       secondary: 'var(--color-secondary)',
       tertiary: 'var(--color-tertiary)',
     },
     extend: {
+      boxShadow: {
+        top: '0 1px 5px rgba(65, 64, 54 ,0.3)'
+      },
       // Set default transition durations and easing when using the transition utilities.
       transitionDuration: {
         DEFAULT: '300ms',
@@ -71,6 +77,18 @@ module.exports = {
   plugins: [
     plugin(function({ addBase, theme }) {
       addBase({
+        ':root': {
+          '--color-primary': '#13E87C',
+          '--color-secondary': '#FF0274',
+          '--color-tertiary': '#0098F1'
+        },
+        '@supports (color: color(display-p3 1 1 1))': {
+            ':root': {
+                '--color-primary': 'color(display-p3 0.07450980392 0.9098039216 0.4862745098)',
+                '--color-secondary': 'color(display-p3 1 0.007843137255 0.4549019608)',
+                '--color-tertiary': 'color(display-p3 0 0.5960784314 0.9450980392)'
+            }
+        },
         // Default color transition on links unless user prefers reduced motion.
         '@media (prefers-reduced-motion: no-preference)': {
           'a': {
