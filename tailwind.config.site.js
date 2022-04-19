@@ -30,7 +30,7 @@ module.exports = {
     },
     extend: {
       animation: {
-        'down': 'down .3s ease-in 1 forwards',
+        'down': 'down .6s ease-in 1 forwards',
         'up': 'up .3s ease-out 1 forwards'
       },
       boxShadow: {
@@ -39,11 +39,11 @@ module.exports = {
       keyframes: {
         down: {
           '0%': { transform: 'translateY(-100%)', opacity: 0 },
-          '20%, 100%': { opacity: 1 },
-          '30%': { transform: 'translateY(15%)' },
+          '10%, 100%': { opacity: 1 },
+          '30%': { transform: 'translateY(20%)' },
           '50%': { transform: 'translateY(-10%)' },
           '70%': { transform: 'translateY(5%)' },
-          '90%': { transform: 'translateY(-4%)' },
+          '90%': { transform: 'translateY(-2%)' },
           '100%': { transform: 'translateY(0)', },
         },
         up: {

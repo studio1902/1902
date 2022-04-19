@@ -10,8 +10,8 @@
             <li
                 {{ if children }}
                     x-data="{ subnavOpen: false }"
-                    @keyup.escape.stop.prevent="subnavOpen = false"
-                    @focusin.window="!$refs.subnav.contains($event.target) && (subnavOpen = false)"
+                    @keyup.escape.window="(subnavOpen === true) && $refs.subnav.classList.add('animate-up'), subnavOpen = false"
+                    @focusin.window="!$refs.subnav.contains($event.target) && (subnavOpen = false) && $refs.subnav.classList.add('animate-up')"
                     x-cloak
                 {{ /if }}
                 class="relative leading-none"
@@ -20,20 +20,20 @@
                     class="relative z-10 py-1 px-2 -my-1 -mx-2 flex items-center rounded-full font-medium text-base uppercase tracking-widest text-neutral dark:text-white focus:outline-none focus-visible:ring-2 ring-primary dark:ring-secondary motion-safe:transition {{ is_current || is_parent ?= 'after:absolute after:z-behind after:h-[3px] after:-inset-x-0 after:bg-primary dark:after:bg-secondary' }}"
                     {{ if children }}
                         href="#"
-                        @click.prevent="subnavOpen = !subnavOpen"
+                        @click.prevent="subnavOpen = !subnavOpen, !subnavOpen && $refs.subnav.classList.add('animate-up')"
                         :aria-label="subnavOpen
                             ? '{{ trans:strings.subnav_close }}'
                             : '{{ trans:strings.subnav_open }}'"
                         :aria-expanded="subnavOpen"
                         :class="{ 'text-white': subnavOpen, 'text-neutral': !subnavOpen }"
-                        @click.outside="subnavOpen = false"
+                        @click.outside="(subnavOpen === true) && $refs.subnav.classList.add('animate-up'), subnavOpen = false"
                     {{ else }}
                         href="{{ url }}"
                     {{ /if }}
                 >
                     {{ title }}
                     {{ if children }}
-                        <span :class="{ 'rotate-180 text-white': subnavOpen, 'text-neutral': !subnavOpen }" class="ml-1 motion-safe:transition">
+                        <span :class="{ '-rotate-180 text-white': subnavOpen, 'text-neutral dark:text-white': !subnavOpen }" class="ml-1 motion-safe:transition">
                             {{ svg:arrow class="w-3 h-3 overflow-visible fill-current" aria-hidden="true" }}
                         </span>
                     {{ /if }}
@@ -41,22 +41,13 @@
                 {{ if children }}
                     <ul
                         x-ref="subnav"
-                        class="absolute opacity-0 -top-4 -inset-x-6 pt-12 pb-4 px-6 bg-primary dark:bg-secondary rounded-lg -translate-y-full"
-                        :class="{
-                            'motion-safe:animate-down': subnavOpen,
-                            'motion-safe:animate-up': !subnavOpen
-                        }"
-
+                        class="absolute opacity-0 -top-4 -inset-x-6 pt-12 pb-4 px-4 bg-primary dark:bg-secondary rounded-lg -translate-y-full"
+                        :class="{ 'motion-safe:animate-down': subnavOpen }"
                     >
                         {{ children }}
                             <li class="">
                                 <a
-                                    class="
-                                        whitespace-nowrap py-3 px-1 -mx-1 block text-light hover:text-neutral focus:outline-none focus-visible:ring-2 ring-primary dark:ring-secondary
-                                        {{ is_current || is_parent
-                                            ? 'text-neutral'
-                                            : 'text-white' }}
-                                    "
+                                    class="block whitespace-nowrap py-3 px-2 rounded text-light hover:text-neutral focus:outline-none focus-visible:ring-2 ring-white {{ is_current || is_parent ? 'text-neutral' : 'text-white' }}"
                                     href="{{ url }}"
                                 >
                                     {{ title }}
