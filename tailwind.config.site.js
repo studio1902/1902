@@ -31,7 +31,9 @@ module.exports = {
     extend: {
       animation: {
         'down': 'down .6s ease-in 1 forwards',
-        'up': 'up .3s ease-out 1 forwards'
+        'up': 'up .3s ease-out 1 forwards',
+        'down-safe': 'down 0s ease-in 1 forwards',
+        'up-safe': 'up 0s ease-out 1 forwards'
       },
       boxShadow: {
         top: '0 1px 5px rgba(65, 64, 54 ,0.3)'

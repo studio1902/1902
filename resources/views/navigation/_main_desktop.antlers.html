@@ -12,7 +12,7 @@
                     x-data="{
                         subnavOpen: false,
                         close() {
-                            this.$refs.subnav.classList.add('animate-up'),
+                            this.$refs.subnav.classList.add('animate-up', 'motion-reduce:animate-up-safe'),
                             this.subnavOpen = false,
                             setTimeout(() => this.$refs.subnav.classList.add('hidden'), 310);
                         },
@@ -29,7 +29,7 @@
                 class="relative leading-none"
             >
                 <a
-                    class="relative z-10 py-1 px-2 -my-1 -mx-2 flex items-center rounded-full font-medium text-base uppercase tracking-widest text-neutral dark:text-white focus:outline-none focus-visible:ring-2 ring-primary dark:ring-secondary motion-safe:transition group {{ is_current || is_parent ?= 'after:absolute after:z-behind after:h-[3px] after:-inset-x-0 after:bg-primary dark:after:bg-secondary' }}"
+                    class="relative z-10 py-1 px-2 -my-1 -mx-2 flex items-center rounded-full font-medium text-base uppercase tracking-widest text-neutral dark:text-white focus:outline-none focus-visible:ring-2 ring-primary dark:ring-secondary group {{ is_current || is_parent ?= 'after:absolute after:z-behind after:h-[3px] after:-inset-x-0 after:bg-primary dark:after:bg-secondary' }}"
                     {{ if children }}
                         href="#"
                         @click.prevent="toggle()"
@@ -44,7 +44,7 @@
                     {{ /if }}
                 >
                     <div
-                        class="absolute left-0 top-1/2 w-1 h-1 rounded-full bg-primary dark:bg-secondary scale-0 -translate-y-1/2 -translate-x-1/2 transition group-hover:scale-100 {{ is_current || is_parent ?= 'hidden' }}"
+                        class="absolute left-0 top-1/2 w-1 h-1 rounded-full bg-primary dark:bg-secondary scale-0 -translate-y-1/2 -translate-x-1/2 motion-safe:transition group-hover:scale-100 {{ is_current || is_parent ?= 'hidden' }}"
                         {{ if children }}
                             :class="{ '!bg-white': subnavOpen }"
                         {{ /if }}
@@ -53,11 +53,11 @@
                     <span class="relative">{{ title }}</span>
                     {{ if children }}
                         <div class="ml-1 relative w-3 h-3">
-                            <div class="absolute top-0 h-[2px] w-1/2 rounded origin-top-right -rotate-45 transition" :class="{ 'scale-x-100 bg-white': subnavOpen, 'scale-x-0 bg-neutral dark:bg-white': !subnavOpen }"></div>
-                            <div class="absolute top-0 left-1/2 h-[2px] w-1/2 rounded origin-top-left rotate-45 transition" :class="{ 'scale-x-100 bg-white': subnavOpen, 'scale-x-0 bg-neutral dark:bg-white': !subnavOpen }"></div>
-                            <div class="absolute top-px left-[calc(50%-1px)] h-[calc(100%-2px)] w-[2px] rounded transition" :class="{ 'bg-white': subnavOpen, 'bg-neutral dark:bg-white': !subnavOpen }"></div>
-                            <div class="absolute bottom-0 h-[2px] w-1/2 rounded origin-bottom-right rotate-45 transition" :class="{ 'scale-x-0 bg-white': subnavOpen, 'scale-x-100 bg-neutral dark:bg-white': !subnavOpen }"></div>
-                            <div class="absolute bottom-0 left-1/2 h-[2px] w-1/2 rounded origin-bottom-left -rotate-45 transition" :class="{ 'scale-x-0 bg-white': subnavOpen, 'scale-x-100 bg-neutral dark:bg-white': !subnavOpen }"></div>
+                            <div class="absolute top-0 h-[2px] w-1/2 rounded origin-top-right -rotate-45 motion-safe:transition" :class="{ 'scale-x-100 bg-white': subnavOpen, 'scale-x-0 bg-neutral dark:bg-white': !subnavOpen }"></div>
+                            <div class="absolute top-0 left-1/2 h-[2px] w-1/2 rounded origin-top-left rotate-45 motion-safe:transition" :class="{ 'scale-x-100 bg-white': subnavOpen, 'scale-x-0 bg-neutral dark:bg-white': !subnavOpen }"></div>
+                            <div class="absolute top-px left-[calc(50%-1px)] h-[calc(100%-2px)] w-[2px] rounded motion-safe:transition" :class="{ 'bg-white': subnavOpen, 'bg-neutral dark:bg-white': !subnavOpen }"></div>
+                            <div class="absolute bottom-0 h-[2px] w-1/2 rounded origin-bottom-right rotate-45 motion-safe:transition" :class="{ 'scale-x-0 bg-white': subnavOpen, 'scale-x-100 bg-neutral dark:bg-white': !subnavOpen }"></div>
+                            <div class="absolute bottom-0 left-1/2 h-[2px] w-1/2 rounded origin-bottom-left -rotate-45 motion-safe:transition" :class="{ 'scale-x-0 bg-white': subnavOpen, 'scale-x-100 bg-neutral dark:bg-white': !subnavOpen }"></div>
                         </div>
                     {{ /if }}
                 </a>
@@ -65,7 +65,7 @@
                     <ul
                         x-ref="subnav"
                         class="hidden absolute opacity-0 -top-4 -inset-x-4 lg:-inset-x-6 pt-12 pb-2 px-2 lg:pb-4 lg:px-4 bg-primary dark:bg-secondary rounded-lg -translate-y-full"
-                        :class="{ 'motion-safe:animate-down': subnavOpen }"
+                        :class="{ 'animate-down motion-reduce:animate-down-safe': subnavOpen }"
                     >
                         {{ children }}
                             <li class="">
