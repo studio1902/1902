@@ -5,11 +5,11 @@
 
 <!-- /layout/_header.antlers.html -->
 <header class="w-full py-4">
-    <div class="fluid-container flex justify-between gap-4 lg:gap-8 items-center">
-        {{# Make partials you want to use for the header or use and edit premade examples like the following ones. #}}
-        {{ partial:components/logo width="120" class="h-8 lg:h-12 w-auto" }}
-        {{ partial:navigation/main }}
+    <div class="fluid-container flex justify-start md:justify-between gap-4 lg:gap-8 items-center">
+        {{ partial:components/logo_desktop width="120" class="h-8 lg:h-12 w-auto" }}
+        {{ partial:navigation/main_desktop }}
         {{ partial:navigation/utilities }}
+        {{ partial:navigation/main_mobile }}
     </div>
 </header>
 <!-- End: /layout/_header.antlers.html -->
