@@ -553,7 +553,7 @@ select {
 
 :root {
   font-size: 100%;
-  font-size: clamp(1rem, -.3rem + 1.6vw, 1.2rem);
+  font-size: clamp(1rem, 1.6vw, 1.2rem);
   min-height: 0vw;
 }
 
@@ -1409,6 +1409,12 @@ html {
 .h-32 {
   height: 8rem;
 }
+.h-10 {
+  height: 2.5rem;
+}
+.h-8 {
+  height: 2rem;
+}
 .min-h-screen {
   min-height: 100vh;
 }
@@ -1448,9 +1454,6 @@ html {
 .max-w-none {
   max-width: none;
 }
-.flex-1 {
-  flex: 1 1 0%;
-}
 .shrink-0 {
   flex-shrink: 0;
 }
@@ -1480,6 +1483,10 @@ html {
     opacity: 1;
   }
 
+  75% {
+    opacity: 0;
+  }
+
   100% {
     transform: translateY(-100%);
     opacity: 0;
@@ -1490,6 +1497,10 @@ html {
   0% {
     transform: translateY(0);
     opacity: 1;
+  }
+
+  75% {
+    opacity: 0;
   }
 
   100% {
@@ -1552,6 +1563,9 @@ html {
 .gap-6 {
   gap: 1.5rem;
 }
+.gap-4 {
+  gap: 1rem;
+}
 .gap-y-6 {
   row-gap: 1.5rem;
 }
@@ -1594,6 +1608,11 @@ html {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
+}
+.space-x-6 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 .divide-x > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-x-reverse: 0;
@@ -1785,9 +1804,6 @@ html {
 }
 .pr-10 {
   padding-right: 2.5rem;
-}
-.pl-24 {
-  padding-left: 6rem;
 }
 .pt-12 {
   padding-top: 3rem;
@@ -2580,6 +2596,26 @@ html {
 
   .lg\:col-span-4 {
     grid-column: span 4 / span 4;
+  }
+
+  .lg\:h-12 {
+    height: 3rem;
+  }
+
+  .lg\:gap-8 {
+    gap: 2rem;
+  }
+
+  .lg\:space-x-12 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(3rem * var(--tw-space-x-reverse));
+    margin-left: calc(3rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .lg\:space-x-4 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1rem * var(--tw-space-x-reverse));
+    margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
   }
 }
 @media (min-width: 1280px) {

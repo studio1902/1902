@@ -5,7 +5,7 @@
 
 <!-- /navigation/_main_desktop.antlers.html -->
 <nav class="hidden md:block" aria-label="{{ trans:strings.main_navigation }}">
-    <ul class="flex items-center space-x-12">
+    <ul class="flex items-center space-x-6 lg:space-x-12">
         {{ nav:main max_depth="2" include_home="true" }}
             <li
                 {{ if children }}
@@ -22,7 +22,7 @@
                                 : (this.$refs.subnav.classList.remove('hidden'), this.subnavOpen = true)
                         }
                     }"
-                    @keyup.escape.window="close()"
+                    @keyup.escape.window.prevent="close()"
                     @focusin.window="!$refs.subnav.contains($event.target) && close()"
                     x-cloak
                 {{ /if }}
