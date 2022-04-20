@@ -1246,6 +1246,14 @@ html {
   left: -1.5rem;
   right: -1.5rem;
 }
+.-inset-x-2 {
+  left: -0.5rem;
+  right: -0.5rem;
+}
+.-inset-x-4 {
+  left: -1rem;
+  right: -1rem;
+}
 .right-0 {
   right: 0px;
 }
@@ -1816,6 +1824,9 @@ html {
 }
 .pb-12 {
   padding-bottom: 3rem;
+}
+.pb-2 {
+  padding-bottom: 0.5rem;
 }
 .text-left {
   text-align: left;
@@ -2594,6 +2605,11 @@ html {
 }
 @media (min-width: 1024px) {
 
+  .lg\:-inset-x-6 {
+    left: -1.5rem;
+    right: -1.5rem;
+  }
+
   .lg\:col-span-4 {
     grid-column: span 4 / span 4;
   }
@@ -2616,6 +2632,15 @@ html {
     --tw-space-x-reverse: 0;
     margin-right: calc(1rem * var(--tw-space-x-reverse));
     margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .lg\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .lg\:pb-4 {
+    padding-bottom: 1rem;
   }
 }
 @media (min-width: 1280px) {
