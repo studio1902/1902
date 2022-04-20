@@ -553,7 +553,7 @@ select {
 
 :root {
   font-size: 100%;
-  font-size: clamp(1rem, 1.6vw, 1.2rem);
+  font-size: clamp(1rem, -.3rem + 1.6vw, 1.2rem);
   min-height: 0vw;
 }
 
