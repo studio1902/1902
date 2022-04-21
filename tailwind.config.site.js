@@ -30,8 +30,8 @@ module.exports = {
     },
     extend: {
       animation: {
-        'down': 'down .6s ease-in 1 both',
-        'up': 'up .3s ease-out 1 both',
+        'down': 'down var(--animation-navigation-down-duration) ease-in 1 both',
+        'up': 'up var(--animation-navigation-up-duration) ease-out 1 both',
         'down-safe': 'down 0s ease-in 1 both',
         'up-safe': 'up 0s ease-out 1 both'
       },
@@ -102,7 +102,9 @@ module.exports = {
         ':root': {
           '--color-primary': '#13E87C',
           '--color-secondary': '#FF0274',
-          '--color-tertiary': '#0098F1'
+          '--color-tertiary': '#0098F1',
+          '--animation-navigation-down-duration': '.6s',
+          '--animation-navigation-up-duration': '.3s'
         },
         '@supports (color: color(display-p3 1 1 1))': {
             ':root': {

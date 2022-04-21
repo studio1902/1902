@@ -11,6 +11,7 @@
                 {{ if children }}
                     x-data="{
                         subnavOpen: false,
+                        animationUpDuration: getComputedStyle(document.body).getPropertyValue('--animation-navigation-up-duration').slice(0, -1) * 1000 + 10,
                         toggle() {
                             if (this.subnavOpen) {
                                 this.close()
@@ -24,7 +25,7 @@
                             this.$refs.subnav.classList.remove('animate-down'),
                             this.$refs.subnav.classList.add('animate-up'),
                             this.subnavOpen = false,
-                            setTimeout(() => this.$refs.subnav.classList.add('hidden'), 310);
+                            setTimeout(() => this.$refs.subnav.classList.add('hidden'), this.animationUpDuration);
                         }
                     }"
                     @keyup.escape.window.prevent="close()"
