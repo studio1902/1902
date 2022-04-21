@@ -15,9 +15,14 @@
 <div
     x-data="{ visible: false }"
     x-show="visible"
-    x-transition.opacity.duration.1200ms
+    x-transition:enter="ease-out"
+    x-transition:enter-start="opacity-0 -translate-y-full"
+    x-transition:enter-end="opacity-100 translate-y-0"
+    x-transition:leave="ease-in"
+    x-transition:leave-start="opacity-100 translate-y-0"
+    x-transition:leave-end="opacity-0 -translate-y-full"
     @scroll.window="visible = window.pageYOffset > 50"
-    class="hidden md:block fixed inset-x-24 top-8 h-8 shadow-2xl shadow-neutral/[.15] dark:shadow-black/30"
+    class="hidden md:block fixed inset-x-32 top-8 h-8 shadow-2xl shadow-neutral/20 dark:shadow-black/40 transition duration-1000"
     aria-hidden="true"
 ></div>
 <!-- End: /layout/_header.antlers.html -->
