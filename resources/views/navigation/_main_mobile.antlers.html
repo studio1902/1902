@@ -11,19 +11,40 @@
 >
     <button
         @click.prevent="mobileNavOpen = !mobileNavOpen"
-        class="fixed bottom-0 right-0 z-20 flex items-center justify-center w-16 h-16 mr-8 text-xs font-bold text-white mb-safe bg-primary focus:outline-none focus-visible:ring-2 ring-primary ring-offset-2"
+        class="fixed bottom-0 right-0 z-20 flex space-x-2 items-center mr-8 mb-safe focus:outline-none focus-visible:ring-2 ring-primary ring-offset-2"
         :aria-label="
         mobileNavOpen
             ? '{{ trans:strings.nav_close }}'
             : '{{ trans:strings.nav_open }}'
         "
         :aria-expanded="mobileNavOpen"
-        x-text="mobileNavOpen ? '{{ trans:strings.close }}' : '{{ trans:strings.menu }}'"
-    ></button>
+    >
+        <span
+            class="uppercase tracking-wide font-light text-lg text-neutral dark:text-white"
+            :class="{ 'text-white': mobileNavOpen, 'text-neutral dark:text-white' !mobileNavOpen }"
+            x-text="mobileNavOpen ? '{{ trans:strings.close }}' : '{{ trans:strings.menu }}'"
+        ></span>
+        <div
+            class="relative w-5 h-5 rounded-full transition-colors duration-500"
+            :class="{ 'bg-white dark:bg-white': mobileNavOpen, 'bg-primary dark:bg-secondary': !mobileNavOpen }"
+            aria-hidden="true"
+        >
+            <div
+                class="absolute z-behind w-64 h-64 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary dark:bg-secondary transition-transform duration-500 scale-[.06]"
+                :class="{ 'scale-100': mobileNavOpen, 'scale-[.06]': !mobileNavOpen }"
+            >
+        </div>
+    </button>
 
     <div
-        class="fixed inset-0 z-10 pt-8 px-8 pb-12 flex flex-col justify-end bg-white"
+        class="fixed inset-0 z-10 pt-8 px-8 pb-12 flex flex-col justify-end bg-white dark:bg-neutral transition-all duration-500"
         x-show="mobileNavOpen"
+        x-transition:enter="ease-out"
+        x-transition:enter-start="[clip-path:circle(0%_at_85vw_90vh)]"
+        x-transition:enter-end="[clip-path:circle(150%_at_85vw_90vh)]"
+        x-transition:leave="ease-in"
+        x-transition:leave-start="[clip-path:circle(150%_at_85vw_90vh)]"
+        x-transition:leave-end="[clip-path:circle(0%_at_85vw_90vh)]"
         x-trap.inert.noscroll="mobileNavOpen"
         x-cloak
     >
@@ -37,7 +58,7 @@
                     class="leading-none"
                 >
                     <a
-                        class="w-full py-2 flex items-center space-x-1 font-bold uppercase tracking-wide hover:text-primary {{ is_current || is_parent ? 'text-primary' : 'text-neutral' }} focus:outline-none focus-visible:ring-2 ring-primary"
+                        class="w-full py-2 flex items-center space-x-1 font-bold uppercase tracking-wide hover:text-primary {{ is_current || is_parent ? 'text-primary' : 'text-neutral dark:text-white' }} focus:outline-none focus-visible:ring-2 ring-primary"
                         {{ if children }}
                             href="#"
                             @click.prevent="subnavOpen = !subnavOpen"

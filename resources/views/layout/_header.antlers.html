@@ -4,12 +4,11 @@
 #}}
 
 <!-- /layout/_header.antlers.html -->
-<header class="relative md:sticky md:z-40 top-0 w-full pt-6 md:py-4 bg-white dark:bg-neutral">
+<header class="sticky z-40 top-0 w-full pt-6 md:py-4 md:bg-white md:dark:bg-neutral">
     <div class="fluid-container flex justify-between items-start md:items-center gap-4 lg:gap-8">
         {{ partial:components/logo_desktop width="120" class="h-8 lg:h-12 w-auto" }}
         {{ partial:navigation/main_desktop }}
         {{ partial:navigation/utilities }}
-        {{ partial:navigation/main_mobile }}
         {{ partial:components/logo_mobile width="40" class="w-8 lg:w-12 h-auto" }}
     </div>
 </header>
@@ -26,4 +25,5 @@
     class="hidden md:block fixed inset-x-32 top-8 h-8 shadow-2xl shadow-neutral/20 dark:shadow-black/40 transition duration-1000"
     aria-hidden="true"
 ></div>
+{{ partial:navigation/main_mobile }}
 <!-- End: /layout/_header.antlers.html -->
