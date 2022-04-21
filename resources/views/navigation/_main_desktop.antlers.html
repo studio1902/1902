@@ -28,7 +28,7 @@
                         }
                     }"
                     @keyup.escape.window.prevent="close()"
-                    @focusin.window="!$refs.subnav.contains($event.target) && close()"
+                    @focusin.window="!$el.contains($event.target) && close()"
                     x-cloak
                 {{ /if }}
                 class="relative leading-none"
