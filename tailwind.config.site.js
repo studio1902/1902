@@ -40,18 +40,18 @@ module.exports = {
       },
       keyframes: {
         down: {
-          '0%': { transform: 'translateY(-100%)', opacity: 0 },
+          '0%': { transform: 'translate3d(0,-100%,0)', opacity: 0 },
           '10%, 100%': { opacity: 1 },
-          '30%': { transform: 'translateY(20%)' },
-          '50%': { transform: 'translateY(-10%)' },
-          '70%': { transform: 'translateY(5%)' },
-          '90%': { transform: 'translateY(-2%)' },
-          '100%': { transform: 'translateY(0)', },
+          '30%': { transform: 'translate3d(0,20%,0)' },
+          '50%': { transform: 'translate3d(0,-10%,0)' },
+          '70%': { transform: 'translate3d(0,5%,0)' },
+          '90%': { transform: 'translate3d(0,-2%,0)' },
+          '100%': { transform: 'translate3d(0,0,0)', },
         },
         up: {
-          '0%': { transform: 'translateY(0)', opacity: 1 },
+          '0%': { transform: 'translate3d(0,0,0)', opacity: 1 },
           '75%': { opacity: 0 },
-          '100%': { transform: 'translateY(-100%)', opacity: 0 },
+          '100%': { transform: 'translate3d(0,-100%,0)', opacity: 0 },
         }
       },
       // Set default transition durations and easing when using the transition utilities.
