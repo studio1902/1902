@@ -4,7 +4,7 @@
 #}}
 
 <!-- /layout/_header.antlers.html -->
-<header class="w-full py-4">
+<header class="relative md:sticky md:z-40 top-0 w-full py-4 bg-white dark:bg-neutral">
     <div class="fluid-container flex justify-start md:justify-between gap-4 lg:gap-8 items-center">
         {{ partial:components/logo_desktop width="120" class="h-8 lg:h-12 w-auto" }}
         {{ partial:navigation/main_desktop }}
@@ -12,4 +12,12 @@
         {{ partial:navigation/main_mobile }}
     </div>
 </header>
+<div
+    x-data="{ visible: false }"
+    x-show="visible"
+    x-transition.opacity.duration.1200ms
+    @scroll.window="visible = window.pageYOffset > 50"
+    class="md:fixed inset-x-24 top-8 h-8 shadow-2xl shadow-neutral/[.15] dark:shadow-black/30"
+    aria-hidden="true"
+></div>
 <!-- End: /layout/_header.antlers.html -->
