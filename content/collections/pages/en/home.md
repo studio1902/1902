@@ -1,7 +1,46 @@
 ---
 id: 758cab64-db09-4edf-9820-e878c4e00dec
 origin: home
-page_builder: {  }
+page_builder:
+  -
+    title: "Studio1902\L is home of Rob de Kort, Statamic developer."
+    type: introduction
+    enabled: true
+    introduction:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Find out about the '
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::af12cb2b-6ad9-4b0c-b5ef-ab4d336a7bf5'
+                  rel: noopener
+                  target: null
+                  title: null
+            text: websites
+          -
+            type: text
+            text: ' Rob creates, and '
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::ed692a52-9c26-42d1-8326-118e4cdf2458'
+                  rel: noopener
+                  target: null
+                  title: null
+            text: Peak
+          -
+            type: text
+            text: ', the community''s #1 Starter Kit for Statamic.'
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1650295636
+updated_at: 1650624522
 ---

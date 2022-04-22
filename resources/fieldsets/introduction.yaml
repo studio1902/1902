@@ -1,0 +1,16 @@
+title: 'Introduction'
+fields:
+  -
+    handle: title
+    field:
+      type: text
+      display: Title
+      validate: required
+      localizable: true
+  -
+    handle: introduction
+    field: common.text_basic
+    config:
+      display: Text
+      validate: required
+      localizable: true

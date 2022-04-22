@@ -3,14 +3,27 @@ tree:
     id: 760f2738-2fed-41e9-aa0f-40834246b2df
     entry: home
   -
-    id: c147df01-af95-4cf8-acec-97b180eb45f6
-    entry: 4e7e5c96-831f-4733-be10-5e8bdea36b0f
+    id: 966711eb-bada-425c-ac8d-0833a7b9a15a
+    title: Diensten
+    children:
+      -
+        id: 477c05d3-1655-4e6c-a1b0-0a6c55109a13
+        entry: e633d2d8-b056-40f0-914a-d9940b5243a9
+        title: Websites
+      -
+        id: b6326473-670e-47f0-8e49-d860d21716f6
+        entry: 9f948d0a-8d2c-4398-b669-92e1dcdafa75
+        title: Consultancy
+      -
+        id: bee03db0-7389-4cf9-9e4f-4d60bc664fc0
+        entry: cf79b512-47e4-479a-b8e6-5ca3595c9cd4
+        title: 'Statamic Peak'
   -
     id: 6d447a5d-f74b-416d-a45d-c2d7408b6db4
     entry: 7eb87293-600d-404b-8519-2c4a2ebc9e51
   -
     id: 7a8a26b5-e84e-4ad5-9a8b-78104a9de29b
-    title: Journal
+    title: Studio
     children:
       -
         id: d0cf9b44-787d-4528-836f-6be432202ee8

@@ -1,0 +1,14 @@
+{{#
+	@name Introduction
+	@desc The Introduction page builder block.
+    @set page.page_builder.introduction
+#}}
+
+<!-- /page_builder/_introduction.antlers.html -->
+<section class="fluid-container grid md:grid-cols-12 gap-8 place-items-center">
+    {{ partial:typography/h1 :content="block:title" class="md:col-span-6" }}
+    {{ partial:typography/prose as="article" class="md:col-span-3" }}
+        {{ block:introduction }}
+    {{ /partial:typography/prose }}
+</section>
+<!-- End: /page_builder/_introduction.antlers.html -->
