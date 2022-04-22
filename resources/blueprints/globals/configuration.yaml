@@ -21,6 +21,42 @@ sections:
           validate:
             - required
       -
+        handle: section_contact
+        field:
+          type: section
+          listable: hidden
+          display: Contact
+          instructions: 'Global contact data.'
+      -
+        handle: phone
+        field:
+          input_type: tel
+          antlers: false
+          display: 'Phone number'
+          type: text
+          icon: text
+          width: 50
+          listable: hidden
+          instructions_position: above
+          validate:
+            - required
+          read_only: false
+      -
+        handle: email
+        field:
+          input_type: email
+          antlers: false
+          display: 'Email address'
+          type: text
+          icon: text
+          width: 50
+          listable: hidden
+          instructions_position: above
+          validate:
+            - required
+            - email
+          read_only: false
+      -
         handle: section_copyright
         field:
           type: section

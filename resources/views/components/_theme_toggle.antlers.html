@@ -10,24 +10,24 @@
     <div class="w-[13ch] font-light text-xs uppercase tracking-wider">
         <button
             x-bind="toggle"
-            class="py-2 px-3 flex items-center rounded-full hover:shadow-top bg-white dark:bg-neutral hover:bg-white hover:dark:bg-white focus:outline-none focus-visible:ring-2 ring-primary dark:ring-secondary motion-safe:transition group"
+            class="py-2 px-3 flex items-center rounded-full hover:shadow-top hover:bg-white hover:dark:bg-white focus:outline-none focus-visible:ring-2 ring-primary dark:ring-secondary motion-safe:transition group"
         >
             {{ icon_classes = 'w-4 h-4 fill-current overflow-visible' }}
             {{ label_classes = 'ml-2 font-light text-neutral dark:text-white group-hover:text-neutral text-xs uppercase tracking-wider motion-safe:transition-colors' }}
             {{ wrapper_classes = 'flex items-center text-neutral dark:text-white motion-safe:transition-colors' }}
-            <div x-show="theme === 'light'" class="{{ wrapper_classes }} group-focus-visible:text-primary group-hover:text-primary">
+            <div x-show="$store.theme.get() === 'light'" class="{{ wrapper_classes }} group-focus-visible:text-primary group-hover:text-primary">
                 {{ svg:sun class="{icon_classes}" alt="" aria-hidden="true" }}
                 <span class="{{ label_classes }}">
                     {{ trans:strings.theme_toggle_light_short }}
                 </span>
             </div>
-            <div x-show="theme === 'dark'" class="{{ wrapper_classes }} group-focus-visible:text-secondary group-hover:text-secondary">
+            <div x-show="$store.theme.get() === 'dark'" class="{{ wrapper_classes }} group-focus-visible:text-secondary group-hover:text-secondary">
                 {{ svg:moon class="{icon_classes}" alt="" aria-hidden="true" }}
                 <span class="{{ label_classes }}">
                     {{ trans:strings.theme_toggle_dark_short }}
                 </span>
             </div>
-            <div x-show="theme === 'system'" class="{{ wrapper_classes }} group-focus-visible:text-tertiary group-hover:text-tertiary">
+            <div x-show="$store.theme.get() === 'system'" class="{{ wrapper_classes }} group-focus-visible:text-tertiary group-hover:text-tertiary">
                 {{ svg:sun x-show="preferredColorScheme === 'light'" class="{icon_classes} opacity-50" alt="" aria-hidden="true" }}
                 {{ svg:moon x-show="preferredColorScheme === 'dark'" class="{icon_classes} opacity-50" alt="" aria-hidden="true" }}
                 <span class="{{ label_classes }}">
@@ -47,7 +47,7 @@
         {{ label_classes = 'font-light text-neutral text-xs uppercase tracking-wider' }}
         <button
             @click="themeLight()"
-            :class="{ 'text-primary bg-neutral-light': theme === 'light' }"
+            :class="{ 'text-primary bg-neutral-light': $store.theme.get() === 'light' }"
             aria-label="{{ trans:strings.theme_toggle_light }}"
             title="{{ trans:strings.theme_toggle_light }}"
             class="{{ button_classes }} focus-visible:text-primary hover:text-primary"
@@ -57,7 +57,7 @@
         </button>
         <button
             @click="themeDark()"
-            :class="{ 'text-secondary bg-neutral-light': theme === 'dark' }"
+            :class="{ 'text-secondary bg-neutral-light': $store.theme.get() === 'dark' }"
             aria-label="{{ trans:strings.theme_toggle_dark }}"
             title="{{ trans:strings.theme_toggle_dark }}"
             class="{{ button_classes }} focus-visible:text-secondary hover:text-secondary"
@@ -67,7 +67,7 @@
         </button>
         <button
             @click="themeSystem()"
-            :class="{ 'text-tertiary bg-neutral-light': theme === 'system' }"
+            :class="{ 'text-tertiary bg-neutral-light': $store.theme.get() === 'system' }"
             aria-label="{{ trans:strings.theme_toggle_system }}"
             title="{{ trans:strings.theme_toggle_system }}"
             class="{{ button_classes }} focus-visible:text-tertiary hover:text-tertiary"
@@ -84,22 +84,31 @@
 
     <script>
         document.addEventListener('alpine:initializing', () => {
+            Alpine.store('theme', {
+                theme: Alpine.$persist('system').as('theme'),
+                set(value) {
+                    this.theme = value
+                },
+                get() {
+                    return this.theme
+                }
+            })
+
             Alpine.data('themeToggle', () => {
                 return {
                     themeToggleOpen: false,
-                    theme: Alpine.$persist('system').as('theme'),
                     preferredColorScheme: window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light',
                     themeColor: {{ theme_color ?? 'false' }},
                     themeLight: function() {
-                        this.theme = 'light'
+                        this.$store.theme.set('light')
                         this.setLightTheme()
                     },
                     themeDark: function() {
-                        this.theme = 'dark'
+                        this.$store.theme.set('dark')
                         this.setDarkTheme()
                     },
                     themeSystem: function() {
-                        this.theme = 'system'
+                        this.$store.theme.set('system')
                         window.matchMedia('(prefers-color-scheme: light)').matches && this.setLightTheme()
                         window.matchMedia('(prefers-color-scheme: dark)').matches && this.setDarkTheme()
                     },

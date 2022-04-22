@@ -11,7 +11,7 @@
 >
     <button
         @click.prevent="mobileNavOpen = !mobileNavOpen"
-        class="fixed bottom-0 right-0 z-20 flex space-x-2 items-center mr-8 mb-safe focus:outline-none focus-visible:ring-2 ring-primary ring-offset-2"
+        class="fixed bottom-0 right-0 z-20 flex space-x-2 items-center mr-3 mb-safe py-2 px-3 rounded-full bg-white dark:bg-neutral focus:outline-none focus-visible:ring-2 ring-primary dark:ring-secondary ring-offset-2"
         :aria-label="
         mobileNavOpen
             ? '{{ trans:strings.nav_close }}'
@@ -20,24 +20,24 @@
         :aria-expanded="mobileNavOpen"
     >
         <span
-            class="uppercase tracking-wide font-light text-lg text-neutral dark:text-white"
-            :class="{ 'text-white': mobileNavOpen, 'text-neutral dark:text-white' !mobileNavOpen }"
+            class="uppercase tracking-wide font-light text-lg motion-safe:transition-colors"
+            :class="{ 'text-white': mobileNavOpen, 'text-neutral dark:text-white': !mobileNavOpen }"
             x-text="mobileNavOpen ? '{{ trans:strings.close }}' : '{{ trans:strings.menu }}'"
         ></span>
         <div
-            class="relative w-5 h-5 rounded-full transition-colors duration-500"
+            class="relative w-5 h-5 rounded-full motion-safe:transition-colors motion-safe:duration-500"
             :class="{ 'bg-white dark:bg-white': mobileNavOpen, 'bg-primary dark:bg-secondary': !mobileNavOpen }"
             aria-hidden="true"
         >
             <div
-                class="absolute z-behind w-64 h-64 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary dark:bg-secondary transition-transform duration-500 scale-[.06]"
+                class="absolute z-behind w-64 h-64 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary dark:bg-secondary motion-safe:transition-transform motion-safe:duration-500 scale-[.06] ease-[cubic-bezier(.78,-0.71,.23,1.96)]"
                 :class="{ 'scale-100': mobileNavOpen, 'scale-[.06]': !mobileNavOpen }"
             >
         </div>
     </button>
 
     <div
-        class="fixed inset-0 z-10 pt-8 px-8 pb-12 flex flex-col justify-end bg-white dark:bg-neutral transition-all duration-500"
+        class="fixed inset-0 z-10 p-6 pr-4 flex flex-col justify-between space-y-8 bg-white dark:bg-neutral motion-safe:transition-all motion-safe:duration-500"
         x-show="mobileNavOpen"
         x-transition:enter="ease-out"
         x-transition:enter-start="[clip-path:circle(0%_at_85vw_90vh)]"
@@ -48,62 +48,72 @@
         x-trap.inert.noscroll="mobileNavOpen"
         x-cloak
     >
-        <ul class="flex flex-col py-2 space-y-4 overflow-auto">
-            {{ nav:main max_depth="2" include_home="true" }}
-                <li
-                    {{ if children }}
-                        x-data="{ subnavOpen: false }"
-                        @focusin.window="!$refs.subnav.contains($event.target) && (subnavOpen = false)"
-                    {{ /if }}
-                    class="leading-none"
-                >
-                    <a
-                        class="w-full py-2 flex items-center space-x-1 font-bold uppercase tracking-wide hover:text-primary {{ is_current || is_parent ? 'text-primary' : 'text-neutral dark:text-white' }} focus:outline-none focus-visible:ring-2 ring-primary"
+        <div class="relative flex justify-between items-start">
+            {{ partial:navigation/utilities }}
+            {{ partial:components/logo_mobile width="40" class="absolute top-0 right-2 w-8 lg:w-12 h-auto" }}
+        </div>
+
+        <div class="overflow-auto">
+            <ul class="flex flex-col">
+                {{ nav:main max_depth="2" include_home="true" }}
+                    <li
                         {{ if children }}
-                            href="#"
-                            @click.prevent="subnavOpen = !subnavOpen"
-                            @click.outside="subnavOpen = false"
-                            :aria-label="subnavOpen
-                                ? '{{ trans:strings.subnav_close }}'
-                                : '{{ trans:strings.subnav_open }}'"
-                            :aria-expanded="subnavOpen"
-                        {{ else }}
-                            href="{{ url }}"
+                            x-data="{ subnavOpen: false }"
+                            @focusin.window="!$refs.subnav.contains($event.target) && (subnavOpen = false)"
                         {{ /if }}
+                        class="leading-none"
                     >
-                        <span>{{ title }}</span>
-                        {{ if children }}
-                            <svg
-                                class="w-3 h-2 overflow-visible stroke-current text-neutral"
-                                :class="{ 'rotate-180': subnavOpen }"
-                                aria-hidden="true"
-                                stroke-width="20"
-                                viewBox="0 0 140 140"><path d="M135.625 42.648l-62.533 62.527a4.37 4.37 0 01-6.184 0L4.375 42.648" fill="none" stroke-linecap="round" stroke-linejoin="round"
-                            /></svg>
-                        {{ /if }}
-                    </a>
-                    {{ if children }}
-                        <ul
-                            x-show="subnavOpen"
-                            x-ref="subnav"
-                            class="flex flex-col items-stretch space-y-2"
-                            x-collapse
-                            x-cloak
+                        <a
+                            class="w-full py-2 flex items-center space-x-4 font-title text-5xl hover:text-primary dark:hover:text-secondary {{ is_current || is_parent ? 'text-primary dark:text-secondary' : 'text-neutral dark:text-white' }} focus:outline-none focus-visible:ring-2 ring-primary dark:ring-secondary"
+                            {{ if children }}
+                                href="#"
+                                @click.prevent="subnavOpen = !subnavOpen"
+                                @click.outside="subnavOpen = false"
+                                :aria-label="subnavOpen
+                                    ? '{{ trans:strings.subnav_close }}'
+                                    : '{{ trans:strings.subnav_open }}'"
+                                :aria-expanded="subnavOpen"
+                            {{ else }}
+                                href="{{ url }}"
+                            {{ /if }}
                         >
-                            {{ children }}
-                                <li class="{{ first ?= 'mt-2' }}">
-                                    <a
-                                        class="block py-2 whitespace-nowrap font-bold hover:text-primary {{ is_current || is_parent ? 'text-primary' : 'text-neutral' }} focus:outline-none focus-visible:ring-2 ring-primary"
-                                        href="{{ url }}">
-                                        {{ title }}
-                                    </a>
-                                </li>
-                            {{ /children }}
-                        </ul>
-                    {{ /if }}
-                </li>
-            {{ /nav:main }}
-        </ul>
+                            <span>{{ title }}</span>
+                            {{ if children }}
+                                <div
+                                    class="w-0 h-0 border-l-8 border-r-8 border-l-transparent border-r-transparent border-t-[14px] border-t-primary dark:border-t-secondary motion-safe:transition-transform"
+                                    :class="{ '[transform:scale(1,-1)]': subnavOpen }"
+                                    aria-hidden="true"
+                                ></div>
+                            {{ /if }}
+                        </a>
+                        {{ if children }}
+                            <ul
+                                x-show="subnavOpen"
+                                x-ref="subnav"
+                                class="flex flex-col items-stretch space-y-2"
+                                x-collapse
+                                x-cloak
+                            >
+                                {{ children }}
+                                    <li class="{{ first ?= 'mt-2' }}">
+                                        <a
+                                            class="block py-2 whitespace-nowrap font-medium underline underline-offset-4 decoration-primary dark:decoration-secondary decoration-dotted decoration-2 {{ is_current || is_parent ? 'text-primary dark:text-secondary' : 'text-neutral dark:text-white hover:text-primary dark:hover:text-secondary' }} focus:outline-none focus-visible:ring-2 ring-primary dark:ring-secondary"
+                                            href="{{ url }}">
+                                            {{ title }}
+                                        </a>
+                                    </li>
+                                {{ /children }}
+                            </ul>
+                        {{ /if }}
+                    </li>
+                {{ /nav:main }}
+            </ul>
+            <div class="mt-8 flex flex-col space-y-3">
+                <b class="mb-1 font-semibold text-lg text-neutral dark:text-white">{{ configuration:copyright_name ?? config:app:name }}</b>
+                <a class="font-medium text-neutral dark:text-white hover:text-primary dark:hover:text-secondary underline underline-offset-4 decoration-primary dark:decoration-secondary decoration-dotted decoration-2" href="tel:{{ configuration:phone }}">{{ configuration:phone }}</a>
+                <a class="font-medium text-neutral dark:text-white hover:text-primary dark:hover:text-secondary underline underline-offset-4 decoration-primary dark:decoration-secondary decoration-dotted decoration-2" href="mailto:{{ configuration:email }}">{{ configuration:email }}</a>
+            </div>
+        </div>
     </div>
 </nav>
 <!-- End: /navigation/_main_mobile.antlers.html -->

@@ -2,3 +2,4 @@ title: Main
 collections:
   - pages
 max_depth: 2
+root: true
