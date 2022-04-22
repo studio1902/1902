@@ -30,14 +30,14 @@
             aria-hidden="true"
         >
             <div
-                class="absolute z-behind w-64 h-64 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary dark:bg-secondary motion-safe:transition-transform motion-safe:duration-500 scale-[.06] motion-safe:ease-[cubic-bezier(.78,-0.71,.23,1.96)]"
+                class="absolute z-behind w-64 h-64 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary dark:bg-secondary motion-safe:transition-transform motion-safe:duration-500 scale-[.06] motion-safe:ease-[cubic-bezier(.8,-0.7,.25,2)]"
                 :class="{ 'scale-100': mobileNavOpen, 'scale-[.06]': !mobileNavOpen }"
             >
         </div>
     </button>
 
     <div
-        class="fixed inset-0 z-10 p-6 pr-4 flex flex-col justify-between space-y-8 bg-white dark:bg-neutral motion-safe:transition-all motion-safe:duration-500"
+        class="fixed inset-0 z-10 p-6 pr-4 flex flex-col justify-between space-y-8 bg-white dark:bg-neutral motion-safe:transition-all motion-safe:duration-700"
         x-show="mobileNavOpen"
         x-transition:enter="ease-out"
         x-transition:enter-start="[clip-path:circle(0%_at_85vw_90vh)]"
