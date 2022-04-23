@@ -30,7 +30,7 @@
             aria-hidden="true"
         >
             <div
-                class="absolute z-behind w-64 h-64 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary dark:bg-secondary motion-safe:transition-transform motion-safe:duration-500 scale-[.06] motion-safe:ease-[cubic-bezier(.8,-0.7,.25,2)]"
+                class="absolute z-behind w-64 h-64 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary dark:bg-secondary motion-safe:transition-transform motion-safe:duration-500 scale-[.06] motion-safe:ease-[cubic-bezier(.25,-0.7,.25,2)]"
                 :class="{ 'scale-100': mobileNavOpen, 'scale-[.06]': !mobileNavOpen }"
             >
         </div>
@@ -50,7 +50,7 @@
     >
         <div class="flex justify-between items-start">
             {{ partial:navigation/utilities }}
-            {{ partial:components/logo_mobile width="40" class="w-8 lg:w-12 h-auto" }}
+            {{ partial:components/logo_mobile width="40" class="w-10 h-auto" }}
         </div>
 
         <div class="overflow-auto">
@@ -64,7 +64,7 @@
                         class="leading-none"
                     >
                         <a
-                            class="w-full py-2 flex items-center space-x-4 font-title text-5xl hover:text-primary dark:hover:text-secondary {{ is_current || is_parent ? 'text-primary dark:text-secondary' : 'text-neutral dark:text-white' }} focus:outline-none focus-visible:ring-2 ring-primary dark:ring-secondary"
+                            class="w-full py-2 flex items-baseline space-x-2 font-title text-5xl hover:text-primary dark:hover:text-secondary {{ is_current || is_parent ? 'text-primary dark:text-secondary' : 'text-neutral dark:text-white' }} focus:outline-none focus-visible:ring-2 ring-primary dark:ring-secondary group"
                             {{ if children }}
                                 href="#"
                                 @click.prevent="subnavOpen = !subnavOpen"
@@ -80,7 +80,7 @@
                             <span>{{ title }}</span>
                             {{ if children }}
                                 <div
-                                    class="w-0 h-0 border-l-8 border-r-8 border-l-transparent border-r-transparent border-t-[14px] border-t-primary dark:border-t-secondary motion-safe:transition-transform"
+                                    class="relative bottom-1 w-0 h-0 border-l-8 border-r-8 border-l-transparent border-r-transparent border-t-[14px] motion-safe:transition {{ is_current || is_parent ? 'border-t-primary dark:border-t-secondary' : 'border-t-neutral group-hover:border-t-primary group-hover:dark:border-t-secondary' }}"
                                     :class="{ '[transform:scale(1,-1)]': subnavOpen }"
                                     aria-hidden="true"
                                 ></div>
