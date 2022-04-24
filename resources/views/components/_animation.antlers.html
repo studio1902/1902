@@ -1,0 +1,19 @@
+<figure
+    x-data="{ animation: '' }"
+    x-init="
+        animation = lottie.loadAnimation({
+            container: $el,
+            renderer: 'svg',
+            autoplay: {{ intersect ? 'false' : 'true' }},
+            loop: {{ loop ? 'true' : 'false' }},
+            path: '{{ animation }}'
+        })
+        animation.setSpeed({{ playback_speed ?? '1.0' }})
+    "
+    {{ if intersect }}
+        x-intersect:enter="animation.play()"
+        x-intersect:leave="animation.stop()"
+    {{ /if }}
+    class="{{ class }}"
+    aria-hidden="true"
+></figure>

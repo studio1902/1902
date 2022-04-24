@@ -1,0 +1,59 @@
+title: Animation
+fields:
+  -
+    handle: section_animation
+    field:
+      display: Animation
+      type: section
+      icon: section
+      instructions: 'An optional animation with render properties.'
+      listable: hidden
+      instructions_position: above
+      read_only: false
+  -
+    handle: animation
+    field: common.image
+    config:
+      container: animations
+      restrict: true
+      display: 'Lottie animation file'
+      width: 33
+      instructions_position: below
+  -
+    handle: loop
+    field:
+      default: true
+      display: Loop
+      type: toggle
+      icon: toggle
+      width: 33
+      replicator_preview: false
+      listable: hidden
+      instructions_position: above
+      read_only: false
+  -
+    handle: intersect
+    field:
+      default: false
+      display: Intersect
+      type: toggle
+      icon: toggle
+      replicator_preview: false
+      width: 33
+      listable: hidden
+      instructions_position: above
+      read_only: false
+  -
+    handle: playback_speed
+    field:
+      default: '1.0'
+      display: 'Playback speed'
+      type: float
+      icon: float
+      width: 33
+      replicator_preview: false
+      listable: hidden
+      instructions_position: above
+      read_only: false
+      validate:
+        - 'between:0.0,2.0'

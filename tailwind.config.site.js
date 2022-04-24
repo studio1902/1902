@@ -54,9 +54,6 @@ module.exports = {
           '100%': { transform: 'translate3d(0,-100%,0)', opacity: 0 },
         }
       },
-      screens: {
-        'xs': '350px'
-      },
       // Set default transition durations and easing when using the transition utilities.
       transitionDuration: {
         DEFAULT: '300ms',
@@ -98,6 +95,10 @@ module.exports = {
       // extrabold: 800,
       // black: 900,
     },
+    screens: {
+      'xs': '350px',
+      ...defaultTheme.screens,
+    }
   },
   plugins: [
     plugin(function({ addBase, theme }) {

@@ -3,7 +3,7 @@ id: home
 blueprint: page
 title: Home
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1650624509
+updated_at: 1650798626
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -49,4 +49,8 @@ page_builder:
           -
             type: text
             text: ', de community''s #1 Starter Kit voor Statamic.'
+    animation: fire.json
+    loop: false
+    intersect: true
+    playback_speed: 0.4
 ---
