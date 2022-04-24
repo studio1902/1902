@@ -3,7 +3,7 @@ id: home
 blueprint: page
 title: Home
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1650823799
+updated_at: 1650827084
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -83,7 +83,7 @@ page_builder:
           -
             type: text
             text: ' on offering the best user experience possible.'
-    animation: flowergun.json
+    animation: knive.json
     playback_speed: 1.0
     loop: false
     intersect: true
