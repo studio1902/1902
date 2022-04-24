@@ -28,3 +28,9 @@ fields:
           fields:
             -
               import: introduction
+        project:
+          display: Project
+          instructions: 'Highlight a project.'
+          fields:
+            -
+              import: project

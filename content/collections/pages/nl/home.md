@@ -3,7 +3,7 @@ id: home
 blueprint: page
 title: Home
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1650802364
+updated_at: 1650823799
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -57,6 +57,9 @@ page_builder:
       - Hot
       - Hot
       - Hot
+  -
+    type: project
+    enabled: true
   -
     title: 'Toegankelijk&shy;heid, privacy en performance is de standaard'
     introduction:

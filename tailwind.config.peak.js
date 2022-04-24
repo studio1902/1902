@@ -191,6 +191,9 @@ module.exports = {
         '.fill-current-cascade *': {
           fill: 'currentColor',
         },
+        '.stroke-current-cascade *': {
+          stroke: 'currentColor',
+        },
       }
       addUtilities(newUtilities)
     }),

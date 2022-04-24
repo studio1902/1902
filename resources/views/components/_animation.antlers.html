@@ -11,9 +11,9 @@
         animation.setSpeed({{ playback_speed ?? '1.0' }})
     "
     {{ if intersect }}
-        x-intersect:enter="animation.play()"
+        x-intersect:enter.full="animation.play()"
         x-intersect:leave="animation.stop()"
     {{ /if }}
-    class="{{ class }}"
+    class="{{ class }} text-neutral dark:text-white fill-current-cascade stroke-current-cascade"
     aria-hidden="true"
 ></figure>
