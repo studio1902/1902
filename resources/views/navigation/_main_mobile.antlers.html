@@ -80,7 +80,7 @@
                             <span>{{ title }}</span>
                             {{ if children }}
                                 <div
-                                    class="relative bottom-1 w-0 h-0 border-l-8 border-r-8 border-l-transparent border-r-transparent border-t-[14px] motion-safe:transition {{ is_current || is_parent ? 'border-t-primary dark:border-t-secondary' : 'border-t-neutral group-hover:border-t-primary group-hover:dark:border-t-secondary' }}"
+                                    class="relative bottom-1 w-0 h-0 border-l-8 border-r-8 border-l-transparent border-r-transparent border-t-[14px] motion-safe:transition {{ is_current || is_parent ? 'border-t-primary dark:border-t-secondary' : 'border-t-neutral dark:border-t-white group-hover:border-t-primary dark:group-hover:border-t-secondary' }}"
                                     :class="{ '[transform:scale(1,-1)]': subnavOpen }"
                                     aria-hidden="true"
                                 ></div>
