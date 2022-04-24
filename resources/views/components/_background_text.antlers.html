@@ -1,29 +1,23 @@
-<script>
-    document.addEventListener('alpine:initializing', () => {
-        Alpine.store('backgroundText', {
-            value: '',
-            set(value) {
-                this.value = value
-            }
-        })
-    })
-</script>
 <div
-    x-data="{
-        text: '',
-        old: ''
-    }"
-    x-cloak
-    class="fixed inset-0 z-behind w-full flex justify-center items-center select-none pointer-events-none"
+    class="absolute inset-0 z-behind w-full flex justify-center items-center select-none pointer-events-none"
+    x-data="{ visible: false }"
+    {{ if intersect }}
+        x-intersect:enter="visible = true"
+        x-intersect:leave.full="visible = false"
+    {{ /if }}
     aria-hidden="true"
-    x-init="
-        $watch('$store.backgroundText.value', (value, oldValue) => {
-            text = value
-        })
-    "
+    x-cloak
 >
     <span
-        x-html="text"
-        class="max-w-[20ch] uppercase tracking-wider font-light text-9xl text-neutral-light dark:text-neutral-light/[.15] text-center">
+        class="max-w-[20ch] uppercase tracking-wider font-light text-8xl text-neutral-light dark:text-neutral-light/10 text-center"
+        x-show="visible"
+        x-transition.opacity.duration.1400ms
+    >
+        {{ block:background_text }}
+            {{ value }}
+            {{ unless last }}
+                <br>
+            {{ /unless }}
+        {{  /block:background_text }}
     </span>
 </div>

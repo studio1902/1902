@@ -1,3 +1,0 @@
-{{ if block:background_text }}
-    <div x-data x-intersect="$store.backgroundText.set('{{ block:background_text }}{{ value }}{{ unless last }}<br>{{ /unless }}{{ /block:background_text }}')" aria-hidden="true"></div>
-{{ /if }}

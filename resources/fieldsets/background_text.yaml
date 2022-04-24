@@ -6,7 +6,7 @@ fields:
       display: Background text
       type: section
       icon: section
-      instructions: 'Manipulate the scrolling background text.'
+      instructions: 'Add an optional background text.'
       listable: hidden
       instructions_position: above
       read_only: false
