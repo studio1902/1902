@@ -3,7 +3,7 @@ id: home
 blueprint: page
 title: Home
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1650798626
+updated_at: 1650802364
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -53,4 +53,41 @@ page_builder:
     loop: false
     intersect: true
     playback_speed: 0.4
+    background_text:
+      - Hot
+      - Hot
+      - Hot
+  -
+    title: 'Toegankelijk&shy;heid, privacy en performance is de standaard'
+    introduction:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Websites should deliver. Read up on '
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::e633d2d8-b056-40f0-914a-d9940b5243a9'
+                  rel: noopener
+                  target: null
+                  title: null
+            text: 'Rob''s ideas'
+          -
+            type: text
+            text: ' on offering the best user experience possible.'
+    animation: flowergun.json
+    playback_speed: 1.0
+    loop: false
+    intersect: true
+    type: introduction
+    enabled: true
+    background_text:
+      - Str8
+      - Outta
+      - Baflo
 ---

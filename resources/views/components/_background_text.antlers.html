@@ -1,0 +1,21 @@
+<script>
+    document.addEventListener('alpine:initializing', () => {
+        Alpine.store('backgroundText', {
+            value: '',
+            set(value) {
+                this.value = value
+            }
+        })
+    })
+</script>
+<div
+    x-data
+    x-cloak
+    class="fixed inset-0 z-behind w-full flex justify-center items-center select-none pointer-events-none"
+    aria-hidden="true"
+>
+    <span
+        x-html="$store.backgroundText.value"
+        class="max-w-[20ch] uppercase tracking-wider font-light text-9xl text-neutral-light text-center">
+    </span>
+</div>

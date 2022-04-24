@@ -17,8 +17,22 @@ fields:
       container: animations
       restrict: true
       display: 'Lottie animation file'
-      width: 33
+      width: 50
       instructions_position: below
+  -
+    handle: playback_speed
+    field:
+      default: '1.0'
+      display: 'Playback speed'
+      type: float
+      icon: float
+      width: 50
+      replicator_preview: false
+      listable: hidden
+      instructions_position: above
+      read_only: false
+      validate:
+        - 'between:0.0,2.0'
   -
     handle: loop
     field:
@@ -26,7 +40,7 @@ fields:
       display: Loop
       type: toggle
       icon: toggle
-      width: 33
+      width: 50
       replicator_preview: false
       listable: hidden
       instructions_position: above
@@ -39,21 +53,7 @@ fields:
       type: toggle
       icon: toggle
       replicator_preview: false
-      width: 33
+      width: 50
       listable: hidden
       instructions_position: above
       read_only: false
-  -
-    handle: playback_speed
-    field:
-      default: '1.0'
-      display: 'Playback speed'
-      type: float
-      icon: float
-      width: 33
-      replicator_preview: false
-      listable: hidden
-      instructions_position: above
-      read_only: false
-      validate:
-        - 'between:0.0,2.0'

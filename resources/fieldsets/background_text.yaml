@@ -1,0 +1,17 @@
+title: Animation
+fields:
+  -
+    handle: section_background_text
+    field:
+      display: Background text
+      type: section
+      icon: section
+      instructions: 'Manipulate the scrolling background text.'
+      listable: hidden
+      instructions_position: above
+      read_only: false
+  -
+    handle: background_text
+    field:
+      type: list
+      display: Text

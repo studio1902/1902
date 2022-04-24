@@ -16,3 +16,5 @@ fields:
       localizable: true
   -
     import: animation
+  -
+    import: background_text

@@ -41,6 +41,46 @@ page_builder:
           -
             type: text
             text: ', the community''s #1 Starter Kit for Statamic.'
+    playback_speed: 1.0
+    loop: true
+    intersect: false
+    background_text:
+      - Hot
+      - Hot
+      - Hot
+  -
+    title: 'Accessibility, privacy and performance included.'
+    introduction:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Websites should deliver. Read up on '
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::e633d2d8-b056-40f0-914a-d9940b5243a9'
+                  rel: noopener
+                  target: null
+                  title: null
+            text: 'Rob''s ideas'
+          -
+            type: text
+            text: ' on offering the best user experience possible.'
+    animation: nonuclear.json
+    playback_speed: 1.0
+    loop: false
+    intersect: true
+    type: introduction
+    enabled: true
+    background_text:
+      - Str8
+      - outta
+      - Baflo
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1650624522
+updated_at: 1650802328
 ---
