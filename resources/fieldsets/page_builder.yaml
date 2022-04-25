@@ -22,15 +22,15 @@ fields:
           fields:
             -
               import: form
-        introduction:
-          display: Introduction
-          instructions: 'A big bold title, text and an animation.'
-          fields:
-            -
-              import: introduction
         project:
           display: Project
           instructions: 'Highlight a project.'
           fields:
             -
               import: project
+        title_and_text:
+          display: Title and text
+          instructions: 'A big bold title, text and an animation.'
+          fields:
+            -
+              import: title_and_text

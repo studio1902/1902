@@ -3,7 +3,7 @@ id: home
 blueprint: page
 title: Home
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1650828505
+updated_at: 1650890594
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -12,7 +12,7 @@ sitemap_priority: 0.5
 page_builder:
   -
     title: "Studio 1902\L is het huis van Rob de Kort, Statamic developer."
-    type: introduction
+    type: title_and_text
     enabled: true
     introduction:
       -
@@ -58,39 +58,9 @@ page_builder:
       - Hot
       - Hot
   -
-    article:
-      -
-        type: paragraph
-      -
-        type: paragraph
-      -
-        type: paragraph
-      -
-        type: paragraph
-      -
-        type: paragraph
-      -
-        type: paragraph
-      -
-        type: paragraph
-      -
-        type: paragraph
-      -
-        type: paragraph
-      -
-        type: paragraph
-      -
-        type: paragraph
-      -
-        type: paragraph
-      -
-        type: paragraph
-      -
-        type: paragraph
-      -
-        type: paragraph
-    type: article
+    type: project
     enabled: true
+    project: 4b4b9b6a-508f-4d18-8b35-3e53db6a2066
   -
     title: 'Toegankelijkheid, privacy en performance is de standaard'
     introduction:
@@ -114,11 +84,11 @@ page_builder:
           -
             type: text
             text: ' on offering the best user experience possible.'
-    animation: knive.json
+    animation: accessibility.json
     playback_speed: 1.0
     loop: false
     intersect: true
-    type: introduction
+    type: title_and_text
     enabled: true
     background_text:
       - Str8

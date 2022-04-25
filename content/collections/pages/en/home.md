@@ -4,7 +4,7 @@ origin: home
 page_builder:
   -
     title: "Studio1902\L is home of Rob de Kort, Statamic developer."
-    type: introduction
+    type: title_and_text
     enabled: true
     introduction:
       -
@@ -75,7 +75,7 @@ page_builder:
     playback_speed: 1.0
     loop: false
     intersect: true
-    type: introduction
+    type: title_and_text
     enabled: true
     background_text:
       - Str8

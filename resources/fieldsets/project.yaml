@@ -1,2 +1,19 @@
-title: 'Project'
-fields: [ ]
+title: Project
+fields:
+  -
+    handle: project
+    field:
+      max_items: 1
+      mode: default
+      create: true
+      collections:
+        - projects
+      display: Project
+      type: entries
+      icon: entries
+      instructions: 'Highlight a project or show the latest.'
+      localizable: true
+      width: 50
+      listable: hidden
+      instructions_position: below
+      read_only: false

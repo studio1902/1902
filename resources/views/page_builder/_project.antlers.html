@@ -6,6 +6,22 @@
 
 <!-- /page_builder/_project.antlers.html -->
 <section class="fluid-container grid md:grid-cols-12 gap-8">
-    {{ partial:typography/h3 content="🔧<br>Project" class="md:col-span-12 text-center" }}
+    <article class="md:col-span-7 md:col-start-1 md:row-span-3 md:row-start-2 grid md:grid-cols-7 gap-8 border border-primary dark:border-secondary">
+        <div class="md:col-span-5 py-8 pl-8">
+            <h2 class="text-4xl font-light uppercase tracking-wider text-primary dark:text-secondary">
+                {{ project:sub_title }}
+            </h2>
+        </div>
+    </article>
+    <div class="md:col-span-7 md:col-start-6 md:row-span-3 md:row-start-1 rounded-t-lg border border-primary dark:border-secondary">
+        <div class="flex space-x-1 items-center w-full h-8 px-3 ">
+            <div class="w-3 h-3 rounded-full border border-primary dark:border-secondary"></div>
+            <div class="w-3 h-3 rounded-full border border-primary dark:border-secondary"></div>
+            <div class="w-3 h-3 rounded-full border border-primary dark:border-secondary"></div>
+        </div>
+        <figure class="aspect-w-4 aspect-h-3">
+            {{ partial:components/picture :image="project:image" cover="true" lazy="true" sizes="(min-width: 768px) 75vw, 90vw"  }}
+        </figure>
+    </div>
 </section>
 <!-- End: /page_builder/_project.antlers.html -->

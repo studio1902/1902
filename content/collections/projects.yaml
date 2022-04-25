@@ -1,0 +1,15 @@
+title: Projects
+sites:
+  - nl
+  - en
+propagate: false
+template: projects/show
+layout: layout
+mount: 7eb87293-600d-404b-8519-2c4a2ebc9e51
+revisions: false
+route: '/{mount}/{slug}'
+date: true
+sort_dir: asc
+date_behavior:
+  past: public
+  future: private

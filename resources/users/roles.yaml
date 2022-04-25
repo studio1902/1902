@@ -31,6 +31,15 @@ editor:
     - 'change passwords'
     - 'view contact form submissions'
     - 'delete contact form submissions'
+    - 'view projects entries'
+    - 'edit projects entries'
+    - 'create projects entries'
+    - 'delete projects entries'
+    - 'publish projects entries'
+    - 'reorder projects entries'
+    - 'edit other authors projects entries'
+    - 'publish other authors projects entries'
+    - 'delete other authors projects entries'
 marketeer:
   title: Marketeer
   permissions:

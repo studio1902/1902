@@ -1,0 +1,16 @@
+{{#
+	@name Projects show
+	@desc The Projects show template.
+#}}
+
+<!-- /projects/show.antlers.html -->
+<main class="outer-grid" id="content">
+    <div class="fluid-container">
+        {{ partial:typography/h1 :content="title" }}
+    </div>
+
+    {{ page_builder scope="block" }}
+        {{ partial src="page_builder/{type}" }}
+    {{ /page_builder }}
+</main>
+<!-- /projects/show.antlers.html -->

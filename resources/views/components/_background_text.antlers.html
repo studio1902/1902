@@ -3,7 +3,7 @@
     x-data="{ visible: false }"
     {{ if intersect }}
         x-intersect:enter="visible = true"
-        x-intersect:leave.full="visible = false"
+        x-intersect:leave="visible = false"
     {{ /if }}
     aria-hidden="true"
     x-cloak
