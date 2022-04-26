@@ -8,7 +8,7 @@
 <section class="relative fluid-container grid grid-cols-5 md:grid-cols-12 gap-x-0 gap-y-8 md:gap-12 place-items-center {{ animation ?= 'pb-12 md:pb-16 lg:pb-24' }}">
     <div class="relative col-span-5 md:col-span-7">
         {{ partial:typography/h1 as="{ block:tag }" :content="block:title" class="pr-12" }}
-        {{# {{ partial:components/animation class="absolute bottom-0 right-0 w-24 mb-6 md:mb-0 md:w-48 md:translate-x-1/2 translate-y-3/4" }} #}}
+        {{ partial:components/animation class="absolute bottom-0 right-0 w-24 mb-6 md:mb-0 md:w-48 md:translate-x-1/2 translate-y-1/2 md:translate-y-3/4" }}
     </div>
     {{ partial:typography/prose as="article" class="col-span-4 col-start-2 md:col-span-3 md:col-start-8 lg:col-span-3" }}
         {{ block:introduction }}
