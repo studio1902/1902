@@ -19,7 +19,7 @@ sections:
         field:
           type: text
           localizable: true
-          display: Sub title
+          display: 'Sub title'
           validate: required
       -
         import: page_builder
@@ -41,7 +41,6 @@ sections:
         handle: slug
         field:
           type: slug
-          required: true
           localizable: true
           generate: true
           listable: hidden
@@ -52,13 +51,30 @@ sections:
         handle: image
         field: common.image
         config:
+          listable: true
           validate: required
+      -
+        handle: client
+        field:
+          max_items: 1
+          mode: default
+          create: true
+          collections:
+            - clients
+          display: Client
+          type: entries
+          icon: entries
+          listable: true
+          instructions_position: above
+          read_only: false
+          validate:
+            - required
       -
         handle: date
         field:
           type: date
-          listable: true
           required: true
+          listable: true
           validate:
             - required
           display: Date
@@ -70,3 +86,15 @@ sections:
           inline: false
           columns: 1
           rows: 1
+      -
+        handle: tools
+        field:
+          type: terms
+          taxonomies:
+            - tools
+          display: Tools
+          mode: typeahead
+          instructions_position: above
+          listable: hidden
+          read_only: false
+          create: true

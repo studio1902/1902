@@ -8,6 +8,21 @@ fields:
       validate: required
       localizable: true
   -
+    handle: tag
+    field:
+      options:
+        h1: H1
+        h2: H2
+      default: h1
+      display: 'Render as'
+      type: button_group
+      icon: button_group
+      listable: hidden
+      instructions_position: above
+      read_only: false
+      validate:
+        - required
+  -
     handle: introduction
     field: common.text_basic
     config:

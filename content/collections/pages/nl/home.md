@@ -3,7 +3,7 @@ id: home
 blueprint: page
 title: Home
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1650890594
+updated_at: 1650967922
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -57,12 +57,13 @@ page_builder:
       - Hot
       - Hot
       - Hot
+    tag: h1
   -
     type: project
     enabled: true
     project: 4b4b9b6a-508f-4d18-8b35-3e53db6a2066
   -
-    title: 'Toegankelijkheid, privacy en performance is de standaard'
+    title: 'Toegankelijke websites, privacy en performance is de standaard'
     introduction:
       -
         type: paragraph
@@ -94,4 +95,5 @@ page_builder:
       - Str8
       - Outta
       - Baflo
+    tag: h2
 ---

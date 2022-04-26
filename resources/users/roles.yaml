@@ -40,6 +40,15 @@ editor:
     - 'edit other authors projects entries'
     - 'publish other authors projects entries'
     - 'delete other authors projects entries'
+    - 'view clients entries'
+    - 'edit clients entries'
+    - 'create clients entries'
+    - 'delete clients entries'
+    - 'publish clients entries'
+    - 'reorder clients entries'
+    - 'edit other authors clients entries'
+    - 'publish other authors clients entries'
+    - 'delete other authors clients entries'
 marketeer:
   title: Marketeer
   permissions:

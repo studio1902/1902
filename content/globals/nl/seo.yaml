@@ -1,4 +1,9 @@
 title_separator: '::'
+change_page_title:
+  -
+    collection: projects
+    what_to_add: custom_text
+    custom_text: Projecten
 noindex_local: true
 noindex_staging: true
 noindex_production: false
@@ -6,17 +11,23 @@ collection_defaults:
   -
     collection: pages
     fallback: page_builder
+  -
+    collection: projects
+    fallback: field
+    field_handle: sub_title
 hreflang_auto: true
 json_ld_type: organization
-organization_name: Studio1902
+organization_name: 'Studio 1902'
 organization_logo: branding/studio1902-logo.png
-breadcrumbs: false
+breadcrumbs: true
 use_social_image_generation: true
 social_images_collections:
   - pages
+  - projects
 twitter_handle: studio1902
 sitemap_collections:
   - pages
+  - projects
 trackers_local: false
 trackers_staging: false
 trackers_production: true

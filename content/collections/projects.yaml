@@ -6,6 +6,8 @@ propagate: false
 template: projects/show
 layout: layout
 mount: 7eb87293-600d-404b-8519-2c4a2ebc9e51
+taxonomies:
+  - tools
 revisions: false
 route: '/{mount}/{slug}'
 date: true
