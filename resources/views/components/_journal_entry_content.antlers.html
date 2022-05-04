@@ -4,11 +4,10 @@
         {{ journal_entry:title }}
     </h2>
 </div>
-<div class="flex flex-col items-start md:flex-row md:justify-between md:items-end gap-6 md:gap-16">
-    {{ svg src="{ journal_entry:client:logo }" class="h-14 w-auto {{ color or 'text-primary dark:text-secondary' }} fill-current-cascade" }}
-    <ul class="inline-flex md:justify-end flex-wrap uppercase text-sm font-medium {{ color or 'text-primary dark:text-secondary' }} tracking-wider">
-        {{ journal_entry:tools }}
+<div class="flex flex-col items-start md:flex-row gap-6 md:gap-16">
+    <ul class="md:max-w-[calc(85%-4rem)] inline-flex md:justify-end flex-wrap uppercase text-sm font-medium {{ color or 'text-primary dark:text-secondary' }} tracking-wider">
+        {{ journal_entry:tags }}
             <li class="ml-[.5ch]">{{ title }}{{ unless last }}<span aria-hidden="true">, </span>{{ /unless }}</li>
-        {{ /journal_entry:tools }}
+        {{ /journal_entry:tags }}
     </ul>
 </div>

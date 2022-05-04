@@ -17,7 +17,7 @@
 >
     <a
         href="{{ journal_entry:url }}"
-        class="relative md:col-span-7 md:col-start-1 md:row-span-3 md:row-start-2 border border-b-0 md:border-b border-primary dark:border-secondary p-6 pb-12 md:p-8 flex flex-col gap-y-8 justify-between group"
+        class="relative md:col-span-9 md:col-start-1 md:row-span-4 md:row-start-1 border border-b-0 md:border-b border-primary dark:border-secondary p-6 pb-12 md:p-8 flex flex-col gap-y-8 justify-between group"
         @mouseover="hover = true"
         @mouseout="hover = false"
         :aria-labelledby="$id('project-title')"
@@ -28,7 +28,7 @@
             class="absolute inset-0 bg-primary dark:bg-secondary p-6 pb-12 md:p-8 flex flex-col space-y-8 justify-between motion-safe:transition-[clip-path] motion-safe:duration-[800ms] ease-out" aria-hidden="true"
             :class="{
                 '[clip-path:polygon(0_0,100%_0,100%_100%,0_100%)]': hover,
-                '[clip-path:polygon(0_0,0_0,0_100%,0_100%)]': !hover
+                '[clip-path:polygon(100%_0,100%_0,100%_100%,100%_100%)]': !hover
             }"
         >
             {{ partial:components/journal_entry_content color="text-white" }}
@@ -40,9 +40,9 @@
         :aria-labelledby="$id('project-title')"
         @mouseover="hover = true"
         @mouseout="hover = false"
-        class="relative -mt-6 md:mt-0 md:col-span-7 md:col-start-6 md:row-span-3 md:row-start-1
+        class="relative -mt-6 md:mt-0 md:col-span-5 md:col-start-8 md:row-span-4 md:row-start-2
         rounded-t-lg border border-primary dark:border-secondary bg-white dark:bg-neutral motion-safe:transition motion-safe:duration-[800ms] ease-out"
-        :class="{ 'md:-rotate-1': hover }"
+        :class="{ 'md:rotate-1': hover }"
     >
         <div class="flex space-x-1 items-center w-full h-8 px-3 ">
             <div class="w-3 h-3 rounded-full border border-primary dark:border-secondary"></div>

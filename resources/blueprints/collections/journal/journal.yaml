@@ -42,6 +42,12 @@ sections:
           validate:
             - required
       -
+        handle: image
+        field: common.image
+        config:
+          listable: true
+          validate: required
+      -
         handle: date
         field:
           type: date
@@ -58,3 +64,15 @@ sections:
           inline: false
           columns: 1
           rows: 1
+      -
+        handle: tags
+        field:
+          type: terms
+          taxonomies:
+            - tags
+          display: Tags
+          mode: typeahead
+          instructions_position: above
+          listable: hidden
+          read_only: false
+          create: true

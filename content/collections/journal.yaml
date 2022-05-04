@@ -1,11 +1,14 @@
 title: Journal
-route: '/{mount}/{slug}'
-layout: layout
+propagate: false
 template: journal/show
+layout: layout
+mount: b5a546e9-818b-47a5-8fbf-2ce91a8f2e7c
+taxonomies:
+  - tags
 revisions: false
+route: '/{mount}/{slug}'
 date: true
 sort_dir: asc
 date_behavior:
-    past: public
-    future: private
-mount: b5a546e9-818b-47a5-8fbf-2ce91a8f2e7c
+  past: public
+  future: private
