@@ -5,11 +5,22 @@
 #}}
 
 <!-- /page_builder/_project.antlers.html -->
-<section class="fluid-container grid md:grid-cols-12 md:gap-8">
-    <article class="md:col-span-7 md:col-start-1 md:row-span-3 md:row-start-2 border border-b-0 md:border-b border-primary dark:border-secondary p-6 pb-12 md:p-8 flex flex-col space-y-8 justify-between">
+<section
+    x-data="{ hover: false }"
+    x-id="['project-title']"
+    class="fluid-container grid md:grid-cols-12 md:gap-8"
+>
+    <a
+        href="{{ project:url }}"
+        class="relative md:col-span-7 md:col-start-1 md:row-span-3 md:row-start-2 border border-b-0 md:border-b border-primary dark:border-secondary p-6 pb-12 md:p-8 flex flex-col gap-y-8 justify-between group"
+        @mouseover="hover = true"
+        @mouseout="hover = false"
+        :aria-labelledby="$id('project-title')"
+        draggable="false"
+    >
         <div class="flex flex-col space-y-6">
             <span class="uppercase text-sm font-medium text-primary dark:text-secondary tracking-wider">Featured<span aria-hidden="true"> \</span></span>
-            <h2 class="md:max-w-[calc(85%-4rem)] text-4xl md:text-5xl font-light uppercase tracking-wider text-primary dark:text-secondary">
+            <h2 :id="$id('project-title')" class="md:max-w-[calc(85%-4rem)] text-4xl md:text-5xl font-light uppercase tracking-wider text-primary dark:text-secondary">
                 {{ project:sub_title }}
             </h2>
         </div>
@@ -17,12 +28,43 @@
             {{ svg src="{ project:client:logo }" class="h-14 w-auto text-primary dark:text-secondary fill-current-cascade" }}
             <ul class="inline-flex md:justify-end flex-wrap uppercase text-sm font-medium text-primary dark:text-secondary tracking-wider">
                 {{ project:tools }}
-                    <li class="ml-[.5ch]">{{ title }}{{ unless last }}<span raria-hidden="true">, </span>{{ /unless }}</li>
+                    <li class="ml-[.5ch]">{{ title }}{{ unless last }}<span aria-hidden="true">, </span>{{ /unless }}</li>
                 {{ /project:tools }}
             </ul>
         </div>
-    </article>
-    <div class="relative -mt-6 md:mt-0 md:col-span-7 md:col-start-6 md:row-span-3 md:row-start-1 rounded-t-lg border border-primary dark:border-secondary">
+        <div
+            class="absolute inset-0 bg-primary dark:bg-secondary p-6 pb-12 md:p-8 flex flex-col space-y-8 justify-between motion-safe:transition-[clip-path] motion-safe:duration-[800ms] ease-out" aria-hidden="true"
+            :class="{
+                '[clip-path:polygon(0_0,100%_0,100%_100%,0_100%)]': hover,
+                '[clip-path:polygon(0_0,0_0,0_100%,0_100%)]': !hover
+            }"
+        >
+            <div class="flex flex-col space-y-6">
+                <span class="uppercase text-sm font-medium text-white tracking-wider">Featured<span aria-hidden="true"> \</span></span>
+                <h2 class="md:max-w-[calc(85%-4rem)] text-4xl md:text-5xl font-light uppercase tracking-wider text-white">
+                    {{ project:sub_title }}
+                </h2>
+            </div>
+            <div class="flex flex-col items-start md:flex-row md:justify-between md:items-end gap-6 md:gap-16">
+                {{ svg src="{ project:client:logo }" class="h-14 w-auto text-white fill-current-cascade" }}
+                <ul class="inline-flex md:justify-end flex-wrap uppercase text-sm font-medium text-white tracking-wider">
+                    {{ project:tools }}
+                        <li class="ml-[.5ch]">{{ title }}{{ unless last }}<span aria-hidden="true">, </span>{{ /unless }}</li>
+                    {{ /project:tools }}
+                </ul>
+            </div>
+        </div>
+    </a>
+    <a
+        href="{{ project:url }}"
+        draggable="false"
+        :aria-labelledby="$id('project-title')"
+        @mouseover="hover = true"
+        @mouseout="hover = false"
+        class="relative -mt-6 md:mt-0 md:col-span-7 md:col-start-6 md:row-span-3 md:row-start-1
+        rounded-t-lg border border-primary dark:border-secondary bg-white dark:bg-neutral md:shadow-primary-shadow/20 md:dark:shadow-secondary-shadow/10 motion-safe:transition"
+        :class="{ 'md:shadow-xl md:-translate-y-px': hover }"
+    >
         <div class="flex space-x-1 items-center w-full h-8 px-3 ">
             <div class="w-3 h-3 rounded-full border border-primary dark:border-secondary"></div>
             <div class="w-3 h-3 rounded-full border border-primary dark:border-secondary"></div>
@@ -31,6 +73,6 @@
         <figure class="aspect-w-4 aspect-h-3">
             {{ partial:components/picture :image="project:image" cover="true" lazy="true" sizes="(min-width: 768px) 75vw, 90vw"  }}
         </figure>
-    </div>
+    </a>
 </section>
 <!-- End: /page_builder/_project.antlers.html -->

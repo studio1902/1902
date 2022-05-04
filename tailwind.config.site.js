@@ -25,7 +25,9 @@ module.exports = {
       },
       // Primary: primary brand color with a default fallback if you don't need shades. Always set a DEFAULT when you use shades.
       primary: 'var(--color-primary)',
+      'primary-shadow': '#13E87C',
       secondary: 'var(--color-secondary)',
+      'secondary-shadow': '#FF0274',
       tertiary: 'var(--color-tertiary)',
     },
     extend: {
