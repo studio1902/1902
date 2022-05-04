@@ -3,7 +3,7 @@ id: home
 blueprint: page
 title: Home
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1651694878
+updated_at: 1651695287
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -127,7 +127,7 @@ page_builder:
     playback_speed: 1.0
     loop: false
     intersect: true
-    audio: half-life-alarm.mp3
+    audio: nature.mp3
     background_text:
       - Bttr
       - sites
