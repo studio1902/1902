@@ -33,7 +33,8 @@ module.exports = {
         'down': 'down var(--animation-navigation-down-duration) ease-in 1 both',
         'up': 'up var(--animation-navigation-up-duration) ease-out 1 both',
         'down-safe': 'down 0s ease-in 1 both',
-        'up-safe': 'up 0s ease-out 1 both'
+        'up-safe': 'up 0s ease-out 1 both',
+        'pulsate': 'pulsate 1s cubic-bezier(.25,-0.7,.25,2) 2 both'
       },
       boxShadow: {
         top: '0 1px 5px rgba(65, 64, 54 ,0.3)'
@@ -52,6 +53,11 @@ module.exports = {
           '0%': { transform: 'translate3d(0,0,0)', opacity: 1 },
           '75%': { opacity: 0 },
           '100%': { transform: 'translate3d(0,-100%,0)', opacity: 0 },
+        },
+        pulsate: {
+          '0%': { transform: 'scale(1)'},
+          '50%': { transform: 'scale(1.2)'},
+          '100%': { transform: 'scale(1)'},
         }
       },
       // Set default transition durations and easing when using the transition utilities.
