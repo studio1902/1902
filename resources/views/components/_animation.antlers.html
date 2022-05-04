@@ -6,7 +6,7 @@
             container: $el,
             renderer: 'svg',
             autoplay: {{ intersect ? 'false' : 'true' }},
-            loop: {{ loop ? 'true' : '2' }},
+            loop: {{ loop ? 'true' : '1' }},
             path: '{{ animation }}'
         })
         animation.setSpeed({{ playback_speed ?? '1.0' }})
