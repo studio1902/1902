@@ -1,0 +1,7 @@
+title: Audio
+disk: audio
+allow_uploads: true
+allow_downloading: true
+allow_renaming: true
+allow_moving: true
+create_folders: false

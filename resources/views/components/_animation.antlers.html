@@ -1,5 +1,6 @@
 <figure
     x-data="{ animation: '' }"
+    @click="animation.stop(), animation.play(){{ audio ?= ', $refs.audio.play()' }}"
     x-init="
         animation = lottie.loadAnimation({
             container: $el,
@@ -14,6 +15,13 @@
         x-intersect:enter.full="animation.play()"
         x-intersect:leave="animation.stop()"
     {{ /if }}
-    class="{{ class }} text-neutral dark:text-white fill-current-cascade stroke-current-cascade"
+    class="{{ class }} text-neutral dark:text-white fill-current-cascade stroke-current-cascade cursor-pointer"
     aria-hidden="true"
-></figure>
+    x-cloak
+>
+    {{ if audio }}
+        <audio x-ref="audio">
+            <source src="{{ audio }}" type="audio/mpeg">
+        </audio>
+    {{ /if }}
+</figure>

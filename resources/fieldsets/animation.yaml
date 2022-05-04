@@ -57,3 +57,12 @@ fields:
       listable: hidden
       instructions_position: above
       read_only: false
+  -
+    handle: audio
+    field: common.image
+    config:
+      container: audio
+      restrict: true
+      display: 'On click audio effect'
+      width: 50
+      instructions_position: below

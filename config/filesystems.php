@@ -74,6 +74,13 @@ return [
             'visibility' => 'public',
         ],
 
+        'audio' => [
+            'driver' => 'local',
+            'root' => public_path('audio'),
+            'url' => '/audio',
+            'visibility' => 'public',
+        ],
+
         'assets' => [
             'driver' => 'local',
             'root' => public_path('assets'),
