@@ -41,6 +41,9 @@ return [
     // Footer
     'on'                                => 'op',
 
+    // Journal
+    'journal'                           => 'Journal',
+
     // Language picker
     'language'                          => 'Bezoek de website in het :language',
 
@@ -63,6 +66,9 @@ return [
     'next'                              => 'Volgende',
     'of'                                => 'van',
     'previous'                          => 'Vorige',
+
+    // Projects
+    'projects_featured'                 => 'Featured',
 
     // Search
     'search'                            => 'Zoek...',

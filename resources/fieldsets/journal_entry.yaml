@@ -1,17 +1,17 @@
-title: Project
+title: 'Journal entry'
 fields:
   -
-    handle: project
+    handle: journal_entry
     field:
       max_items: 1
       mode: default
       create: true
       collections:
-        - projects
-      display: Project
+        - journal
+      display: Journal entry
       type: entries
       icon: entries
-      instructions: 'Highlight a project or show the latest.'
+      instructions: 'Highlight a journal entry or show the latest.'
       localizable: true
       listable: hidden
       instructions_position: below

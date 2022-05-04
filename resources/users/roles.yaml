@@ -49,6 +49,15 @@ editor:
     - 'edit other authors clients entries'
     - 'publish other authors clients entries'
     - 'delete other authors clients entries'
+    - 'view journal entries'
+    - 'edit journal entries'
+    - 'create journal entries'
+    - 'delete journal entries'
+    - 'publish journal entries'
+    - 'reorder journal entries'
+    - 'edit other authors journal entries'
+    - 'publish other authors journal entries'
+    - 'delete other authors journal entries'
 marketeer:
   title: Marketeer
   permissions:

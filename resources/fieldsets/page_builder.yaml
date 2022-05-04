@@ -22,6 +22,12 @@ fields:
           fields:
             -
               import: form
+        journal_entry:
+          display: 'Journal entry'
+          instructions: 'Highlight a journal entry.'
+          fields:
+            -
+              import: journal_entry
         project:
           display: Project
           instructions: 'Highlight a project.'
@@ -29,7 +35,7 @@ fields:
             -
               import: project
         title_and_text:
-          display: Title and text
+          display: 'Title and text'
           instructions: 'A big bold title, text and an animation.'
           fields:
             -

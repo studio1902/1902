@@ -3,7 +3,7 @@ id: home
 blueprint: page
 title: Home
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1651668401
+updated_at: 1651694878
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -62,7 +62,6 @@ page_builder:
   -
     type: project
     enabled: true
-    project: 4b4b9b6a-508f-4d18-8b35-3e53db6a2066
   -
     title: 'Toegankelijke websites, privacy en performance is de standaard'
     introduction:
@@ -97,4 +96,43 @@ page_builder:
       - Outta
       - Baflo
     tag: h2
+  -
+    type: journal_entry
+    enabled: true
+  -
+    title: 'Powerful solutions for meaningful clients'
+    tag: h2
+    introduction:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Websites should deliver. Read up on Rob''s ideas on '
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::e633d2d8-b056-40f0-914a-d9940b5243a9'
+                  rel: noopener
+                  target: null
+                  title: null
+            text: 'offering the best user experience possible'
+          -
+            type: text
+            text: .
+    animation: nonuclear.json
+    playback_speed: 1.0
+    loop: false
+    intersect: true
+    audio: half-life-alarm.mp3
+    background_text:
+      - Bttr
+      - sites
+      - bttr
+      - days
+    type: title_and_text
+    enabled: true
 ---

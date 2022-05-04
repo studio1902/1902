@@ -1,14 +1,14 @@
 <div class="flex flex-col space-y-6">
-    <span class="uppercase text-sm font-medium {{ color or 'text-primary dark:text-secondary' }} tracking-wider">{{ trans:strings.projects_featured }}<span aria-hidden="true"> \</span></span>
+    <span class="uppercase text-sm font-medium {{ color or 'text-primary dark:text-secondary' }} tracking-wider">{{ trans:strings.journal }}<span aria-hidden="true"> \</span></span>
     <h2 :id="$id('project-title')" class="md:max-w-[calc(85%-4rem)] text-4xl md:text-5xl font-light uppercase tracking-wider {{ color or 'text-primary dark:text-secondary' }}">
-        {{ project:sub_title }}
+        {{ journal_entry:title }}
     </h2>
 </div>
 <div class="flex flex-col items-start md:flex-row md:justify-between md:items-end gap-6 md:gap-16">
-    {{ svg src="{ project:client:logo }" class="h-14 w-auto {{ color or 'text-primary dark:text-secondary' }} fill-current-cascade" }}
+    {{ svg src="{ journal_entry:client:logo }" class="h-14 w-auto {{ color or 'text-primary dark:text-secondary' }} fill-current-cascade" }}
     <ul class="inline-flex md:justify-end flex-wrap uppercase text-sm font-medium {{ color or 'text-primary dark:text-secondary' }} tracking-wider">
-        {{ project:tools }}
+        {{ journal_entry:tools }}
             <li class="ml-[.5ch]">{{ title }}{{ unless last }}<span aria-hidden="true">, </span>{{ /unless }}</li>
-        {{ /project:tools }}
+        {{ /journal_entry:tools }}
     </ul>
 </div>
