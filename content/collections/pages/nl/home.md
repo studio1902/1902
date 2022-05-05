@@ -3,7 +3,7 @@ id: home
 blueprint: page
 title: Home
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1651785071
+updated_at: 1651785416
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -155,6 +155,7 @@ page_builder:
       - 'on the'
       - code
     background_text_position: center
+    image: about/rob-de-kort-studio-1902.jpg
   -
     title: 'Above all, Rob is a joy to work with.'
     tag: h2

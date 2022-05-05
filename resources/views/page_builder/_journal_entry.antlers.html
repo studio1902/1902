@@ -27,8 +27,8 @@
         <div
             class="absolute inset-0 bg-primary dark:bg-secondary p-6 pb-12 md:p-8 flex flex-col space-y-8 justify-between motion-safe:transition-[clip-path] motion-safe:duration-[500ms] ease-out" aria-hidden="true"
             :class="{
-                '[clip-path:circle(150%_at_120%_150%)]': hover,
-                '[clip-path:circle(0%_at_120%_150%)]': !hover
+                '[clip-path:circle(165%_at_120%_200%)]': hover,
+                '[clip-path:circle(60%_at_120%_200%)]': !hover
             }"
         >
             {{ partial:components/journal_entry_content color="text-white" }}
@@ -45,7 +45,7 @@
     >
         {{ partial:components/title_bar }}
         <figure class="w-full h-full border border-primary dark:border-secondary">
-            {{ partial:components/picture :image="journal_entry:image" cover="true" lazy="true" sizes="(min-width: 768px) 75vw, 90vw"  }}
+            {{ partial:components/picture :image="journal_entry:image" cover="true" lazy="true" sizes="(min-width: 768px) 33vw, 90vw"  }}
         </figure>
     </a>
 

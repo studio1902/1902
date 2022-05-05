@@ -6,6 +6,13 @@
 
 <!-- /page_builder/_services.antlers.html -->
 <section class="relative fluid-container grid md:grid-cols-12 gap-8 {{ yield:background_text_compensation }}">
+    <article class="relative z-10 p-8 md:p-12 md:col-span-8 md:col-start-1 md:row-start-2 md:row-span-3 bg-primary dark:bg-secondary">
+        {{ partial:typography/h2 class="mb-4" content="{ trans:strings.services }" }}
+
+    </article>
+    <figure class="md:col-span-6 md:col-start-7 md:row-span-3 md:row-start-1">
+        {{ partial:components/picture :image="image" cover="true" lazy="true" class="grayscale" sizes="(min-width: 768px) 75vw, 90vw"  }}
+    </figure>
     {{ partial:components/background_text }}
 </section>
 <!-- End: /page_builder/_services.antlers.html -->
