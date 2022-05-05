@@ -15,6 +15,12 @@ sections:
           validate:
             - required
       -
+        handle: teaser
+        field: common.text_plain
+        config:
+          validate: required
+          localizable: true
+      -
         import: page_builder
   seo:
     display: SEO

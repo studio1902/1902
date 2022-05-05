@@ -8,5 +8,6 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1651783643
+updated_at: 1651786766
+teaser: 'Die starter kit is er dus ook. Tof ding wel.'
 ---
