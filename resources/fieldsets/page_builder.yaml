@@ -34,6 +34,12 @@ fields:
           fields:
             -
               import: project
+        services:
+          display: Services
+          instructions: 'List all services together with an image.'
+          fields:
+            -
+              import: services
         title_and_text:
           display: 'Title and text'
           instructions: 'A big bold title, text and an animation.'

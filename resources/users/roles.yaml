@@ -58,6 +58,15 @@ editor:
     - 'edit other authors journal entries'
     - 'publish other authors journal entries'
     - 'delete other authors journal entries'
+    - 'view services entries'
+    - 'edit services entries'
+    - 'create services entries'
+    - 'delete services entries'
+    - 'publish services entries'
+    - 'reorder services entries'
+    - 'edit other authors services entries'
+    - 'publish other authors services entries'
+    - 'delete other authors services entries'
 marketeer:
   title: Marketeer
   permissions:

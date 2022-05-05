@@ -3,7 +3,7 @@ id: home
 blueprint: page
 title: Home
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1651782941
+updated_at: 1651783383
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -146,6 +146,9 @@ page_builder:
     enabled: true
     background_text_position: start
     text_position: end
+  -
+    type: services
+    enabled: true
   -
     title: 'Above all, Rob is a joy to work with.'
     tag: h2

@@ -7,17 +7,17 @@ tree:
     title: Diensten
     children:
       -
-        id: 477c05d3-1655-4e6c-a1b0-0a6c55109a13
-        entry: e633d2d8-b056-40f0-914a-d9940b5243a9
+        id: 330e23ce-e4a5-48b7-8f1b-53f45bafd9a7
+        entry: a397a0da-af80-4d0a-b398-f415fd9dd847
         title: Websites
       -
-        id: b6326473-670e-47f0-8e49-d860d21716f6
-        entry: 9f948d0a-8d2c-4398-b669-92e1dcdafa75
+        id: 40f837d8-6e68-46e9-aa03-54e3456ebf38
+        entry: 609657f7-ef15-4f04-8b6d-7103d54ae1c5
         title: Consultancy
       -
-        id: bee03db0-7389-4cf9-9e4f-4d60bc664fc0
-        entry: cf79b512-47e4-479a-b8e6-5ca3595c9cd4
-        title: 'Statamic Peak'
+        id: 57825dba-0488-480c-9821-1f8bbf4a5a94
+        entry: 3b9ff3c2-bc7a-4a54-8350-8524f9525cb2
+        title: Peak
   -
     id: 6d447a5d-f74b-416d-a45d-c2d7408b6db4
     entry: 7eb87293-600d-404b-8519-2c4a2ebc9e51

@@ -1,5 +1,6 @@
 title: Main
 collections:
   - pages
+  - services
 max_depth: 2
 root: true
