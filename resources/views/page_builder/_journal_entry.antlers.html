@@ -13,7 +13,7 @@
 <section
     x-data="{ hover: false }"
     x-id="['project-title']"
-    class="fluid-container grid md:grid-cols-12 md:gap-8"
+    class="relative fluid-container grid md:grid-cols-12 md:gap-8 {{ yield:background_text_compensation }}"
 >
     <a
         href="{{ journal_entry:url }}"
@@ -27,7 +27,7 @@
         <div
             class="absolute inset-0 bg-primary dark:bg-secondary p-6 pb-12 md:p-8 flex flex-col space-y-8 justify-between motion-safe:transition-[clip-path] motion-safe:duration-[500ms] ease-out" aria-hidden="true"
             :class="{
-                '[clip-path:circle(160%_at_120%_150%)]': hover,
+                '[clip-path:circle(150%_at_120%_150%)]': hover,
                 '[clip-path:circle(0%_at_120%_150%)]': !hover
             }"
         >
@@ -43,14 +43,12 @@
         class="relative -mt-6 md:mt-0 md:col-span-5 md:col-start-8 md:row-span-4 md:row-start-2 rounded-t-lg motion-safe:transition ease-out"
         :class="{ 'md:rotate-1 md:shadow-2xl': hover }"
     >
-        <div class="flex space-x-1 items-center w-full h-8 px-3 rounded-t-lg border border-b-0 border-primary dark:border-secondary bg-white dark:bg-neutral">
-            <div class="w-3 h-3 rounded-full border border-primary dark:border-secondary motion-safe:transition" :class="{ 'bg-[#FF5E57] border-neutral/20 dark:border-white/20': hover }"></div>
-            <div class="w-3 h-3 rounded-full border border-primary dark:border-secondary motion-safe:transition" :class="{ 'bg-[#FEBC2E] border-neutral/20 dark:border-white/20': hover }"></div>
-            <div class="w-3 h-3 rounded-full border border-primary dark:border-secondary motion-safe:transition" :class="{ 'bg-[#28CC40] border-neutral/20 dark:border-white/20': hover }"></div>
-        </div>
+        {{ partial:components/title_bar }}
         <figure class="w-full h-full border border-primary dark:border-secondary">
             {{ partial:components/picture :image="journal_entry:image" cover="true" lazy="true" sizes="(min-width: 768px) 75vw, 90vw"  }}
         </figure>
     </a>
+
+    {{ partial:components/background_text }}
 </section>
 <!-- End: /page_builder/_journal_entry.antlers.html -->

@@ -1,31 +1,30 @@
-<div
-    class="
-        absolute inset-0 z-behind w-full flex justify-center select-none pointer-events-none
-        {{ switch(
-            (background_text_position === 'start') => 'items-start',
-            (background_text_position === 'center') => 'items-center',
-            (background_text_position === 'end') => 'items-end',
-            () => 'items-center'
-        )}}
-    "
-    x-data="{ visible: false }"
-    {{ if intersect }}
-        x-intersect:enter="visible = true"
-        x-intersect:leave="visible = false"
-    {{ /if }}
-    aria-hidden="true"
-    x-cloak
->
-    <span
-        class="max-w-[20ch] uppercase tracking-wider font-light text-8xl text-neutral-light dark:text-neutral-light/10 text-center"
-        x-show="visible"
-        x-transition.opacity.duration.1400ms
+{{ if background_text }}
+    <div
+        class="
+            absolute inset-0 z-behind w-full flex justify-center select-none pointer-events-none
+            {{ switch(
+                (background_text_position === 'start') => 'items-start',
+                (background_text_position === 'center') => 'items-center',
+                (background_text_position === 'end') => 'items-end',
+                () => 'items-center'
+            )}}
+        "
+        aria-hidden="true"
     >
-        {{ block:background_text }}
-            {{ value }}
-            {{ unless last }}
-                <br>
-            {{ /unless }}
-        {{  /block:background_text }}
-    </span>
-</div>
+        <span class="max-w-[20ch] uppercase tracking-wider font-light text-8xl text-neutral-light dark:text-neutral-light/10 text-center">
+            {{ block:background_text }}
+                {{ value }}
+                {{ unless last }}
+                    <br>
+                {{ /unless }}
+            {{  /block:background_text }}
+        </span>
+    </div>
+
+    {{ section:background_text_compensation }}
+        {{ switch(
+            (background_text && background_text_position === 'start') => 'pt-32',
+            (background_text && background_text_position === 'end') => 'pb-32'
+        )}}
+    {{ /section:background_text_compensation }}
+{{ /if }}

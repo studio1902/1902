@@ -13,19 +13,18 @@
             (text_position === 'center') => 'place-items-center',
             (text_position === 'end') => 'place-items-end'
         )}}
-        {{ switch(
-            (background_text && background_text_position === 'start') => 'pt-28',
-            (background_text && background_text_position === 'end') => 'pb-28'
-        )}}
+        {{ yield:background_text_compensation }}
     "
 >
     <div class="relative col-span-5 md:col-span-7 flex flex-col">
         {{ partial:typography/h1 as="{ block:tag }" :content="block:title" class="pr-12 xl:max-w-[80%]" }}
         {{ partial:components/animation class="w-32 md:w-48 self-end " }}
     </div>
+
     {{ partial:typography/prose as="article" class="col-span-4 col-start-2 md:col-span-3 md:col-start-8 lg:col-span-3 md:py-12" }}
         {{ block:introduction }}
     {{ /partial:typography/prose }}
+
     {{ partial:components/background_text }}
 </section>
 <!-- End: /page_builder/_title_and_text.antlers.html -->

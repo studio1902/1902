@@ -16,3 +16,5 @@ fields:
       listable: hidden
       instructions_position: below
       read_only: false
+  -
+    import: background_text

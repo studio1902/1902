@@ -3,7 +3,7 @@ id: home
 blueprint: page
 title: Home
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1651781350
+updated_at: 1651782941
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -104,6 +104,10 @@ page_builder:
   -
     type: journal_entry
     enabled: true
+    background_text:
+      - Newest
+      - Latest
+    background_text_position: start
   -
     title: 'Powerful solutions for meaningful clients'
     tag: h2
@@ -142,4 +146,40 @@ page_builder:
     enabled: true
     background_text_position: start
     text_position: end
+  -
+    title: 'Above all, Rob is a joy to work with.'
+    tag: h2
+    introduction:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Websites should deliver. Read up on Rob''s ideas on '
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::e633d2d8-b056-40f0-914a-d9940b5243a9'
+                  rel: noopener
+                  target: null
+                  title: null
+            text: 'offering the best user experience possible'
+          -
+            type: text
+            text: .
+    text_position: start
+    animation: flowergun.json
+    playback_speed: 1.0
+    loop: false
+    intersect: true
+    background_text:
+      - 'Kill it'
+      - with
+      - kindness
+    background_text_position: start
+    type: title_and_text
+    enabled: true
 ---
