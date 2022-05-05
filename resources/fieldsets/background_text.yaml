@@ -15,3 +15,9 @@ fields:
     field:
       type: list
       display: Text
+      width: 50
+  -
+    handle: background_text_position
+    field: common.position
+    config:
+      width: 50

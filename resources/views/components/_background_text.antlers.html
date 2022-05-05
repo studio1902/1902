@@ -1,5 +1,13 @@
 <div
-    class="absolute inset-0 z-behind w-full flex justify-center items-center select-none pointer-events-none"
+    class="
+        absolute inset-0 z-behind w-full flex justify-center select-none pointer-events-none
+        {{ switch(
+            (background_text_position === 'start') => 'items-start',
+            (background_text_position === 'center') => 'items-center',
+            (background_text_position === 'end') => 'items-end',
+            () => 'items-center'
+        )}}
+    "
     x-data="{ visible: false }"
     {{ if intersect }}
         x-intersect:enter="visible = true"

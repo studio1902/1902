@@ -15,6 +15,7 @@ fields:
     field: common.image
     config:
       container: animations
+      replicator_preview: false
       restrict: true
       display: 'Lottie animation file'
       width: 50
@@ -62,6 +63,7 @@ fields:
     field: common.image
     config:
       container: audio
+      replicator_preview: false
       restrict: true
       display: 'On click audio effect'
       width: 50

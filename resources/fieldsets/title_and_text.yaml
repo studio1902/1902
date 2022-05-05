@@ -15,6 +15,7 @@ fields:
         h2: H2
       default: h1
       display: 'Render as'
+      replicator_preview: false
       type: button_group
       icon: button_group
       listable: hidden
@@ -29,6 +30,9 @@ fields:
       display: Text
       validate: required
       localizable: true
+  -
+    handle: text_position
+    field: common.position
   -
     import: animation
   -

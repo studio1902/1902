@@ -3,7 +3,7 @@ id: home
 blueprint: page
 title: Home
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1651776639
+updated_at: 1651781350
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -11,7 +11,7 @@ sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 page_builder:
   -
-    title: 'Studio 1902 is het huis van Rob de Kort, Statamic developer.'
+    title: "Studio 1902 \Lis home of  Rob de Kort, Statamic developer"
     type: title_and_text
     enabled: true
     introduction:
@@ -59,6 +59,8 @@ page_builder:
       - Hot
     tag: h1
     audio: fire-burning.mp3
+    background_text_position: center
+    text_position: center
   -
     type: project
     enabled: true
@@ -97,6 +99,8 @@ page_builder:
       - Baflo
     tag: h2
     audio: cooking.mp3
+    background_text_position: start
+    text_position: center
   -
     type: journal_entry
     enabled: true
@@ -136,4 +140,6 @@ page_builder:
       - days
     type: title_and_text
     enabled: true
+    background_text_position: start
+    text_position: end
 ---

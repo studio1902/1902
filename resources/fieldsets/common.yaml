@@ -90,3 +90,15 @@ fields:
       default: md
       listable: hidden
       display: Size
+  -
+    handle: position
+    field:
+      options:
+        start: Top
+        center: Middle
+        end: Bottom
+      default: start
+      type: button_group
+      listable: false
+      replicator_preview: false
+      display: 'Position'
