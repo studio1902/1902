@@ -5,7 +5,9 @@
 #}}
 
 <!-- /page_builder/_{{ filename }}.antlers.html -->
-<section class="fluid-container grid md:grid-cols-12 gap-8">
+<section class="relative fluid-container grid md:grid-cols-12 gap-8 {{ yield:background_text_compensation }}">
     {{ partial:typography/h3 content="🔧<br>{{ name }}" class="md:col-span-12 text-center" }}
+
+    {{ partial:components/background_text }}
 </section>
 <!-- End: /page_builder/_{{ filename }}.antlers.html -->

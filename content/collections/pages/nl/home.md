@@ -3,7 +3,7 @@ id: home
 blueprint: page
 title: Home
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1651783383
+updated_at: 1651785071
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -64,6 +64,7 @@ page_builder:
   -
     type: project
     enabled: true
+    background_text_position: start
   -
     title: 'Toegankelijke websites, privacy en performance is de standaard'
     introduction:
@@ -149,6 +150,11 @@ page_builder:
   -
     type: services
     enabled: true
+    background_text:
+      - Always
+      - 'on the'
+      - code
+    background_text_position: center
   -
     title: 'Above all, Rob is a joy to work with.'
     tag: h2

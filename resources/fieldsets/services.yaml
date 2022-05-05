@@ -1,2 +1,4 @@
 title: 'Services'
-fields: [ ]
+fields:
+  -
+    import: background_text
