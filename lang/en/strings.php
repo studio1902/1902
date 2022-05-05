@@ -69,6 +69,7 @@ return [
 
     // Projects
     'projects_featured'                 => 'Featured',
+    'projects_view'                     => 'View project',
 
     // Search
     'search'                            => 'Search',
