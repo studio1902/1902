@@ -43,6 +43,7 @@ return [
 
     // Journal
     'journal'                           => 'Journal',
+    'journal_all'                       => 'All entries',
 
     // Language picker
     'language'                          => 'Visit the site in :language',
@@ -70,6 +71,7 @@ return [
     // Projects
     'projects_featured'                 => 'Featured',
     'projects_view'                     => 'View project',
+    'projects_all'                      => 'All projects',
 
     // Search
     'search'                            => 'Search',

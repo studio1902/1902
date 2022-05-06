@@ -43,6 +43,7 @@ return [
 
     // Journal
     'journal'                           => 'Journal',
+    'journal_all'                       => 'Alle artikelen',
 
     // Language picker
     'language'                          => 'Bezoek de website in het :language',
@@ -70,6 +71,7 @@ return [
     // Projects
     'projects_featured'                 => 'Featured',
     'projects_view'                     => 'Bekijk project',
+    'projects_all'                      => 'Alle projecten',
 
     // Search
     'search'                            => 'Zoek...',

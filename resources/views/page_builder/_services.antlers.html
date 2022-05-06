@@ -10,7 +10,7 @@
         {{ partial:typography/h2 class="md:col-span-3" color="text-white" content="{ trans:strings.services }" }}
         <ul class="contents">
             {{ collection:services sort="order" }}
-                {{ partial:typography/h3 class="mb-0" :content="title" }}
+                <a class="underline" href="{{ url }}">{{ partial:typography/h3 class="mb-0" :content="title" }}</a>
                 {{ partial:typography/paragraph :content="teaser" class="md:col-span-2 text-white" }}
             {{ /collection:services }}
         </ul>

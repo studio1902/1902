@@ -25,9 +25,9 @@
     >
         {{ partial:components/project_content }}
         <div
-            class="absolute inset-0 bg-primary dark:bg-secondary p-6 pb-12 md:p-8 flex flex-col space-y-8 justify-between motion-safe:transition-[clip-path] motion-safe:duration-500 ease-out" aria-hidden="true"
+            class="hidden md:flex absolute inset-0 bg-primary dark:bg-secondary p-6 pb-12 md:p-8 flex-col space-y-8 justify-between motion-safe:transition-[clip-path] motion-safe:duration-500 ease-out" aria-hidden="true"
             :class="{
-                '[clip-path:circle(140%_at_120%_120%)]': hover,
+                '[clip-path:circle(170%_at_120%_120%)]': hover,
                 '[clip-path:circle(20%_at_120%_120%)]': !hover
             }"
         >
@@ -48,6 +48,10 @@
             {{ partial:components/picture :image="project:image" cover="true" lazy="true" sizes="(min-width: 768px) 66vw, 90vw"  }}
         </figure>
     </a>
+
+    <aside class="md:col-span-5 md:row-start-4 md:col-start-8 place-self-end flex flex-col justify-center items-end pt-4 pb-10">
+        {{ partial:components/button label="{ trans:strings.projects_all }" link_type="url" url="{mount_url from='projects'}" }}
+    </aside>
 
     {{ partial:components/background_text }}
 </section>
