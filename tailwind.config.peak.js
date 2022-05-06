@@ -135,8 +135,8 @@ module.exports = {
           marginLeft: 'auto',
           marginRight: 'auto',
           // Use safe-area-inset together with default padding for Apple devices with a notch.
-          paddingLeft: `calc(env(safe-area-inset-left, 0rem) + ${theme('padding.6')})`,
-          paddingRight: `calc(env(safe-area-inset-right, 0rem) + ${theme('padding.6')})`,
+          paddingLeft: `calc(env(safe-area-inset-left, 0rem) + ${theme('padding.4')})`,
+          paddingRight: `calc(env(safe-area-inset-right, 0rem) + ${theme('padding.4')})`,
         },
         // The outer grid where all block builder blocks are a child of. Spreads out all blocks
         // vertically with a uniform space between them.
@@ -151,6 +151,14 @@ module.exports = {
           // sites footer.
           '& > *:last-child.w-full': {
             marginBottom: `-${theme('spacing.12')}`,
+          },
+        },
+        '@media screen(xs)': {
+           // Larger horizontal padding on larger screens.
+           '.fluid-container': {
+            // Use safe-area-inset together with default padding for Apple devices with a notch.
+            paddingLeft: `calc(env(safe-area-inset-left, 0rem) + ${theme('padding.6')})`,
+            paddingRight: `calc(env(safe-area-inset-right, 0rem) + ${theme('padding.6')})`,
           },
         },
         '@media screen(md)': {
