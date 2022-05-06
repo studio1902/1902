@@ -39,7 +39,8 @@ return [
     'theme_toggle_toggle_open'          => 'Open donkere-modus-selector.',
 
     // Footer
-    'on'                                => 'op',
+    'footer_on'                         => 'op',
+    'footer_talk'                       => 'Let\'s talk!',
 
     // Journal
     'journal'                           => 'Journal',

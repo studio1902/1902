@@ -57,6 +57,17 @@ sections:
             - email
           read_only: false
       -
+        handle: contact_page
+        field: common.entry
+        config:
+          display: 'Contact page'
+          width: 50
+          instructions: 'Select the page to where the footer contact button links.'
+          collections:
+            - pages
+          validate:
+            - required
+      -
         handle: section_copyright
         field:
           type: section

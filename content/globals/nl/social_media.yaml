@@ -9,8 +9,3 @@ social_media:
     prefix: 'https://www.github.com/'
     type: github
     enabled: true
-  -
-    handle: in/robdekort/
-    prefix: 'https://www.linkedin.com/'
-    type: linkedin
-    enabled: true

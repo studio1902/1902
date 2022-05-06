@@ -39,7 +39,8 @@ return [
     'theme_toggle_toggle_close'         => 'Close dark mode picker.',
 
     // Footer
-    'on'                                => 'on',
+    'footer_on'                         => 'on',
+    'footer_talk'                       => 'Let\'s talk!',
 
     // Journal
     'journal'                           => 'Journal',
