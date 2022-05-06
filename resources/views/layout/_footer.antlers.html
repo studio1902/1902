@@ -25,7 +25,7 @@
                 {{ /social_media:social_media }}
             </div>
         {{ /if }} #}}
-        <a href="{{ configuration.contact_page:url }}" class="order-1 md:order-2 py-6 px-4 flex items-center space-x-3 bg-primary dark:bg-secondary">
+        <a href="{{ configuration.contact_page:url }}" class="order-1 md:order-2 py-6 px-4 flex items-center space-x-3 bg-primary dark:bg-secondary focus:outline-none focus-visible:ring-2 ring-primary ring-offset-2 dark:ring-offset-neutral dark:ring-secondary motion-safe:transition">
             {{ svg:arrow_right class="text-white fill-current w-6" aria-hidden="true" }}
             <span class="text-white font-light uppercase tracking-wider text-4xl">{{ trans:strings.footer_talk }}</span>
         </a>
