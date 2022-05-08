@@ -41,6 +41,7 @@ return [
     // Footer
     'footer_on'                         => 'on',
     'footer_talk'                       => 'Let\'s talk!',
+    'footer_privacy_statement'          => 'Privacy statement',
 
     // Journal
     'journal'                           => 'Journal',
