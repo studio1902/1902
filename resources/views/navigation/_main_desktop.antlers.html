@@ -11,6 +11,7 @@
                 {{ if children }}
                     x-data="{
                         subnavOpen: false,
+                        shadow: false,
                         animationUpDuration: getComputedStyle(document.body).getPropertyValue('--animation-navigation-up-duration').slice(0, -1) * 1000 + 10,
                         toggle() {
                             if (this.subnavOpen) {
@@ -71,6 +72,8 @@
                     <ul
                         x-ref="subnav"
                         class="absolute -top-4 -inset-x-4 lg:-inset-x-6 pt-12 pb-2 px-2 lg:pb-4 lg:px-4 bg-primary dark:bg-secondary rounded-lg hidden"
+                        @scroll.window="shadow = window.pageYOffset > 100"
+                        :class="{ 'shadow-md': shadow }"
                     >
                         {{ children }}
                             <li class="">
