@@ -3,7 +3,7 @@ id: home
 blueprint: page
 title: Home
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1651785416
+updated_at: 1652002681
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -192,4 +192,5 @@ page_builder:
     background_text_position: start
     type: title_and_text
     enabled: true
+    audio: heartbeat.mp3
 ---
