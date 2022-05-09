@@ -1,0 +1,29 @@
+title: Partners
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          input_type: text
+          localizable: true
+          listable: true
+          display: Title
+          validate:
+            - required
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: logo
+        field: common.image
+        config:
+          mode: grid
+          listable: true
+          display: Logo
+          validate:
+            - required
+            - 'mimes:svg'

@@ -5,8 +5,18 @@
 
 <!-- /projects/show.antlers.html -->
 <main class="outer-grid" id="content">
-    <div class="fluid-container">
-        {{ partial:typography/h1 :content="title" }}
+    <div class="relative fluid-container grid grid-cols-5 md:grid-cols-12 gap-x-0 gap-y-8 md:gap-12">
+        {{ partial:typography/h1 :content="sub_title" class="col-span-5 md:col-span-7 pr-12 xl:max-w-[75%]" }}
+
+        <aside class="col-span-4 col-start-2 md:col-span-3 md:col-start-8 lg:col-span-3 md:py-12 text-neutral dark:text-white font-light leading-relaxed">
+            <h2 class="font-medium">{{ title }}</h2>
+            Client: {{ client:title }}<br>
+            {{ if partners }}
+            Partners: {{ partners }}{{ title }}{{ unless last }}, {{ /unless }}{{ /partners }}<br>
+            {{ /if }}
+            {{ trans_choice:strings.projects_role count="{ roles | length }" }}: {{ roles }}{{ title }}{{ unless last }}, {{ /unless }}{{ /roles }}<br>
+            Launched: {{ date format_localized="%Y" }}
+        </aside>
     </div>
 
     {{ page_builder scope="block" }}

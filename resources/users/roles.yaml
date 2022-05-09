@@ -67,6 +67,15 @@ editor:
     - 'edit other authors services entries'
     - 'publish other authors services entries'
     - 'delete other authors services entries'
+    - 'view partners entries'
+    - 'edit partners entries'
+    - 'create partners entries'
+    - 'delete partners entries'
+    - 'publish partners entries'
+    - 'reorder partners entries'
+    - 'edit other authors partners entries'
+    - 'publish other authors partners entries'
+    - 'delete other authors partners entries'
 marketeer:
   title: Marketeer
   permissions:

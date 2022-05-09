@@ -1,6 +1,8 @@
-data: {  }
+data:
+  alt: 'Illustratie van een gezicht en een wijzende vinger voor Sociale Benadering Dementie'
+  alt_en: 'Illustration of a face and a finger pointing up for Social Approach Dementia.'
 size: 619449
-last_modified: 1650961836
+last_modified: 1650968416
 width: 4000
 height: 3000
 mime_type: image/jpeg

@@ -50,6 +50,31 @@ return [
             'collection' => 'pages',
             'width' => 50
         ],
+        [
+            'type' => 'collection',
+            'collection' => 'projects',
+            'width' => 50
+        ],
+        [
+            'type' => 'collection',
+            'collection' => 'journal',
+            'width' => 50
+        ],
+        [
+            'type' => 'collection',
+            'collection' => 'services',
+            'width' => 33
+        ],
+        [
+            'type' => 'collection',
+            'collection' => 'clients',
+            'width' => 33
+        ],
+        [
+            'type' => 'collection',
+            'collection' => 'partners',
+            'width' => 33
+        ],
     ],
 
     /*

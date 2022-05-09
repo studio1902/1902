@@ -1,6 +1,8 @@
-data: {  }
+data:
+  alt: 'Logo Sociale Benadering Dementie'
+  alt_en: 'Logo Social Approach Dementia'
 size: 16324
-last_modified: 1650962527
+last_modified: 1650968416
 width: 441.0
 height: 140.0
 mime_type: image/svg+xml

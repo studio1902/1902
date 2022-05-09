@@ -124,20 +124,6 @@ fields:
         link_type: asset
         show_controls: 'equals true'
   -
-    handle: button_type
-    field:
-      options:
-        button: Button
-        inline: Inline
-      type: button_group
-      localizable: true
-      default: button
-      listable: false
-      display: 'Button type'
-      replicator_preview: false
-      if:
-        show_controls: 'equals true'
-  -
     handle: attr_title
     field:
       placeholder: 'Learn more'

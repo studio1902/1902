@@ -1,0 +1,14 @@
+title: Partners
+sites:
+  - nl
+  - en
+propagate: false
+template: default
+layout: layout
+mount: b120b562-4350-4070-8a53-5a6ab852e564
+revisions: false
+slugs: false
+sort_dir: asc
+date_behavior:
+  past: public
+  future: private

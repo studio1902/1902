@@ -75,6 +75,7 @@ return [
     'projects_featured'                 => 'Featured',
     'projects_view'                     => 'Bekijk project',
     'projects_all'                      => 'Alle projecten',
+    'projects_role'                     => 'Rol|Rollen',
 
     // Search
     'search'                            => 'Zoek...',

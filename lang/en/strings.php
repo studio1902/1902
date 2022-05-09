@@ -75,6 +75,7 @@ return [
     'projects_featured'                 => 'Featured',
     'projects_view'                     => 'View project',
     'projects_all'                      => 'All projects',
+    'projects_role'                     => 'Role|Roles',
 
     // Search
     'search'                            => 'Search',
