@@ -42,6 +42,7 @@ return [
     'footer_on'                         => 'on',
     'footer_talk'                       => 'Let\'s talk!',
     'footer_privacy_statement'          => 'Privacy statement',
+    'footer_availability'               => 'Available for projects starting :month',
 
     // Journal
     'journal'                           => 'Journal',

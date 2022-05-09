@@ -42,6 +42,7 @@ return [
     'footer_on'                         => 'op',
     'footer_talk'                       => 'Let\'s talk!',
     'footer_privacy_statement'          => 'Privacy statement',
+    'footer_availability'               => 'Beschikbaar voor projecten vanaf :month',
 
     // Journal
     'journal'                           => 'Journal',

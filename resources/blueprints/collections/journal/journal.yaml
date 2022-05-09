@@ -73,6 +73,6 @@ sections:
           display: Tags
           mode: typeahead
           instructions_position: above
-          listable: hidden
+          listable: true
           read_only: false
           create: true

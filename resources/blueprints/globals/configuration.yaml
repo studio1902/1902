@@ -63,10 +63,28 @@ sections:
           display: 'Contact page'
           width: 50
           instructions: 'Select the page to where the footer contact button links.'
+          instructions_position: below
           collections:
             - pages
           validate:
             - required
+      -
+        handle: availability_from
+        field:
+          mode: single
+          time_enabled: false
+          time_seconds_enabled: false
+          full_width: false
+          inline: false
+          columns: 1
+          rows: 1
+          display: 'Availability from'
+          type: date
+          icon: date
+          width: 50
+          listable: hidden
+          instructions_position: above
+          read_only: false
       -
         handle: section_copyright
         field:
