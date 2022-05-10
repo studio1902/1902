@@ -21,7 +21,7 @@
         :aria-expanded="mobileNavOpen"
     >
         <span
-            class="relative z-10 uppercase tracking-wide font-light text-lg motion-safe:transition-colors"
+            class="relative z-10 uppercase tracking-wide text-lg motion-safe:transition-colors"
             :class="{ 'text-white': mobileNavOpen, 'text-neutral dark:text-white': !mobileNavOpen }"
             x-text="mobileNavOpen ? '{{ trans:strings.close }}' : '{{ trans:strings.menu }}'"
         ></span>

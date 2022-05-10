@@ -8,7 +8,7 @@
     <div class="relative fluid-container grid grid-cols-5 md:grid-cols-12 gap-x-0 gap-y-8 md:gap-12">
         {{ partial:typography/h1 :content="sub_title" class="col-span-5 md:col-span-7 pr-12 xl:max-w-[75%]" }}
 
-        <aside class="col-span-4 col-start-2 md:col-span-5 md:col-start-8 text-neutral dark:text-white font-light leading-relaxed">
+        <aside class="col-span-4 col-start-2 md:col-span-5 md:col-start-8 text-neutral dark:text-white leading-relaxed">
             <h2 class="font-medium">{{ title }}</h2>
             <table>
                 <tr>
@@ -39,12 +39,12 @@
         <article class="flex flex-col space-y-8 md:pr-40 md:col-span-7 md:col-start-1 md:row-span-3 md:row-start-1 p-8 md:p-12 bg-primary dark:bg-secondary">
             {{ partial:typography/h2 color="text-white" content="{ trans:strings.projects_overview }" }}
             <div>
-                {{ partial:typography/h3 class="mb-2" content="{ trans:strings.projects_features }" }}</a>
-                <span class="font-light text-white">{{ features | list }}</span>
+                {{ partial:typography/h3 class="mb-2 font-medium" content="{ trans:strings.projects_features }" }}</a>
+                <span class="text-white">{{ features | list }}</span>
             </div>
             <div>
-                {{ partial:typography/h3 class="mb-2" content="{ trans:strings.projects_technologies }" }}</a>
-                <span class="font-light text-white">{{ tools | pluck('title') | list }}</span>
+                {{ partial:typography/h3 class="mb-2 font-medium" content="{ trans:strings.projects_technologies }" }}</a>
+                <span class="text-white">{{ tools | pluck('title') | list }}</span>
             </div>
         </article>
 
