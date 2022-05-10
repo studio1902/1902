@@ -64,8 +64,8 @@
         font-display: swap;
     }
 
-    .prose {
-
+    article.prose > *:first-of-type p:first-child::first-letter {
+        @apply leading-none text-primary dark:text-secondary font-semibold float-left mr-2 -mb-2 text-[3.5rem];
     }
 }
 
