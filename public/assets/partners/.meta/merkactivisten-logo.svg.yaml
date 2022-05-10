@@ -1,6 +1,8 @@
-data: {  }
+data:
+  alt: 'Merkactivisten logo'
+  alt_en: 'Brand Activists logo'
 size: 4115
-last_modified: 1652127537
+last_modified: 1652127694
 width: 211.0
 height: 64.0
 mime_type: image/svg+xml

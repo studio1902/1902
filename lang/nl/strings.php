@@ -76,6 +76,12 @@ return [
     'projects_view'                     => 'Bekijk project',
     'projects_all'                      => 'Alle projecten',
     'projects_role'                     => 'Rol|Rollen',
+    'projects_client'                   => 'Klant',
+    'projects_partner'                  => 'Partner|Partners',
+    'projects_launched'                 => 'Livegang',
+    'projects_overview'                 => 'Overzicht',
+    'projects_features'                 => 'Features',
+    'projects_technologies'             => 'Gebruikte technieken',
 
     // Search
     'search'                            => 'Zoek...',

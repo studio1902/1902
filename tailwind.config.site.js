@@ -136,7 +136,7 @@ module.exports = {
             //--------------------------------------------------------------------------
             // fontFamily: theme('fontFamily.mono'),
             fontFamily: theme('fontFamily.sans'),
-            fontWeight: theme('fontWeight.medium'),
+            fontWeight: theme('fontWeight.light'),
             // fontFamily: theme('fontFamily.serif'),
         },
       })

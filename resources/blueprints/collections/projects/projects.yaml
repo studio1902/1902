@@ -22,6 +22,79 @@ sections:
           display: 'Sub title'
           validate: required
       -
+        handle: client
+        field:
+          max_items: 1
+          mode: default
+          create: true
+          collections:
+            - clients
+          display: Client
+          type: entries
+          icon: entries
+          listable: true
+          instructions_position: above
+          read_only: false
+          validate:
+            - required
+          width: 50
+      -
+        handle: partners
+        field:
+          mode: default
+          create: true
+          collections:
+            - partners
+          display: Partners
+          type: entries
+          icon: entries
+          listable: hidden
+          instructions_position: above
+          read_only: false
+          width: 50
+      -
+        handle: roles
+        field:
+          type: terms
+          taxonomies:
+            - roles
+          display: Roles
+          mode: typeahead
+          instructions_position: above
+          listable: hidden
+          read_only: false
+          create: true
+          width: 50
+          validate:
+            - required
+      -
+        handle: tools
+        field:
+          type: terms
+          taxonomies:
+            - tools
+          display: Tools
+          mode: typeahead
+          instructions_position: above
+          listable: hidden
+          read_only: false
+          create: true
+          width: 50
+          validate:
+            - required
+      -
+        handle: features
+        field:
+          display: Features
+          type: list
+          icon: list
+          localizable: true
+          listable: hidden
+          instructions_position: above
+          read_only: false
+          validate:
+            - required
+      -
         import: page_builder
   seo:
     display: SEO
@@ -71,56 +144,3 @@ sections:
           localizable: true
           listable: true
           validate: required
-      -
-        handle: client
-        field:
-          max_items: 1
-          mode: default
-          create: true
-          collections:
-            - clients
-          display: Client
-          type: entries
-          icon: entries
-          listable: true
-          instructions_position: above
-          read_only: false
-          validate:
-            - required
-      -
-        handle: partners
-        field:
-          mode: default
-          create: true
-          collections:
-            - partners
-          display: Partners
-          type: entries
-          icon: entries
-          listable: hidden
-          instructions_position: above
-          read_only: false
-      -
-        handle: roles
-        field:
-          type: terms
-          taxonomies:
-            - roles
-          display: Roles
-          mode: typeahead
-          instructions_position: above
-          listable: hidden
-          read_only: false
-          create: true
-      -
-        handle: tools
-        field:
-          type: terms
-          taxonomies:
-            - tools
-          display: Tools
-          mode: typeahead
-          instructions_position: above
-          listable: hidden
-          read_only: false
-          create: true

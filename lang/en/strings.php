@@ -76,6 +76,12 @@ return [
     'projects_view'                     => 'View project',
     'projects_all'                      => 'All projects',
     'projects_role'                     => 'Role|Roles',
+    'projects_client'                   => 'Client',
+    'projects_partner'                  => 'Partner|Partners',
+    'projects_launched'                 => 'Launched',
+    'projects_overview'                 => 'Overview',
+    'projects_features'                 => 'Features',
+    'projects_technologies'             => 'Technology used',
 
     // Search
     'search'                            => 'Search',
