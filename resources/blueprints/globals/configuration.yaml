@@ -168,3 +168,58 @@ sections:
             privacy_statement_type: 'equals entry'
           validate:
             - 'required_if:privacy_statement_type,entry'
+      -
+        handle: section_footer_animation
+        field:
+          display: 'Footer animation'
+          type: section
+          icon: section
+          instructions: 'A list of footer animations and texts.'
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: footer_animations
+        field:
+          fields:
+            -
+              handle: animation
+              field: common.image
+              config:
+                container: animations
+                display: Animation
+                width: 25
+                validate:
+                  - required
+            -
+              handle: audio
+              field: common.image
+              config:
+                container: audio
+                restrict: true
+                display: 'On click audio effect'
+                width: 25
+                instructions_position: below
+            -
+              handle: text
+              field:
+                input_type: text
+                antlers: false
+                display: Text
+                type: text
+                icon: text
+                width: 50
+                listable: hidden
+                instructions_position: above
+                read_only: false
+                validate:
+                  - required
+          mode: table
+          reorderable: true
+          display: 'Footer animations'
+          type: grid
+          icon: grid
+          listable: hidden
+          instructions_position: above
+          read_only: false
+          localizable: true

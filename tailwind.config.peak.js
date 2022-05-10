@@ -149,8 +149,7 @@ module.exports = {
           // If the last child of the outer grid is full width (e.g. when it has a full width
           // colored background), give it negative margin bottom to get it flush to your
           // sites footer.
-          // '& > *:last-child.w-full': {
-          '& > *:last-child': {
+          '& > *:last-child.w-full': {
             marginBottom: `-${theme('spacing.8')}`,
           },
         },
@@ -168,8 +167,7 @@ module.exports = {
             rowGap: theme('spacing.16'),
             paddingTop: theme('spacing.16'),
             paddingBottom: theme('spacing.16'),
-            // '& > *:last-child.w-full': {
-            '& > *:last-child': {
+            '& > *:last-child.w-full': {
               marginBottom: `-${theme('spacing.16')}`,
             },
           },
@@ -186,8 +184,7 @@ module.exports = {
             rowGap: theme('spacing.24'),
             paddingTop: theme('spacing.24'),
             paddingBottom: theme('spacing.24'),
-            // '& > *:last-child.w-full': {
-            '& > *:last-child': {
+            '& > *:last-child.w-full': {
               marginBottom: `-${theme('spacing.24')}`,
             },
           },

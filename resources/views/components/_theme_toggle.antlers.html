@@ -13,7 +13,7 @@
             class="py-2 px-3 flex items-center rounded-full hover:shadow-top hover:bg-white hover:dark:bg-white focus:outline-none focus-visible:ring-2 ring-primary dark:ring-secondary motion-safe:transition group"
         >
             {{ icon_classes = 'w-4 h-4 fill-current overflow-visible' }}
-            {{ label_classes = 'ml-2 text-neutral dark:text-white group-hover:text-neutral text-xs uppercase tracking-wider motion-safe:transition-colors' }}
+            {{ label_classes = 'font-light ml-2 text-neutral dark:text-white group-hover:text-neutral text-xs uppercase tracking-wider motion-safe:transition-colors' }}
             {{ wrapper_classes = 'flex items-center text-neutral dark:text-white motion-safe:transition-colors' }}
             <div x-show="$store.theme.get() === 'light'" class="{{ wrapper_classes }} group-focus-visible:text-primary group-hover:text-primary">
                 {{ svg:sun class="{icon_classes}" alt="" aria-hidden="true" }}
@@ -44,7 +44,7 @@
     >
         {{ button_classes = 'py-2 px-3 w-full flex items-center space-x-2 text-neutral focus:outline-none focus-visible:ring-2 ring-primary dark:ring-secondary motion-safe:transition-colors' }}
         {{ icon_classes = 'w-4 h-4 fill-current overflow-visible' }}
-        {{ label_classes = 'text-neutral text-xs uppercase tracking-wider' }}
+        {{ label_classes = 'font-light text-neutral text-xs uppercase tracking-wider' }}
         <button
             @click="themeLight()"
             :class="{ 'text-primary bg-neutral-light': $store.theme.get() === 'light' }"

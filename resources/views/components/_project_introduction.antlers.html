@@ -1,0 +1,27 @@
+<div class="relative fluid-container grid grid-cols-5 md:grid-cols-12 gap-x-0 gap-y-8 md:gap-12">
+    {{ partial:typography/h1 :content="sub_title" class="col-span-5 md:col-span-7 pr-12 xl:max-w-[75%]" }}
+
+    <aside class="col-span-4 col-start-2 md:col-span-5 md:col-start-8 text-neutral dark:text-white leading-relaxed">
+        <h2 class="font-medium">{{ title }}</h2>
+        <table>
+            <tr>
+                <th class="font-light text-left pr-2">{{ trans:strings.projects_client }}:</th>
+                <td>{{ client:title }}</td>
+            </tr>
+            {{ if partners }}
+                <tr>
+                    <th class="font-light text-left pr-2">{{ trans_choice:strings.projects_partner count="{ partners | length }" }}:</th>
+                    <td>{{ partners | pluck('title') | list }}</td>
+                </tr>
+            {{ /if }}
+            <tr>
+                <th class="font-light text-left pr-2">{{ trans_choice:strings.projects_role count="{ roles | length }" }}:</th>
+                <td>{{ roles | pluck('title') | list }}</td>
+            </tr>
+            <tr>
+                <th class="font-light text-left pr-2">{{ trans:strings.projects_launched }}:</th>
+                <td>{{ date format_localized="%Y" }}</td>
+            </tr>
+        </table>
+    </aside>
+</div>

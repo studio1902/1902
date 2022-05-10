@@ -1,0 +1,30 @@
+{{ collection in="projects" as="posts" limit="1" sort="random" :id:isnt="id" }}
+    {{ posts }}
+        <section
+            x-data=""
+            x-id="['project-title']"
+            class="relative fluid-container grid md:grid-cols-12 md:gap-8 {{ yield:background_text_compensation }}"
+        >
+            <a
+                href="{{ url }}"
+                class="relative md:col-span-6 border border-b-0 md:border-b border-primary dark:border-secondary p-6 pb-12 md:p-8 flex flex-col gap-y-8 justify-between focus:outline-none focus-visible:ring-2 ring-offset-2 ring-offset-white dark:ring-offset-neutral ring-primary dark:ring-secondary group"
+                :aria-labelledby="$id('project-title')"
+                draggable="false"
+            >
+                {{ scope:project }}
+                    {{ partial:components/project_content }}
+                {{ /scope:project }}
+                <div
+                    class="hidden md:flex absolute inset-0 bg-primary dark:bg-secondary p-6 pb-12 md:p-8 flex-col space-y-8 justify-between motion-safe:transition-[clip-path] motion-safe:duration-500 ease-out [clip-path:circle(20%_at_120%_120%)] group-hover:[clip-path:circle(170%_at_120%_120%)]" aria-hidden="true"
+                >
+                    {{ scope:project }}
+                        {{ partial:components/project_content color="text-white" }}
+                    {{ /scope:project }}
+                </div>
+            </a>
+
+            {{ background_text = ['More','work'] }}
+            {{ partial:components/background_text background_text_position="start" }}
+        </section>
+    {{ /posts }}
+{{ /collection }}
