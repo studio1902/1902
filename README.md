@@ -1,4 +1,14 @@
-# studio1902.nl
+# 1902.studio
+
+This is the source code of [1902.studio](https://1902.studio). It's built using [Statamic](https://statamic.com) and [Statamic Peak](https://peak.1902.studio).
+
+## License
+* Statamic is paid software and his it's own [commerical license](https://github.com/statamic/cms/blob/3.3/LICENSE.md).
+* Statamic Peak is open source and falls under the [MIT license](https://github.com/studio1902/statamic-peak/blob/main/LICENSE).
+* The content, design and source code of this website falls under [exclusive copyright](https://choosealicense.com/no-permission/).
+
+## Credits
+The website was designed by [Merkactivisten](https://merkactivisten.nl) in collaboration with Rob de Kort. The website is built by Rob de Kort.
 
 ## Installation instructions
 
@@ -15,7 +25,7 @@ APP_NAME='Studio 1902'
 APP_ENV=local
 APP_KEY=
 APP_DEBUG=true
-APP_URL=http://studio1902.test
+APP_URL=http://1902.test
 
 DEBUGBAR_ENABLED=false
 
@@ -40,16 +50,6 @@ MAIL_PASSWORD=testpwd
 MAIL_ENCRYPTION=null
 MAIL_FROM_ADDRESS=info@studio1902.nl
 MAIL_FROM_NAME="${APP_NAME}"
-
-PUSHER_APP_ID=
-PUSHER_APP_KEY=
-PUSHER_APP_SECRET=
-PUSHER_APP_CLUSTER=mt1
-
-AWS_ACCESS_KEY_ID=
-AWS_SECRET_ACCESS_KEY=
-AWS_DEFAULT_REGION=us-east-1
-AWS_BUCKET=
 
 MIX_PUSHER_APP_KEY="${PUSHER_APP_KEY}"
 MIX_PUSHER_APP_CLUSTER="${PUSHER_APP_CLUSTER}"
