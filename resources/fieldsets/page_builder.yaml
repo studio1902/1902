@@ -22,6 +22,12 @@ fields:
           fields:
             -
               import: form
+        image_and_text:
+          display: 'Image and text'
+          instructions: 'An image and text on a tinted background.'
+          fields:
+            -
+              import: image_and_text
         journal_entry:
           display: 'Journal entry'
           instructions: 'Highlight a journal entry.'

@@ -1,9 +1,16 @@
-title_separator: '::'
+title_separator: •
 change_page_title:
   -
     collection: projects
     what_to_add: custom_text
     custom_text: Projecten
+  -
+    collection: journal
+    what_to_add: collection_title
+  -
+    collection: services
+    what_to_add: custom_text
+    custom_text: Diensten
 noindex_local: true
 noindex_staging: true
 noindex_production: false
@@ -15,6 +22,13 @@ collection_defaults:
     collection: projects
     fallback: field
     field_handle: sub_title
+  -
+    collection: services
+    fallback: field
+    field_handle: teaser
+  -
+    collection: journal
+    fallback: page_builder
 hreflang_auto: true
 json_ld_type: organization
 organization_name: 'Studio 1902'

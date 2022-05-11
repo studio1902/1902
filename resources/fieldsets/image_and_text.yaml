@@ -1,0 +1,15 @@
+title: 'Image and text'
+fields:
+  -
+    handle: text
+    field: common.text_rich
+    config:
+      validate: required
+  -
+    handle: image
+    field: common.image
+    config:
+      validate: required
+      width: 50
+  -
+    import: background_text

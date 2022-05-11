@@ -18,8 +18,16 @@ sections:
         handle: teaser
         field: common.text_plain
         config:
-          validate: required
           localizable: true
+          display: Teaser
+          validate: required
+      -
+        handle: introduction
+        field: common.text_plain
+        config:
+          display: Introduction
+          validate:
+            - required
       -
         import: page_builder
   seo:
@@ -40,7 +48,6 @@ sections:
         handle: slug
         field:
           type: slug
-          required: true
           localizable: true
           generate: true
           listable: hidden

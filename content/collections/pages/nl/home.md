@@ -3,7 +3,7 @@ id: home
 blueprint: page
 title: Home
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1652003089
+updated_at: 1652276809
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -88,10 +88,9 @@ page_builder:
           -
             type: text
             text: ' on offering the best user experience possible.'
-    animation: knive.json
     playback_speed: 1.0
     loop: false
-    intersect: true
+    intersect: false
     type: title_and_text
     enabled: true
     background_text:
@@ -99,7 +98,6 @@ page_builder:
       - Outta
       - Baflo
     tag: h2
-    audio: chopping-veggies.mp3
     background_text_position: start
     text_position: center
   -
