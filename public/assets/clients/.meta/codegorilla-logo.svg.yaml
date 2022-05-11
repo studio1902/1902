@@ -1,7 +1,8 @@
-data: {  }
-size: 8439
-last_modified: 1652186846
-width: '42'
+data:
+  alt: 'Logo CodeGorilla'
+size: 8220
+last_modified: 1652190840
+width: '41'
 height: '57'
-mime_type: image/svg+xml
+mime_type: text/plain
 duration: null

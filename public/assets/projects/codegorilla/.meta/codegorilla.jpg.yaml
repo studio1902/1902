@@ -1,6 +1,8 @@
-data: {  }
+data:
+  alt: 'Kleurrijke illustratie van CodeGorilla met bladeren, planten een laptop en mensen die werken op laptops.'
+  alt_en: 'CodeGorilla colorful illustration with leaves, a computer and people working on laptops.'
 size: 6106862
-last_modified: 1652187007
+last_modified: 1652190840
 width: 8000
 height: 5000
 mime_type: image/jpeg
