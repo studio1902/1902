@@ -18,7 +18,7 @@
 >
     <div class="relative col-span-5 md:col-span-7 flex flex-col">
         {{ partial:typography/h1 as="{ block:tag }" :content="block:title" class="pr-12 xl:max-w-[75%]" }}
-        {{ partial:components/animation class="w-32 md:w-48 self-end " }}
+        {{ partial:components/animation class="w-32 md:w-48 self-end { background_text_position === 'start' ?= 'relative -top-12' }" }}
     </div>
 
     {{ partial:typography/prose as="article" class="col-span-4 col-start-2 md:col-span-3 md:col-start-8 lg:col-span-3 md:py-12" }}
