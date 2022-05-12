@@ -3,7 +3,7 @@ id: home
 blueprint: page
 title: Home
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1652276809
+updated_at: 1652344588
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -41,7 +41,7 @@ page_builder:
               -
                 type: link
                 attrs:
-                  href: 'statamic://entry::cf79b512-47e4-479a-b8e6-5ca3595c9cd4'
+                  href: 'statamic://entry::3b9ff3c2-bc7a-4a54-8350-8524f9525cb2'
                   rel: noopener
                   target: null
                   title: null
