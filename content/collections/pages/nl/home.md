@@ -3,7 +3,7 @@ id: home
 blueprint: page
 title: Home
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1652344588
+updated_at: 1652385042
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -100,6 +100,7 @@ page_builder:
     tag: h2
     background_text_position: start
     text_position: center
+    animation: accessibility.json
   -
     type: journal_entry
     enabled: true
