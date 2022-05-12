@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1652389556
+updated_at: 1652389645
 teaser: 'Een teaser over design en dev als product. Vertel maar.'
 introduction: 'Crowdsource non-disclosure agreement. MVP creative pitch venture startup low hanging fruit hypotheses customer strategy iPad partnership social proof. deployment. Long tail success entrepreneur network effects android. deployment.'
 page_builder:
@@ -48,7 +48,7 @@ page_builder:
       - ret
       - tool
       - box
-    background_text_position: start
+    background_text_position: center
     type: collapsed_grid
     enabled: true
     title: 'Tech Stack'
