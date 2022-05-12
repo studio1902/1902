@@ -1,0 +1,64 @@
+{{#
+	@name Collapsed grid
+	@desc The Collapsed grid page builder block.
+    @set page.page_builder.collapsed_grid
+#}}
+
+<!-- /page_builder/_collapsed_grid.antlers.html -->
+<section class="relative fluid-container {{ yield:background_text_compensation }}">
+    <div class="lg:px-8">
+        {{ block:title ?= { partial:typography/h1 as="h2" :content="block:title" class="md:col-span-12 mb-4 md:pl-4" } }}
+
+        <div
+            x-data="{ expanded: false }"
+            class="relative"
+        >
+            <div
+                x-show="!expanded"
+                x-transition.opacity.duration.250ms
+                class="absolute z-10 inset-0 flex justify-center items-end bg-gradient-to-t from-white dark:from-neutral to-transparent pointer-events-none"
+            >
+                <button
+                    @click="expanded = !expanded"
+                    class="p-2 translate-y-8 pointer-events-auto"
+                >
+                    {{ partial:components/button as="span" faux="true" button_icon="arrow_down" label="{ trans:strings.show_all }" }}
+                </button>
+            </div>
+
+            <div
+                x-show="expanded"
+                x-collapse.min.350px
+                class="grid grid-cols-2"
+            >
+                {{ block:grid }}
+                    <article class="
+                        flex flex-col md:flex-row md:space-y-0 md:space-x-12 p-4 odd:pl-0 even:pr-0 md:odd:pr-12 md:odd:pl-4 md:even:pr-4 md:even:pl-12 odd:border-r-2 border-neutral-light dark:border-neutral-light/10
+                        {{ first || count === 2 ? 'md:pt-6' : 'md:pt-12' }}
+                        {{ if total_results | mod('2') === 0 }}
+                            {{ (count == { $total_results - 1 }) || last ? 'md:pb-6 border-b-0' : 'md:pb-12 border-b-2' }}
+                        {{ else }}
+                            {{ last ? 'md:pb-6 border-b-0' : 'md:pb-12 border-b-2' }}
+                        {{ /if }}
+                    ">
+                        <div class="order-2 md:order-1">
+                            {{ partial:typography/h3 :content="title" color="text-primary dark:text-secondary" class="mb-3" }}
+                            {{ partial:typography/p :content="text" }}
+                            {{ partial:components/buttons }}
+                        </div>
+                        <figure
+                            class="order-1 md:order-2 w-12 md:w-44 mb-4 motion-safe:transition"
+                            :class="{ 'grayscale contrast-150 dark:contrast-100 dark:grayscale-0': !expanded, 'grayscale-0 contrast-100': expanded }"
+                            aria-hidden="true"
+                        >
+                            {{ svg :src="icon" width="50" height="50" class="w-full h-auto" aria-hidden="true" }}
+                        </figure>
+                    </article>
+                {{ /block:grid }}
+            </div>
+        </div>
+    </div>
+
+    {{ partial:components/background_text }}
+</section>
+<!-- End: /page_builder/_collapsed_grid.antlers.html -->

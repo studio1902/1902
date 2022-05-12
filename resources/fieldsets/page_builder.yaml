@@ -16,6 +16,12 @@ fields:
           fields:
             -
               import: article
+        collapsed_grid:
+          display: 'Collapsed grid'
+          instructions: 'A content grid that is collapsed by default.'
+          fields:
+            -
+              import: collapsed_grid
         form:
           display: Form
           instructions: 'Show a form.'

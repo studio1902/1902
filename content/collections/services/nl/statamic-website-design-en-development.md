@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1652281785
+updated_at: 1652354823
 teaser: 'Een teaser over design en dev als product. Vertel maar.'
 introduction: 'Crowdsource non-disclosure agreement. MVP creative pitch venture startup low hanging fruit hypotheses customer strategy iPad partnership social proof. deployment. Long tail success entrepreneur network effects android. deployment.'
 page_builder:
@@ -42,4 +42,92 @@ page_builder:
             type: text
             text: "Projects start from 3K upwards.\_"
     image: services/studio-1920-office.jpeg
+  -
+    background_text:
+      - Sec
+      - ret
+      - tool
+      - box
+    background_text_position: start
+    type: collapsed_grid
+    enabled: true
+    title: 'Tech Stack'
+    grid:
+      -
+        title: Statamic
+        text: 'Advisor startup equity. Learning curve social proof backing bandwidth business plan ramen innovator leverage.'
+        icon: tools/statamic-logo.svg
+        buttons:
+          -
+            label: statamic.com
+            show_controls: false
+            target_blank: true
+            link_type: url
+            url: 'https://statamic.com'
+      -
+        title: Peak
+        text: 'Advisor startup equity. Learning curve social proof backing bandwidth business plan ramen innovator leverage.'
+        icon: tools/statamic-peak-logo.svg
+        buttons:
+          -
+            label: peak.1902.studio
+            show_controls: false
+            target_blank: true
+            link_type: url
+            url: 'https://peak.1902.studio'
+      -
+        title: Alpine.js
+        text: 'Advisor startup equity. Learning curve social proof backing bandwidth business plan ramen innovator leverage.'
+        icon: tools/alpine-logo.svg
+        buttons:
+          -
+            label: alpinejs.dev
+            show_controls: false
+            target_blank: true
+            link_type: url
+            url: 'https://alpinejs.dev'
+      -
+        title: TailwindCSS
+        text: 'Advisor startup equity. Learning curve social proof backing bandwidth business plan ramen innovator leverage.'
+        icon: tools/tailwind-logo.svg
+        buttons:
+          -
+            label: tailwindcss.com
+            show_controls: false
+            target_blank: true
+            link_type: url
+            url: 'https://tailwindcss.com'
+      -
+        title: Laravel
+        text: 'Advisor startup equity. Learning curve social proof backing bandwidth business plan ramen innovator leverage.'
+        icon: tools/laravel-logo.svg
+        buttons:
+          -
+            label: laravel.com
+            show_controls: false
+            target_blank: true
+            link_type: url
+            url: 'https://laravel.com'
+      -
+        title: Ploi.io
+        text: 'Advisor startup equity. Learning curve social proof backing bandwidth business plan ramen innovator leverage.'
+        icon: tools/ploi-logo.svg
+        buttons:
+          -
+            label: ploi.io
+            show_controls: false
+            target_blank: true
+            link_type: url
+            url: 'https://ploi.io'
+      -
+        title: Hetzner
+        text: 'Advisor startup equity. Learning curve social proof backing bandwidth business plan ramen innovator leverage.'
+        icon: tools/hetzner-logo.svg
+        buttons:
+          -
+            label: hetzner.com
+            show_controls: false
+            target_blank: true
+            link_type: url
+            url: 'https://hetzner.com'
 ---

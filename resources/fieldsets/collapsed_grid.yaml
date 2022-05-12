@@ -1,0 +1,60 @@
+title: 'Collapsed grid'
+fields:
+  -
+    handle: title
+    field:
+      input_type: text
+      antlers: false
+      display: Title
+      type: text
+      icon: text
+      localizable: true
+      listable: hidden
+      instructions_position: above
+      read_only: false
+  -
+    handle: grid
+    field:
+      fields:
+        -
+          handle: title
+          field:
+            input_type: text
+            antlers: false
+            display: Title
+            type: text
+            icon: text
+            listable: hidden
+            instructions_position: above
+            read_only: false
+            validate:
+              - required
+        -
+          handle: text
+          field: common.text_plain
+          config:
+            validate:
+              - required
+        -
+          handle: icon
+          field: common.image
+          config:
+            display: Icon
+            width: 25
+            validate:
+              - required
+        -
+          import: buttons
+      mode: stacked
+      min_rows: 2
+      add_row: 'Add cell'
+      reorderable: true
+      display: Grid
+      type: grid
+      icon: grid
+      listable: hidden
+      instructions_position: above
+      replicator_preview: false
+      read_only: false
+  -
+    import: background_text

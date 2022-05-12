@@ -65,6 +65,7 @@ return [
     'no_results'                        => 'There are currently no posts.',
     'no_script'                         => 'This website requires Javascript for some parts to function properly. Your experience may vary.',
     'home'                              => 'Go to the homepage.',
+    'show_all'                          => 'Show all',
 
     // Pagination
     'next'                              => 'next',

@@ -65,6 +65,7 @@ return [
     'no_results'                        => 'Er zijn momenteel geen resultaten.',
     'no_script'                         => 'De website vereist Javascript.',
     'home'                              => 'Ga naar de homepage.',
+    'show_all'                          => 'Toon alles',
 
     // Pagination
     'next'                              => 'Volgende',
