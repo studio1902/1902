@@ -1,0 +1,13 @@
+{{#
+	@name Quote
+	@desc The Quote page builder block.
+    @set page.page_builder.quote
+#}}
+
+<!-- /page_builder/_quote.antlers.html -->
+<section class="relative fluid-container grid md:grid-cols-12 gap-8 {{ yield:background_text_compensation }}">
+    {{ partial:typography/h3 content="🔧<br>Quote" class="md:col-span-12 text-center" }}
+
+    {{ partial:components/background_text }}
+</section>
+<!-- End: /page_builder/_quote.antlers.html -->

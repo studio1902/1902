@@ -22,7 +22,7 @@
                 {{ if project_url }}
                     <li class="last:border-b border-primary dark:border-secondary">
                         <a
-                            class="relative p-4 flex justify-between gap-4 items-center border border-b-0 border-primary dark:border-secondary group"
+                            class="relative p-4 flex justify-between gap-4 items-center border border-b-0 border-primary dark:border-secondary focus:outline-none focus-visible:ring-4 ring-primary ring-offset-2 dark:ring-offset-neutral dark:ring-secondary group"
                             href="{{ project_url }}"
                             aria-label="{{ trans:strings.projects_visit }}"
                             :aria-labelledby="$id('project-title')"

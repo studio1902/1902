@@ -52,6 +52,12 @@ fields:
           fields:
             -
               import: project_list
+        quote:
+          display: Quote
+          instructions: 'Add a quote with an image and a name.'
+          fields:
+            -
+              import: quote
         services:
           display: Services
           instructions: 'List all services together with an image.'
