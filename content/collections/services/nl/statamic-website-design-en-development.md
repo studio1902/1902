@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1652390533
+updated_at: 1652390685
 teaser: 'Een teaser over design en dev als product. Vertel maar.'
 introduction: 'Crowdsource non-disclosure agreement. MVP creative pitch venture startup low hanging fruit hypotheses customer strategy iPad partnership social proof. deployment. Long tail success entrepreneur network effects android. deployment.'
 page_builder:
@@ -140,8 +140,10 @@ page_builder:
     buttons:
       -
         label: Portfolio
-        show_controls: false
+        show_controls: true
         target_blank: false
+        link_type: entry
+        entry: 7eb87293-600d-404b-8519-2c4a2ebc9e51
   -
     background_text_position: start
     type: quote
