@@ -20,7 +20,7 @@
             >
                 <button
                     @click="expanded = !expanded"
-                    class="p-2 translate-y-8 pointer-events-auto"
+                    class="p-2 rounded translate-y-8 pointer-events-auto focus:outline-none focus-visible:ring ring-primary dark:ring-secondary"
                 >
                     {{ partial:components/button as="span" faux="true" button_icon="arrow_down" label="{ trans:strings.show_all }" }}
                 </button>

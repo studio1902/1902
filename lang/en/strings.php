@@ -83,7 +83,7 @@ return [
     'projects_overview'                 => 'Overview',
     'projects_features'                 => 'Features',
     'projects_technologies'             => 'Technology used',
-    'projects_technologies'             => 'Visit project in a new tab',
+    'projects_visit'                    => 'Visit website',
 
     // Search
     'search'                            => 'Search',

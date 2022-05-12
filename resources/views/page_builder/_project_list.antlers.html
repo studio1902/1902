@@ -22,19 +22,16 @@
                 {{ if project_url }}
                     <li class="last:border-b border-primary dark:border-secondary">
                         <a
-                            class="p-4 flex justify-between space-y-4 items-center border border-b-0 border-primary dark:border-secondary group"
+                            class="relative p-4 flex justify-between gap-4 items-center border border-b-0 border-primary dark:border-secondary group"
                             href="{{ project_url }}"
                             aria-label="{{ trans:strings.projects_visit }}"
                             :aria-labelledby="$id('project-title')"
                             draggable="false"
                         >
-                            <div class="flex flex-col">
-                                <span class="uppercase font-sm tracking-wider text-primary dark:text-secondary">{{ sub_title }}</span>
-                                <h3 :id="$id('project-title')" class="text-4xl font-light uppercase tracking-wider text-primary dark:text-secondary">
-                                    {{ title }}
-                                </h3>
+                            {{ partial:components/project_list_content }}
+                            <div class="absolute inset-0 p-4 flex justify-between gap-4 items-center bg-primary dark:bg-secondary  [clip-path:circle(20%_at_-20%_0%)] md:group-hover:[clip-path:circle(170%_at_-20%_0%)] transition-all">
+                                {{ partial:components/project_list_content sub_title="{ trans:strings.projects_visit }" color="text-white" }}
                             </div>
-                            {{ svg:external_big class="w-10 h-10 text-primary dark:text-secondary fill-current opacity-0  group-hover:opacity-100 motion-safe:transition-opacity" }}
                         </a>
                     </li>
                 {{ /if }}
