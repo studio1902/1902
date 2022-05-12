@@ -5,9 +5,20 @@
 #}}
 
 <!-- /page_builder/_quote.antlers.html -->
-<section class="relative fluid-container grid md:grid-cols-12 gap-8 {{ yield:background_text_compensation }}">
-    {{ partial:typography/h3 content="🔧<br>Quote" class="md:col-span-12 text-center" }}
+<section class="relative fluid-container {{ yield:background_text_compensation }}">
+    <blockquote class="lg:px-12 flex flex-col md:flex-row gap-8 md:gap-12 items-center dark:text-white">
+        <footer class="order-2 md:order-1 flex flex-col space-y-2 text-center md:text-right">
+            <cite class="not-italic">{{ block:name }}</cite>
+            <span>{{ block:linked_via:title }}</span>
+        </footer>
+        <div class="order-1 md:order-2 w-40">
+            <figure class="aspect-w-1 aspect-h-1 rounded-full overflow-hidden">
+                {{ partial:components/picture :image="image" cover="true" lazy="true" sizes="(min-width: 768px) 25vw, 50vw"  }}
+            </figure>
+        </div>
+        {{ partial:typography/h2 as="p" :content="block:quote" class="order-3 text-center md:text-left max-w-[15ch]" color="text-primary dark:text-secondary" }}
 
-    {{ partial:components/background_text }}
+        {{ partial:components/background_text }}
+    </blockquote>
 </section>
 <!-- End: /page_builder/_quote.antlers.html -->

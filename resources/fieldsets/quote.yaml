@@ -1,4 +1,49 @@
-title: 'Quote'
+title: Quote
 fields:
+  -
+    handle: name
+    field:
+      input_type: text
+      antlers: false
+      display: Name
+      type: text
+      icon: text
+      width: 33
+      listable: hidden
+      instructions_position: above
+      read_only: false
+      validate:
+        - required
+  -
+    handle: linked_via
+    field: common.entry
+    config:
+      display: 'Linked via'
+      width: 33
+      validate:
+        - required
+      collections:
+        - clients
+        - partners
+  -
+    handle: image
+    field: common.image
+    config:
+      width: 33
+      validate:
+        - required
+  -
+    handle: quote
+    field:
+      input_type: text
+      antlers: false
+      display: Quote
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+      read_only: false
+      validate:
+        - required
   -
     import: background_text
