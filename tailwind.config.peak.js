@@ -131,7 +131,7 @@ module.exports = {
         // The main wrapper for all sections on our website. Has a max width and is centered.
         '.fluid-container': {
           width: '100%',
-          maxWidth: theme('screens.2xl'),
+          maxWidth: theme('screens.xl'),
           marginLeft: 'auto',
           marginRight: 'auto',
           // Use safe-area-inset together with default padding for Apple devices with a notch.
@@ -187,6 +187,12 @@ module.exports = {
             '& > *:last-child.w-full': {
               marginBottom: `-${theme('spacing.24')}`,
             },
+          },
+        },
+        '@media screen(2xl)': {
+          // Larger container on larger screens.
+          '.fluid-container': {
+            maxWidth: theme('screens.2xl'),
           },
         },
       }
