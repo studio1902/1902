@@ -44,9 +44,13 @@
                 </div>
             {{ /configuration:footer_animations }}
 
-            <a href="{{ configuration.contact_page:url }}" class="py-6 px-5 flex items-center space-x-3 bg-primary dark:bg-secondary text-white hover:text-neutral focus:outline-none focus-visible:ring-4 ring-primary ring-offset-2 dark:ring-offset-neutral dark:ring-secondary motion-safe:transition">
+            <a href="{{ configuration.contact_page:url }}" class="relative py-6 px-5 flex items-center gap-3 bg-primary dark:bg-secondary text-white focus:outline-none focus-visible:ring-4 ring-primary ring-offset-2 dark:ring-offset-neutral dark:ring-secondary motion-safe:transition group">
                 {{ svg:arrow_right class="fill-current w-6" aria-hidden="true" }}
-                <span class="text-current uppercase tracking-wider text-4xl lg:text-5xl">{{ trans:strings.footer_talk }}</span>
+                <span class="uppercase tracking-wider text-4xl lg:text-5xl">{{ trans:strings.footer_talk }}</span>
+                <div class="absolute inset-0 py-6 px-5 flex items-center gap-3 bg-white dark:bg-neutral text-primary dark:text-secondary [clip-path:circle(20%_at_-20%_130%)] group-hover:[clip-path:circle(180%_at_-20%_130%)]  motion-safe:transition-all" aria-hidden="true">
+                    {{ svg:arrow_right class="text-primary dark:text-secondary fill-current w-6" aria-hidden="true" }}
+                    <span class="text-primary dark:text-secondary uppercase tracking-wider text-4xl lg:text-5xl">{{ trans:strings.footer_talk }}</span>
+                </div>
             </a>
         </div>
     </div>
