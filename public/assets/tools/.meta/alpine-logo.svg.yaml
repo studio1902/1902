@@ -1,6 +1,7 @@
-data: {  }
-size: 909
-last_modified: 1652348005
+data:
+  alt: 'AlpineJS Logo'
+size: 910
+last_modified: 1652355248
 width: '76'
 height: '35'
 mime_type: image/svg+xml

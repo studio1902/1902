@@ -16,7 +16,7 @@
             <div
                 x-show="!expanded"
                 x-transition.opacity.duration.250ms
-                class="absolute z-10 inset-0 flex justify-center items-end bg-gradient-to-t from-white dark:from-neutral to-transparent pointer-events-none"
+                class="absolute z-10 inset-x-0 bottom-0 top-1/2 md:top-1/3 flex justify-center items-end bg-gradient-to-t from-white dark:from-neutral to-transparent pointer-events-none"
             >
                 <button
                     @click="expanded = !expanded"
@@ -28,7 +28,7 @@
 
             <div
                 x-show="expanded"
-                x-collapse.min.350px
+                x-collapse.min.430px
                 class="grid grid-cols-2"
             >
                 {{ block:grid }}

@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1652354823
+updated_at: 1652364108
 teaser: 'Een teaser over design en dev als product. Vertel maar.'
 introduction: 'Crowdsource non-disclosure agreement. MVP creative pitch venture startup low hanging fruit hypotheses customer strategy iPad partnership social proof. deployment. Long tail success entrepreneur network effects android. deployment.'
 page_builder:
@@ -130,4 +130,20 @@ page_builder:
             target_blank: true
             link_type: url
             url: 'https://hetzner.com'
+  -
+    background_text_position: center
+    type: project_list
+    enabled: true
+    title: Projecten
+    limit: 3
+    background_text:
+      - Lijstje
+      - met
+      - werk
+    text: 'Advisor startup equity. Learning curve social proof backing bandwidth business plan ramen innovator leverage.'
+    buttons:
+      -
+        label: Portfolio
+        show_controls: false
+        target_blank: false
 ---

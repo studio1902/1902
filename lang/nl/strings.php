@@ -83,6 +83,7 @@ return [
     'projects_overview'                 => 'Overzicht',
     'projects_features'                 => 'Features',
     'projects_technologies'             => 'Gebruikte technieken',
+    'projects_technologies'             => 'Bezoek het project in een nieuwe tab',
 
     // Search
     'search'                            => 'Zoek...',

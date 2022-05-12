@@ -1,6 +1,7 @@
-data: {  }
-size: 3111
-last_modified: 1652348005
+data:
+  alt: 'Statamic Logo'
+size: 3112
+last_modified: 1652355248
 width: '76'
 height: '62'
 mime_type: image/svg+xml

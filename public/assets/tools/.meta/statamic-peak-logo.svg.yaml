@@ -1,7 +1,8 @@
-data: {  }
-size: 3564
-last_modified: 1652348005
+data:
+  alt: 'Peak Logo'
+size: 4955
+last_modified: 1652355248
 width: '700'
-height: '330.325444'
-mime_type: image/svg+xml
+height: '331'
+mime_type: text/plain
 duration: null

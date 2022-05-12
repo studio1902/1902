@@ -46,6 +46,12 @@ fields:
           fields:
             -
               import: project
+        project_list:
+          display: 'Project list'
+          instructions: 'Show a project list containing recent projects or a selection.'
+          fields:
+            -
+              import: project_list
         services:
           display: Services
           instructions: 'List all services together with an image.'

@@ -1,6 +1,7 @@
-data: {  }
+data:
+  alt: 'Hetzner Logo'
 size: 2075
-last_modified: 1652353027
+last_modified: 1652355248
 width: '181.42'
 height: '22.24'
 mime_type: image/svg+xml

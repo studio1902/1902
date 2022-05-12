@@ -144,3 +144,16 @@ sections:
           localizable: true
           listable: true
           validate: required
+      -
+        handle: project_url
+        field:
+          input_type: url
+          antlers: false
+          display: 'Project URL'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          read_only: false
+          validate:
+            - url

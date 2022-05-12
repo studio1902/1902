@@ -1,0 +1,53 @@
+{{#
+	@name Project list
+	@desc The Project list page builder block.
+    @set page.page_builder.project_list
+#}}
+
+<!-- /page_builder/_project_list.antlers.html -->
+{{
+    projects = block:projects
+        ? block:projects
+        : { collection:projects sort="date:desc" :limit="limit" has="project_url" }
+}}
+<section
+    x-id="['project-title']"
+    class="relative fluid-container {{ yield:background_text_compensation }}"
+>
+    <div class="lg:px-12 grid md:grid-cols-12 gap-8">
+        {{ block:title ?= { partial:typography/h1 as="h2" :content="block:title" class="md:col-span-12" } }}
+
+        <ul class="md:col-span-8 flex flex-col justify-start">
+            {{ projects }}
+                {{ if project_url }}
+                    <li class="last:border-b border-primary dark:border-secondary">
+                        <a
+                            class="p-4 flex justify-between space-y-4 items-center border border-b-0 border-primary dark:border-secondary group"
+                            href="{{ project_url }}"
+                            aria-label="{{ trans:strings.projects_visit }}"
+                            :aria-labelledby="$id('project-title')"
+                            draggable="false"
+                        >
+                            <div class="flex flex-col">
+                                <span class="uppercase font-sm tracking-wider text-primary dark:text-secondary">{{ sub_title }}</span>
+                                <h3 :id="$id('project-title')" class="text-4xl font-light uppercase tracking-wider text-primary dark:text-secondary">
+                                    {{ title }}
+                                </h3>
+                            </div>
+                            {{ svg:external_big class="w-10 h-10 text-primary dark:text-secondary fill-current opacity-0  group-hover:opacity-100 motion-safe:transition-opacity" }}
+                        </a>
+                    </li>
+                {{ /if }}
+            {{ /projects }}
+        </ul>
+
+        <article class="md:col-span-4">
+            {{ text ?= { partial:typography/p :content="text" } }}
+
+            {{ partial:components/buttons }}
+        </article>
+    </div>
+
+    {{ partial:components/background_text }}
+</section>
+<!-- End: /page_builder/_project_list.antlers.html -->

@@ -1,6 +1,7 @@
-data: {  }
-size: 5456
-last_modified: 1652348005
+data:
+  alt: 'Laravel Logo'
+size: 5457
+last_modified: 1652355248
 width: '76'
 height: '79'
 mime_type: image/svg+xml

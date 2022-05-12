@@ -1,0 +1,49 @@
+title: 'Project list'
+fields:
+  -
+    handle: title
+    field:
+      input_type: text
+      antlers: false
+      display: Title
+      type: text
+      icon: text
+      listable: hidden
+      localizable: true
+      instructions_position: above
+      read_only: false
+  -
+    handle: projects
+    field:
+      mode: default
+      create: true
+      collections:
+        - projects
+      display: Projects
+      localizable: true
+      type: entries
+      icon: entries
+      listable: hidden
+      instructions_position: above
+      read_only: false
+  -
+    handle: limit
+    field:
+      display: 'Amount of recent projects'
+      type: integer
+      default: 3
+      icon: integer
+      width: 33
+      listable: hidden
+      instructions_position: above
+      replicator_preview: false
+      read_only: false
+      if:
+        projects: empty
+  -
+    handle: text
+    field: common.text_plain
+  -
+    import: buttons
+  -
+    import: background_text
