@@ -14,7 +14,7 @@
     x-id="['project-title']"
     class="relative fluid-container {{ yield:background_text_compensation }}"
 >
-    <div class="lg:px-12 grid md:grid-cols-12 gap-8">
+    <div class="lg:px-12 grid md:grid-cols-12 gap-8 md:gap-12">
         {{ block:title ?= { partial:typography/h1 as="h2" :content="block:title" class="md:col-span-12" } }}
 
         <ul class="md:col-span-8 flex flex-col justify-start">
