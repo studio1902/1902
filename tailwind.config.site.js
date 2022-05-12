@@ -43,10 +43,10 @@ module.exports = {
         down: {
           '0%': { transform: 'translate3d(0,-100%,0)', opacity: 0 },
           '10%, 100%': { opacity: 1 },
-          '30%': { transform: 'translate3d(0,20%,0)' },
-          '50%': { transform: 'translate3d(0,-10%,0)' },
-          '70%': { transform: 'translate3d(0,5%,0)' },
-          '90%': { transform: 'translate3d(0,-2%,0)' },
+          '30%': { transform: 'translate3d(0,18%,0)' },
+          '50%': { transform: 'translate3d(0,-8%,0)' },
+          '70%': { transform: 'translate3d(0,4%,0)' },
+          '90%': { transform: 'translate3d(0,-1%,0)' },
           '100%': { transform: 'translate3d(0,0,0)', },
         },
         up: {
@@ -113,7 +113,7 @@ module.exports = {
           '--color-primary': '#13E87C',
           '--color-secondary': '#FF0274',
           '--color-tertiary': '#0098F1',
-          '--animation-navigation-down-duration': '.6s',
+          '--animation-navigation-down-duration': '.5s',
           '--animation-navigation-up-duration': '.3s'
         },
         '@supports (color: color(display-p3 1 1 1))': {
