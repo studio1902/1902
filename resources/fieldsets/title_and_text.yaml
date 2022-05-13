@@ -24,8 +24,8 @@ fields:
       validate:
         - required
   -
-    handle: introduction
-    field: common.text_basic
+    handle: text_content
+    field: common.text_basic_set
     config:
       display: Text
       validate: required
@@ -33,6 +33,13 @@ fields:
   -
     handle: text_position
     field: common.position
+    config:
+      width: 50
+  -
+    handle: text_size
+    field: common.size
+    config:
+      width: 50
   -
     import: animation
   -

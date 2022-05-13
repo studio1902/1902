@@ -1,0 +1,30 @@
+title: 'Dot label'
+fields:
+  -
+    handle: label_type
+    field:
+      options:
+        availability: Availability
+        custom_text: 'Custom text'
+      default: availability
+      display: Type
+      type: button_group
+      icon: button_group
+      listable: hidden
+      instructions_position: above
+      read_only: false
+      validate:
+        - required
+  -
+    handle: label
+    field:
+      input_type: text
+      type: text
+      localizable: true
+      listable: hidden
+      display: Text
+      instructions_position: above
+      read_only: false
+      antlers: false
+      if:
+        label_type: 'equals custom_text'

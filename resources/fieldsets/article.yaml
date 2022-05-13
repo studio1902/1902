@@ -41,6 +41,11 @@ fields:
           fields:
             -
               import: figure
+        dot_label:
+          display: Dot label
+          fields:
+            -
+              import: dot_label
         pull_quote:
           display: 'Pull quote'
           fields:

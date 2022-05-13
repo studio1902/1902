@@ -3,7 +3,7 @@ id: home
 blueprint: page
 title: Home
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1652385042
+updated_at: 1652445465
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -14,7 +14,7 @@ page_builder:
     title: "Studio 1902 \Lis home of  Rob de Kort, Statamic developer"
     type: title_and_text
     enabled: true
-    introduction:
+    text_content:
       -
         type: paragraph
         content:
@@ -60,14 +60,15 @@ page_builder:
     tag: h1
     audio: fire-burning.mp3
     background_text_position: center
-    text_position: center
+    text_position: end
+    text_size: small
   -
     type: project
     enabled: true
     background_text_position: start
   -
     title: 'Toegankelijke websites, privacy en performance is de standaard'
-    introduction:
+    text_content:
       -
         type: paragraph
         content:
@@ -101,6 +102,7 @@ page_builder:
     background_text_position: start
     text_position: center
     animation: accessibility.json
+    text_size: small
   -
     type: journal_entry
     enabled: true
@@ -111,7 +113,7 @@ page_builder:
   -
     title: 'Powerful solutions for meaningful clients'
     tag: h2
-    introduction:
+    text_content:
       -
         type: paragraph
         content:
@@ -146,6 +148,7 @@ page_builder:
     enabled: true
     background_text_position: start
     text_position: end
+    text_size: small
   -
     type: services
     enabled: true
@@ -158,7 +161,7 @@ page_builder:
   -
     title: 'Above all, Rob is a joy to work with.'
     tag: h2
-    introduction:
+    text_content:
       -
         type: paragraph
         content:
@@ -192,4 +195,5 @@ page_builder:
     type: title_and_text
     enabled: true
     audio: heartbeat.mp3
+    text_size: small
 ---

@@ -13,14 +13,14 @@ fields:
       listable: hidden
       display: Image
   -
-      handle: entry
-      field:
-        max_items: 1
-        mode: default
-        type: entries
-        localizable: true
-        listable: false
-        display: Entry
+    handle: entry
+    field:
+      max_items: 1
+      mode: default
+      type: entries
+      localizable: true
+      listable: false
+      display: Entry
   -
     handle: text_rich
     field:
@@ -72,6 +72,42 @@ fields:
       listable: hidden
       display: Text
   -
+    handle: text_basic_set
+    field:
+      buttons:
+        - bold
+        - italic
+        - unorderedlist
+        - orderedlist
+        - removeformat
+        - anchor
+      save_html: false
+      toolbar_mode: fixed
+      link_noopener: true
+      link_noreferrer: false
+      container: assets
+      target_blank: false
+      reading_time: false
+      fullscreen: true
+      allow_source: true
+      type: bard
+      replicator_preview: false
+      localizable: true
+      listable: hidden
+      display: Text
+      instructions_position: above
+      read_only: false
+      always_show_set_button: false
+      sets:
+        dot_label:
+          display: 'Dot label'
+          fields:
+            -
+              import: dot_label
+      enable_input_rules: true
+      enable_paste_rules: true
+      antlers: false
+  -
     handle: text_plain
     field:
       type: textarea
@@ -101,4 +137,15 @@ fields:
       type: button_group
       listable: false
       replicator_preview: false
-      display: 'Position'
+      display: Position
+  -
+    handle: size
+    field:
+      options:
+        small: Small
+        large: Large
+      default: small
+      type: button_group
+      listable: false
+      replicator_preview: false
+      display: Size
