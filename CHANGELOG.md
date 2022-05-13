@@ -1,5 +1,24 @@
 # Changelog
 
+## v4.14 (2022-05-13)
+
+### What's fixed
+- Multilingual sitemaps for Statamic 3.3+. 708d5672 by @robdekort
+
+## v4.13 (2022-05-10)
+
+### What's improved
+- Glide `fill` SEO JSON-ld image instead of `fit`. 0d2bff96 by @robdekort
+- Make change collection title field localizable. d02d4b4f by @robdekort
+
+### What's fixed
+- Typo in theme toggle comments. 88f2b82c by @robdekort
+
+## v4.12 (2022-04-22)
+
+### What's new
+- Use a store for the theme/dark-mode configuration. This way you can reactively use the current theme/mode in other components. #216 by @robdekort
+
 ## v4.11 (2022-04-20)
 
 ### What's new
