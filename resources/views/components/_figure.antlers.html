@@ -19,16 +19,16 @@
     {{
         partial:components/picture
         :image="image"
-        class="w-full"
+        class="w-full { style === 'bw' ?= 'grayscale' }"
         cover="false"
         lazy="true"
         sizes="
-            {{ switch(
+            { switch(
                 (size == 'md') => '(min-width: 768px) 55vw, 90vw',
                 (size == 'lg') => '(min-width: 768px) 75vw, 90vw',
                 (size == 'xl') => '90vw',
                 () => '100vw'
-            )}}
+            )}
         "
     }}
 

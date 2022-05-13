@@ -157,7 +157,7 @@ page_builder:
       - 'on the'
       - code
     background_text_position: center
-    image: about/rob-de-kort-studio-1902.jpg
+    image: about/rob-de-kort-studio-1902-01.jpg
   -
     title: 'Above all, Rob is a joy to work with.'
     tag: h2

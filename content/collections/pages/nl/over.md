@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1652452906
+updated_at: 1652453364
 page_builder:
   -
     title: 'Studio 1902 Over Rob, de studio en een beetje geschiedenis'
@@ -50,7 +50,7 @@ page_builder:
           -
             type: text
             text: ' bestaat sinds 2017 en dankt zijn naam aan m’n mooie huis in Baflo, waar Anno 1902 op de gevel prijkt. Ik werk thuis, wat betekent dat je dikwijls een kat, kind of mijn vrouw door het beeld ziet lopen als we videovergaderen. Juist de afwisseling met het zelfstandig en samen werken aan mooie projecten, maakt dat ik hou van wat ik doe.'
-    image: about/rob-de-kort-studio-1902.jpg
+    image: about/rob-de-kort-studio-1902-01.jpg
     background_text:
       - Studio
       - '1902'
@@ -136,8 +136,9 @@ page_builder:
         attrs:
           values:
             type: figure
-            image: about/baflo.jpeg
+            image: about/rob-de-kort-studio-1902-02.jpg
             size: lg
+            style: bw
     background_text_position: start
     type: article
     enabled: true

@@ -1,6 +1,7 @@
-data: {  }
+data:
+  alt: 'Jack McDade avatar'
 size: 268159
-last_modified: 1652448315
+last_modified: 1652452931
 width: 1385
 height: 1385
 mime_type: image/jpeg
