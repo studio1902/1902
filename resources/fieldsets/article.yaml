@@ -64,3 +64,5 @@ fields:
       container: assets
       enable_input_rules: true
       enable_paste_rules: true
+  -
+    import: background_text

@@ -1,0 +1,63 @@
+{{#
+	@name Partners
+	@desc The Partners page builder block.
+    @set page.page_builder.partners
+#}}
+
+<!-- /page_builder/_partners.antlers.html -->
+{{
+    partners = block:partners
+        ? block:partners
+        : { collection:partners sort="order"  }
+}}
+<section class="relative fluid-container {{ yield:background_text_compensation }}">
+    <div class="lg:px-12">
+        {{ block:title ?= { partial:typography/h1 as="h2" :content="block:title" class="md:col-span-12 mb-8" } }}
+
+        <div
+            x-data="{ expanded: false }"
+            class="relative"
+        >
+            <div
+                x-show="!expanded"
+                x-transition.opacity.duration.250ms
+                class="absolute z-10 inset-x-0 bottom-0 top-1/2 md:top-1/3 flex justify-center items-end bg-gradient-to-t from-white dark:from-neutral to-white/0 pointer-events-none"
+            >
+                <button
+                    @click="expanded = !expanded"
+                    class="p-2 rounded translate-y-8 pointer-events-auto focus:outline-none focus-visible:ring ring-primary dark:ring-secondary"
+                >
+                    {{ partial:components/button as="span" faux="true" button_icon="arrow_down" label="{ trans:strings.show_all }" }}
+                </button>
+            </div>
+
+            <div
+                x-show="expanded"
+                x-collapse.min.330px
+            >
+                {{ partners }}
+                    <article class="
+                        flex flex-col md:flex-row md:gap-8
+                        {{ first ? 'pb-8' : 'py-8 border-t-2 border-neutral-light dark:border-neutral-light/10' }}
+                    ">
+                        <div class="order-2 md:order-1">
+                            {{ partial:typography/h3 :content="title" color="text-primary dark:text-secondary" class="mb-3" }}
+                            {{ partial:typography/p :content="text" }}
+                            {{ partial:components/button class="!inline-flex" label="{ link | explode('//') | last }" target_blank="true" link_type="url" url="{ link }" }}
+                        </div>
+                        <figure
+                            class="order-1 md:order-2 flex-shrink-0 w-24 md:w-32 mb-4 motion-safe:transition"
+                            :class="{ 'grayscale contrast-150 dark:contrast-100 dark:grayscale-0': !expanded, 'grayscale-0 contrast-100': expanded }"
+                            aria-hidden="true"
+                        >
+                            {{ svg :src="logo" width="30" height="30" class="w-full h-auto" aria-hidden="true" }}
+                        </figure>
+                    </article>
+                {{ /partners }}
+            </div>
+        </div>
+    </div>
+
+    {{ partial:components/background_text }}
+</section>
+<!-- End: /page_builder/_partners.antlers.html -->

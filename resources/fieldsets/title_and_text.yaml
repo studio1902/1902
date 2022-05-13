@@ -36,9 +36,16 @@ fields:
     config:
       width: 50
   -
-    handle: text_size
-    field: common.size
-    config:
+    handle: size
+    field:
+      options:
+        small: Small
+        large: Large
+      default: small
+      type: button_group
+      listable: false
+      replicator_preview: false
+      display: Size
       width: 50
   -
     import: animation

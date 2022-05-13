@@ -1,0 +1,30 @@
+title: Partners
+fields:
+  -
+    handle: title
+    field:
+      input_type: text
+      antlers: false
+      display: Title
+      type: text
+      icon: text
+      listable: hidden
+      localizable: true
+      instructions_position: above
+      read_only: false
+  -
+    handle: partners
+    field:
+      mode: default
+      create: true
+      collections:
+        - partners
+      display: Partners
+      type: entries
+      icon: entries
+      instructions: 'Highlight a selection of partners or all.'
+      listable: hidden
+      instructions_position: above
+      read_only: false
+  -
+    import: background_text

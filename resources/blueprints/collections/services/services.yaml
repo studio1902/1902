@@ -22,13 +22,6 @@ sections:
           display: Teaser
           validate: required
       -
-        handle: introduction
-        field: common.text_plain
-        config:
-          display: Introduction
-          validate:
-            - required
-      -
         import: page_builder
   seo:
     display: SEO

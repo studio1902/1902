@@ -1,0 +1,14 @@
+{{#
+	@name Introduction
+	@desc The Introduction page builder block.
+    @set page.page_builder.introduction
+#}}
+
+<!-- /page_builder/_introduction.antlers.html -->
+<div class="fluid-container grid md:grid-cols-12 gap-8">
+    <div class="md:col-span-8 md:col-start-3 pr-12 md:pr-0 md:text-center">
+        {{ block:title ?= { partial:typography/h1 :content="block:title" class="mb-8" } }}
+        {{ block:text ?= { partial:typography/p :content="block:text" } }}
+    </div>
+</div>
+<!-- End: /page_builder/_introduction.antlers.html -->

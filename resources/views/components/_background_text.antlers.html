@@ -20,11 +20,12 @@
             {{ /background_text }}
         </span>
     </div>
-
-    {{ section:background_text_compensation }}
-        {{ switch(
-            (background_text && background_text_position === 'start') => 'pt-32',
-            (background_text && background_text_position === 'end') => 'pb-32'
-        )}}
-    {{ /section:background_text_compensation }}
 {{ /if }}
+
+{{ section:background_text_compensation }}
+    {{ switch(
+        (background_text && background_text_position === 'start') => 'pt-32',
+        (background_text && background_text_position === 'end') => 'pb-32',
+        () => ''
+    )}}
+{{ /section:background_text_compensation }}

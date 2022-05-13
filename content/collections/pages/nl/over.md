@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1652447435
+updated_at: 1652452906
 page_builder:
   -
     title: 'Studio 1902 Over Rob, de studio en een beetje geschiedenis'
@@ -34,5 +34,115 @@ page_builder:
     intersect: false
     background_text_position: start
     type: title_and_text
+    enabled: true
+    size: small
+  -
+    text:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            marks:
+              -
+                type: bold
+            text: 'Studio 1902'
+          -
+            type: text
+            text: ' bestaat sinds 2017 en dankt zijn naam aan m’n mooie huis in Baflo, waar Anno 1902 op de gevel prijkt. Ik werk thuis, wat betekent dat je dikwijls een kat, kind of mijn vrouw door het beeld ziet lopen als we videovergaderen. Juist de afwisseling met het zelfstandig en samen werken aan mooie projecten, maakt dat ik hou van wat ik doe.'
+    image: about/rob-de-kort-studio-1902.jpg
+    background_text:
+      - Studio
+      - '1902'
+    background_text_position: start
+    type: image_and_text
+    enabled: true
+    image_size: large
+  -
+    article:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: "Naast development- en designwerk, hou ik van koken, muziek, theater en gamen. Verder heb ik een voorliefde voor alles wat een stekker heeft. Verder ben ik\_sowieso een kattenmens, vader van twee en blij met de mogelijkheid een vuurtje te stoken in mijn tuin, maar ook te kunnen besluiten een verre reis te maken."
+    type: article
+    enabled: true
+    background_text_position: start
+  -
+    name: 'Jack McDade'
+    linked_via: f8c33cb6-311e-4158-97d3-11ca4dea4592
+    image: quotes/jack-mcdade.jpg
+    quote: 'Rob is one of Statamic''s competitive advantages. His kindness, code, and critical thinking makes the community a better place.'
+    background_text_position: start
+    type: quote
+    enabled: true
+    function: Founder
+    quote_size: small
+  -
+    article:
+      -
+        type: heading
+        attrs:
+          level: 1
+        content:
+          -
+            type: text
+            text: 'Mijn werk'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Mijn stijl zou ik omschrijven als minimalistisch en modern. Mijn websites sluiten altijd aan bij de boodschap van de klant, met oog voor mooi ontwerp. En waar ik voor sta is gebruiksvriendelijkheid: het bijhouden en vullen van een website zou niet moeilijker moeten zijn dan het schrijven van een Word-document. Ook vind ik privacy en toegankelijkheid een belangrijk onderdeel van m’n werk.'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Wat mij drijft is de oneindige verandering van webdevelopment. Ik leer zonder te overdrijven iedere dag bij, blijf verbeteren en bijschaven. Mijn werkwijze typeer ik als persoonlijk, eerlijk en liefdevol. Dit zoek ik dan ook in de mensen met wie ik samenwerk. Pas dan kom je tot echt goede resultaten.'
+      -
+        type: set
+        attrs:
+          values:
+            type: buttons
+            buttons:
+              -
+                label: 'Bekijk mijn werk'
+                show_controls: true
+                target_blank: false
+                link_type: entry
+                entry: 7eb87293-600d-404b-8519-2c4a2ebc9e51
+    type: article
+    enabled: true
+    background_text:
+      - Rob
+      - 'of all'
+      - Trades
+    background_text_position: start
+  -
+    background_text_position: center
+    type: partners
+    enabled: true
+    title: Partners
+    background_text:
+      - 'Let''s'
+      - team
+      - up
+  -
+    article:
+      -
+        type: set
+        attrs:
+          values:
+            type: figure
+            image: about/baflo.jpeg
+            size: lg
+    background_text_position: start
+    type: article
+    enabled: true
+  -
+    title: 'Do you strive for purrfection?'
+    type: introduction
     enabled: true
 ---

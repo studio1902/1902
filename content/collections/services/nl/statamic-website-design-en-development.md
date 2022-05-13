@@ -8,10 +8,16 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1652390685
+updated_at: 1652452604
 teaser: 'Een teaser over design en dev als product. Vertel maar.'
 introduction: 'Crowdsource non-disclosure agreement. MVP creative pitch venture startup low hanging fruit hypotheses customer strategy iPad partnership social proof. deployment. Long tail success entrepreneur network effects android. deployment.'
 page_builder:
+  -
+    background_text_position: start
+    type: introduction
+    enabled: true
+    title: 'Website design & development'
+    text: 'Crowdsource non-disclosure agreement. MVP creative pitch venture startup low hanging fruit hypotheses customer strategy iPad partnership social proof. deployment. Long tail success entrepreneur network effects android. deployment.'
   -
     background_text:
       - World
@@ -42,6 +48,7 @@ page_builder:
             type: text
             text: "Projects start from 3K upwards.\_"
     image: services/studio-1920-office.jpeg
+    image_size: small
   -
     background_text:
       - Sec
@@ -152,6 +159,7 @@ page_builder:
     linked_via: 67003260-537d-4671-b9d2-01a58a4dfd59
     image: quotes/jouke-zult.jpg
     quote: 'Rob''s a top developer that knows his design stuff as well.'
+    quote_size: large
   -
     article:
       -
@@ -162,4 +170,5 @@ page_builder:
             text: "Churn rate infographic assets niche market learning curve gamification customer. Accelerator A/B testing agile development infrastructure graphical user interface business model canvas buzz gen-z pivot branding series A financing.\_"
     type: article
     enabled: true
+    background_text_position: start
 ---

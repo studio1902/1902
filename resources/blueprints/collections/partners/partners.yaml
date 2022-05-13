@@ -14,6 +14,21 @@ sections:
           display: Title
           validate:
             - required
+      -
+        handle: text
+        field: common.text_plain
+        config:
+          validate: required
+      -
+        handle: link
+        field:
+          type: text
+          input_type: html
+          localizable: true
+          listable: true
+          display: URL
+          validate:
+            - required
   sidebar:
     display: Sidebar
     fields:

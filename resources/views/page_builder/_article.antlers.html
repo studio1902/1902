@@ -5,11 +5,13 @@
 #}}
 
 <!-- /page_builder/_article.antlers.html -->
-<section class="fluid-container grid grid-cols-12">
+<section class="relative fluid-container grid grid-cols-12 {{ yield:background_text_compensation }}">
     {{ partial:typography/prose as="article" class="contents drop-cap" }}
         {{ article }}
             {{ partial src="components/{type}" }}
         {{ /article }}
     {{ /partial:typography/prose }}
+
+    {{ partial:components/background_text }}
 </section>
 <!-- End: /page_builder/_article.antlers.html -->

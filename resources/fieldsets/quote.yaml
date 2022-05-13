@@ -8,18 +8,31 @@ fields:
       display: Name
       type: text
       icon: text
-      width: 33
+      width: 50
       listable: hidden
       instructions_position: above
       read_only: false
       validate:
         - required
   -
+    handle: function
+    field:
+      input_type: text
+      antlers: false
+      display: Function
+      type: text
+      icon: text
+      width: 50
+      localizable: true
+      listable: hidden
+      instructions_position: above
+      read_only: false
+  -
     handle: linked_via
     field: common.entry
     config:
       display: 'Linked via'
-      width: 33
+      width: 50
       validate:
         - required
       collections:
@@ -29,7 +42,7 @@ fields:
     handle: image
     field: common.image
     config:
-      width: 33
+      width: 50
       validate:
         - required
   -
@@ -43,6 +56,23 @@ fields:
       listable: hidden
       instructions_position: above
       read_only: false
+      validate:
+        - required
+  -
+    handle: quote_size
+    field:
+      options:
+        small: Small
+        large: Large
+      default: large
+      display: Quote size
+      type: button_group
+      icon: button_group
+      listable: hidden
+      instructions_position: above
+      read_only: false
+      localizable: true
+      replicator_preview: false
       validate:
         - required
   -

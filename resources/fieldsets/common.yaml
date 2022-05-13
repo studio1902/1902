@@ -138,14 +138,3 @@ fields:
       listable: false
       replicator_preview: false
       display: Position
-  -
-    handle: size
-    field:
-      options:
-        small: Small
-        large: Large
-      default: small
-      type: button_group
-      listable: false
-      replicator_preview: false
-      display: Size

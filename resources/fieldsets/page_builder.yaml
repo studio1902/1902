@@ -28,6 +28,12 @@ fields:
           fields:
             -
               import: form
+        introduction:
+          display: Introduction
+          instructions: 'Centered title and text.'
+          fields:
+            -
+              import: introduction
         image_and_text:
           display: 'Image and text'
           instructions: 'An image and text on a tinted background.'
@@ -40,6 +46,12 @@ fields:
           fields:
             -
               import: journal_entry
+        partners:
+          display: Partners
+          instructions: 'A a collapsed list of partners.'
+          fields:
+            -
+              import: partners
         project:
           display: Project
           instructions: 'Highlight a project.'

@@ -12,4 +12,21 @@ fields:
       validate: required
       width: 50
   -
+    handle: image_size
+    field:
+      options:
+        small: Small
+        large: Large
+      default: small
+      display: Size
+      type: button_group
+      icon: button_group
+      width: 50
+      listable: hidden
+      instructions_position: above
+      read_only: false
+      replicator_preview: false
+      validate:
+        - required
+  -
     import: background_text

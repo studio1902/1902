@@ -6,11 +6,30 @@
 
 <!-- /page_builder/_image_and_text.antlers.html -->
 <section class="relative fluid-container grid md:grid-cols-12 {{ yield:background_text_compensation }}">
-    {{ partial:typography/prose_inverted as="article" class="md:pr-40 md:col-span-7 md:col-start-1 md:row-span-3 md:row-start-1 p-8 md:p-12 bg-primary dark:bg-secondary" }}
+    {{ partial:typography/prose_inverted
+        as="article"
+        class="
+            p-8 md:p-10 bg-primary dark:bg-secondary
+            {{
+                image_size === 'small'
+                    ? 'md:col-span-7 md:col-start-1 md:row-span-3 md:row-start-1 md:pr-40 '
+                    : 'md:relative z-10 md:col-span-5 md:col-start-1 md:row-span-2 md:row-start-1'
+            }}
+        "
+
+    }}
         {{ block:text }}
     {{ /partial:typography/prose_inverted }}
 
-    <figure class="md:col-span-6 md:col-start-7 md:row-start-2 md:row-span-3">
+    <figure
+        class="
+            {{
+                image_size === 'small'
+                    ? 'md:col-span-6 md:col-start-7 md:row-start-2 md:row-span-3'
+                    : 'md:col-span-8 md:col-start-5 md:row-start-2 md:row-span-3'
+            }}
+        "
+    >
         {{ partial:components/picture :image="block:image" class="grayscale" cover="true" lazy="true" sizes="(min-width: 768px) 75vw, 90vw"  }}
     </figure>
 

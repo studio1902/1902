@@ -1,0 +1,17 @@
+title: Introduction
+fields:
+  -
+    handle: title
+    field:
+      input_type: text
+      antlers: false
+      display: Title
+      type: text
+      icon: text
+      localizable: true
+      listable: hidden
+      instructions_position: above
+      read_only: false
+  -
+    handle: text
+    field: common.text_plain
