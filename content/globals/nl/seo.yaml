@@ -32,7 +32,7 @@ collection_defaults:
 hreflang_auto: true
 json_ld_type: organization
 organization_name: 'Studio 1902'
-organization_logo: branding/studio1902-logo.png
+organization_logo: branding/studio-1902-logo.png
 breadcrumbs: true
 use_social_image_generation: true
 social_images_collections:

@@ -7,7 +7,7 @@ return [
     'form_mail_closing'                 => 'Kind regards',
     'form_mail_from'                    => config('app.name'),
     'form_mail_greeting'                => 'Dear',
-    'form_mail_logo'                    => 'https://cdn.studio1902.nl/assets/statamic-peak/statamic-peak-logo.png',
+    'form_mail_logo'                    => 'https://cdn.studio1902.nl/assets/1902.studio/studio-1902-logo.png',
     'form_mail_submitted'               => 'Submitted',
     'form_mail_title'                   => 'Contact form',
     'form_mail_url'                     => config('app.url'),
