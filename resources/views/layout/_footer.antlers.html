@@ -34,14 +34,13 @@
         </div>
 
         <div class="relative order-1 md:order-2 flex flex-col space-y-2 md:space-y-4">
-
-            <span class="w-80 text-xs font-medium uppercase tracking-wider text-primary dark:text-secondary">{{ trans:strings.footer_availability month="{ configuration:availability_from | format_localized('%B %Y') }" }}</span>
+            <span class="w-full md:w-80 text-xs font-medium uppercase tracking-wider text-primary dark:text-secondary">{{ trans:strings.footer_availability month="{ configuration:availability_from | format_localized('%B %Y') }" }}</span>
 
             {{ footer_animation = footer_animation
                 ? footer_animation
                 : { collection:footer_animations limit="1" sort="random" }
             }}
-                <div class="w-80">
+                <div class="w-full md:w-80">
                     <span class="text-neutral dark:text-white">{{ title }}</span>
                     {{ partial:components/animation class="my-2 md:my-0 w-32 md:w-48 self-end md:absolute left-0 bottom-0 md:-translate-x-56 md:-translate-y-4" intersect="true" loop="false" }}
                 </div>
