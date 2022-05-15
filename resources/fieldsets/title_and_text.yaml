@@ -36,7 +36,7 @@ fields:
     config:
       width: 50
   -
-    handle: size
+    handle: text_size
     field:
       options:
         small: Small

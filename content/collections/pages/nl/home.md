@@ -3,7 +3,7 @@ id: home
 blueprint: page
 title: Home
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1652445465
+updated_at: 1652624201
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -60,8 +60,9 @@ page_builder:
     tag: h1
     audio: fire-burning.mp3
     background_text_position: center
-    text_position: end
+    text_position: center
     text_size: small
+    size: small
   -
     type: project
     enabled: true
@@ -103,6 +104,7 @@ page_builder:
     text_position: center
     animation: accessibility.json
     text_size: small
+    size: small
   -
     type: journal_entry
     enabled: true
@@ -149,6 +151,7 @@ page_builder:
     background_text_position: start
     text_position: end
     text_size: small
+    size: small
   -
     type: services
     enabled: true
@@ -196,4 +199,5 @@ page_builder:
     enabled: true
     audio: heartbeat.mp3
     text_size: small
+    size: small
 ---
