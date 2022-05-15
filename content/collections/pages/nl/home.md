@@ -3,7 +3,7 @@ id: home
 blueprint: page
 title: Home
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1652624201
+updated_at: 1652643640
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -92,7 +92,7 @@ page_builder:
             text: ' on offering the best user experience possible.'
     playback_speed: 1.0
     loop: false
-    intersect: false
+    intersect: true
     type: title_and_text
     enabled: true
     background_text:
@@ -102,9 +102,10 @@ page_builder:
     tag: h2
     background_text_position: start
     text_position: center
-    animation: accessibility.json
+    animation: knive.json
     text_size: small
     size: small
+    audio: chopping-veggies.mp3
   -
     type: journal_entry
     enabled: true
