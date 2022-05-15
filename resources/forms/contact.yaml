@@ -2,16 +2,16 @@ title: Contact
 honeypot: fax
 email:
   -
-    to: info@site.com
-    from: info@site.com
+    to: info@1902.studio
+    from: info@1902.studio
     reply_to: '{{ email }}'
     subject: 'Contact form received'
     html: email/form_owner
     text: email/form_owner_text
   -
     to: '{{ email }}'
-    from: info@site.com
-    reply_to: info@site.com
+    from: info@1902.studio
+    reply_to: info@1902.studio
     subject: 'Contact form sent'
     html: email/form_sender
     text: email/form_sender_text
