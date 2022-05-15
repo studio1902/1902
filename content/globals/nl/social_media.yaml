@@ -1,11 +1,16 @@
 social_media:
   -
+    handle: info@1902.studio
+    prefix: 'mailto:'
+    type: email
+    enabled: true
+  -
     handle: studio1902
     prefix: 'https://www.twitter.com/'
     type: twitter
     enabled: true
   -
-    handle: studio1902/statamic-peak
+    handle: studio1902/1902
     prefix: 'https://www.github.com/'
     type: github
     enabled: true
