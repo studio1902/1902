@@ -11,7 +11,7 @@ sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 page_builder:
   -
-    title: "Studio 1902 \Lis home of  Rob de Kort, Statamic developer"
+    title: "Studio 1902 is home of Rob de Kort, Statamic developer"
     type: title_and_text
     enabled: true
     text_content:

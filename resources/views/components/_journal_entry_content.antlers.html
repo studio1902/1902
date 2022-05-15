@@ -1,6 +1,6 @@
 <div class="flex flex-col space-y-6">
     <span class="uppercase text-sm font-medium {{ color or 'text-primary dark:text-secondary' }} tracking-wider">{{ trans:strings.journal }}<span aria-hidden="true"> \</span></span>
-    <h2 :id="$id('project-title')" class="md:max-w-[calc(85%-4rem)] text-4xl md:text-5xl uppercase tracking-wider {{ color or 'text-primary dark:text-secondary' }}">
+    <h2 {{ once }}:id="$id('project-title')" {{ /once}} class="md:max-w-[calc(85%-4rem)] text-4xl md:text-5xl uppercase tracking-wider {{ color or 'text-primary dark:text-secondary' }}">
         {{ journal_entry:title }}
     </h2>
 </div>
