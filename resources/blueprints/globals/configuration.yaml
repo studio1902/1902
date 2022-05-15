@@ -201,7 +201,7 @@ sections:
                 width: 25
                 instructions_position: below
             -
-              handle: text
+              handle: byline
               field:
                 input_type: text
                 antlers: false

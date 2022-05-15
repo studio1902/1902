@@ -37,12 +37,13 @@
 
             <span class="w-80 text-xs font-medium uppercase tracking-wider text-primary dark:text-secondary">{{ trans:strings.footer_availability month="{ configuration:availability_from | format_localized('%B %Y') }" }}</span>
 
-            {{ configuration:footer_animations | shuffle | limit('1') }}
-                <div class="w-80">
-                    <span class="text-neutral dark:text-white">{{ text }}</span>
-                    {{ partial:components/animation class="my-2 md:my-0 w-32 md:w-48 self-end md:absolute left-0 bottom-0 md:-translate-x-56 md:-translate-y-4" intersect="true" loop="false" }}
-                </div>
-            {{ /configuration:footer_animations }}
+            {{ if animation }}
+                {{ partial:components/footer_animation }}
+            {{ else  }}
+                {{ configuration:footer_animations | shuffle | limit('1') }}
+                    {{ partial:components/footer_animation }}
+                {{ /configuration:footer_animations }}
+            {{ /if }}
 
             <a href="{{ configuration.contact_page:url }}" class="relative py-6 px-5 flex items-center gap-3 border border-primary dark:border-secondary bg-primary dark:bg-secondary text-white focus:outline-none focus-visible:ring-4 ring-primary ring-offset-2 dark:ring-offset-neutral dark:ring-secondary motion-safe:transition group">
                 {{ svg:arrow_right class="fill-current w-6" aria-hidden="true" }}

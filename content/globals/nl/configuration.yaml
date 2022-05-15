@@ -9,17 +9,17 @@ privacy_statement_entry: 8994808d-fbd1-41bf-bd07-26b6b5782fee
 footer_animations:
   -
     animation: cat.json
-    text: 'Looking for a cat person Statamic Developer for your next project?'
+    byline: 'Looking for a cat person Statamic Developer for your next project?'
     audio: cat-purring.mp3
   -
     animation: knive.json
-    text: 'Got the ingredients, but looking for a chef? Let''s discuss the menu!'
+    byline: 'Got the ingredients, but looking for a chef? Let''s discuss the menu!'
     audio: chopping-veggies.mp3
   -
     animation: nonuclear.json
-    text: 'Working on a brighter future as well? Your new website can help.'
+    byline: 'Working on a brighter future as well? Your new website can help.'
     audio: nature.mp3
   -
     animation: fire.json
-    text: 'Looking for a hot new website? Let''s start a fire.'
+    byline: 'Looking for a hot new website? Let''s start a fire.'
     audio: fire-burning.mp3
