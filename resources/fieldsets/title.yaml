@@ -1,0 +1,31 @@
+title: Title
+fields:
+  -
+    handle: title
+    field:
+      input_type: text
+      antlers: false
+      display: Title
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+      read_only: false
+      validate:
+        - required
+  -
+    handle: tag
+    field:
+      options:
+        h1: H1
+        h2: H2
+      default: h1
+      display: 'Render as'
+      replicator_preview: false
+      type: button_group
+      icon: button_group
+      listable: hidden
+      instructions_position: above
+      read_only: false
+      validate:
+        - required

@@ -5,8 +5,8 @@
 #}}
 
 <!-- /page_builder/_collapsed_grid.antlers.html -->
-<section class="relative fluid-container {{ yield:background_text_compensation }}">
-    <div class="lg:px-8">
+<section class="relative fluid-container grid lg:grid-cols-12 {{ yield:background_text_compensation }}">
+    <div class="lg:col-span-10 lg:col-start-2">
         {{ block:title ?= { partial:typography/h1 as="h2" :content="block:title" class="md:col-span-12 mb-4 md:pl-4" } }}
 
         <div

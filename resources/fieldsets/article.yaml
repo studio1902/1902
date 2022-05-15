@@ -36,16 +36,16 @@ fields:
           fields:
             -
               import: buttons
+        dot_label:
+          display: 'Dot label'
+          fields:
+            -
+              import: dot_label
         figure:
           display: Figure
           fields:
             -
               import: figure
-        dot_label:
-          display: Dot label
-          fields:
-            -
-              import: dot_label
         pull_quote:
           display: 'Pull quote'
           fields:
@@ -56,6 +56,11 @@ fields:
           fields:
             -
               import: table
+        title:
+          display: Title
+          fields:
+            -
+              import: title
         video:
           display: Video
           fields:

@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1652453364
+updated_at: 1652625109
 page_builder:
   -
     title: 'Studio 1902 Over Rob, de studio en een beetje geschiedenis'
@@ -82,13 +82,12 @@ page_builder:
   -
     article:
       -
-        type: heading
+        type: set
         attrs:
-          level: 1
-        content:
-          -
-            type: text
-            text: 'Mijn werk'
+          values:
+            type: title
+            title: 'Mijn werk'
+            tag: h2
       -
         type: paragraph
         content:

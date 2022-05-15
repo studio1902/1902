@@ -5,11 +5,11 @@
 #}}
 
 <!-- /page_builder/_quote.antlers.html -->
-<section class="relative fluid-container {{ yield:background_text_compensation }}">
-    <blockquote class="lg:px-12 flex flex-col md:flex-row gap-8 md:gap-12 items-center dark:text-white">
+<section class="relative fluid-container grid lg:grid-cols-12 {{ yield:background_text_compensation }}">
+    <blockquote class="lg:col-span-10 lg:col-start-2 flex flex-col md:flex-row gap-8 md:gap-12 items-center dark:text-white">
         <footer class="order-2 md:order-1 flex flex-col space-y-1 text-center md:text-right md:items-end">
-            <cite class="not-italic">{{ block:name }}</cite>
-            <span>
+            <cite class="font-medium not-italic">{{ block:name }}</cite>
+            <span class="italic">
                 {{ block:function ?= block:function + ' - ' }}{{ block:linked_via:title }}
             </span>
         </footer>
