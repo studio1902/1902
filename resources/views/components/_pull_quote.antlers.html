@@ -16,11 +16,10 @@
         )}}
     "
 >
-    <blockquote class="p-0 m-0 text-3xl italic leading-snug text-primary">
-        {{ quote | nl2br }}
+    {{ partial:typography/h2 as="blockquote" :content="quote|nl2br" class="!text-2xl" color="text-primary dark:text-secondary" }}
     </blockquote>
     {{ if author }}
-        <figcaption class="block mt-4 font-bold text-neutral">
+        <figcaption class="block mt-4 font-medium text-neutral dark:text-white">
             {{ author }}
         </figcaption>
     {{ /if }}

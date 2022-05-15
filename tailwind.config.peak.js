@@ -82,7 +82,6 @@ module.exports = {
           },
           '.size-xl': {
             gridColumn: 'span 12 / span 12',
-            gridColumnStart: '2',
           },
         },
       })
