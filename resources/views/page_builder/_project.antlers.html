@@ -23,7 +23,7 @@
         :aria-labelledby="$id('project-title')"
         draggable="false"
     >
-        {{ partial:components/project_content }}
+        {{ partial:components/project_content generate_id="true" }}
         <div
             class="hidden md:flex absolute inset-0 bg-primary dark:bg-secondary p-6 pb-12 md:p-8 flex-col space-y-8 justify-between motion-safe:transition-[clip-path] motion-safe:duration-500 ease-out" aria-hidden="true"
             :class="{
