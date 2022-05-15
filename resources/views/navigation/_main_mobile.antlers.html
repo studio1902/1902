@@ -54,7 +54,7 @@
             {{ partial:components/logo_mobile width="40" class="w-10 h-auto" }}
         </div>
 
-        <div class="overflow-auto">
+        <div class="overflow-y-auto overflow-x-hidden">
             <ul class="flex flex-col">
                 {{ nav:main max_depth="2" include_home="true" }}
                     <li
@@ -111,8 +111,8 @@
             </ul>
             <div class="mt-8 flex flex-col space-y-3">
                 <b class="mb-1 font-semibold text-lg text-neutral dark:text-white">{{ configuration:copyright_name ?? config:app:name }}</b>
-                <a class="p-1 -m-1 font-medium text-neutral dark:text-white hover:text-primary dark:hover:text-secondary underline underline-offset-4 decoration-primary dark:decoration-secondary decoration-dotted decoration-2 focus:outline-none focus-visible:ring-2 ring-primary dark:ring-secondary" href="tel:{{ configuration:phone }}">{{ configuration:phone }}</a>
-                <a class="p-1 -m-1 font-medium text-neutral dark:text-white hover:text-primary dark:hover:text-secondary underline underline-offset-4 decoration-primary dark:decoration-secondary decoration-dotted decoration-2 focus:outline-none focus-visible:ring-2 ring-primary dark:ring-secondary" href="mailto:{{ configuration:email }}">{{ configuration:email }}</a>
+                {{ partial:components/button label="{ configuration:phone }" link_type="tel" tel="{ configuration:phone }" class="mb-2" }}
+                {{ partial:components/button label="{ configuration:email }" link_type="email" email="{ configuration:email }" class="mb-2" }}
             </div>
         </div>
     </div>

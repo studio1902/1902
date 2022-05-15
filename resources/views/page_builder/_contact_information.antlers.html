@@ -22,11 +22,10 @@
     </div>
 
     <aside class="order-2 md:order-3 md:col-span-4 flex flex-col items-start pl-8 md:pl-0 md:py-12">
-        <b class="mb-4 font-semibold text-lg text-neutral dark:text-white">{{ config:app:name }}</b>
+        <b class="mb-8 font-semibold text-lg text-neutral dark:text-white">{{ config:app:name }}</b>
         {{ partial:typography/title content="Contact" class="mb-2" }}
-        <a class="p-1 -m-1 rounded font-medium text-neutral dark:text-white hover:text-primary dark:hover:text-secondary underline underline-offset-4 decoration-primary dark:decoration-secondary decoration-dotted decoration-2 focus:outline-none focus-visible:ring-2 ring-primary dark:ring-secondary" href="tel:{{ configuration:phone }}">{{ configuration:phone }}</a>
-        <a class="p-1 -m-1 rounded font-medium text-neutral dark:text-white hover:text-primary dark:hover:text-secondary underline underline-offset-4 decoration-primary dark:decoration-secondary decoration-dotted decoration-2 focus:outline-none focus-visible:ring-2 ring-primary dark:ring-secondary" href="mailto:{{ configuration:email }}">{{ configuration:email }}</a>
-
+        {{ partial:components/button label="{ configuration:phone }" link_type="tel" tel="{ configuration:phone }" class="mb-2" }}
+        {{ partial:components/button label="{ configuration:email }" link_type="email" email="{ configuration:email }" class="mb-2" }}
         {{ partial:typography/title content="KvK: { configuration:kvk }" class="mt-8" }}
         {{ partial:typography/title content="BTW: { configuration:btw }" }}
         {{ partial:typography/title content="IBAN: { configuration:iban }" }}
