@@ -6,7 +6,7 @@
 <!-- /components/_notification.antlers.html -->
 <div
     class="
-        rounded border p-4
+        border p-4
         {{ switch(
             (type == 'success') => 'bg-green-100 border-green-600',
             (type == 'notice') => 'bg-yellow-100 border-yellow-600',
@@ -36,7 +36,7 @@
         <div class="ml-3">
             <h3
                 class="
-                    text-sm leading-5 font-bold
+                    text-sm leading-5 font-medium
                     {{ switch(
                         (type == 'success') => 'text-green-800',
                         (type == 'notice') => 'text-yellow-800',
