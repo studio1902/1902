@@ -7,10 +7,7 @@
 <!-- /page_builder/_form.antlers.html -->
 <script src="/vendor/statamic/frontend/js/helpers.js"></script>
 <section class="fluid-container grid md:grid-cols-12 gap-8">
-    <div class="md:col-start-3 md:col-span-8">
-        {{ partial:typography/h1 as="h2" color="text-primary" class="mb-8" :content="block:title" }}
-        {{ partial:typography/p :content="block:text" }}
-
+    <div class="relative md:col-start-3 md:col-span-8">
         {{# Create the selected form and reference Alpine data in `sending()`. Prevent form from submitting with POST as we will submit with AJAX. #}}
         <div x-data="sending">
             {{ form:create :in="form:handle"
@@ -24,7 +21,7 @@
                 <div class="w-full grid md:grid-cols-12 gap-6">
                     {{# Honeypot spam protection. #}}
                     <div class="hidden">
-                        <label class="font-bold" for="{{ honeypot }}">{{ trans:strings.form_honeypot }} <sup class="text-yellow-400">*</sup></label>
+                        <label class="font-medium text-xs text-neutral dark:text-white uppercase tracking-wider" for="{{ honeypot }}">{{ trans:strings.form_honeypot }} <sup class="text-yellow-400">*</sup></label>
                         <input class="form-input w-full" id="{{ honeypot }}" type="text" name="{{ honeypot }}" tabindex="-1" autocomplete="off"/>
                     </div>
 
@@ -40,7 +37,7 @@
                                 {{ width == '100' ?= 'md:col-span-12' }}"
                             >
                                 {{ unless type === 'section' }}
-                                    <label class="font-bold" for="{{ handle }}">
+                                    <label class="font-medium text-neutral dark:text-white text-xs uppercase tracking-wider" for="{{ handle }}">
                                         {{ trans :key="display" }}
                                         {{ if validate | contains('required') }}
                                             <sup class="text-yellow-400">*</sup>
@@ -129,7 +126,8 @@
                 })
             })
         </script>
-
+        <div class="absolute -inset-y-12 -left-12 w-5 border-l border-t border-b border-primary dark:border-secondary" aria-hidden="true"></div>
+        <div class="absolute -inset-y-12 -right-12 w-5 border-r border-t border-b border-primary dark:border-secondary" aria-hidden="true"></div>
     </div>
 </section>
 <!-- End: /page_builder/_form.antlers.html -->

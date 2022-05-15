@@ -11,14 +11,15 @@
     {{ foreach:options as="value|label" }}
         <label class="inline-flex items-center">
             <input
-                class="mr-2 border-neutral text-primary focus-visible:border-primary focus-visible:ring focus-visible:ring-primary motion-safe:transition"
+                class="mr-2 text-primary dark:text-secondary bg-neutral-light dark:bg-neutral-light/10 focus-visible:border-primary dark:focus-visible:border-secondary  focus:outline-none focus:ring-0 motion-safe:transition"
+                :class="{ 'border-red-600 focus-visible:border-red-600': errors.{{ handle }}, 'border-neutral-light': !errors.{{ handle }}  }"
                 type="radio"
                 name="{{ handle }}"
                 value="{{ value }}"
                 {{ js_attributes }}
                 {{ (old === value) ?= 'checked' }}
             >
-            {{ trans :key="label" }}
+            <span class="text-neutral dark:text-white">{{ trans :key="label" }}</span>
         </label>
     {{ /foreach:options }}
 </fieldset>
