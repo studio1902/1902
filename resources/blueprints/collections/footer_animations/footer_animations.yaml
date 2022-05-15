@@ -1,0 +1,34 @@
+title: 'Footer animations'
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          input_type: text
+          localizable: true
+          listable: true
+          display: Title
+          validate:
+            - required
+      -
+        handle: animation
+        field: common.image
+        config:
+          container: animations
+          display: Animation
+          width: 50
+          validate:
+            - required
+      -
+        handle: audio
+        field: common.image
+        config:
+          container: audio
+          restrict: true
+          display: 'On click audio effect'
+          width: 50
+          instructions_position: below

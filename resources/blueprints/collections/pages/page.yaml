@@ -51,33 +51,10 @@ sections:
           listable: false
           localizable: true
       -
-        handle: animation
-        field: common.image
+        handle: footer_animation
+        field: common.entry
         config:
-          container: animations
-          display: Animation
-          instructions: 'Falls back to a random global footer animation.'
-          instructions_position: below
-      -
-        handle: audio
-        field: common.image
-        config:
-          container: audio
-          restrict: true
-          display: 'On click audio effect'
-          instructions_position: below
-          if:
-            animation: not empty
-      -
-        handle: byline
-        field:
-          input_type: text
-          antlers: false
-          display: Text
-          type: text
-          icon: text
-          listable: hidden
-          instructions_position: above
-          read_only: false
-          if:
-            animation: not empty
+          display: 'Footer animation'
+          instructions: 'Falls back to a random footer animation.'
+          collections:
+            - footer_animations

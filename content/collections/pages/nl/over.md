@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1652627049
+updated_at: 1652636086
 page_builder:
   -
     title: 'Studio 1902 Over Rob, de studio en een beetje geschiedenis'
@@ -145,7 +145,5 @@ page_builder:
     title: 'Do you strive for purrfection?'
     type: introduction
     enabled: true
-animation: cat.json
-audio: cat-purring.mp3
-byline: 'Looking for a cat person Statamic Developer for your next project?'
+footer_animation: 8cd0bf8f-7d9c-4519-a844-526222b47992
 ---

@@ -76,6 +76,15 @@ editor:
     - 'edit other authors partners entries'
     - 'publish other authors partners entries'
     - 'delete other authors partners entries'
+    - 'view footer_animations entries'
+    - 'edit footer_animations entries'
+    - 'create footer_animations entries'
+    - 'delete footer_animations entries'
+    - 'publish footer_animations entries'
+    - 'reorder footer_animations entries'
+    - 'edit other authors footer_animations entries'
+    - 'publish other authors footer_animations entries'
+    - 'delete other authors footer_animations entries'
 marketeer:
   title: Marketeer
   permissions:
