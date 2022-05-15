@@ -7,7 +7,7 @@
 <!-- /page_builder/_form.antlers.html -->
 <script src="/vendor/statamic/frontend/js/helpers.js"></script>
 <section class="fluid-container grid md:grid-cols-12 gap-8 my-12">
-    <div class="relative md:col-start-3 md:col-span-8">
+    <div class="relative mx-8 md:mx-0 md:col-start-3 md:col-span-8">
         {{# Create the selected form and reference Alpine data in `sending()`. Prevent form from submitting with POST as we will submit with AJAX. #}}
         <div x-data="sending">
             {{ form:create :in="form:handle"
@@ -126,8 +126,8 @@
                 })
             })
         </script>
-        <div class="absolute -inset-y-12 -left-12 w-8 border-l border-t border-b border-primary dark:border-secondary" aria-hidden="true"></div>
-        <div class="absolute -inset-y-12 -right-12 w-8 border-r border-t border-b border-primary dark:border-secondary" aria-hidden="true"></div>
+        <div class="absolute -inset-y-8 md:-inset-y-12 -left-8 md:-left-12 w-6 md:w-8 border-l border-t border-b border-primary dark:border-secondary" aria-hidden="true"></div>
+        <div class="absolute -inset-y-8 md:-inset-y-12 -right-8 md:-right-12 w-6 md:w-8 border-r border-t border-b border-primary dark:border-secondary" aria-hidden="true"></div>
     </div>
 </section>
 <!-- End: /page_builder/_form.antlers.html -->

@@ -1,0 +1,36 @@
+title: 'Contact information'
+fields:
+  -
+    handle: title
+    field:
+      type: text
+      display: Title
+      validate: required
+      localizable: true
+  -
+    handle: tag
+    field:
+      options:
+        h1: H1
+        h2: H2
+      default: h1
+      display: 'Render as'
+      replicator_preview: false
+      type: button_group
+      icon: button_group
+      listable: hidden
+      instructions_position: above
+      read_only: false
+      validate:
+        - required
+  -
+    handle: text_content
+    field: common.text_basic_set
+    config:
+      display: Text
+      validate: required
+      localizable: true
+  -
+    import: animation
+  -
+    import: background_text

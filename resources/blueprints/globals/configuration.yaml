@@ -57,6 +57,48 @@ sections:
             - email
           read_only: false
       -
+        handle: kvk
+        field:
+          input_type: text
+          antlers: false
+          display: KvK
+          type: text
+          icon: text
+          width: 33
+          listable: hidden
+          instructions_position: above
+          read_only: false
+          validate:
+            - required
+      -
+        handle: btw
+        field:
+          input_type: text
+          antlers: false
+          display: BTW
+          type: text
+          icon: text
+          width: 33
+          listable: hidden
+          instructions_position: above
+          read_only: false
+          validate:
+            - required
+      -
+        handle: iban
+        field:
+          input_type: text
+          antlers: false
+          display: IBAN
+          type: text
+          icon: text
+          width: 33
+          listable: hidden
+          instructions_position: above
+          read_only: false
+          validate:
+            - required
+      -
         handle: contact_page
         field: common.entry
         config:

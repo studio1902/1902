@@ -22,24 +22,30 @@ fields:
           fields:
             -
               import: collapsed_grid
+        contact_information:
+          display: 'Contact information'
+          instructions: 'Add contact data, text and an animation.'
+          fields:
+            -
+              import: contact_information
         form:
           display: Form
           instructions: 'Show a form.'
           fields:
             -
               import: form
-        introduction:
-          display: Introduction
-          instructions: 'Centered title and text.'
-          fields:
-            -
-              import: introduction
         image_and_text:
           display: 'Image and text'
           instructions: 'An image and text on a tinted background.'
           fields:
             -
               import: image_and_text
+        introduction:
+          display: Introduction
+          instructions: 'Centered title and text.'
+          fields:
+            -
+              import: introduction
         journal_entry:
           display: 'Journal entry'
           instructions: 'Highlight a journal entry.'

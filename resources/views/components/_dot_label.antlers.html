@@ -7,11 +7,14 @@
 <!-- /components/_green_dot.antlers.html -->
 <div class="{{ !no_sizing ?= 'size-md' }} flex items-center space-x-2">
     <div class="w-3 h-3 rounded-full bg-primary dark:bg-secondary"></div>
-    <span class="text-primary dark:text-secondary font-medium text-xs uppercase tracking-wider">
-        {{ label_type === 'custom_text'
-            ? { label }
-            : { trans:strings.footer_availability month="{ configuration:availability_from | format_localized('%B %Y') }" }
-        }}
-    </span>
+    {{
+        partial:typography/title
+        content="
+            { label_type === 'custom_text'
+                ? { label }
+                : { trans:strings.footer_availability month="{ configuration:availability_from | format_localized('%B %Y') }" }
+            }
+        "
+    }}
 </div>
 <!-- End: /components/_green_dot.antlers.html -->
