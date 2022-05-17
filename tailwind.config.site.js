@@ -110,7 +110,7 @@ module.exports = {
     plugin(function({ addBase, theme }) {
       addBase({
         ':root': {
-          '--color-primary': '#13E87C',
+          '--color-primary': '#12B54A',
           '--color-secondary': '#FF0274',
           '--color-tertiary': '#0098F1',
           '--animation-navigation-down-duration': '.5s',
@@ -118,7 +118,7 @@ module.exports = {
         },
         '@supports (color: color(display-p3 1 1 1))': {
             ':root': {
-                '--color-primary': 'color(display-p3 0.07450980392 0.9098039216 0.4862745098)',
+                '--color-primary': 'color(display-p3 0.07058823529 0.7098039216 0.2901960784)',
                 '--color-secondary': 'color(display-p3 1 0.007843137255 0.4549019608)',
                 '--color-tertiary': 'color(display-p3 0 0.5960784314 0.9450980392)'
             }
