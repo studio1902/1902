@@ -14,21 +14,23 @@
     <!-- /projects/index.antlers.html -->
     {{ collection:projects sort="date:desc" paginate="true" limit="10" as="items" }}
         {{ unless no_results }}
-            {{ items group_by="project_type" }}
-                {{ groups }}
-                    {{ if group === 'full' }}
-                        {{ items }}
-                            {{ scope:project }}
-                                {{ partial:components/project }}
-                            {{ /scope:project }}
-                        {{ /items }}
-                    {{ else }}
-                        <div class="fluid-container grid lg:grid-cols-12 lg:gap-8">
-                            {{ partial:components/project_list class="md:col-span-7 flex flex-col justify-start" :projects="items" }}
-                        </div>
-                    {{ /if }}
-                {{ /groups }}
-            {{ /items }}
+            {{
+                full = items where (project_type == 'full')
+                list = items where (project_type == 'list') orderby (date 'desc');
+            }}
+
+            {{ full }}
+                {{ scope:project }}
+                    {{ partial:components/project }}
+                {{ /scope:project }}
+
+                {{ if next.last }}
+                    {{# Fun things with small items #}}
+                    <div class="fluid-container grid lg:grid-cols-12 lg:gap-8">
+                        {{ partial:components/project_list class="md:col-span-7 flex flex-col justify-start" :projects="list" }}
+                    </div>
+                {{ /if }}
+            {{ /full }}
         {{ else }}
             <div class="fluid-container text-center">
                 {{ trans:strings.no_results }}
