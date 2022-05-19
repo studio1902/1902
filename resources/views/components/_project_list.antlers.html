@@ -1,0 +1,25 @@
+<ul class="{{ class }}">
+    {{ projects }}
+        {{ if project_url }}
+            <li
+                x-data
+                x-id="['project-title']"
+                class="last:border-b border-primary dark:border-secondary"
+            >
+                <a
+                    class="relative p-4 flex justify-between gap-4 items-center border border-b-0 border-primary dark:border-secondary focus:outline-none focus-visible:ring-4 ring-primary ring-offset-2 dark:ring-offset-neutral dark:ring-secondary group"
+                    href="{{ project_url }}"
+                    target="_blank"
+                    aria-label="{{ trans:strings.projects_visit }}"
+                    :aria-labelledby="$id('project-title')"
+                    draggable="false"
+                >
+                    {{ partial:components/project_list_content }}
+                    <div class="absolute inset-0 p-4 flex justify-between gap-4 items-center bg-primary dark:bg-secondary  [clip-path:circle(20%_at_-20%_0%)] md:group-hover:[clip-path:circle(170%_at_-20%_0%)] transition-all">
+                        {{ partial:components/project_list_content sub_title="{ trans:strings.projects_visit }" color="text-white" }}
+                    </div>
+                </a>
+            </li>
+        {{ /if }}
+    {{ /projects }}
+</ul>

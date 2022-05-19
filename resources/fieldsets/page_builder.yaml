@@ -94,3 +94,7 @@ fields:
           fields:
             -
               import: title_and_text
+      instructions_position: above
+      read_only: false
+      unless:
+        project_type: 'equals list'

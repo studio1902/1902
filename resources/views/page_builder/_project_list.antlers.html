@@ -11,33 +11,12 @@
         : { collection:projects sort="date:desc" :limit="limit" has="project_url" }
 }}
 <section
-    x-id="['project-title']"
     class="relative fluid-container grid lg:grid-cols-12 {{ yield:background_text_compensation }}"
 >
     <div class="lg:col-span-10 lg:col-start-2 grid md:grid-cols-12 gap-8 md:gap-12">
         {{ block:title ?= { partial:typography/h1 as="h2" :content="block:title" class="md:col-span-12" } }}
 
-        <ul class="md:col-span-8 flex flex-col justify-start">
-            {{ projects }}
-                {{ if project_url }}
-                    <li class="last:border-b border-primary dark:border-secondary">
-                        <a
-                            class="relative p-4 flex justify-between gap-4 items-center border border-b-0 border-primary dark:border-secondary focus:outline-none focus-visible:ring-4 ring-primary ring-offset-2 dark:ring-offset-neutral dark:ring-secondary group"
-                            href="{{ project_url }}"
-                            target="_blank"
-                            aria-label="{{ trans:strings.projects_visit }}"
-                            :aria-labelledby="$id('project-title')"
-                            draggable="false"
-                        >
-                            {{ partial:components/project_list_content }}
-                            <div class="absolute inset-0 p-4 flex justify-between gap-4 items-center bg-primary dark:bg-secondary  [clip-path:circle(20%_at_-20%_0%)] md:group-hover:[clip-path:circle(170%_at_-20%_0%)] transition-all">
-                                {{ partial:components/project_list_content sub_title="{ trans:strings.projects_visit }" color="text-white" }}
-                            </div>
-                        </a>
-                    </li>
-                {{ /if }}
-            {{ /projects }}
-        </ul>
+        {{ partial:components/project_list class="md:col-span-8 flex flex-col justify-start" }}
 
         <article class="md:col-span-4">
             {{ text ?= { partial:typography/p :content="text" } }}

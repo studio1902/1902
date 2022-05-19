@@ -15,12 +15,33 @@ sections:
           validate:
             - required
       -
+        handle: project_type
+        field:
+          options:
+            list: 'Listable project'
+            full: 'Full case'
+          default: list
+          display: 'Project type'
+          type: button_group
+          icon: button_group
+          listable: hidden
+          instructions_position: above
+          read_only: false
+          validate:
+            - required
+      -
         handle: sub_title
         field:
           type: text
           localizable: true
           display: 'Sub title'
-          validate: required
+          validate:
+            - required
+          instructions_position: above
+          listable: hidden
+          read_only: false
+          input_type: text
+          antlers: false
       -
         handle: client
         field:
@@ -67,6 +88,9 @@ sections:
           width: 50
           validate:
             - required
+            - sometimes
+          if:
+            project_type: 'equals full'
       -
         handle: tools
         field:
@@ -82,6 +106,9 @@ sections:
           width: 50
           validate:
             - required
+            - sometimes
+          if:
+            project_type: 'equals full'
       -
         handle: features
         field:
@@ -94,6 +121,9 @@ sections:
           read_only: false
           validate:
             - required
+            - sometimes
+          if:
+            project_type: 'equals full'
       -
         import: page_builder
   seo:
@@ -132,7 +162,7 @@ sections:
           mode: single
           time_enabled: false
           time_required: false
-          earliest_date: '2021-01-01'
+          earliest_date: '2017-01-01'
           full_width: false
           inline: false
           columns: 1
@@ -143,7 +173,11 @@ sections:
         config:
           localizable: true
           listable: true
-          validate: required
+          validate:
+            - required
+            - sometimes
+          if:
+            project_type: 'equals full'
       -
         handle: project_url
         field:
