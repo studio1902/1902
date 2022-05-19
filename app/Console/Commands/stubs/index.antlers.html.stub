@@ -5,25 +5,28 @@
 
 <!-- /{{ filename }}/index.antlers.html -->
 <main class="outer-grid" id="content">
-    <div class="fluid-container grid md:grid-cols-12 gap-12">
-        {{ collection:{{ handle }} sort="{{ sort }}" paginate="true" limit="10" as="items" }}
-            {{ unless no_results }}
-                {{ items }}
-                    <div class="md:col-span-6">
-                        <a class="underline dark:text-white" href="{{ url }}">{{ title }}</a>
-                    </div>
-                {{ /items }}
-            {{ else }}
-                <div class="md:col-span-6">
-                    {{ trans:strings.no_results }}
-                </div>
-            {{ /unless }}
-            {{ partial:components/pagination class="md:col-span-12" }}
-        {{ /collection:{{ handle }} }}
-    </div>
-
     {{ page_builder scope="block" }}
         {{ partial src="page_builder/{type}" }}
     {{ /page_builder }}
 </main>
+
+{{ section:index_content }}
+    <!-- /{{ filename }}/index.antlers.html -->
+    {{ collection:{{ handle }} sort="{{ sort }}" paginate="true" limit="10" as="items" }}
+        {{ unless no_results }}
+            {{ items }}
+                <div class="fluid-container">
+                    <a class="underline dark:text-white" href="{{ url }}">{{ title }}</a>
+                </div>
+            {{ /items }}
+        {{ else }}
+            <div class="fluid-container text-center">
+                {{ trans:strings.no_results }}
+            </div>
+        {{ /unless }}
+
+        {{ partial:components/pagination class="fluid-container" }}
+    {{ /collection:{{ handle }} }}
+    <!-- End: /{{ filename }}/index.antlers.html -->
+{{ /section:index_content }}
 <!-- End: /{{ filename }}/index.antlers.html -->

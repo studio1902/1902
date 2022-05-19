@@ -37,7 +37,7 @@ fields:
   -
     handle: loop
     field:
-      default: true
+      default: false
       display: Loop
       type: toggle
       icon: toggle
@@ -49,7 +49,7 @@ fields:
   -
     handle: intersect
     field:
-      default: false
+      default: true
       display: Intersect
       type: toggle
       icon: toggle

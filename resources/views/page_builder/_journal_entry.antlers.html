@@ -10,49 +10,5 @@
         ? block:journal_entry
         : ({ collection:journal sort="date:desc" limit="1" } | first)
 }}
-<section
-    x-data="{ hover: false }"
-    x-id="['journal-title']"
-    class="relative fluid-container grid md:grid-cols-12 md:gap-8 {{ yield:background_text_compensation }}"
->
-    <a
-        href="{{ journal_entry:url }}"
-        class="relative md:col-span-9 md:col-start-1 md:row-span-4 md:row-start-1 border border-b-0 md:border-b border-primary dark:border-secondary p-6 pb-12 md:p-8 flex flex-col gap-y-8 justify-between focus:outline-none focus-visible:ring-2 ring-offset-2 ring-offset-white dark:ring-offset-neutral ring-primary dark:ring-secondary"
-        @mouseover="hover = true"
-        @mouseout="hover = false"
-        :aria-labelledby="$id('journal-title')"
-        draggable="false"
-    >
-        {{ partial:components/journal_entry_content generate_id="true" }}
-        <div
-            class="hidden md:flex absolute inset-0 bg-primary dark:bg-secondary p-6 pb-12 md:p-8 flex-col space-y-8 justify-between motion-safe:transition-[clip-path] motion-safe:duration-[500ms] ease-out" aria-hidden="true"
-            :class="{
-                '[clip-path:circle(200%_at_120%_200%)]': hover,
-                '[clip-path:circle(60%_at_120%_200%)]': !hover
-            }"
-        >
-            {{ partial:components/journal_entry_content color="text-white" }}
-        </div>
-    </a>
-    <a
-        href="{{ journal_entry:url }}"
-        draggable="false"
-        :aria-labelledby="$id('journal-title')"
-        @mouseover="hover = true"
-        @mouseout="hover = false"
-        class="relative -mt-6 md:mt-0 md:col-span-5 md:col-start-8 md:row-span-4 md:row-start-2 rounded-t-lg motion-safe:transition ease-out focus:outline-none focus-visible:ring-2 ring-offset-2 ring-offset-white dark:ring-offset-neutral ring-primary dark:ring-secondary"
-        :class="{ 'md:rotate-1': hover }"
-    >
-        {{ partial:components/title_bar }}
-        <figure class="aspect-w-4 aspect-h-3 border border-primary dark:border-secondary">
-            {{ partial:components/picture :image="journal_entry:image" cover="true" lazy="true" sizes="(min-width: 768px) 33vw, 90vw"  }}
-        </figure>
-    </a>
-
-    <aside class="pt-6 pb-2 md:pt-0 md:col-span-7 md:row-start-5 md:col-start-1 md:place-self-end flex flex-col justify-center items-end">
-        {{ partial:components/button label="{ trans:strings.journal_all }" link_type="url" url="{mount_url from='journal'}" }}
-    </aside>
-
-    {{ partial:components/background_text }}
-</section>
+{{ partial:components/journal_entry mount_link="true" }}
 <!-- End: /page_builder/_journal_entry.antlers.html -->

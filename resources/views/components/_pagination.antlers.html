@@ -23,21 +23,21 @@
             {{ /section:pagination }}
 
             {{# The actual pagination buttons. #}}
-            {{ active_classes = 'text-primary' }}
-            {{ inactive_classes = '' }}
-            {{ location_classes = '' }}
+            {{ active_classes = 'p-1 -m-1 rounded flex space-x-1 items-baseline font-medium text-neutral dark:text-white focus:outline-none focus-visible:ring ring-primary dark:ring-secondary leading-none underline underline-offset-4 decoration-dotted decoration-2 decoration-primary dark:decoration-secondary hover:text-primary hover:dark:text-secondary motion-safe:transition' }}
+            {{ inactive_classes = 'flex space-x-1 items-baseline font-medium text-neutral dark:text-white opacity-30 leading-none underline underline-offset-4 decoration-dotted decoration-2 decoration-neutral dark:decoration-white' }}
+            {{ location_classes = 'text-sm font-medium text-neutral dark:text-white' }}
 
-            <nav class="md:px-8 flex justify-center space-x-4">
+            <nav class="md:px-8 flex justify-center items-baseline space-x-8">
                 {{ if prev_page }}
-                    <a class="{{ active_classes }}" href="{{ prev_page }}">&laquo; {{ trans:strings.previous }}</a>
+                    <a class="{{ active_classes }}" href="{{ prev_page }}">< {{ trans:strings.previous }}</a>
                 {{ else }}
-                    <span class="{{ inactive_classes }}">&laquo; {{ trans:strings.previous }}</span>
+                    <span class="{{ inactive_classes }}">< {{ trans:strings.previous }}</span>
                 {{ /if }}
                 <span class="{{ location_classes }}">{{ current_page }} {{ trans:strings.of }} {{ total_pages }}</span>
                 {{ if next_page }}
-                    <a class="{{ active_classes }}" href="{{ next_page }}">{{ trans:strings.next }} &raquo;</a>
+                    <a class="{{ active_classes }}" href="{{ next_page }}">{{ trans:strings.next }} ></a>
                 {{ else }}
-                    <span class="{{ inactive_classes }}">{{ trans:strings.next }} &raquo;</span>
+                    <span class="{{ inactive_classes }}">{{ trans:strings.next }} ></span>
                 {{ /if }}
             </nav>
         {{ /paginate }}

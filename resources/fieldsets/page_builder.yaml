@@ -40,6 +40,12 @@ fields:
           fields:
             -
               import: image_and_text
+        index_content:
+          display: 'Index content'
+          instructions: 'Add the current index page collection content.'
+          fields:
+            -
+              import: index_content
         introduction:
           display: Introduction
           instructions: 'Centered title and text.'
