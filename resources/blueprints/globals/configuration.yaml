@@ -103,7 +103,7 @@ sections:
         field: common.entry
         config:
           display: 'Contact page'
-          width: 50
+          width: 33
           instructions: 'Select the page to where the footer contact button links.'
           instructions_position: below
           collections:
@@ -123,10 +123,24 @@ sections:
           display: 'Availability from'
           type: date
           icon: date
-          width: 50
+          width: 33
           listable: hidden
           instructions_position: above
           read_only: false
+      -
+        handle: pricing_from
+        field:
+          input_type: text
+          antlers: false
+          display: Pricing from
+          type: text
+          icon: text
+          width: 33
+          listable: hidden
+          instructions_position: above
+          read_only: false
+          validate:
+            - required
       -
         handle: section_copyright
         field:

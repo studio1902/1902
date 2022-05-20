@@ -42,7 +42,6 @@ return [
     'footer_on'                         => 'on',
     'footer_talk'                       => 'Let\'s talk!',
     'footer_privacy_statement'          => 'Privacy statement',
-    'footer_availability'               => 'Available for projects starting :month',
 
     // Journal
     'journal'                           => 'Journal',
@@ -66,6 +65,8 @@ return [
     'no_script'                         => 'This website requires Javascript for some parts to function properly. Your experience may vary.',
     'home'                              => 'Go to the homepage.',
     'show_all'                          => 'Show all',
+    'availability'                      => 'Available starting :month',
+    'pricing'                           => 'Projects starting from :amount',
 
     // Pagination
     'next'                              => 'next',

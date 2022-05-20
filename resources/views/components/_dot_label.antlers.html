@@ -6,16 +6,15 @@
 
 <!-- /components/_green_dot.antlers.html -->
 <div class="{{ !no_sizing ?= 'size-md' }} flex items-center space-x-2">
-    {{ partial:components/animating_dot }}
+    <span class="relative flex h-3 w-3">
+        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary dark:bg-secondary opacity-75"></span>
+        <span class="relative inline-flex rounded-full h-3 w-3 bg-primary dark:bg-secondary"></span>
+    </span>
 
-    {{
-        partial:typography/title
-        content="
-            { label_type === 'custom_text'
-                ? { label }
-                : { trans:strings.footer_availability month="{ configuration:availability_from | format_localized('%B %Y') }" }
-            }
-        "
-    }}
+    {{ if label_type === 'custom_text' }}
+        {{ partial:typography/title content="{ label }" }}
+    {{ else }}
+        {{ partial:typography/title content="{ trans:strings.availability month="{ configuration:availability_from | format_localized('%B %Y') }" }<br>{ trans:strings.pricing amount="{ configuration:pricing_from }" }" }}
+    {{ /if }}
 </div>
 <!-- End: /components/_green_dot.antlers.html -->

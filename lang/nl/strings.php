@@ -42,7 +42,6 @@ return [
     'footer_on'                         => 'op',
     'footer_talk'                       => 'Let\'s talk!',
     'footer_privacy_statement'          => 'Privacy statement',
-    'footer_availability'               => 'Beschikbaar vanaf :month',
 
     // Journal
     'journal'                           => 'Journal',
@@ -66,6 +65,8 @@ return [
     'no_script'                         => 'De website vereist Javascript.',
     'home'                              => 'Ga naar de homepage.',
     'show_all'                          => 'Toon alles',
+    'availability'                      => 'Beschikbaar vanaf :month',
+    'pricing'                           => 'Project starten vanaf :amount',
 
     // Pagination
     'next'                              => 'Volgende',

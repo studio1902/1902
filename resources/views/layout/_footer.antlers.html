@@ -35,10 +35,7 @@
 
         <div class="relative order-1 md:order-2 flex flex-col space-y-2 md:space-y-4">
             <span class="w-full md:w-80 flex items-center space-x-2">
-                {{ partial:components/animating_dot }}
-                <span class="text-xs font-medium uppercase tracking-wider text-primary dark:text-secondary">
-                    {{ trans:strings.footer_availability month="{ configuration:availability_from | format_localized('%B %Y') }" }}
-                </span>
+                {{ partial:components/dot_label no_sizing="true" }}
             </span>
 
             {{ footer_animation = footer_animation
