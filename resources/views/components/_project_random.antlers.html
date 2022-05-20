@@ -4,7 +4,7 @@
 #}}
 
 <!-- /components/_project_random.antlers.html -->
-{{ collection in="projects" as="posts" limit="1" sort="random" :id:isnt="id" }}
+{{ collection in="projects" as="posts" limit="1" sort="random" :id:isnt="id" project_type:is="full" }}
     {{ posts }}
         <section
             x-data=""

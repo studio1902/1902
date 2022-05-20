@@ -3,6 +3,10 @@
 	@desc The Projects show template.
 #}}
 
+{{ if project_type === 'list' }}
+    {{ 404 }}
+{{ /if }}
+
 <!-- /projects/show.antlers.html -->
 <main class="outer-grid" id="content">
     {{ partial:components/_project_introduction }}
