@@ -5,8 +5,6 @@
 
 <!-- /typography/_caption.antlers.html -->
 {{ if caption }}
-    <{{ as or 'span' }} class="block mt-2 text-sm text-neutral dark:text-white">
-        {{ caption }}
-    </{{ as or 'span' }}>
+    {{ partial:typography/title as="{ as or 'span' }" :content="caption" class="mt-2"  }}
 {{ /if }}
 <!-- End: /typography/_caption.antlers.html -->
