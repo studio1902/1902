@@ -46,6 +46,7 @@ return [
     // Journal
     'journal'                           => 'Journal',
     'journal_all'                       => 'All entries',
+    'journal_by'                        => 'by',
 
     // Language picker
     'language'                          => 'Visit the site in :language',

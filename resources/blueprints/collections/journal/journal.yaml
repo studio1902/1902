@@ -34,7 +34,6 @@ sections:
         handle: slug
         field:
           type: slug
-          required: true
           localizable: true
           generate: true
           listable: hidden
@@ -48,11 +47,24 @@ sections:
           listable: true
           validate: required
       -
+        handle: author
+        field:
+          mode: select
+          display: Author
+          type: users
+          icon: users
+          listable: hidden
+          instructions_position: above
+          read_only: false
+          validate:
+            - required
+          max_items: 1
+      -
         handle: date
         field:
           type: date
-          listable: true
           required: true
+          listable: true
           validate:
             - required
           display: Date
