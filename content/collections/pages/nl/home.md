@@ -3,7 +3,7 @@ id: home
 blueprint: page
 title: Home
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1652643640
+updated_at: 1653045107
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -11,7 +11,7 @@ sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 page_builder:
   -
-    title: "Studio 1902 is home of Rob de Kort, Statamic developer"
+    title: 'Maatwerk voor toegankelijke websites.'
     type: title_and_text
     enabled: true
     text_content:
@@ -68,28 +68,28 @@ page_builder:
     enabled: true
     background_text_position: start
   -
-    title: 'Toegankelijke websites, privacy en performance is de standaard'
+    title: 'Optimale prestatie, met oog voor privacy en accessibility'
     text_content:
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'Websites should deliver. Read up on '
+            text: 'Websites moeten presteren, zowel voor de gebruiker als voor de beheerder. Lees meer over hoe ik websites met '
           -
             type: text
             marks:
               -
                 type: link
                 attrs:
-                  href: 'statamic://entry::e633d2d8-b056-40f0-914a-d9940b5243a9'
+                  href: 'statamic://entry::a397a0da-af80-4d0a-b398-f415fd9dd847'
                   rel: noopener
                   target: null
                   title: null
-            text: 'Rob''s ideas'
+            text: 'de beste gebruikerservaring'
           -
             type: text
-            text: ' on offering the best user experience possible.'
+            text: ' maak'
     playback_speed: 1.0
     loop: false
     intersect: true
@@ -114,7 +114,7 @@ page_builder:
       - Latest
     background_text_position: start
   -
-    title: 'Powerful solutions for meaningful clients'
+    title: 'Een CMS met ongekende mogelijkheden'
     tag: h2
     text_content:
       -
@@ -122,18 +122,18 @@ page_builder:
         content:
           -
             type: text
-            text: 'Websites should deliver. Read up on Rob''s ideas on '
+            text: 'Ik ben een liefhebber en een kenner. Ik vertel anderen dan ook graag '
           -
             type: text
             marks:
               -
                 type: link
                 attrs:
-                  href: 'statamic://entry::e633d2d8-b056-40f0-914a-d9940b5243a9'
+                  href: 'statamic://entry::609657f7-ef15-4f04-8b6d-7103d54ae1c5'
                   rel: noopener
                   target: null
                   title: null
-            text: 'offering the best user experience possible'
+            text: 'waarom en hoe iedereen met Statamic kan werken'
           -
             type: text
             text: .
@@ -163,7 +163,7 @@ page_builder:
     background_text_position: center
     image: about/rob-de-kort-studio-1902-01.jpg
   -
-    title: 'Above all, Rob is a joy to work with.'
+    title: 'Ga zelf aan de slag'
     tag: h2
     text_content:
       -
@@ -171,21 +171,21 @@ page_builder:
         content:
           -
             type: text
-            text: 'Websites should deliver. Read up on Rob''s ideas on '
+            text: 'Omdat ik iets terug wil doen, ontwikkelde ik een gratis starterkit voor Statamic Community: '
           -
             type: text
             marks:
               -
                 type: link
                 attrs:
-                  href: 'statamic://entry::e633d2d8-b056-40f0-914a-d9940b5243a9'
+                  href: 'statamic://entry::3b9ff3c2-bc7a-4a54-8350-8524f9525cb2'
                   rel: noopener
                   target: null
                   title: null
-            text: 'offering the best user experience possible'
+            text: PEAK
           -
             type: text
-            text: .
+            text: '. Kijk rustig rond!'
     text_position: start
     animation: flowergun.json
     playback_speed: 1.0
@@ -201,4 +201,5 @@ page_builder:
     audio: heartbeat.mp3
     text_size: small
     size: small
+footer_animation: 8cd0bf8f-7d9c-4519-a844-526222b47992
 ---

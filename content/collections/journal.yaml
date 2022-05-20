@@ -1,4 +1,7 @@
 title: Journal
+sites:
+  - nl
+  - en
 propagate: false
 template: journal/show
 layout: layout

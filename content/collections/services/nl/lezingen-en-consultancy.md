@@ -8,8 +8,8 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1652643226
-teaser: 'Lezingen, consultancy, hulp met projecten en tools. Doe ik.'
+updated_at: 1653044444
+teaser: 'Ik kom graag bij jouw team langs om mijn kennis te delen, sharing is caring!'
 introduction: 'Crowdsource non-disclosure agreement. MVP creative pitch venture startup low hanging fruit hypotheses customer strategy iPad partnership social proof. deployment. Long tail success entrepreneur network effects android. deployment.'
 page_builder:
   -
@@ -67,7 +67,6 @@ page_builder:
         buttons:
           -
             label: statamic.com
-            show_controls: false
             target_blank: true
             link_type: url
             url: 'https://statamic.com'
@@ -78,7 +77,6 @@ page_builder:
         buttons:
           -
             label: peak.1902.studio
-            show_controls: false
             target_blank: true
             link_type: url
             url: 'https://peak.1902.studio'
@@ -89,7 +87,6 @@ page_builder:
         buttons:
           -
             label: alpinejs.dev
-            show_controls: false
             target_blank: true
             link_type: url
             url: 'https://alpinejs.dev'
@@ -100,7 +97,6 @@ page_builder:
         buttons:
           -
             label: tailwindcss.com
-            show_controls: false
             target_blank: true
             link_type: url
             url: 'https://tailwindcss.com'
@@ -111,7 +107,6 @@ page_builder:
         buttons:
           -
             label: laravel.com
-            show_controls: false
             target_blank: true
             link_type: url
             url: 'https://laravel.com'
@@ -122,7 +117,6 @@ page_builder:
         buttons:
           -
             label: ploi.io
-            show_controls: false
             target_blank: true
             link_type: url
             url: 'https://ploi.io'
@@ -133,7 +127,6 @@ page_builder:
         buttons:
           -
             label: hetzner.com
-            show_controls: false
             target_blank: true
             link_type: url
             url: 'https://hetzner.com'
@@ -147,7 +140,6 @@ page_builder:
     buttons:
       -
         label: Portfolio
-        show_controls: true
         target_blank: false
         link_type: entry
         entry: 7eb87293-600d-404b-8519-2c4a2ebc9e51

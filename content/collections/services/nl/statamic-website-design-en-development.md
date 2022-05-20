@@ -8,8 +8,8 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1653039109
-teaser: 'Een teaser over design en dev als product. Vertel maar.'
+updated_at: 1653043502
+teaser: 'Ik ontwerp en bouw websites die presteren, gebruiksvriendelijk en toegankelijk zijn.'
 introduction: 'Crowdsource non-disclosure agreement. MVP creative pitch venture startup low hanging fruit hypotheses customer strategy iPad partnership social proof. deployment. Long tail success entrepreneur network effects android. deployment.'
 page_builder:
   -
@@ -138,6 +138,8 @@ page_builder:
           -
             label: hetzner.com
             target_blank: false
+            link_type: url
+            url: 'https://hetzner.com'
   -
     background_text_position: center
     type: project_list
