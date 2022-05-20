@@ -5,7 +5,9 @@
 
 <!-- /components/_journal_entry.antlers.html -->
 <div class="flex flex-col space-y-6">
-    <span class="uppercase text-sm font-medium {{ color or 'text-primary dark:text-secondary' }} tracking-wider">{{ trans:strings.journal }}<span aria-hidden="true"> \</span></span>
+    {{ if featured }}
+        <span class="uppercase text-sm font-medium {{ color or 'text-primary dark:text-secondary' }} tracking-wider">{{ trans:strings.journal }}<span aria-hidden="true"> \</span></span>
+    {{ /if }}
     <h2 {{ if generate_id }}:id="$id('project-title')"{{ /if}} class="md:max-w-[calc(85%-4rem)] text-4xl md:text-5xl uppercase tracking-wider {{ color or 'text-primary dark:text-secondary' }}">
         {{ journal_entry:title }}
     </h2>

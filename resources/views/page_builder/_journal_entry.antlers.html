@@ -10,5 +10,5 @@
         ? block:journal_entry
         : ({ collection:journal sort="date:desc" limit="1" } | first)
 }}
-{{ partial:components/journal_entry mount_link="true" }}
+{{ partial:components/journal_entry mount_link="true" featured="true" }}
 <!-- End: /page_builder/_journal_entry.antlers.html -->
