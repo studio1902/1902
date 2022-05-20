@@ -106,7 +106,7 @@ page_builder:
       - Latest
     background_text_position: start
   -
-    title: 'A CMS with unprecedented possibilities'
+    title: 'A cms with unprecedented possibilities'
     tag: h2
     text_content:
       -

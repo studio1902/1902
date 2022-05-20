@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1653043502
+updated_at: 1653055022
 teaser: 'Ik ontwerp en bouw websites die presteren, gebruiksvriendelijk en toegankelijk zijn.'
 introduction: 'Crowdsource non-disclosure agreement. MVP creative pitch venture startup low hanging fruit hypotheses customer strategy iPad partnership social proof. deployment. Long tail success entrepreneur network effects android. deployment.'
 page_builder:
@@ -17,7 +17,7 @@ page_builder:
     type: introduction
     enabled: true
     title: 'Website design & development'
-    text: 'Crowdsource non-disclosure agreement. MVP creative pitch venture startup low hanging fruit hypotheses customer strategy iPad partnership social proof. deployment. Long tail success entrepreneur network effects android. deployment.'
+    text: 'Als je me vraagt een website te bouwen, krijg je er een ontwerper bij. Van tekentafel tot beheer achteraf.'
   -
     background_text:
       - World
@@ -34,19 +34,13 @@ page_builder:
         content:
           -
             type: text
-            text: 'Great sites for better businesses'
+            text: 'Alles wat je nodig hebt.'
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'Hypotheses twitter technology prototype facebook. Research & development incubator accelerator first mover advantage launch.'
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: "Projects start from 3K upwards.\_"
+            text: 'Ik vind het leuk om mee te denken over hoe het design het best tot zijn recht komt. Zo krijg jij ook de beste ervaring met Statamic. Ik werk voor eigen klanten, maar zoek ook regelmatig de samenwerking met creatieve bureaus en juist die afwisseling maakt dat ik elke dag met plezier aan m’n bureau zit (of sta).'
     image: services/studio-1920-office.jpeg
     image_size: small
   -
@@ -62,7 +56,7 @@ page_builder:
     grid:
       -
         title: Statamic
-        text: 'Advisor startup equity. Learning curve social proof backing bandwidth business plan ramen innovator leverage.'
+        text: 'Een flat file content management systeem met een fantastisch control panel voor mijn klanten.'
         icon: tools/statamic-logo.svg
         buttons:
           -
@@ -72,7 +66,7 @@ page_builder:
             url: 'https://statamic.com'
       -
         title: Peak
-        text: 'Advisor startup equity. Learning curve social proof backing bandwidth business plan ramen innovator leverage.'
+        text: 'Mijn open source Starter Kit voor Statamic. Hiermee bouwen ik, en vele anderen hun websites.'
         icon: tools/statamic-peak-logo.svg
         buttons:
           -
@@ -82,7 +76,7 @@ page_builder:
             url: 'https://peak.1902.studio'
       -
         title: 'Antlers Runtime'
-        text: 'Advisor startup equity. Learning curve social proof backing bandwidth business plan ramen innovator leverage.'
+        text: 'De template language voor Statamic. De nieuwste versie is geheel herschreven door de onvolprezen John Koster.'
         icon: tools/antlers-logo.svg
         buttons:
           -
@@ -92,7 +86,7 @@ page_builder:
             url: 'https://antlers.dev'
       -
         title: Alpine.js
-        text: 'Advisor startup equity. Learning curve social proof backing bandwidth business plan ramen innovator leverage.'
+        text: 'Een lichtgewicht javascript-framework dat het toevoegen van interactieve elementen makkelijk en leuk maakt.'
         icon: tools/alpine-logo.svg
         buttons:
           -
@@ -102,7 +96,7 @@ page_builder:
             url: 'https://alpinejs.dev'
       -
         title: TailwindCSS
-        text: 'Advisor startup equity. Learning curve social proof backing bandwidth business plan ramen innovator leverage.'
+        text: 'Een utility first CSS framework en tool voor custom design systems.'
         icon: tools/tailwind-logo.svg
         buttons:
           -
@@ -112,7 +106,7 @@ page_builder:
             url: 'https://tailwindcss.com'
       -
         title: Laravel
-        text: 'Advisor startup equity. Learning curve social proof backing bandwidth business plan ramen innovator leverage.'
+        text: 'Het PHP-framework waar Statamic op gebaseerd is. Het stelt me in staat om maatwerk te kunnen toevoegen aan mijn websites.'
         icon: tools/laravel-logo.svg
         buttons:
           -
@@ -122,7 +116,7 @@ page_builder:
             url: 'https://laravel.com'
       -
         title: Ploi.io
-        text: 'Advisor startup equity. Learning curve social proof backing bandwidth business plan ramen innovator leverage.'
+        text: 'Een server management tool van Nederlandse bodem. Met Ploi kun je eenvoudig servers configureren en projecten online zetten.'
         icon: tools/ploi-logo.svg
         buttons:
           -
@@ -132,7 +126,7 @@ page_builder:
             url: 'https://ploi.io'
       -
         title: Hetzner
-        text: 'Advisor startup equity. Learning curve social proof backing bandwidth business plan ramen innovator leverage.'
+        text: 'Betaalbare en snelle cloud servers van onze Oosterburen. GDPR compliant.'
         icon: tools/hetzner-logo.svg
         buttons:
           -
@@ -146,7 +140,7 @@ page_builder:
     enabled: true
     title: Projecten
     limit: 3
-    text: 'Advisor startup equity. Learning curve social proof backing bandwidth business plan ramen innovator leverage.'
+    text: 'Je gaat het pas snappen als je het ziet.'
     buttons:
       -
         label: Portfolio
@@ -157,19 +151,30 @@ page_builder:
     background_text_position: start
     type: quote
     enabled: true
-    name: 'Jouke Zult'
-    linked_via: 67003260-537d-4671-b9d2-01a58a4dfd59
-    image: quotes/jouke-zult.jpg
-    quote: 'Rob''s a top developer that knows his design stuff as well.'
-    quote_size: large
+    name: 'Minke Haveman'
+    linked_via: 3e587978-4076-49fa-8189-b5694d623d47
+    image: quotes/minke-haveman.jpg
+    quote: 'Ik heb in meerdere projecten samengewerkt met Rob en dat is uitstekend bevallen. Rob is absoluut een expert, werkt snel, precies, transparant en geeft pro-actief advies. Bovendien is het CMS dat hij gebruikt absoluut een van de meest fijne systemen die ik ben tegengekomen.'
+    quote_size: small
   -
     article:
+      -
+        type: heading
+        attrs:
+          level: 2
+        content:
+          -
+            type: text
+            marks:
+              -
+                type: bold
+            text: 'Meer dan waar je om vroeg'
       -
         type: paragraph
         content:
           -
             type: text
-            text: "Churn rate infographic assets niche market learning curve gamification customer. Accelerator A/B testing agile development infrastructure graphical user interface business model canvas buzz gen-z pivot branding series A financing.\_"
+            text: 'Een stukje ethische verantwoording naar de mensen toe: ik verlaag de CO₂ -uitstoot van mijn websites door assets te verkleinen en bandbreedte van een paginabezoek zo laag mogelijk te houden. Ook houd ik altijd focus op gebruiksvriendelijkheid en toegankelijkheid. Tegelijk snap ik dat websites goed moeten presteren om bij te dragen aan marketingdoelen. Gelukkig is het beheer van je website een peuleschil, omdat ik weet hoe je Statamic hiervoor kan inzetten. Dat geldt ook voor front end development: ik maak graag die extra animatie of dat effect dat de User Interface ten goede komt.'
     type: article
     enabled: true
     background_text_position: start

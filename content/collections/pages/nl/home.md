@@ -114,7 +114,7 @@ page_builder:
       - Latest
     background_text_position: start
   -
-    title: 'Een CMS met ongekende mogelijkheden'
+    title: 'Een cms met ongekende mogelijkheden'
     tag: h2
     text_content:
       -
