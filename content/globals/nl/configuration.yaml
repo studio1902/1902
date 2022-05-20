@@ -8,5 +8,5 @@ contact_page: 4fbf1889-af9d-4852-8339-555bebbcc803
 availability_from: '2022-08-01'
 pricing_from: 3k
 copyright_since: 2017
-privacy_statement_type: entry
-privacy_statement_entry: 8994808d-fbd1-41bf-bd07-26b6b5782fee
+privacy_statement_type: pdf
+privacy_statement_asset: legal/privacy-statement-nl.pdf
