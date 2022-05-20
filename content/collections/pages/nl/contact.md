@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1652640988
+updated_at: 1653071658
 page_builder:
   -
     title: 'Let''s start a fire'
@@ -25,7 +25,21 @@ page_builder:
         content:
           -
             type: text
-            text: 'Paradigm shift ramen partner network iPad long tail virality. Business model canvas seed round technology influencer. Creative equity product management.'
+            text: 'Enthousiast geworden of een prangende vraag? Mail of bel me, dan hoor je van mij! Volg me vooral ook op '
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'https://twitter.com/studio1902'
+                  rel: noopener
+                  target: _blank
+                  title: null
+            text: Twitter
+          -
+            type: text
+            text: ', want daar vind je actueel, werkgerelateerd nieuws (of cynische tweets).'
     text_position: start
     text_size: small
     animation: fire.json
