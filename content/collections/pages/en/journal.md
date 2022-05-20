@@ -29,10 +29,6 @@ page_builder:
     background_text_position: center
     type: index_content
     enabled: true
-  -
-    title: 'Uitgelezen kans'
-    type: introduction
-    enabled: true
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1653079308
+updated_at: 1653082062
 ---
