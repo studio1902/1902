@@ -3,12 +3,9 @@ tree:
     id: 760f2738-2fed-41e9-aa0f-40834246b2df
     entry: home
   -
-    id: 7a8a26b5-e84e-4ad5-9a8b-78104a9de29b
-    title: Studio
+    id: 966711eb-bada-425c-ac8d-0833a7b9a15a
+    title: Diensten
     children:
-      -
-        id: d0cf9b44-787d-4528-836f-6be432202ee8
-        entry: 784b5e43-4c28-43b1-9771-6f7b35c51826
       -
         id: 330e23ce-e4a5-48b7-8f1b-53f45bafd9a7
         entry: a397a0da-af80-4d0a-b398-f415fd9dd847
@@ -25,8 +22,15 @@ tree:
     id: 6d447a5d-f74b-416d-a45d-c2d7408b6db4
     entry: 7eb87293-600d-404b-8519-2c4a2ebc9e51
   -
-    id: fb8d7756-c190-4859-b7a4-c44cfff7b366
-    entry: b5a546e9-818b-47a5-8fbf-2ce91a8f2e7c
+    id: 7a8a26b5-e84e-4ad5-9a8b-78104a9de29b
+    title: Studio
+    children:
+      -
+        id: d0cf9b44-787d-4528-836f-6be432202ee8
+        entry: 784b5e43-4c28-43b1-9771-6f7b35c51826
+      -
+        id: fb8d7756-c190-4859-b7a4-c44cfff7b366
+        entry: b5a546e9-818b-47a5-8fbf-2ce91a8f2e7c
   -
     id: e606b3d4-0823-4760-8edd-f73381a61a60
     entry: 4fbf1889-af9d-4852-8339-555bebbcc803
