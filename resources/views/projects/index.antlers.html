@@ -14,6 +14,7 @@
     <!-- /projects/index.antlers.html -->
     {{ collection:projects sort="date:desc" paginate="true" limit="10" as="items" }}
         {{ unless no_results }}
+            {{# Thanks John Koster for this gem. #}}
             {{
                 full = items where (project_type == 'full')
                 list = items where (project_type == 'list') orderby (date 'desc');
