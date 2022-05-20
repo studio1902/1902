@@ -1,3 +1,9 @@
+{{#
+	@name Project content
+	@desc The project content component used inside project listing(s).
+#}}
+
+<!-- /components/_project_content.antlers.html -->
 <div class="flex flex-col space-y-6">
     <span class="uppercase text-sm font-medium {{ color or 'text-primary dark:text-secondary' }} tracking-wider">{{ trans:strings.projects_featured }}<span aria-hidden="true"> \</span></span>
     <h2 {{ if generate_id }}:id="$id('project-title')" {{ /if}} class="md:max-w-[calc(85%-4rem)] text-4xl md:text-5xl uppercase tracking-wider {{ color or 'text-primary dark:text-secondary' }}">
@@ -14,3 +20,4 @@
         {{ /project:tools }}
     </ul>
 </div>
+<!-- End: /components/_project_content.antlers.html -->

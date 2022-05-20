@@ -6,7 +6,8 @@
 
 <!-- /components/_green_dot.antlers.html -->
 <div class="{{ !no_sizing ?= 'size-md' }} flex items-center space-x-2">
-    <div class="w-3 h-3 rounded-full bg-primary dark:bg-secondary"></div>
+    {{ partial:components/animating_dot }}
+
     {{
         partial:typography/title
         content="

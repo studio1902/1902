@@ -1,3 +1,9 @@
+{{#
+	@name Animation
+	@desc The animation component rendering site wide used animations.
+#}}
+
+<!-- /components/_animation.antlers.html -->
 <figure
     x-data="{ animation: '' }"
     @click="animation.stop(), animation.play(){{ audio ?= ', $refs.audio.play()' }}"
@@ -25,3 +31,4 @@
         </audio>
     {{ /if }}
 </figure>
+<!-- End: /components/_animation.antlers.html -->

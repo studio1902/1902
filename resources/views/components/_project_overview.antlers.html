@@ -1,3 +1,9 @@
+{{#
+	@name Project overview
+	@desc The project overview component used on project show entries.
+#}}
+
+<!-- /components/_project_overview.antlers.html -->
 <div class="relative fluid-container grid md:grid-cols-12 {{ yield:background_text_compensation }}">
     {{ svg src="{ client:logo }" class="absolute top-0 left-1/2 -translate-x-1/2 md:-translate-y-1/2 h-20 w-auto max-w-full {{ color or 'text-neutral dark:text-white' }} fill-current-cascade" }}
 
@@ -20,3 +26,4 @@
     {{ background_text = ['Nitty','gritty'] }}
     {{ partial:components/background_text background_text_position="start" }}
 </div>
+<!-- End: /components/_project_overview.antlers.html -->

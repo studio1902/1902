@@ -1,3 +1,9 @@
+{{#
+	@name Project list content
+	@desc The project list content component used inside project listing(s).
+#}}
+
+<!-- /components/_project_list_content.antlers.html -->
 <div class="flex flex-col">
     <span class="uppercase font-sm tracking-wider {{ color or 'text-primary dark:text-secondary' }}">{{ sub_title }}</span>
     <h3 :id="$id('project-title')" class="text-4xl font-light uppercase tracking-wider {{ color or 'text-primary dark:text-secondary' }}">
@@ -5,3 +11,4 @@
     </h3>
 </div>
 {{ svg:external_big class="flex-shrink-0 hidden md:block w-8 h-8 {{ color or 'text-primary dark:text-secondary' }} fill-current opacity-0  group-hover:opacity-100 motion-safe:transition-opacity" }}
+<!-- End: /components/_project_list_content.antlers.html -->

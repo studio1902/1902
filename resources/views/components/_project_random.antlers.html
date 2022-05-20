@@ -1,3 +1,9 @@
+{{#
+	@name Project random
+	@desc The project random component fetching a random project that is not the current project.
+#}}
+
+<!-- /components/_project_random.antlers.html -->
 {{ collection in="projects" as="posts" limit="1" sort="random" :id:isnt="id" }}
     {{ posts }}
         <section
@@ -28,3 +34,4 @@
         </section>
     {{ /posts }}
 {{ /collection }}
+<!-- End: /components/_project_random.antlers.html -->
