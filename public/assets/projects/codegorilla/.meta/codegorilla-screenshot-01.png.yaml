@@ -1,6 +1,7 @@
-data: {  }
+data:
+  alt: 'Codegorilla screenshot homepage'
 size: 4748586
-last_modified: 1653074101
+last_modified: 1653074363
 width: 3022
 height: 1782
 mime_type: image/png

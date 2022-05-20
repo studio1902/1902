@@ -1,6 +1,8 @@
-data: {  }
+data:
+  alt: 'Foto van Mia Holte'
+  alt_en: 'Picture of Mia Holte'
 size: 26478
-last_modified: 1653060488
+last_modified: 1653070592
 width: 400
 height: 400
 mime_type: image/jpeg

@@ -1,6 +1,8 @@
-data: {  }
+data:
+  alt: 'Portret van Marc Schriemer'
+  alt_en: 'Portrait of Marc Schriemer'
 size: 55474
-last_modified: 1653067804
+last_modified: 1653070592
 width: 541
 height: 541
 mime_type: image/jpeg

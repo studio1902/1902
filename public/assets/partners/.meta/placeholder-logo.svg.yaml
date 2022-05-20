@@ -1,6 +1,7 @@
-data: {  }
-size: 389
-last_modified: 1653070691
+data:
+  alt: 'Placeholder logo'
+size: 390
+last_modified: 1653071885
 width: '179'
 height: '179'
 mime_type: image/svg+xml

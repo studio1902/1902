@@ -1,6 +1,7 @@
-data: {  }
+data:
+  alt: 'ETN Grafisk logo'
 size: 5743
-last_modified: 1653060428
+last_modified: 1653070592
 width: '168'
 height: '24'
 mime_type: image/svg+xml
