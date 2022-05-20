@@ -33,8 +33,6 @@ fields:
     config:
       display: 'Linked via'
       width: 50
-      validate:
-        - required
       collections:
         - clients
         - partners

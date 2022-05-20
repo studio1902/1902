@@ -4,22 +4,47 @@ blueprint: page
 title: 'Pagina niet gevonden'
 page_builder:
   -
-    article:
-      -
-        type: heading
-        attrs:
-          level: 1
-        content:
-          -
-            type: text
-            text: 'Pagina niet gevonden'
+    title: '404 miau'
+    tag: h1
+    text_content:
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'Helaas, de pagina die je zocht is niet (meer) beschikbaar.'
-    type: article
+            text: 'De pagina die je wilde bezoeken is er niet of niet meer. '
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::home'
+                  rel: noopener
+                  target: null
+                  title: null
+            text: 'Ga naar de homepage'
+          -
+            type: text
+            text: .
+    text_position: start
+    text_size: small
+    animation: cat.json
+    playback_speed: 1.0
+    loop: false
+    intersect: true
+    audio: cat-purring.mp3
+    background_text_position: start
+    type: title_and_text
+    enabled: true
+  -
+    name: 'Rob de Kort'
+    function: 'Eigenaar Studio 1902'
+    image: about/rob-de-kort-studio-1902-01.jpg
+    quote: 'Sorry! Kan ik het goedmaken?'
+    quote_size: large
+    background_text_position: start
+    type: quote
     enabled: true
 seo_noindex: true
 seo_nofollow: false
@@ -27,5 +52,6 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1646941596
+updated_at: 1653081516
+footer_animation: 91a1c315-982e-46e1-b7c1-2ab98eae9aa0
 ---
