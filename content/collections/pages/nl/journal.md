@@ -8,11 +8,11 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1652951453
+updated_at: 1653079282
 template: journal/index
 page_builder:
   -
-    title: 'I write stuff for you to read'
+    title: 'Ik schrijf dingen om te lezen'
     tag: h1
     text_content:
       -
@@ -20,7 +20,7 @@ page_builder:
         content:
           -
             type: text
-            text: 'Find out about the websites Rob creates, and Peak, the community''s #1 Starter Kit for Statamic.'
+            text: 'Artikelen over web development. Soms in het Engels, soms in het Nederlands.'
     text_position: start
     text_size: small
     playback_speed: 1.0

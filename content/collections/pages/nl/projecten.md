@@ -8,11 +8,11 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1652951428
+updated_at: 1653079167
 template: projects/index
 page_builder:
   -
-    title: 'Stuff I built for people to use'
+    title: 'Projecten van mijn hand'
     tag: h1
     text_content:
       -
@@ -20,7 +20,7 @@ page_builder:
         content:
           -
             type: text
-            text: 'Find out about the websites Rob creates, and Peak, the community''s #1 Starter Kit for Statamic.'
+            text: 'Een selectie van mijn werk. Websites voor en door mensen die goed doen.'
     text_position: start
     text_size: small
     playback_speed: 1.0

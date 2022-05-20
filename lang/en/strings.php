@@ -69,9 +69,9 @@ return [
     'pricing'                           => 'Projects starting from :amount',
 
     // Pagination
-    'next'                              => 'next',
+    'next'                              => 'Next',
     'of'                                => 'of',
-    'previous'                          => 'previous',
+    'previous'                          => 'Previous',
 
     // Projects
     'projects_featured'                 => 'Featured',

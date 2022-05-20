@@ -12,7 +12,7 @@
 
 {{ section:index_content }}
     <!-- /projects/index.antlers.html -->
-    {{ collection:projects sort="date:desc" paginate="true" limit="10" as="items" }}
+    {{ collection:projects sort="date:desc" paginate="true" limit="5" as="items" }}
         {{ unless no_results }}
             {{# Thanks John Koster for this gem. #}}
             {{
@@ -26,12 +26,17 @@
                 {{ /scope:project }}
 
                 {{ if next.last }}
-                    {{# Fun things with small items #}}
                     <div class="fluid-container grid lg:grid-cols-12 lg:gap-8">
                         {{ partial:components/project_list class="md:col-span-7 flex flex-col justify-start" :projects="list" }}
                     </div>
                 {{ /if }}
             {{ /full }}
+
+            {{ if !full }}
+                <div class="fluid-container grid lg:grid-cols-12 lg:gap-8">
+                    {{ partial:components/project_list class="md:col-span-7 flex flex-col justify-start" :projects="list" }}
+                </div>
+            {{ /if }}
         {{ else }}
             <div class="fluid-container text-center">
                 {{ trans:strings.no_results }}
