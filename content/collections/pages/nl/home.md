@@ -182,7 +182,7 @@ page_builder:
                   rel: noopener
                   target: null
                   title: null
-            text: PEAK
+            text: Peak
           -
             type: text
             text: '. Kijk rustig rond!'

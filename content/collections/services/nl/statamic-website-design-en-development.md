@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1653055022
+updated_at: 1653061761
 teaser: 'Ik ontwerp en bouw websites die presteren, gebruiksvriendelijk en toegankelijk zijn.'
 introduction: 'Crowdsource non-disclosure agreement. MVP creative pitch venture startup low hanging fruit hypotheses customer strategy iPad partnership social proof. deployment. Long tail success entrepreneur network effects android. deployment.'
 page_builder:
@@ -43,6 +43,7 @@ page_builder:
             text: 'Ik vind het leuk om mee te denken over hoe het design het best tot zijn recht komt. Zo krijg jij ook de beste ervaring met Statamic. Ik werk voor eigen klanten, maar zoek ook regelmatig de samenwerking met creatieve bureaus en juist die afwisseling maakt dat ik elke dag met plezier aan m’n bureau zit (of sta).'
     image: services/studio-1920-office.jpeg
     image_size: small
+    style: bw
   -
     background_text:
       - Sec

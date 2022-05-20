@@ -47,3 +47,11 @@ sections:
           display: Slug
           validate:
             - required
+      -
+        handle: footer_animation
+        field: common.entry
+        config:
+          display: 'Footer animation'
+          instructions: 'Falls back to a random footer animation.'
+          collections:
+            - footer_animations

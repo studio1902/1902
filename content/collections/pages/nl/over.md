@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1652636086
+updated_at: 1653070404
 page_builder:
   -
     title: 'Studio 1902 Over Rob, de studio en een beetje geschiedenis'
@@ -58,6 +58,7 @@ page_builder:
     type: image_and_text
     enabled: true
     image_size: large
+    style: bw
   -
     article:
       -
@@ -108,7 +109,6 @@ page_builder:
             buttons:
               -
                 label: 'Bekijk mijn werk'
-                show_controls: true
                 target_blank: false
                 link_type: entry
                 entry: 7eb87293-600d-404b-8519-2c4a2ebc9e51
@@ -120,6 +120,16 @@ page_builder:
       - Trades
     background_text_position: start
   -
+    name: 'Marc Schriemer'
+    function: Ondernemer
+    linked_via: 6eea46a5-7d9e-483a-a015-d08ff2e9bf6b
+    image: quotes/marc-schriemer.jpg
+    quote: 'Heel prettig samenwerken met Rob. Van een heldere offerte binnen de deadline naar een strakke website. Hij werkt snel, is kundig en komt proactief met verbeteringen. Heel tevreden!'
+    quote_size: small
+    background_text_position: start
+    type: quote
+    enabled: true
+  -
     background_text_position: center
     type: partners
     enabled: true
@@ -128,19 +138,28 @@ page_builder:
       - 'Let''s'
       - team
       - up
+    partners:
+      - f8c33cb6-311e-4158-97d3-11ca4dea4592
+      - 67003260-537d-4671-b9d2-01a58a4dfd59
+      - aab05cd5-5187-4b6e-9b83-55eb74c4a41b
+      - 3e587978-4076-49fa-8189-b5694d623d47
+      - e3ed3cae-ef3d-43ef-b814-0863cbb72500
+      - a0d02eaf-c629-4d40-9f4d-4af6c1d4c53e
   -
     article:
       -
-        type: set
-        attrs:
-          values:
-            type: figure
-            image: about/rob-de-kort-studio-1902-02.jpg
-            size: lg
-            style: bw
-    background_text_position: start
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Ben je bezig met een project en wil je sparren, samenwerken of onderdelen uitbesteden? Ik werk heel graag met je samen.'
+    background_text_position: center
     type: article
     enabled: true
+    background_text:
+      - What
+      - about
+      - 'you?'
   -
     title: 'Do you strive for purrfection?'
     type: introduction

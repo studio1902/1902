@@ -191,3 +191,11 @@ sections:
           read_only: false
           validate:
             - url
+      -
+        handle: footer_animation
+        field: common.entry
+        config:
+          display: 'Footer animation'
+          instructions: 'Falls back to a random footer animation.'
+          collections:
+            - footer_animations

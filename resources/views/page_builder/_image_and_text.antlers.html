@@ -30,7 +30,7 @@
             }}
         "
     >
-        {{ partial:components/picture :image="block:image" class="grayscale" cover="true" lazy="true" sizes="(min-width: 768px) 75vw, 90vw"  }}
+        {{ partial:components/picture :image="block:image" class="{ style === 'bw' ?= 'grayscale' }" cover="true" lazy="true" sizes="(min-width: 768px) 75vw, 90vw"  }}
     </figure>
 
     {{ partial:components/background_text }}

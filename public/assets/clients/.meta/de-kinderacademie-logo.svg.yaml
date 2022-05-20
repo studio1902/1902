@@ -1,6 +1,7 @@
-data: {  }
+data:
+  alt: 'De Kinderacademie logo'
 size: 3625
-last_modified: 1652967647
+last_modified: 1652969288
 width: '226'
 height: '104'
 mime_type: image/svg+xml

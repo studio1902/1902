@@ -1,6 +1,7 @@
-data: {  }
+data:
+  alt: 'Waltec logo'
 size: 11201
-last_modified: 1652967562
+last_modified: 1652969288
 width: '1440'
 height: '389'
 mime_type: image/svg+xml

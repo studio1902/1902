@@ -64,7 +64,7 @@ fields:
       options:
         small: Small
         large: Large
-      default: large
+      default: small
       display: Quote size
       type: button_group
       icon: button_group

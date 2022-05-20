@@ -1,6 +1,7 @@
-data: {  }
-size: 8530
-last_modified: 1653054776
+data:
+  alt: 'Minke Haveman Logo'
+size: 8573
+last_modified: 1653056662
 width: 539.0
 height: 64.0
 mime_type: image/svg+xml

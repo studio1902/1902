@@ -36,7 +36,7 @@
                 class="relative leading-none"
             >
                 <a
-                    class="relative z-10 py-1 px-2 -my-1 -mx-2 flex items-center rounded-full font-medium text-base uppercase tracking-widest text-neutral dark:text-white focus:outline-none focus-visible:ring-2 ring-primary dark:ring-secondary group {{ is_current || is_parent ?= 'after:absolute after:z-behind after:h-[3px] after:-inset-x-0 after:bg-primary dark:after:bg-secondary' }}"
+                    class="relative z-10 py-1 px-2 -my-1 -mx-2 flex items-center rounded-full font-medium text-base uppercase tracking-widest text-neutral dark:text-white focus:outline-none focus-visible:ring-2 ring-primary dark:ring-secondary group {{ is_current || is_parent ?= 'after:absolute after:z-behind after:h-[3px] after:-inset-x-0 after:bg-primary dark:after:bg-secondary after:opacity-70' }}"
                     {{ if children }}
                         href="#"
                         @click.prevent="toggle()"

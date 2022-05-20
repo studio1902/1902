@@ -12,6 +12,23 @@ fields:
       validate: required
       width: 50
   -
+    handle: style
+    field:
+      options:
+        bw: 'Black and white'
+        color: 'Full color'
+      default: bw
+      display: Style
+      type: button_group
+      icon: button_group
+      width: 50
+      listable: hidden
+      instructions_position: above
+      read_only: false
+      replicator_preview: false
+      validate:
+        - required
+  -
     handle: image_size
     field:
       options:
