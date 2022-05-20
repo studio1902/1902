@@ -39,6 +39,3 @@ sections:
           mode: grid
           listable: true
           display: Logo
-          validate:
-            - required
-            - 'mimes:svg'

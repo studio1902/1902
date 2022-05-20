@@ -8,6 +8,7 @@
 <figure
     class="
         not-prose
+        !my-4
         {{ switch(
             (size == 'md') => 'size-md',
             (size == 'lg') => 'size-lg',
@@ -16,10 +17,15 @@
         )}}
     "
 >
+    {{ browser_frame ?= { partial:components/title_bar } }}
     {{
         partial:components/picture
         :image="image"
-        class="w-full { style === 'bw' ?= 'grayscale' }"
+        class="
+            w-full
+            { style === 'bw' ?= 'grayscale' }
+            { browser_frame ?= 'border border-primary dark:border-secondary' }
+        "
         cover="false"
         lazy="true"
         sizes="

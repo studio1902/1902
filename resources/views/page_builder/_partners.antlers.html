@@ -50,7 +50,7 @@
                             :class="{ 'grayscale contrast-150 dark:contrast-100 dark:grayscale-0': !expanded, 'grayscale-0 contrast-100': expanded }"
                             aria-hidden="true"
                         >
-                            {{ svg :src="logo" width="30" height="30" class="w-full h-auto" aria-hidden="true" }}
+                            {{ logo ?= { svg :src="logo" width="30" height="30" class="w-full h-auto" aria-hidden="true" } }}
                         </figure>
                     </article>
                 {{ /partners }}

@@ -35,3 +35,14 @@ fields:
       listable: hidden
       display: Caption
       width: 50
+  -
+    handle: browser_frame
+    field:
+      default: false
+      display: 'Browser frame'
+      type: toggle
+      icon: toggle
+      width: 50
+      listable: hidden
+      instructions_position: above
+      read_only: false
