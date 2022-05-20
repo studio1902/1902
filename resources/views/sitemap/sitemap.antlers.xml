@@ -1,7 +1,7 @@
 {{ xml_header }}
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" {{ yield:namespace }}>
     {{ seo:sitemap_collections }}
-        {{ collection from="{handle}" seo_noindex:isnt="true" as="results" }}
+        {{ collection from="{handle}" seo_noindex:isnt="true" as="results" project_type:isnt="list" }}
             {{ results }}
                 <url>
                     <loc>{{ permalink }}</loc>
