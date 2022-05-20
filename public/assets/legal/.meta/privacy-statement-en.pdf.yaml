@@ -1,6 +1,7 @@
-data: {  }
+data:
+  alt: 'Privacy statement'
 size: 34067
-last_modified: 1653083058
+last_modified: 1653083152
 width: null
 height: null
 mime_type: application/pdf

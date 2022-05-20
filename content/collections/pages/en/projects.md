@@ -36,4 +36,6 @@ page_builder:
     enabled: true
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
 updated_at: 1653079192
+og_image: projects-og-1653085548.png
+twitter_image: projects-twitter-1653085548.png
 ---

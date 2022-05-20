@@ -207,4 +207,6 @@ page_builder:
     background_text_position: end
     type: article
     enabled: true
+og_image: statamic-peak-og-1653085580.png
+twitter_image: statamic-peak-twitter-1653085580.png
 ---

@@ -195,4 +195,6 @@ page_builder:
     size: small
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
 updated_at: 1653043876
+og_image: '-og-1653085536.png'
+twitter_image: '-twitter-1653085536.png'
 ---

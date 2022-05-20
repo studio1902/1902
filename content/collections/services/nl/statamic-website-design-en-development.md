@@ -179,4 +179,6 @@ page_builder:
     type: article
     enabled: true
     background_text_position: start
+og_image: website-design-development-og-1653085574.png
+twitter_image: website-design-development-twitter-1653085574.png
 ---

@@ -73,4 +73,6 @@ page_builder:
     type: article
     enabled: true
 footer_animation: 21e68da1-7ba6-42e4-ab5d-c25225a87524
+og_image: lezingen-consultancy-og-1653085577.png
+twitter_image: lezingen-consultancy-twitter-1653085577.png
 ---

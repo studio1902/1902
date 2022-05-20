@@ -159,4 +159,6 @@ page_builder:
     enabled: true
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
 updated_at: 1653070421
+og_image: about-og-1653085530.png
+twitter_image: about-twitter-1653085530.png
 ---
