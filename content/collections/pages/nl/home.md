@@ -202,6 +202,6 @@ page_builder:
     text_size: small
     size: small
 footer_animation: 8cd0bf8f-7d9c-4519-a844-526222b47992
-og_image: home-og-1653085538.png
-twitter_image: home-twitter-1653085538.png
+og_image: home-og-1653085918.png
+twitter_image: home-twitter-1653085918.png
 ---

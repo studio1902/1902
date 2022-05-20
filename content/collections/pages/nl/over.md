@@ -165,6 +165,6 @@ page_builder:
     type: introduction
     enabled: true
 footer_animation: 8cd0bf8f-7d9c-4519-a844-526222b47992
-og_image: over-og-1653085542.png
-twitter_image: over-twitter-1653085542.png
+og_image: over-og-1653085922.png
+twitter_image: over-twitter-1653085922.png
 ---

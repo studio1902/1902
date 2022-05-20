@@ -63,6 +63,6 @@ page_builder:
     enabled: true
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
 updated_at: 1653059007
-og_image: talks-consultancy-og-1653085578.png
-twitter_image: talks-consultancy-twitter-1653085578.png
+og_image: talks-consultancy-og-1653085942.png
+twitter_image: talks-consultancy-twitter-1653085942.png
 ---
