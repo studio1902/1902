@@ -38,10 +38,14 @@ use_social_image_generation: true
 social_images_collections:
   - pages
   - projects
+  - journal
+  - services
 twitter_handle: studio1902
 sitemap_collections:
   - pages
   - projects
+  - journal
+  - services
 trackers_local: false
 trackers_staging: false
 trackers_production: true
