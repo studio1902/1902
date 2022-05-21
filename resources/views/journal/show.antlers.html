@@ -4,7 +4,7 @@
 #}}
 
 <!-- /journal/show.antlers.html -->
-<main class="outer-grid" id="content">
+<main class="outer-grid" id="content" {{ locale != language ?= 'lang="{ language }"'}}>
     {{ partial:components/_journal_entry_introduction }}
 
     {{ page_builder scope="block" }}

@@ -31,11 +31,11 @@ page_builder:
     type: index_content
     enabled: true
   -
-    title: 'Uitgelezen kans?'
+    title: 'Seen enough?'
     type: introduction
     enabled: true
+og_image: null
+twitter_image: null
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1653079192
-og_image: projects-og-1653085928.png
-twitter_image: projects-twitter-1653085928.png
+updated_at: 1653141392
 ---

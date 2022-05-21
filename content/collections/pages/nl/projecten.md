@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1653079167
+updated_at: 1653141387
 template: projects/index
 page_builder:
   -
@@ -39,7 +39,7 @@ page_builder:
     type: index_content
     enabled: true
   -
-    title: 'Uitgelezen kans?'
+    title: 'Genoeg gezien?'
     type: introduction
     enabled: true
 og_image: projecten-og-1653123986.png
