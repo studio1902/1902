@@ -10,5 +10,5 @@ apple_status_bar_black: false
 android_mobile_web_app: false
 use_favicons: true
 svg: favicon.svg
-safari_color: '#13E87C'
+safari_color: '#12B54A'
 ios_color: '#FFFFFF'
