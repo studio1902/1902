@@ -63,11 +63,16 @@
 
                     {{# Pulse button and disable upon sending. #}}
                     <div class="md:col-span-12 flex justify-end">
-                        {{ partial:components/button as="button" label="{ trans:strings.form_send }" }}
-                            {{ slot:attributes }}
-                                :disabled="sending" :class="{ 'opacity-25 cursor-default': sending }"
-                            {{ /slot:attributes }}
-                        {{ /partial:components/button }}
+                        <button
+                            class="relative py-2 px-3 border border-primary dark:border-secondary bg-primary dark:bg-secondary text-white focus:outline-none focus-visible:ring-4 ring-primary ring-offset-2 dark:ring-offset-neutral dark:ring-secondary motion-safe:transition group"
+                            :disabled="sending"
+                            :class="{ 'opacity-25 cursor-default': sending }"
+                        >
+                            <span class="uppercase tracking-wider">{{ trans:strings.form_send }}</span>
+                            <div class="absolute inset-0 py-2 px-3 bg-white dark:bg-neutral text-primary dark:text-secondary [clip-path:circle(20%_at_-20%_130%)] group-hover:[clip-path:circle(180%_at_-20%_130%)] motion-safe:transition-all" aria-hidden="true">
+                                <span class="text-primary dark:text-secondary uppercase tracking-wider">{{ trans:strings.form_send }}</span>
+                            </div>
+                        </button>
                     </div>
                     <template x-if="success">
                         {{ partial src="components/notification" type="success" class="md:col-span-12" content="{trans:strings.form_success}" }}
