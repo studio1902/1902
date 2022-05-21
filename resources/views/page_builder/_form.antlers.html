@@ -85,6 +85,8 @@
                         errors: [],
                         sending: false,
                         success: false,
+                        confetti: null,
+                        colors: [],
                         sendForm: async function() {
                             this.sending = true
 
@@ -104,9 +106,18 @@
                                     this.error = false
                                     this.sending = false
                                     this.$refs.form.reset()
+                                    this.confetti = confetti({
+                                        particleCount: 150,
+                                        spread: 100,
+                                        origin: { y: 0.6 },
+                                        shape: ['circle', 'circle', 'square'],
+                                        colors: ['#12B54A', '#FF0274'],
+                                        disableForReducedMotion: true
+                                    })
 
                                     setTimeout(function(){
                                         this.success = false
+                                        this.confetti.reset()
                                     }, 4500)
                                 }
                                 if (json['error']) {

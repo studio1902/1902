@@ -4,6 +4,7 @@ import intersect from '@alpinejs/intersect'
 import persist from '@alpinejs/persist'
 import focus from '@alpinejs/focus'
 import lottie from 'lottie-web'
+import confetti from 'canvas-confetti'
 import 'focus-visible'
 
 // Global get CSRF token function (used by forms).
@@ -17,6 +18,9 @@ window.getToken = async () => {
             this.error = 'Something went wrong. Please try again later.'
         })
 }
+
+// Init confetti
+window.confetti = confetti
 
 // Init Lottie
 window.lottie = lottie
