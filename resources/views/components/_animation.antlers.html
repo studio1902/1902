@@ -11,7 +11,11 @@
         animation = lottie.loadAnimation({
             container: $el,
             renderer: 'svg',
-            autoplay: {{ intersect ? 'false' : 'true' }},
+            {{ unless !autoplay }}
+                autoplay: {{ intersect ? 'false' : 'true' }},
+            {{ else }}
+                autoplay: false,
+            {{ /unless }}
             loop: {{ loop ? 'true' : '1' }},
             path: '{{ animation }}'
         })

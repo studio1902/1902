@@ -7,13 +7,14 @@
 {{ if background_text }}
     <div
         class="
-            absolute inset-0 z-behind w-full flex justify-center select-none pointer-events-none
+            absolute inset-0 z-behind w-full flex {{ position or 'justify-center' }} select-none pointer-events-none
             {{ switch(
                 (background_text_position === 'start') => 'items-start',
                 (background_text_position === 'center') => 'items-center',
                 (background_text_position === 'end') => 'items-end',
                 () => 'items-center'
             )}}
+            {{ class }}
         "
         aria-hidden="true"
     >

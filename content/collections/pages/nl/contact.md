@@ -58,6 +58,6 @@ page_builder:
     form: contact
     type: form
     enabled: true
-og_image: contact-og-1653085915.png
-twitter_image: contact-twitter-1653085915.png
+og_image: contact-og-1653123977.png
+twitter_image: contact-twitter-1653123977.png
 ---

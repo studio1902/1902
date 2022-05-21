@@ -42,6 +42,6 @@ page_builder:
     title: 'Uitgelezen kans?'
     type: introduction
     enabled: true
-og_image: projecten-og-1653085927.png
-twitter_image: projecten-twitter-1653085927.png
+og_image: projecten-og-1653123986.png
+twitter_image: projecten-twitter-1653123986.png
 ---

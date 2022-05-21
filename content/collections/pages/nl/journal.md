@@ -42,6 +42,6 @@ page_builder:
     title: 'Uitgelezen kans'
     type: introduction
     enabled: true
-og_image: journal-og-1653085921.png
-twitter_image: journal-twitter-1653085921.png
+og_image: journal-og-1653123981.png
+twitter_image: journal-twitter-1653123981.png
 ---
