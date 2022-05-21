@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1653061364
+updated_at: 1653126450
 teaser: 'Mijn bijdrage aan de open-source-gemeenschap, een complete starter kit voor ontwikkelaars uit de Statamic Community. Gratis.'
 introduction: 'Crowdsource non-disclosure agreement. MVP creative pitch venture startup low hanging fruit hypotheses customer strategy iPad partnership social proof. deployment. Long tail success entrepreneur network effects android. deployment.'
 page_builder:
@@ -26,10 +26,7 @@ page_builder:
         content:
           -
             type: text
-            marks:
-              -
-                type: bold
-            text: 'De populairste kit in de Statamic Community'
+            text: 'De populairste starter kit'
       -
         type: paragraph
         content:
@@ -37,7 +34,7 @@ page_builder:
             type: text
             text: 'Een handige starter kit waarmee je snel aan de slag kan en nieuwe dingen leert.'
     image: services/statamic-starter-kit-peak.jpg
-    style: bw
+    style: color
     image_size: small
     background_text_position: start
     type: image_and_text
@@ -139,6 +136,7 @@ page_builder:
     projects:
       - 4b4b9b6a-508f-4d18-8b35-3e53db6a2066
       - 3a39cb30-08b0-42db-85c9-bcffc5aa7d71
+      - 524c0aa8-af38-4f99-8068-6c03bb2a3243
     text: 'Al mijn Statamic websites zijn gebouwd met behulp van Peak.'
     buttons:
       -
@@ -200,6 +198,11 @@ page_builder:
                 link_type: url
                 target_blank: true
                 url: 'https://discord.com/invite/sW7KXWaucH'
+              -
+                label: Screencast
+                link_type: url
+                target_blank: true
+                url: 'https://www.youtube.com/watch?v=79Ist1HrHoA'
     background_text:
       - Why
       - 'tell me'

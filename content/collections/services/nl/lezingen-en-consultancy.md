@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1653058906
+updated_at: 1653126213
 teaser: 'Ik kom graag bij jouw team langs om mijn kennis te delen, sharing is caring!'
 introduction: 'Crowdsource non-disclosure agreement. MVP creative pitch venture startup low hanging fruit hypotheses customer strategy iPad partnership social proof. deployment. Long tail success entrepreneur network effects android. deployment.'
 page_builder:
@@ -26,9 +26,6 @@ page_builder:
         content:
           -
             type: text
-            marks:
-              -
-                type: bold
             text: 'Bouw betere websites'
       -
         type: paragraph
@@ -51,6 +48,7 @@ page_builder:
       - Sharing
       - is
       - caring
+    style: bw
   -
     name: 'Joris Hartsuiker'
     function: 'Head of Development'

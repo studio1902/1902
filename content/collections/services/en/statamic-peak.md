@@ -17,7 +17,7 @@ page_builder:
         content:
           -
             type: text
-            text: 'The most popular kit in the Statamic Community'
+            text: 'The most popular starter kit'
       -
         type: paragraph
         content:
@@ -25,7 +25,7 @@ page_builder:
             type: text
             text: 'A handy starter kit with which you can quickly get started and learn new things.'
     image: services/statamic-starter-kit-peak.jpg
-    style: bw
+    style: color
     image_size: small
     background_text_position: start
     type: image_and_text
@@ -118,6 +118,7 @@ page_builder:
     projects:
       - 4b4b9b6a-508f-4d18-8b35-3e53db6a2066
       - 3a39cb30-08b0-42db-85c9-bcffc5aa7d71
+      - 0acd0189-4728-4b93-9412-3fcb52fb7964
     text: 'All my Statamic sites have been built using Peak'
     buttons:
       -
@@ -186,8 +187,8 @@ page_builder:
     background_text_position: end
     type: article
     enabled: true
+og_image: null
+twitter_image: null
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1653061353
-og_image: '-og-1653085936.png'
-twitter_image: '-twitter-1653085936.png'
+updated_at: 1653126461
 ---
