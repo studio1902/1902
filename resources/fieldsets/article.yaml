@@ -14,6 +14,7 @@ fields:
         - quote
         - removeformat
         - anchor
+        - code
       save_html: false
       toolbar_mode: fixed
       link_noopener: false
@@ -74,5 +75,8 @@ fields:
       container: assets
       enable_input_rules: true
       enable_paste_rules: true
+      instructions_position: above
+      read_only: false
+      antlers: false
   -
     import: background_text

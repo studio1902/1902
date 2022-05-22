@@ -70,7 +70,7 @@
 }
 
 pre {
-    @apply my-4 overflow-x-auto;
+    @apply my-2 overflow-x-auto;
 }
 
 pre code.torchlight {
