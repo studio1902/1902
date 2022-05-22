@@ -1,3 +1,1 @@
-<pre><x-torchlight-code language='antlers'>
-    {!! $code !!}
-</x-torchlight-code></pre>
+<pre><x-torchlight-code :language="$mode == 'handlebars' ? 'antlers' : $mode">{!! $code !!}</x-torchlight-code></pre>
