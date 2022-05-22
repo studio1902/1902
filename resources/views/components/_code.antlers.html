@@ -1,0 +1,21 @@
+{{#
+	@name Code
+	@desc The Code component.
+    @set page.article.code
+#}}
+
+<!-- /components/_code.antlers.html -->
+<div
+    class="
+        not-prose
+        {{ switch(
+            (size == 'md') => 'size-md',
+            (size == 'lg') => 'size-lg',
+            (size == 'xl') => 'size-xl',
+            () => 'size-md'
+        )}}
+    "
+>
+    <code>{{ code }}</code>
+</div>
+<!-- End: /components/_code.antlers.html -->

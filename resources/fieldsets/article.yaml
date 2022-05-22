@@ -36,6 +36,11 @@ fields:
           fields:
             -
               import: buttons
+        code:
+          display: Code
+          fields:
+            -
+              import: code
         dot_label:
           display: 'Dot label'
           fields:
