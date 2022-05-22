@@ -16,7 +16,8 @@
         "laravel/framework": "^8.0",
         "laravel/tinker": "^2.0",
         "spatie/browsershot": "^3.52",
-        "statamic/cms": "^v3.3.0"
+        "statamic/cms": "^v3.3.0",
+        "torchlight/torchlight-laravel": "^0.5.11"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.5",
