@@ -4,7 +4,7 @@
 #}}
 
 <!-- /components/_social_image.antlers.html -->
-<div id="{{ selector }}" style="{{ style }}" class="relative p-12 flex flex-col justify-between bg-neutral-50">
+<div id="{{ selector }}" style="{{ style }}" class="relative p-12 flex flex-col justify-between">
     {{ get_content:id }}
         {{ partial:components/logo_desktop class="relative z-10 h-20 w-auto" }}
         {{ if collection:handle === 'pages' }}
@@ -12,25 +12,25 @@
                 {{ if result }}
                     {{ result }}
                         {{ partial:components/animation class="self-end w-32 h-32" autoplay="false" intersect="false" }}
-                        {{ partial:typography/h1 :content="title" class="self-end text-right max-w-[70%] !text-7xl text-shadow" }}
+                        {{ partial:typography/h1 :content="title" class="self-end text-right max-w-[70%] !text-7xl" }}
                         {{ partial:components/background_text background_text_position="center" position="justify-end" class="pr-32" }}
                     {{ /result }}
                 {{ else }}
-                    {{ partial:typography/h1 :content="title" class="self-end text-right max-w-[70%] !text-7xl text-shadow" }}
+                    {{ partial:typography/h1 :content="title" class="self-end text-right max-w-[70%] !text-7xl" }}
                 {{ /if }}
             {{ /page_builder }}
         {{ elseif collection:handle === 'services' }}
-            {{ partial:typography/h1 :content="title" class="self-end text-right max-w-[70%] !text-7xl text-shadow" }}
+            {{ partial:typography/h1 :content="title" class="self-end text-right max-w-[70%] !text-7xl" }}
             {{ background_text = ['Services'] }}
             {{ partial:components/background_text background_text_position="center" position="justify-end" class="pr-32" }}
         {{ elseif collection:handle === 'journal' || collection:handle === 'projects' }}
-            <div class="absolute right-16 bottom-20 w-2/5 -rotate-1">
+            <div class="absolute right-12 bottom-16 w-2/5 -rotate-1">
                 {{ partial:components/title_bar }}
                 <figure class="aspect-w-4 aspect-h-3 border border-primary">
                     {{ partial:components/picture :image="image" cover="true" lazy="true" sizes="(min-width: 768px) 66vw, 90vw"  }}
                 </figure>
             </div>
-            {{ partial:typography/h1 content="{ sub_title ?? title }" class="relative text-left max-w-[70%] !text-7xl text-shadow" }}
+            {{ partial:typography/h1 content="{ sub_title ?? title }" class="relative text-left max-w-[55%] !text-[4rem]" }}
         {{ /if }}
     {{ /get_content:id }}
 </div>
