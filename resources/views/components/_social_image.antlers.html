@@ -12,15 +12,15 @@
                 {{ if result }}
                     {{ result }}
                         {{ partial:components/animation class="self-end w-32 h-32" autoplay="false" intersect="false" }}
-                        {{ partial:typography/h1 :content="title" class="self-end text-right max-w-[70%] !text-7xl" }}
+                        {{ partial:typography/h1 :content="title" class="self-end text-right max-w-[70%] !text-7xl text-shadow" }}
                         {{ partial:components/background_text background_text_position="center" position="justify-end" class="pr-32" }}
                     {{ /result }}
                 {{ else }}
-                    {{ partial:typography/h1 :content="title" class="self-end text-right max-w-[70%] !text-7xl" }}
+                    {{ partial:typography/h1 :content="title" class="self-end text-right max-w-[70%] !text-7xl text-shadow" }}
                 {{ /if }}
             {{ /page_builder }}
         {{ elseif collection:handle === 'services' }}
-            {{ partial:typography/h1 :content="title" class="self-end text-right max-w-[70%] !text-7xl" }}
+            {{ partial:typography/h1 :content="title" class="self-end text-right max-w-[70%] !text-7xl text-shadow" }}
             {{ background_text = ['Services'] }}
             {{ partial:components/background_text background_text_position="center" position="justify-end" class="pr-32" }}
         {{ elseif collection:handle === 'journal' || collection:handle === 'projects' }}
@@ -30,7 +30,7 @@
                     {{ partial:components/picture :image="image" cover="true" lazy="true" sizes="(min-width: 768px) 66vw, 90vw"  }}
                 </figure>
             </div>
-            {{ partial:typography/h1 content="{ sub_title ?? title }" class="relative text-left max-w-[70%] !text-7xl" }}
+            {{ partial:typography/h1 content="{ sub_title ?? title }" class="relative text-left max-w-[70%] !text-7xl text-shadow" }}
         {{ /if }}
     {{ /get_content:id }}
 </div>

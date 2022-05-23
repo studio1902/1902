@@ -197,6 +197,9 @@ module.exports = {
     // Custom utilities for this particular site.
     plugin(function({ addUtilities, theme, variants }) {
       const newUtilities = {
+        '.text-shadow': {
+          textShadow: '2px 2px 0px #fff'
+        }
       }
       addUtilities(newUtilities)
     }),

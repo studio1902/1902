@@ -1,6 +1,7 @@
-data: {  }
+data:
+  alt: 'Responsive images in Statamic.'
 size: 239298
-last_modified: 1653332026
+last_modified: 1653334047
 width: 1667
 height: 1242
 mime_type: image/png
