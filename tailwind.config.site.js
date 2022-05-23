@@ -140,21 +140,6 @@ module.exports = {
             fontWeight: theme('fontWeight.light'),
             // fontFamily: theme('fontFamily.serif'),
         },
-        'pre': {
-          margin: '.5rem 0',
-        },
-        'pre code.torchlight': {
-          display: 'block',
-          padding: '1rem 0',
-          minWidth: '100%',
-          fontSize: theme('fontSize.xs'),
-        },
-        'pre code.torchlight .line': {
-          padding: '0 1rem',
-        },
-        'pre code.torchlight .line-number, pre code.torchlight .summary-caret': {
-          marginRight: '1rem',
-        }
       })
     }),
 
@@ -188,6 +173,20 @@ module.exports = {
         },
         '.dark .drop-cap > *:first-of-type > p:first-child::first-letter': {
           color: theme('colors.secondary'),
+        },'pre': {
+          margin: '.5rem 0',
+        },
+        'pre code.torchlight': {
+          display: 'block',
+          padding: '1rem 0',
+          minWidth: '100%',
+          fontSize: theme('fontSize.xs'),
+        },
+        'pre code.torchlight .line': {
+          padding: '0 1rem',
+        },
+        'pre code.torchlight .line-number, pre code.torchlight .summary-caret': {
+          marginRight: '1rem',
         }
       }
       addComponents(components)
