@@ -173,13 +173,15 @@ module.exports = {
         },
         '.dark .drop-cap > *:first-of-type > p:first-child::first-letter': {
           color: theme('colors.secondary'),
-        },'pre': {
+        },
+        'pre': {
           margin: '.5rem 0',
+          overflowX: 'auto',
         },
         'pre code.torchlight': {
           display: 'block',
           padding: '1rem 0',
-          minWidth: '100%',
+          minWidth: 'max-content',
           fontSize: theme('fontSize.xs'),
         },
         'pre code.torchlight .line': {
