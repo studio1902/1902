@@ -19,19 +19,15 @@
     {{ code_snippet }}
         {{ partial:components/torchlight }}
     {{ /code_snippet }}
+
     {{ partial:typography/caption as="span" }}
 </div>
 
 {{ once }}
     {{ section:attribution }}
         <!-- /components/_code.antlers.html -->
-        <aside class="fluid-container grid grid-cols-12">
-            <div class="size-md">
-                <div class="flex items-baseline text-neutral dark:text-white scale-75 origin-left">
-                    <span>Code highlighting by: </span>
-                    {{ partial:components/button label="Torchlight" target_blank="true" link_type="url" url="https://torchlight.dev" }}
-                </div>
-            </div>
+        <aside class="size-md text-neutral dark:text-white text-xs">
+            Code highlighting by: <a rel="noopener" target="_blank" href="https://torchlight.dev">Torchlight</a>
         </aside>
         <!-- End: /components/_code.antlers.html -->
     {{ /section:attribution }}

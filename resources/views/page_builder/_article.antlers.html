@@ -10,6 +10,7 @@
         {{ article }}
             {{ partial src="components/{type}" }}
         {{ /article }}
+        {{ yield:attribution }}
     {{ /partial:typography/prose }}
 
     {{ partial:components/background_text }}
