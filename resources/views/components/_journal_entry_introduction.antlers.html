@@ -8,7 +8,7 @@
     {{ partial:typography/h1 :content="title" class="mb-8" }}
 
     <aside class="text-neutral dark:text-white">
-        <time class="inline-block mb-2">{{ date | format_localized('%e %B %Y') }}</time>, {{ trans:strings.journal_by }} {{ author:name }}
+        <time class="inline-block mb-2" lang="{{ locale }}">{{ date | format_localized('%e %B %Y') }}</time>, {{ trans:strings.journal_by }} {{ author:name }}
 
         <div class="font-medium text-xs uppercase tracking-wider text-primary dark:text-secondary">
             {{ tags | pluck('title') | list }}

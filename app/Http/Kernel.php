@@ -14,7 +14,6 @@ class Kernel extends HttpKernel
      * @var array
      */
     protected $middleware = [
-        \Torchlight\Middleware\RenderTorchlight::class,
         \App\Http\Middleware\TrustProxies::class,
         \Fruitcake\Cors\HandleCors::class,
         \App\Http\Middleware\PreventRequestsDuringMaintenance::class,
@@ -30,6 +29,7 @@ class Kernel extends HttpKernel
      */
     protected $middlewareGroups = [
         'web' => [
+            \Torchlight\Middleware\RenderTorchlight::class,
             \App\Http\Middleware\EncryptCookies::class,
             \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
             \Illuminate\Session\Middleware\StartSession::class,
@@ -62,5 +62,17 @@ class Kernel extends HttpKernel
         'signed' => \Illuminate\Routing\Middleware\ValidateSignature::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
+    ];
+
+    /**
+     * Set middleware priority.
+     *
+     * Render Torchlight before Caching.
+     *
+     * @var array
+     */
+    protected $middlewarePriority = [
+        \Statamic\StaticCaching\Middleware\Cache::class,
+        \Torchlight\Middleware\RenderTorchlight::class,
     ];
 }
