@@ -4,8 +4,8 @@
 #}}
 
 <!-- /components/_project_overview.antlers.html -->
-<div class="relative fluid-container grid md:grid-cols-12 {{ yield:background_text_compensation }}">
-    {{ client:logo ?= { svg src="{ client:logo }" class="absolute top-0 left-1/2 -translate-x-1/2 md:-translate-y-1/2 h-20 w-auto max-w-full { color or 'text-neutral dark:text-white' } fill-current-cascade" } }}
+<div class="relative fluid-container grid md:grid-cols-12 mt-24">
+    {{ client:logo ?= { svg src="{ client:logo }" class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-[150%] h-20 w-auto max-w-full { color or 'text-neutral dark:text-white' } fill-current-cascade" } }}
 
     <article class="flex flex-col space-y-8 md:pr-40 md:col-span-7 md:col-start-1 md:row-span-3 md:row-start-1 p-8 md:p-12 bg-primary dark:bg-secondary">
         {{ partial:typography/h2 color="text-white" content="{ trans:strings.projects_overview }" }}
@@ -22,8 +22,5 @@
     <figure class="md:col-span-6 md:col-start-7 md:row-start-2 md:row-span-3">
         {{ partial:components/picture :image="image" cover="true" lazy="true" sizes="(min-width: 768px) 75vw, 90vw"  }}
     </figure>
-
-    {{ background_text = ['Nitty','gritty'] }}
-    {{ partial:components/background_text background_text_position="start" }}
 </div>
 <!-- End: /components/_project_overview.antlers.html -->
