@@ -92,6 +92,11 @@ return [
             'driver' => 'octane',
         ],
 
+        'torchlight' => [
+            'driver' => 'file',
+            'path' => storage_path('torchlight/'),
+        ],
+
     ],
 
     /*

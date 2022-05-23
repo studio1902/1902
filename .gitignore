@@ -5,6 +5,7 @@
 /public/img/
 /public/static/
 /storage/*.key
+/storage/torchlight
 /vendor
 .env
 .env.backup
