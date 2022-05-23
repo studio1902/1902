@@ -3,7 +3,7 @@ id: home
 blueprint: page
 title: Home
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1653045107
+updated_at: 1653299552
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -204,4 +204,5 @@ page_builder:
 footer_animation: 8cd0bf8f-7d9c-4519-a844-526222b47992
 og_image: home-og-1653123979.png
 twitter_image: home-twitter-1653123979.png
+seo_description: 'Maatwerk voor toegankelijke websites. Studio 1902 is het huis van Rob de Kort. Webdesigner en Statamic developer.'
 ---

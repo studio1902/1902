@@ -193,8 +193,9 @@ page_builder:
     audio: heartbeat.mp3
     text_size: small
     size: small
+seo_description: 'Bespoke and accessible websites. Studio 1902 is home of Rob de Kort. Webdesigner and Statamic developer.'
+og_image: null
+twitter_image: null
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1653043876
-og_image: '-og-1653085917.png'
-twitter_image: '-twitter-1653085917.png'
+updated_at: 1653299569
 ---
