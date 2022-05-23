@@ -1,6 +1,7 @@
-data: {  }
+data:
+  alt: 'Screenshot merkactivisten.nl homepage'
 size: 673711
-last_modified: 1653337916
+last_modified: 1653338776
 width: 2656
 height: 1780
 mime_type: image/png
