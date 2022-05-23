@@ -6,6 +6,7 @@
 // adding and extending to Tailwinds default utility classes.
 //
 
+const svgToDataUri = require('mini-svg-data-uri')
 const defaultTheme = require('tailwindcss/defaultTheme')
 const plugin = require('tailwindcss/plugin')
 const colors = require('tailwindcss/colors')
@@ -139,12 +140,55 @@ module.exports = {
             fontWeight: theme('fontWeight.light'),
             // fontFamily: theme('fontFamily.serif'),
         },
+        'pre': {
+          margin: '.5rem 0',
+        },
+        'pre code.torchlight': {
+          display: 'block',
+          padding: '1rem 0',
+          minWidth: '100%',
+          fontSize: theme('fontSize.xs'),
+        },
+        'pre code.torchlight .line': {
+          padding: '0 1rem',
+        },
+        'pre code.torchlight .line-number, pre code.torchlight .summary-caret': {
+          marginRight: '1rem',
+        }
       })
     }),
 
     // Custom components for this particular site.
     plugin(function({ addComponents, theme }) {
       const components = {
+        '.prose a[target="_blank"]:is(:where(a):not(:where([class~="not-prose"] *)))::after': {
+          content: '""',
+          display: 'inline-block',
+          width: '.75em',
+          height: '.75em',
+          marginLeft: '.25em',
+          backgroundImage: `url("${svgToDataUri(
+            `<svg viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg"><path fill="${theme('colors.neutral.DEFAULT')}" d="M5 1.95v2H2v9h9V10h2v4.95H0v-13z"/><path fill="${theme('colors.neutral.DEFAULT')}" d="M15 0v7h-2V3.414l-7 7L4.586 9l6.999-7H7.167V0z"/></svg>`
+          )}")`,
+          backgroundRepeat: 'no-repeat',
+        },
+        '.dark .prose a[target="_blank"]:is(:where(a):not(:where([class~="not-prose"] *)))::after': {
+          backgroundImage: `url("${svgToDataUri(
+            `<svg viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg"><path fill="${theme('colors.white')}" d="M5 1.95v2H2v9h9V10h2v4.95H0v-13z"/><path fill="${theme('colors.white')}" d="M15 0v7h-2V3.414l-7 7L4.586 9l6.999-7H7.167V0z"/></svg>`
+          )}")`,
+        },
+        '.drop-cap > *:first-of-type > p:first-child::first-letter': {
+          lineHeight: '1',
+          color: theme('colors.primary'),
+          fontWeight: theme('fontWeight.semibold'),
+          float: 'left',
+          marginRight: '.5rem',
+          marginBottom: '-.5rem',
+          fontSize: '3.5rem',
+        },
+        '.dark .drop-cap > *:first-of-type > p:first-child::first-letter': {
+          color: theme('colors.secondary'),
+        }
       }
       addComponents(components)
     }),

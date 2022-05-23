@@ -23,5 +23,5 @@ module.exports = {
     './resources/views/**/*.html',
     './resources/js/**/*.js',
   ],
-  safelist: []
+  safelist: ['pre','pre code.torchlight']
 }

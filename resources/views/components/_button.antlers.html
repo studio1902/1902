@@ -10,16 +10,11 @@
         class="p-1 -m-1 rounded flex space-x-1 items-baseline font-medium text-neutral dark:text-white focus:outline-none focus-visible:ring ring-primary dark:ring-secondary leading-none underline underline-offset-4 decoration-dotted decoration-2 decoration-primary dark:decoration-secondary hover:text-primary hover:dark:text-secondary motion-safe:transition {{ class }}"
         {{ !faux ?= { partial:snippets/button_attributes } }}
     >
-        <span
-            {{ if target_blank || button_icon }}
-                class="after:content-[attr(after)]"
-                after="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
-            {{ /if }}
-        >
+        <span>
             {{ label }}
         </span>
         {{ if target_blank }}
-            {{ svg:external class="relative -left-5 w-3 h-3 fill-current" }}
+            {{ svg:external class="ml-1 w-3 h-3 fill-neutral dark:fill-white" }}
         {{ elseif button_icon }}
             {{ svg :src="button_icon" class="relative -left-5 w-3 h-3 fill-current" }}
         {{ /if }}

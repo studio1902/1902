@@ -65,27 +65,6 @@
     }
 }
 
-.drop-cap > *:first-of-type > p:first-child::first-letter {
-    @apply leading-none text-primary dark:text-secondary font-semibold float-left mr-2 -mb-2 text-[3.5rem];
-}
-
-pre {
-    @apply my-2 overflow-x-auto;
-}
-
-pre code.torchlight {
-    @apply block py-4 min-w-max text-xs;
-}
-
-pre code.torchlight .line {
-     @apply px-4;
-}
-
-pre code.torchlight .line-number,
-pre code.torchlight .summary-caret {
-    @apply mr-4;
-}
-
 @layer components {
 
 }
