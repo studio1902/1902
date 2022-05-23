@@ -10,7 +10,10 @@
         {{ article }}
             {{ partial src="components/{type}" }}
         {{ /article }}
-        {{ yield:attribution }}
+
+        {{ once }}
+            {{ yield:attribution }}
+        {{ /once }}
     {{ /partial:typography/prose }}
 
     {{ partial:components/background_text }}
