@@ -11,7 +11,7 @@
         {{ partial src="page_builder/{type}" }}
     {{ /page_builder }}
 
-    {{# {{ attribution ?= '<span class="text-neutral dark:text-white">Torchlight attribution</span>' }} #}}
+    {{ yield:attribution }}
 
     {{ partial:components/_journal_entry_random }}
 </main>
