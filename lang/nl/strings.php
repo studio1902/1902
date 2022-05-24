@@ -67,7 +67,7 @@ return [
     'home'                              => 'Ga naar de homepage.',
     'show_all'                          => 'Toon alles',
     'availability'                      => 'Beschikbaar vanaf :month',
-    'pricing'                           => 'Project starten vanaf :amount',
+    'pricing'                           => 'Projecten starten vanaf :amount',
 
     // Pagination
     'next'                              => 'Volgende',
