@@ -1,6 +1,7 @@
-data: {  }
+data:
+  alt: 'Nieuw Allardsoog logo'
 size: 10943
-last_modified: 1653391910
+last_modified: 1653394373
 width: '258'
 height: '96'
 mime_type: image/svg+xml

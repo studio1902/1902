@@ -1,6 +1,8 @@
-data: {  }
+data:
+  alt: 'Nieuw Allardsoog, thema-afbeelding van het vlinderverblijf. Een vlinder.'
+  alt_en: 'Nieuw Allardsoog, the theme image of the butterfly accommodation. A butterfly.'
 size: 2263903
-last_modified: 1653392583
+last_modified: 1653394373
 width: 5108
 height: 3192
 mime_type: image/jpeg

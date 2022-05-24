@@ -1,6 +1,8 @@
-data: {  }
+data:
+  alt: 'Nieuw Allardsoog fazant'
+  alt_en: 'Nieuw Allardsoog pheasant'
 size: 9447118
-last_modified: 1653392296
+last_modified: 1653394373
 width: 5184
 height: 3456
 mime_type: image/jpeg

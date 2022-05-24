@@ -1,6 +1,8 @@
-data: {  }
+data:
+  alt: 'Nieuw Allardsoog screenshot van accommodatiepagina ''De fazant'''
+  alt_en: 'Nieuw Allardsoog screenshot accommodation page'
 size: 5869284
-last_modified: 1653392370
+last_modified: 1653394373
 width: 3366
 height: 2450
 mime_type: image/png

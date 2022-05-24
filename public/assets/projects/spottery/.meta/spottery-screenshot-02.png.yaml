@@ -1,6 +1,8 @@
-data: {  }
+data:
+  alt: 'Spottery screenshot kaartjespagina'
+  alt_en: 'Spottery screenshot card page'
 size: 550443
-last_modified: 1653393850
+last_modified: 1653394373
 width: 3158
 height: 2232
 mime_type: image/png

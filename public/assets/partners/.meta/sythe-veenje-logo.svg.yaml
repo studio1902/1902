@@ -1,6 +1,7 @@
-data: {  }
+data:
+  alt: 'Sythe Veenje logo'
 size: 2781
-last_modified: 1653384964
+last_modified: 1653385511
 width: 95.0
 height: 133.0
 mime_type: image/svg+xml

@@ -1,6 +1,8 @@
-data: {  }
+data:
+  alt: 'Strikwerda logo - concept, design, illustratie'
+  alt_en: 'Strikwerda logo - concept, design, illustration'
 size: 27659
-last_modified: 1653385456
+last_modified: 1653385511
 width: '177'
 height: '101'
 mime_type: image/svg+xml

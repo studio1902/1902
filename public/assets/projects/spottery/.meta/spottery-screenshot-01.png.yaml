@@ -1,6 +1,7 @@
-data: {  }
+data:
+  alt: 'Spottery screenshot homepage'
 size: 3461928
-last_modified: 1653393847
+last_modified: 1653394373
 width: 3066
 height: 2262
 mime_type: image/png

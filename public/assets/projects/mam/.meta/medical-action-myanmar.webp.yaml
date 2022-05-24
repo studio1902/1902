@@ -1,6 +1,8 @@
-data: {  }
+data:
+  alt: 'Medical Action Myanmar kindje wordt geholpen'
+  alt_en: 'Medical Action Mynmar, kid being helped.'
 size: 622976
-last_modified: 1653393059
+last_modified: 1653394373
 width: 1680
 height: 1641
 mime_type: image/webp
