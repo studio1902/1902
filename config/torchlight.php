@@ -34,7 +34,7 @@ return [
     // We replace tabs in your code blocks with spaces in HTML. Set
     // the number of spaces you'd like to use per tab. Set to
     // `false` to leave literal tabs in the HTML.
-    'tab_width' => 4,
+    'tab_width' => 2,
 
     // If you pass a filename to the code component or in a markdown
     // block, Torchlight will look for code snippets in the

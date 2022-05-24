@@ -136,6 +136,7 @@ page_builder:
       - 3e47342a-9d19-421c-85be-a5d3b52715f9
       - 67003260-537d-4671-b9d2-01a58a4dfd59
       - 3e587978-4076-49fa-8189-b5694d623d47
+      - f0f9462e-c755-4bb0-a5aa-8519a458b900
       - e3ed3cae-ef3d-43ef-b814-0863cbb72500
       - a0d02eaf-c629-4d40-9f4d-4af6c1d4c53e
   -
@@ -157,8 +158,8 @@ page_builder:
     title: 'Do you strive for purrfection?'
     type: introduction
     enabled: true
+og_image: null
+twitter_image: null
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1653070421
-og_image: about-og-1653085912.png
-twitter_image: about-twitter-1653085912.png
+updated_at: 1653385199
 ---
