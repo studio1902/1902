@@ -3,7 +3,7 @@ id: home
 blueprint: page
 title: Home
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1653299552
+updated_at: 1653394344
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -67,6 +67,7 @@ page_builder:
     type: project
     enabled: true
     background_text_position: start
+    project: 4b4b9b6a-508f-4d18-8b35-3e53db6a2066
   -
     title: 'Optimale prestatie, met oog voor privacy en accessibility'
     text_content:

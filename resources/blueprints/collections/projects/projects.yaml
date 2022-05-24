@@ -199,3 +199,5 @@ sections:
           instructions: 'Falls back to a random footer animation.'
           collections:
             - footer_animations
+          if:
+            project_type: 'equals full'
