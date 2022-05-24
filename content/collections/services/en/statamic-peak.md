@@ -187,8 +187,8 @@ page_builder:
     background_text_position: end
     type: article
     enabled: true
-og_image: null
-twitter_image: null
+og_image: '-og-1653395332.png'
+twitter_image: '-twitter-1653395332.png'
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
 updated_at: 1653126461
 ---

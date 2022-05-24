@@ -158,8 +158,8 @@ page_builder:
     title: 'Do you strive for purrfection?'
     type: introduction
     enabled: true
-og_image: null
-twitter_image: null
+og_image: about-og-1653395169.png
+twitter_image: about-twitter-1653395169.png
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
 updated_at: 1653385199
 ---
