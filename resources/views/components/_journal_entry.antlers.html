@@ -43,11 +43,11 @@
         </figure>
     </a>
 
-    <aside class="pt-6 pb-2 md:pt-0 md:col-span-7 md:row-start-5 md:col-start-1 md:place-self-end flex flex-col justify-center items-end">
-        {{ if mount_link }}
+    {{ if mount_link }}
+        <aside class="pt-6 pb-2 md:pt-0 md:col-span-7 md:row-start-5 md:col-start-1 md:place-self-end flex flex-col justify-center items-end">
             {{ partial:components/button label="{ trans:strings.journal_all }" link_type="url" url="{mount_url from='journal'}" }}
-        {{ /if }}
-    </aside>
+        </aside>
+    {{ /if }}
 
     {{ partial:components/background_text }}
 </section>

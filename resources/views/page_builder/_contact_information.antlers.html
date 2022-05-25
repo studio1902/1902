@@ -6,21 +6,21 @@
 
 <!-- /page_builder/_contact_information.antlers.html -->
 <section class="relative fluid-container grid md:grid-cols-12 gap-x-0 gap-y-8 md:gap-12 {{ yield:background_text_compensation }}">
-    <div class="order-1 relative md:col-span-4 flex flex-col">
+    <div class="relative md:col-span-4 flex flex-col">
         {{ partial:typography/h1 :as="block:tag" :content="block:title" class="mb-16" }}
 
-        {{ partial:typography/prose as="article" class="pl-8" }}
+        {{ partial:typography/prose as="article" class="md:pl-8" }}
             {{ block:text_content }}
                 {{ partial src="components/{type}" no_sizing="true" }}
             {{ /block:text_content }}
         {{ /partial:typography/prose }}
     </div>
 
-    <div class="order-3 md:order-2 md:col-span-4 place-self-center">
+    <div class="md:col-span-4 place-self-center">
         {{ partial:components/animation class="w-32 md:w-48" }}
     </div>
 
-    <aside class="order-2 md:order-3 md:col-span-4 flex flex-col items-start pl-8 md:pl-0 md:py-12">
+    <aside class="md:col-span-4 flex flex-col items-start md:py-12">
         <b class="mb-8 font-semibold text-lg text-neutral dark:text-white">{{ config:app:name }}</b>
         {{ partial:typography/title content="Contact" class="mb-2" }}
         {{ partial:components/button label="{ configuration:phone }" link_type="tel" tel="{ configuration:phone }" class="mb-2" }}

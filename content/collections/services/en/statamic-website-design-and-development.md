@@ -35,6 +35,7 @@ page_builder:
             text: 'I like to think along about how the design comes into fruition. This way you also get the best experience with Statamic. I work for my own clients, but I also regularly look for collaborations with creative agencies and it is precisely this variety that makes me enjoy sitting (or standing) at my desk every day.'
     image: services/studio-1920-office.jpeg
     image_size: small
+    style: bw
   -
     background_text:
       - Sec
@@ -167,8 +168,8 @@ page_builder:
     type: article
     enabled: true
     background_text_position: start
-updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1653055579
 og_image: website-design-development-og-1653395329.png
 twitter_image: website-design-development-twitter-1653395329.png
+updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
+updated_at: 1653466984
 ---

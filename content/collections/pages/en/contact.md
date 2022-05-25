@@ -29,15 +29,15 @@ page_builder:
       - Burn
       - baby
       - burn
-    background_text_position: end
+    background_text_position: center
     type: contact_information
     enabled: true
   -
     form: contact
     type: form
     enabled: true
-updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1653071699
 og_image: '-og-1653395170.png'
 twitter_image: '-twitter-1653395170.png'
+updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
+updated_at: 1653466919
 ---
