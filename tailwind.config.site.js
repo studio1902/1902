@@ -177,6 +177,7 @@ module.exports = {
         'pre': {
           margin: '.5rem 0',
           overflowX: 'auto',
+          borderRadius: theme('borderRadius.md'),
         },
         'pre code.torchlight': {
           display: 'block',

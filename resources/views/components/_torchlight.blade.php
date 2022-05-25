@@ -5,6 +5,9 @@
     @case('htmlmixed')
         @php $language = 'html' @endphp
         @break
+    @case('yaml-frontmatter')
+        @php $language = 'yaml' @endphp
+        @break
     @default
         @php $language = $mode @endphp
 @endswitch
