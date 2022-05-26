@@ -157,7 +157,7 @@ module.exports = {
           )}")`,
           backgroundRepeat: 'no-repeat',
         },
-        '.dark .prose a[target="_blank"]:is(:where(a):not(:where([class~="not-prose"] *)))::after': {
+        '.dark .prose a[target="_blank"]:is(:where(a):not(:where([class~="not-prose"] *)))::after, .prose-inverted a[target="_blank"]:is(:where(a):not(:where([class~="not-prose"] *)))::after': {
           backgroundImage: `url("${svgToDataUri(
             `<svg viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg"><path fill="${theme('colors.white')}" d="M5 1.95v2H2v9h9V10h2v4.95H0v-13z"/><path fill="${theme('colors.white')}" d="M15 0v7h-2V3.414l-7 7L4.586 9l6.999-7H7.167V0z"/></svg>`
           )}")`,

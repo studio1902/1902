@@ -2,14 +2,14 @@
 id: 1cb325a7-b544-42a7-b052-bc639eff7113
 origin: a397a0da-af80-4d0a-b398-f415fd9dd847
 title: 'Website design & development'
-teaser: 'I design and build websites that perform, are user-friendly and accessible.'
+teaser: 'I design and build accessible websites that perform and are user-friendly.'
 page_builder:
   -
     background_text_position: start
     type: introduction
     enabled: true
     title: 'Website design & development'
-    text: 'If you ask me to build a website, you get a designer for free. From the initial plans to service after delivery.'
+    text: 'If you ask me to build a website, you get a designer for free. From the initial plans to service after delivery; I love to be involved from start to finish.'
   -
     background_text:
       - World
@@ -131,12 +131,12 @@ page_builder:
     background_text_position: center
     type: project_list
     enabled: true
-    title: Projects
+    title: 'Projects'
     limit: 3
     text: 'You''ll get it when you see it.'
     buttons:
       -
-        label: Portfolio
+        label: More projects
         target_blank: false
         link_type: entry
         entry: 7eb87293-600d-404b-8519-2c4a2ebc9e51
@@ -171,5 +171,5 @@ page_builder:
 og_image: website-design-development-og-1653395329.png
 twitter_image: website-design-development-twitter-1653395329.png
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1653466984
+updated_at: 1653553940
 ---

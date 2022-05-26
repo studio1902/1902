@@ -12,7 +12,7 @@ page_builder:
         content:
           -
             type: text
-            text: 'A selection of work by and for people who do good.'
+            text: 'Below you see a selection of my work. As you can see, I love websites for and by people who do good.'
     text_position: start
     text_size: small
     playback_speed: 1.0
@@ -37,5 +37,5 @@ page_builder:
 og_image: projects-og-1653395177.png
 twitter_image: projects-twitter-1653395177.png
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1653141392
+updated_at: 1653556108
 ---

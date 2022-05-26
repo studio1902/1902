@@ -77,7 +77,7 @@ return [
     // Projects
     'projects_featured'                 => 'Featured',
     'projects_view'                     => 'Bekijk project',
-    'projects_all'                      => 'Alle projecten',
+    'projects_all'                      => 'Meer projecten',
     'projects_role'                     => 'Rol|Rollen',
     'projects_client'                   => 'Klant',
     'projects_partner'                  => 'Partner|Partners',

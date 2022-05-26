@@ -8,8 +8,8 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1653466989
-teaser: 'Ik ontwerp en bouw websites die presteren, gebruiksvriendelijk en toegankelijk zijn.'
+updated_at: 1653553949
+teaser: 'Ik ontwerp en bouw toegankelijke websites die presteren en gebruiksvriendelijk zijn.'
 introduction: 'Crowdsource non-disclosure agreement. MVP creative pitch venture startup low hanging fruit hypotheses customer strategy iPad partnership social proof. deployment. Long tail success entrepreneur network effects android. deployment.'
 page_builder:
   -
@@ -17,7 +17,7 @@ page_builder:
     type: introduction
     enabled: true
     title: 'Website design & development'
-    text: 'Als je me vraagt een website te bouwen, krijg je er een ontwerper bij. Van tekentafel tot beheer achteraf.'
+    text: 'Als je me vraagt een website te bouwen, krijg je er een ontwerper bij. Van tekentafel tot beheer achteraf; ik vind het leuk om vanaf het begin tot het eind met je mee te denken.'
   -
     background_text:
       - World
@@ -34,7 +34,7 @@ page_builder:
         content:
           -
             type: text
-            text: 'Alles wat je nodig hebt.'
+            text: 'Alles wat je nodig hebt'
       -
         type: paragraph
         content:
@@ -53,11 +53,11 @@ page_builder:
     background_text_position: center
     type: collapsed_grid
     enabled: true
-    title: 'Tech Stack'
+    title: 'Curriculum Technae'
     grid:
       -
         title: Statamic
-        text: 'Een flat file content management systeem met een fantastisch control panel voor mijn klanten.'
+        text: 'Een flat file contentmanagementsysteem met een fantastisch control panel voor mijn klanten.'
         icon: tools/statamic-logo.svg
         buttons:
           -
@@ -67,7 +67,7 @@ page_builder:
             url: 'https://statamic.com'
       -
         title: Peak
-        text: 'Mijn open source Starter Kit voor Statamic. Hiermee bouwen ik, en vele anderen hun websites.'
+        text: 'Mijn open source Starter Kit voor Statamic. Hiermee bouwen vele anderen en ik hun websites.'
         icon: tools/statamic-peak-logo.svg
         buttons:
           -
@@ -139,12 +139,12 @@ page_builder:
     background_text_position: center
     type: project_list
     enabled: true
-    title: Projecten
+    title: 'Projecten'
     limit: 3
     text: 'Je gaat het pas snappen als je het ziet.'
     buttons:
       -
-        label: Portfolio
+        label: Meer projecten
         target_blank: false
         link_type: entry
         entry: 7eb87293-600d-404b-8519-2c4a2ebc9e51

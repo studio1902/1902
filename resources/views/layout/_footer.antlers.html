@@ -4,7 +4,7 @@
 #}}
 
 <!-- /layout/_footer.antlers.html -->
-<footer class="mt-auto mb-4 md:mb-0 md:mt-8">
+<footer class="mt-auto mb-4 md:mb-0">
     <div class="fluid-container flex flex-col space-y-4 md:space-y-0 md:flex-row md:justify-between md:space-x-4 md:items-end">
         <div class="md:pb-10 order-2 md:order-1 py-8 md:py-0 flex flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-2 text-xs text-neutral dark:text-white">
             <span>
@@ -33,30 +33,32 @@
             {{ yield:reset_cookie_consent }}
         </div>
 
-        <div class="relative order-1 md:order-2 flex flex-col space-y-2 md:space-y-4">
-            <span class="w-full md:w-80 flex items-center space-x-2">
-                {{ partial:components/dot_label no_sizing="true" }}
-            </span>
+        {{ unless id === configuration.contact_page:id }}
+            <div class="relative order-1 md:order-2 flex flex-col space-y-2 md:space-y-4">
+                <span class="w-full md:w-80 flex items-center space-x-2">
+                    {{ partial:components/dot_label no_sizing="true" }}
+                </span>
 
-            {{ footer_animation = footer_animation
-                ? footer_animation
-                : { collection:footer_animations limit="1" sort="random" }
-            }}
-                <div class="w-full md:w-80">
-                    <span class="text-neutral dark:text-white">{{ title }}</span>
-                    {{ partial:components/animation class="my-2 md:my-0 w-32 md:w-48 self-end md:absolute left-0 bottom-0 md:-translate-x-56 md:-translate-y-4" intersect="true" loop="false" }}
-                </div>
-            {{ /footer_animation }}
+                {{ footer_animation = footer_animation
+                    ? footer_animation
+                    : { collection:footer_animations limit="1" sort="random" }
+                }}
+                    <div class="w-full md:w-80">
+                        <span class="text-neutral dark:text-white">{{ title }}</span>
+                        {{ partial:components/animation class="my-2 md:my-0 w-32 md:w-48 self-end md:absolute left-0 bottom-0 md:-translate-x-56 md:-translate-y-4" intersect="true" loop="false" }}
+                    </div>
+                {{ /footer_animation }}
 
-            <a href="{{ configuration.contact_page:url }}" class="relative py-6 px-5 flex items-center gap-3 border border-primary dark:border-secondary bg-primary dark:bg-secondary text-white focus:outline-none focus-visible:ring-4 ring-primary ring-offset-2 dark:ring-offset-neutral dark:ring-secondary motion-safe:transition group">
-                {{ svg:arrow_right class="fill-current w-6" aria-hidden="true" }}
-                <span class="uppercase tracking-wider text-4xl lg:text-5xl">{{ trans:strings.footer_talk }}</span>
-                <div class="absolute inset-0 py-6 px-5 flex items-center gap-3 bg-white dark:bg-neutral text-primary dark:text-secondary [clip-path:circle(20%_at_-20%_130%)] group-hover:[clip-path:circle(180%_at_-20%_130%)]  motion-safe:transition-all" aria-hidden="true">
-                    {{ svg:arrow_right class="text-primary dark:text-secondary fill-current w-6" aria-hidden="true" }}
-                    <span class="text-primary dark:text-secondary uppercase tracking-wider text-4xl lg:text-5xl">{{ trans:strings.footer_talk }}</span>
-                </div>
-            </a>
-        </div>
+                <a href="{{ configuration.contact_page:url }}" class="relative py-6 px-5 flex items-center gap-3 border border-primary dark:border-secondary bg-primary dark:bg-secondary text-white focus:outline-none focus-visible:ring-4 ring-primary ring-offset-2 dark:ring-offset-neutral dark:ring-secondary motion-safe:transition group">
+                    {{ svg:arrow_right class="fill-current w-6" aria-hidden="true" }}
+                    <span class="uppercase tracking-wider text-4xl lg:text-5xl">{{ trans:strings.footer_talk }}</span>
+                    <div class="absolute inset-0 py-6 px-5 flex items-center gap-3 bg-white dark:bg-neutral text-primary dark:text-secondary [clip-path:circle(20%_at_-20%_130%)] group-hover:[clip-path:circle(180%_at_-20%_130%)]  motion-safe:transition-all" aria-hidden="true">
+                        {{ svg:arrow_right class="text-primary dark:text-secondary fill-current w-6" aria-hidden="true" }}
+                        <span class="text-primary dark:text-secondary uppercase tracking-wider text-4xl lg:text-5xl">{{ trans:strings.footer_talk }}</span>
+                    </div>
+                </a>
+            </div>
+        {{ /if }}
     </div>
 </footer>
 <!-- End: /layout/_footer.antlers.html -->

@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1653126450
+updated_at: 1653556011
 teaser: 'Mijn bijdrage aan de open-source-gemeenschap, een complete starter kit voor ontwikkelaars uit de Statamic Community. Gratis.'
 introduction: 'Crowdsource non-disclosure agreement. MVP creative pitch venture startup low hanging fruit hypotheses customer strategy iPad partnership social proof. deployment. Long tail success entrepreneur network effects android. deployment.'
 page_builder:
@@ -33,6 +33,20 @@ page_builder:
           -
             type: text
             text: 'Een handige starter kit waarmee je snel aan de slag kan en nieuwe dingen leert.'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'https://peak.1902.studio'
+                  rel: noopener
+                  target: _blank
+                  title: null
+            text: 'Ga naar de documentatie'
     image: services/statamic-starter-kit-peak.jpg
     style: color
     image_size: small
@@ -176,7 +190,7 @@ page_builder:
         content:
           -
             type: text
-            text: 'Omdat ik zelf ook gebruik maak van open source software, vind ik het een mooi idee om iets terug te kunnen doen voor de community. De kit wordt veel gebruikt en er wordt veel naar verwezen. Ik werk er met veel plezier aan. Daarbij, is er een grotere eer dan wanneer anderen zeggen: ‘Oh that question? Check out this file in Peak for an example on how to do this.’'
+            text: 'Omdat ik zelf ook gebruik maak van open source software, vind ik het een mooi idee om iets terug te kunnen doen voor de community. Deze kit wordt veel gebruikt en er wordt veel naar verwezen. Het is te gek als anderen zeggen ‘Oh that question? Check out this file in Peak for an example on how to do this.’?'
       -
         type: set
         attrs:
@@ -212,4 +226,5 @@ page_builder:
     enabled: true
 og_image: statamic-peak-og-1653127434.png
 twitter_image: statamic-peak-twitter-1653127434.png
+footer_animation: 21e68da1-7ba6-42e4-ab5d-c25225a87524
 ---

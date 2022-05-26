@@ -8,10 +8,10 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1653126095
+updated_at: 1653556561
 page_builder:
   -
-    title: 'Let''s start a fire'
+    title: 'Een warm onthaal'
     tag: h1
     text_content:
       -
@@ -48,8 +48,8 @@ page_builder:
     intersect: true
     audio: fire-burning.mp3
     background_text:
-      - Burn
-      - baby
+      - Fire
+      - water
       - burn
     background_text_position: center
     type: contact_information

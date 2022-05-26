@@ -4,7 +4,7 @@ origin: 784b5e43-4c28-43b1-9771-6f7b35c51826
 title: About
 page_builder:
   -
-    title: 'Studio 1902 About Rob, the studio and a little history'
+    title: 'About Rob, the studio and a little history'
     tag: h1
     text_content:
       -
@@ -12,14 +12,14 @@ page_builder:
         attrs:
           values:
             type: dot_label
-            label: 'Once upon a time'
+            label: 'Once upon a time...'
             label_type: custom_text
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'It started with the communication education Design and Multimedia and after that I stood in front of the class for many years on the Art and Multimedia school of the Noorderpoortcollege in Groningen. In addition, I started graphic design early and was co-owner of a web agency for ten years.'
+            text: 'It started with a bachelor in Design and Multimedia. After that I was a teacher for many years at the Noorderpoort Art and Multimedia School in Groningen. I started graphic design when I was young and was co-owner of a web agency for ten years'
     text_position: start
     text_size: large
     playback_speed: 1.0
@@ -87,13 +87,13 @@ page_builder:
         content:
           -
             type: text
-            text: 'Mijn stijl zou ik omschrijven als minimalistisch en modern. Mijn websites sluiten altijd aan bij de boodschap van de klant, met oog voor mooi ontwerp. En waar ik voor sta is gebruiksvriendelijkheid: het bijhouden en vullen van een website zou niet moeilijker moeten zijn dan het schrijven van een Word-document. Ook vind ik privacy en toegankelijkheid een belangrijk onderdeel van m’n werk.'
+            text: 'I would describe my style as minimalistic and modern. My websites always match my clients message, with an eye for beautiful design. What I absolutely stand for, is user friendliness: managing a CMS shouldn''t be harder than writing a Word doc. I also think privacy and accessibility are important parts of my job.'
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'Wat mij drijft is de oneindige verandering van webdevelopment. Ik leer zonder te overdrijven iedere dag bij, blijf verbeteren en bijschaven. Mijn werkwijze typeer ik als persoonlijk, eerlijk en liefdevol. Dit zoek ik dan ook in de mensen met wie ik samenwerk. Pas dan kom je tot echt goede resultaten.'
+            text: 'What drives me, is the infinite change in web development. Without exaggeration: I learn every single day and I keep improving and refining. My way of working is personal and I do things with care. I don’t like keeping up appearances. Simply because being yourself brings out the best in others.'
       -
         type: set
         attrs:
@@ -161,5 +161,5 @@ page_builder:
 og_image: about-og-1653395169.png
 twitter_image: about-twitter-1653395169.png
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1653385199
+updated_at: 1653557322
 ---

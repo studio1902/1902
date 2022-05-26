@@ -3,7 +3,7 @@ id: home
 blueprint: page
 title: Home
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1653394344
+updated_at: 1653490488
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -20,35 +20,21 @@ page_builder:
         content:
           -
             type: text
-            text: 'Kom meer te weten over de '
+            text: 'Ik ben Rob de Kort, maatwerkdeveloper en webdesigner. Ik ben gespecialiseerd in Statamic en bouw '
           -
             type: text
             marks:
               -
                 type: link
                 attrs:
-                  href: 'statamic://entry::7eb87293-600d-404b-8519-2c4a2ebc9e51'
+                  href: 'statamic://entry::a397a0da-af80-4d0a-b398-f415fd9dd847'
                   rel: noopener
                   target: null
                   title: null
-            text: websites
+            text: 'gebruiksvriendelijke en toegankelijke websites'
           -
             type: text
-            text: ' die ik maak, en '
-          -
-            type: text
-            marks:
-              -
-                type: link
-                attrs:
-                  href: 'statamic://entry::3b9ff3c2-bc7a-4a54-8350-8524f9525cb2'
-                  rel: noopener
-                  target: null
-                  title: null
-            text: Peak
-          -
-            type: text
-            text: ', de community''s #1 Starter Kit voor Statamic.'
+            text: '. '
     animation: fire.json
     loop: false
     intersect: true
@@ -90,7 +76,7 @@ page_builder:
             text: 'de beste gebruikerservaring'
           -
             type: text
-            text: ' maak'
+            text: ' maak.'
     playback_speed: 1.0
     loop: false
     intersect: true
@@ -172,7 +158,7 @@ page_builder:
         content:
           -
             type: text
-            text: 'Omdat ik iets terug wil doen, ontwikkelde ik een gratis starterkit voor Statamic Community: '
+            text: 'Omdat ik iets terug wil doen, ontwikkelde ik een gratis Starter Kit voor de Statamic Community: '
           -
             type: text
             marks:

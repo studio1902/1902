@@ -37,17 +37,8 @@ page_builder:
     background_text_position: start
     type: title_and_text
     enabled: true
-  -
-    name: 'Rob de Kort'
-    function: 'Owner Studio 1902'
-    image: about/rob-de-kort-studio-1902-01.jpg
-    quote: 'Sorry! Can I make it up to you?'
-    quote_size: large
-    background_text_position: start
-    type: quote
-    enabled: true
-updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1653081514
 og_image: page-not-found-og-1653395175.png
 twitter_image: page-not-found-twitter-1653395175.png
+updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
+updated_at: 1653555102
 ---

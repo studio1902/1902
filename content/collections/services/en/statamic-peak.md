@@ -5,7 +5,7 @@ teaser: 'My contribution to the open source community, a complete starter kit fo
 page_builder:
   -
     title: 'Statamic Peak'
-    text: 'Peak is an accessible Starter Kit based on advancing insights, including all SEO and a11y best practices. I have converted all my knowledge of Statamic into this Starter Kit, so that developers all over the world can have a better experience and can contribute to improving the kit themselves. In this way we make the web better, more beautiful and more accessible together.'
+    text: 'Peak is an accessible Starter Kit based on advancing insights, including all SEO and a11y best practices. I have converted all my knowledge of Statamic into this Starter Kit, so that developers all over the world can have a better experience and can contribute to improving the kit themselves. This way, we work together to make the web a better, more beautiful and accessible place.'
     type: introduction
     enabled: true
   -
@@ -23,7 +23,21 @@ page_builder:
         content:
           -
             type: text
-            text: 'A handy starter kit with which you can quickly get started and learn new things.'
+            text: 'A handy starter kit that gets you started quickly and lets you learn new things.'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'https://peak.1902.studio'
+                  rel: noopener
+                  target: _blank
+                  title: null
+            text: 'Go to the docs'
     image: services/statamic-starter-kit-peak.jpg
     style: color
     image_size: small
@@ -42,7 +56,7 @@ page_builder:
         content:
           -
             type: text
-            text: 'What do you find in Peak?'
+            text: 'What can you find in Peak?'
       -
         type: bullet_list
         content:
@@ -158,7 +172,7 @@ page_builder:
         content:
           -
             type: text
-            text: 'Because I  use open source software myself, I think it''s nice to be able to give something back to the community. The kit is widely used and referenced a lot. I enjoy working on it. Besides, is there a greater honor than when others say, ''Oh that question? Check out this file in Peak for an example on how to do this.’'
+            text: 'Because I  use open source software myself, I think it''s nice to be able to give something back to the community. The kit is widely used and referenced a lot. I enjoy working on it. Besides, it''s awesome when others say, ''Oh that question? Check out this file in Peak for an example on how to do this.’'
       -
         type: set
         attrs:
@@ -190,5 +204,5 @@ page_builder:
 og_image: '-og-1653395332.png'
 twitter_image: '-twitter-1653395332.png'
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1653126461
+updated_at: 1653557136
 ---

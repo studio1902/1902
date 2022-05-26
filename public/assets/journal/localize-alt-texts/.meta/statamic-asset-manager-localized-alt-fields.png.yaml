@@ -1,6 +1,7 @@
-data: {  }
+data:
+  alt: 'The Statamic asset manager with localized asset fields.'
 size: 3238189
-last_modified: 1653486992
+last_modified: 1653487976
 width: 2624
 height: 1748
 mime_type: image/png

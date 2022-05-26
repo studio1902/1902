@@ -8,10 +8,10 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1653385162
+updated_at: 1653556400
 page_builder:
   -
-    title: 'Studio 1902 Over Rob, de studio en een beetje geschiedenis'
+    title: 'Over Rob, de studio en een beetje geschiedenis'
     tag: h1
     text_content:
       -
@@ -19,14 +19,14 @@ page_builder:
         attrs:
           values:
             type: dot_label
-            label: 'Once upon a time'
+            label: 'Er was eens...'
             label_type: custom_text
       -
         type: paragraph
         content:
           -
             type: text
-            text: "Het begon met de communicatieopleiding Vormgeving en Multimedia en stond daarna jarenlang zelf voor de klas op de opleiding Kunst en Multimedia van het Noorderpoortcollege in Groningen. Daarnaast begon ik vroeg met grafisch ontwerp en was tien jaar mede-eigenaar van een webbureau.\_"
+            text: 'Het begon met de communicatieopleiding Vormgeving en Multimedia. Daarna stond ik jarenlang zelf voor de klas op de opleiding Kunst en Multimedia van het Noorderpoortcollege in Groningen. Ik begon daarnaast vroeg met grafisch ontwerp en was tien jaar mede-eigenaar van een webbureau'
     text_position: start
     text_size: large
     playback_speed: 1.0
@@ -162,7 +162,7 @@ page_builder:
       - about
       - 'you?'
   -
-    title: 'Do you strive for purrfection?'
+    title: 'Ook een prrrfectionist?'
     type: introduction
     enabled: true
 footer_animation: 8cd0bf8f-7d9c-4519-a844-526222b47992

@@ -12,35 +12,21 @@ page_builder:
         content:
           -
             type: text
-            text: 'Learn more about the '
+            text: 'My name is Rob de Kort, web developer and designer. My speciality is Statamic and build '
           -
             type: text
             marks:
               -
                 type: link
                 attrs:
-                  href: 'statamic://entry::af12cb2b-6ad9-4b0c-b5ef-ab4d336a7bf5'
+                  href: 'statamic://entry::1cb325a7-b544-42a7-b052-bc639eff7113'
                   rel: noopener
                   target: null
                   title: null
-            text: websites
+            text: 'user-friendly and accessible websites'
           -
             type: text
-            text: ' I create, and '
-          -
-            type: text
-            marks:
-              -
-                type: link
-                attrs:
-                  href: 'statamic://entry::eaef30e0-19cd-4805-9cad-c43c96e2a50a'
-                  rel: noopener
-                  target: null
-                  title: null
-            text: Peak
-          -
-            type: text
-            text: ', the community''s #1 Starter Kit voor Statamic.'
+            text: .
     animation: fire.json
     loop: false
     intersect: true
@@ -164,7 +150,7 @@ page_builder:
         content:
           -
             type: text
-            text: 'Because I want to give something back, I developed a free starter kit for Statamic Community: Have a '
+            text: 'Because I want to give something back, I developed a free Starter Kit for the Statamic Community: Have a '
           -
             type: text
             marks:
@@ -198,5 +184,5 @@ seo_description: 'Bespoke and accessible websites. Studio 1902 is home of Rob de
 og_image: '-og-1653395172.png'
 twitter_image: '-twitter-1653395172.png'
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1653466629
+updated_at: 1653490501
 ---

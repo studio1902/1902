@@ -77,7 +77,7 @@ return [
     // Projects
     'projects_featured'                 => 'Featured',
     'projects_view'                     => 'View project',
-    'projects_all'                      => 'All projects',
+    'projects_all'                      => 'More projects',
     'projects_role'                     => 'Role|Roles',
     'projects_client'                   => 'Client',
     'projects_partner'                  => 'Partner|Partners',

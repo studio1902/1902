@@ -8,11 +8,11 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1653079282
+updated_at: 1653556433
 template: journal/index
 page_builder:
   -
-    title: 'Ik schrijf dingen om te lezen'
+    title: 'Blogs die hout snijden'
     tag: h1
     text_content:
       -

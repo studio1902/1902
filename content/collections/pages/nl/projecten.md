@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1653141387
+updated_at: 1653556104
 template: projects/index
 page_builder:
   -
@@ -20,7 +20,7 @@ page_builder:
         content:
           -
             type: text
-            text: 'Een selectie van mijn werk. Websites voor en door mensen die goed doen.'
+            text: 'Hieronder vind je een selectie van mijn werk. Zoals je ziet: ik hou van websites voor en door mensen die goed doen.'
     text_position: start
     text_size: small
     playback_speed: 1.0
