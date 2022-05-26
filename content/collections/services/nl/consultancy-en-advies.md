@@ -50,12 +50,7 @@ page_builder:
       - caring
     style: bw
   -
-    name: 'Joris Hartsuiker'
-    function: 'Head of Development'
-    linked_via: 455aedd1-1cbe-41df-810a-29a9266b8bac
-    image: quotes/joris-hartsuiker.jpeg
-    quote: 'Rob gaf een duidelijke en heldere uitleg over zijn boilerplate Peak en over het gebruik van Statamic. Begin je net met Statamic of met zijn boilerplate Peak, dan is dit een absolute aanrader!'
-    quote_size: small
+    quote: 177108b2-5c21-4473-8d52-77c97bd84d94
     background_text_position: start
     type: quote
     enabled: true

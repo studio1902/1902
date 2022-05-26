@@ -1,76 +1,12 @@
 title: Quote
 fields:
   -
-    handle: name
-    field:
-      input_type: text
-      antlers: false
-      display: Name
-      type: text
-      icon: text
-      width: 50
-      listable: hidden
-      instructions_position: above
-      read_only: false
-      validate:
-        - required
-  -
-    handle: function
-    field:
-      input_type: text
-      antlers: false
-      display: Function
-      type: text
-      icon: text
-      width: 50
-      localizable: true
-      listable: hidden
-      instructions_position: above
-      read_only: false
-  -
-    handle: linked_via
+    handle: quote
     field: common.entry
     config:
-      display: 'Linked via'
-      width: 50
-      collections:
-        - clients
-        - partners
-  -
-    handle: image
-    field: common.image
-    config:
-      width: 50
-      validate:
-        - required
-  -
-    handle: quote
-    field:
-      input_type: text
-      antlers: false
       display: Quote
-      type: text
-      icon: text
-      listable: hidden
-      instructions_position: above
-      read_only: false
-      validate:
-        - required
-  -
-    handle: quote_size
-    field:
-      options:
-        small: Small
-        large: Large
-      default: small
-      display: Quote size
-      type: button_group
-      icon: button_group
-      listable: hidden
-      instructions_position: above
-      read_only: false
-      localizable: true
-      replicator_preview: false
+      collections:
+        - quotes
       validate:
         - required
   -

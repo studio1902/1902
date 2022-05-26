@@ -152,11 +152,7 @@ page_builder:
     background_text_position: start
     type: quote
     enabled: true
-    name: 'Minke Haveman'
-    linked_via: 3e587978-4076-49fa-8189-b5694d623d47
-    image: quotes/minke-haveman.jpg
-    quote: 'Ik heb in meerdere projecten samengewerkt met Rob en dat is uitstekend bevallen. Rob is absoluut een expert, werkt snel, precies, transparant en geeft pro-actief advies. Bovendien is het CMS dat hij gebruikt absoluut een van de meest fijne systemen die ik ben tegengekomen.'
-    quote_size: small
+    quote: ddaadd96-582f-4773-9f81-e989bc691127
   -
     article:
       -

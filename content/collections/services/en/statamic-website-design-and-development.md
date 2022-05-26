@@ -144,11 +144,7 @@ page_builder:
     background_text_position: start
     type: quote
     enabled: true
-    name: 'Minke Haveman'
-    linked_via: 3e587978-4076-49fa-8189-b5694d623d47
-    image: quotes/minke-haveman.jpg
-    quote: 'I have worked with Rob on several projects and it was an excellent experience. Rob is an absolute expert, works quickly, precisely, transparently and provides proactive advice. Plus, the cms he uses is definitely one of the nicest systems I''ve come across.'
-    quote_size: small
+    quote: ddaadd96-582f-4773-9f81-e989bc691127
   -
     article:
       -

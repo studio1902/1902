@@ -8,21 +8,21 @@
 <section class="relative fluid-container grid lg:grid-cols-12 {{ yield:background_text_compensation }}">
     <blockquote class="lg:col-span-10 lg:col-start-2 flex flex-col md:flex-row gap-8 md:gap-12 items-center dark:text-white">
         <footer class="order-2 md:order-1 flex flex-col space-y-1 text-center md:text-right md:items-end">
-            <cite class="font-medium not-italic">{{ block:name }}</cite>
+            <cite class="font-medium not-italic">{{ block:quote:name }}</cite>
             <span class="italic">
                 {{ if linked_via }}
-                    {{ block:function ?= block:function + ' - ' }}{{ block:linked_via:title }}
+                    {{ block:quote:function ?= block:quote:function + ' - ' }}{{ block:quote:linked_via:title }}
                 {{ else }}
-                    {{ block:function }}
+                    {{ block:quote:function }}
                 {{ /if }}
             </span>
         </footer>
         <div class="order-1 md:order-2 w-40">
             <figure class="aspect-w-1 aspect-h-1 rounded-full overflow-hidden">
-                {{ partial:components/picture :image="image" class="grayscale" cover="true" lazy="true" sizes="(min-width: 768px) 25vw, 50vw"  }}
+                {{ partial:components/picture :image="quote:image" class="grayscale" cover="true" lazy="true" sizes="(min-width: 768px) 25vw, 50vw"  }}
             </figure>
         </div>
-        {{ partial:typography/h2 as="p" :content="block:quote" class="order-3 text-center md:text-left { quote_size === 'small' ? '!text-xl max-w-[35ch]' : 'max-w-[15ch]' }" color="text-primary dark:text-secondary" }}
+        {{ partial:typography/h2 as="p" :content="block:quote:quote" class="order-3 text-center md:text-left { block:quote:quote_size === 'small' ? '!text-xl max-w-[35ch]' : 'max-w-[15ch]' }" color="text-primary dark:text-secondary" }}
 
         {{ partial:components/background_text }}
     </blockquote>

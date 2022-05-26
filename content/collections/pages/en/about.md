@@ -64,10 +64,7 @@ page_builder:
     enabled: true
     background_text_position: start
   -
-    name: 'Jack McDade'
-    linked_via: f8c33cb6-311e-4158-97d3-11ca4dea4592
-    image: quotes/jack-mcdade.jpg
-    quote: 'Rob is one of Statamic''s competitive advantages. His kindness, code, and critical thinking makes the community a better place.'
+    quote: f99ea848-bbcd-4656-a052-28e7628efd9b
     background_text_position: start
     type: quote
     enabled: true
@@ -113,11 +110,7 @@ page_builder:
       - Trades
     background_text_position: start
   -
-    name: 'Marc Schriemer'
-    function: Ondernemer
-    linked_via: 6eea46a5-7d9e-483a-a015-d08ff2e9bf6b
-    image: quotes/marc-schriemer.jpg
-    quote: 'Working with Rob is very pleasant. From a clear quote within the deadline to a slick website. He works quickly, is knowledgeable and proactively comes up with improvements. Very satisfied!'
+    quote: 67c6130e-3089-4583-9345-472665b0ef37
     quote_size: small
     background_text_position: start
     type: quote
@@ -161,5 +154,5 @@ page_builder:
 og_image: about-og-1653395169.png
 twitter_image: about-twitter-1653395169.png
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1653557322
+updated_at: 1653559797
 ---

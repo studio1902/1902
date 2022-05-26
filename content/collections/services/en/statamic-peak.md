@@ -118,12 +118,7 @@ page_builder:
     type: article
     enabled: true
   -
-    name: 'Jack McDade'
-    function: Founder
-    linked_via: f8c33cb6-311e-4158-97d3-11ca4dea4592
-    image: quotes/jack-mcdade.jpg
-    quote: 'Rob is the Jean-Claude Van Damme of the Statamic community. His code is so fast and flexible it can kick you in the face and the back of the head at the same time.'
-    quote_size: small
+    quote: 94121705-4dac-465a-b7ea-ebb611379ef3
     background_text_position: start
     type: quote
     enabled: true
@@ -148,12 +143,7 @@ page_builder:
     type: project_list
     enabled: true
   -
-    name: 'Mia Holte'
-    function: Designer
-    linked_via: aab05cd5-5187-4b6e-9b83-55eb74c4a41b
-    image: quotes/mia-holte.jpg
-    quote: 'Rob is a developer who''s not afraid of recommending the best approach, and putting users first. He, like us, really cares about accessibility. Most of the websites we build for our clients use Rob''s Statamic starter kit, so we know we''re off to a good start on every project'
-    quote_size: small
+    quote: 745af405-cf29-486c-aa3e-a9491ba5dc97
     background_text_position: start
     type: quote
     enabled: true
@@ -194,6 +184,34 @@ page_builder:
                 link_type: url
                 target_blank: true
                 url: 'https://discord.com/invite/sW7KXWaucH'
+      -
+        type: heading
+        attrs:
+          level: 3
+        content:
+          -
+            type: text
+            text: 'Need help?'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'I''d love to help you and your team by '
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::1ee900c6-8fad-4cc6-978b-f9a7b7f07b54'
+                  rel: noopener
+                  target: null
+                  title: null
+            text: 'sharing my knowledge'
+          -
+            type: text
+            text: '. Together we can make the web a better place.'
     background_text:
       - Why
       - 'tell me'
@@ -204,5 +222,5 @@ page_builder:
 og_image: '-og-1653395332.png'
 twitter_image: '-twitter-1653395332.png'
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1653557136
+updated_at: 1653557894
 ---

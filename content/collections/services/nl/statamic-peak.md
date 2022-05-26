@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1653556011
+updated_at: 1653557842
 teaser: 'Mijn bijdrage aan de open-source-gemeenschap, een complete starter kit voor ontwikkelaars uit de Statamic Community. Gratis.'
 introduction: 'Crowdsource non-disclosure agreement. MVP creative pitch venture startup low hanging fruit hypotheses customer strategy iPad partnership social proof. deployment. Long tail success entrepreneur network effects android. deployment.'
 page_builder:
@@ -136,12 +136,7 @@ page_builder:
     type: article
     enabled: true
   -
-    name: 'Jack McDade'
-    function: Founder
-    linked_via: f8c33cb6-311e-4158-97d3-11ca4dea4592
-    image: quotes/jack-mcdade.jpg
-    quote: 'Rob is the Jean-Claude Van Damme of the Statamic community. His code is so fast and flexible it can kick you in the face and the back of the head at the same time.'
-    quote_size: small
+    quote: 94121705-4dac-465a-b7ea-ebb611379ef3
     background_text_position: start
     type: quote
     enabled: true
@@ -166,12 +161,7 @@ page_builder:
     type: project_list
     enabled: true
   -
-    name: 'Mia Holte'
-    function: Designer
-    linked_via: aab05cd5-5187-4b6e-9b83-55eb74c4a41b
-    image: quotes/mia-holte.jpg
-    quote: 'Rob is a developer who''s not afraid of recommending the best approach, and putting users first. He, like us, really cares about accessibility. Most of the websites we build for our clients use Rob''s Statamic starter kit, so we know we''re off to a good start on every project'
-    quote_size: small
+    quote: 745af405-cf29-486c-aa3e-a9491ba5dc97
     background_text_position: start
     type: quote
     enabled: true
@@ -217,6 +207,34 @@ page_builder:
                 link_type: url
                 target_blank: true
                 url: 'https://www.youtube.com/watch?v=79Ist1HrHoA'
+      -
+        type: heading
+        attrs:
+          level: 3
+        content:
+          -
+            type: text
+            text: 'Hulp nodig?'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Ik help jou en je organisatie graag op weg door mijn '
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::609657f7-ef15-4f04-8b6d-7103d54ae1c5'
+                  rel: noopener
+                  target: null
+                  title: null
+            text: 'kennis met je te delen'
+          -
+            type: text
+            text: '. Samen maken we het web mooier.'
     background_text:
       - Why
       - 'tell me'

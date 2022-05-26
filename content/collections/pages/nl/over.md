@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1653556400
+updated_at: 1653559791
 page_builder:
   -
     title: 'Over Rob, de studio en een beetje geschiedenis'
@@ -71,10 +71,7 @@ page_builder:
     enabled: true
     background_text_position: start
   -
-    name: 'Jack McDade'
-    linked_via: f8c33cb6-311e-4158-97d3-11ca4dea4592
-    image: quotes/jack-mcdade.jpg
-    quote: 'Rob is one of Statamic''s competitive advantages. His kindness, code, and critical thinking makes the community a better place.'
+    quote: 78d6349e-f6f8-4937-bb59-d14255938f4e
     background_text_position: start
     type: quote
     enabled: true
@@ -120,11 +117,7 @@ page_builder:
       - Trades
     background_text_position: start
   -
-    name: 'Marc Schriemer'
-    function: Ondernemer
-    linked_via: 6eea46a5-7d9e-483a-a015-d08ff2e9bf6b
-    image: quotes/marc-schriemer.jpg
-    quote: 'Heel prettig samenwerken met Rob. Van een heldere offerte binnen de deadline naar een strakke website. Hij werkt snel, is kundig en komt proactief met verbeteringen. Heel tevreden!'
+    quote: 031e0b3b-77c9-469d-804c-bd414bf8df17
     quote_size: small
     background_text_position: start
     type: quote
