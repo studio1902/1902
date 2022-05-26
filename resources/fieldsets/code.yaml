@@ -6,7 +6,7 @@ fields:
     config:
       instructions: 'The size in which the Code should be displayed.'
   -
-    handle: code_snippet
+    handle: code
     field:
       theme: material
       mode: handlebars
