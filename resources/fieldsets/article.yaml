@@ -42,6 +42,11 @@ fields:
           fields:
             -
               import: code
+        code_rendered:
+          display: 'Code rendered'
+          fields:
+            -
+              import: code_rendered
         dot_label:
           display: 'Dot label'
           fields:

@@ -1,0 +1,27 @@
+title: 'Code rendered'
+fields:
+  -
+    handle: size
+    field: common.size
+    config:
+      instructions: 'The size in which the Code rendered should be displayed.'
+  -
+    handle: code
+    field:
+      theme: material
+      mode: handlebars
+      mode_selectable: true
+      indent_type: spaces
+      indent_size: 2
+      key_map: default
+      line_numbers: true
+      line_wrapping: true
+      display: 'Code'
+      type: code
+      icon: code
+      localizable: true
+      listable: hidden
+      instructions_position: below
+      read_only: false
+      validate:
+        - required
