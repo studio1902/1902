@@ -1,0 +1,55 @@
+{{#
+	@name HTML
+	@desc The HTML component.
+    @set page.article.html
+#}}
+
+<!-- /components/_html.antlers.html -->
+<div
+    class="
+        not-prose
+        my-4
+        {{ switch(
+            (size == 'md') => 'size-md',
+            (size == 'lg') => 'size-lg',
+            (size == 'xl') => 'size-xl',
+            () => 'size-md'
+        )}}
+    "
+>
+    {{ partial:components/title_bar }}
+
+    <div
+        x-data="{
+            twCDNConsent: $persist(false).as('twCDNConsent').using(sessionStorage),
+            html: '',
+            loadTailwind() {
+                let tailwind = document.createElement('script')
+                tailwind.src = 'https://cdn.tailwindcss.com'
+                $root.appendChild(tailwind)
+                let config = document.createElement('script')
+                config.innerHTML = 'tailwind.config={prefix:\'tw-\'}'
+                tailwind.onload = () => { $root.appendChild(config) }
+            }
+        }"
+        x-effect="twCDNConsent && (html = '{{ html | entities | add_slashes | sanitize | collapse_whitespace }}') && loadTailwind()"
+        class="border border-primary dark:border-secondary"
+    >
+        <div x-html="html">
+        </div>
+        <div x-show="!twCDNConsent" x-transition.opacity class="w-full h-44 p-6 flex flex-col justify-center items-center space-y-4 bg-black/10">
+            <button
+                class="relative py-2 px-3 border border-primary dark:border-secondary bg-primary dark:bg-secondary text-white focus:outline-none focus-visible:ring-4 ring-primary ring-offset-2 dark:ring-offset-neutral dark:ring-secondary motion-safe:transition group"
+                @click="twCDNConsent = true"
+            >
+                <span class="uppercase tracking-wider">{{ trans:strings.run_code }}</span>
+                <div class="absolute inset-0 py-2 px-3 bg-white dark:bg-neutral text-primary dark:text-secondary [clip-path:circle(20%_at_-20%_130%)] group-hover:[clip-path:circle(180%_at_-20%_130%)] motion-safe:transition-all" aria-hidden="true">
+                    <span class="text-primary dark:text-secondary uppercase tracking-wider">{{ trans:strings.run_code }}</span>
+                </div>
+            </button>
+            {{ partial:typography/title as="{ as or 'span' }" content="{ trans:strings.run_code_explainer }" }}
+        </div>
+    </div>
+    {{ partial:typography/caption as="figcaption" }}
+</div>
+<!-- End: /components/_html.antlers.html -->

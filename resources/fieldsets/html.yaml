@@ -1,0 +1,46 @@
+title: HTML
+fields:
+  -
+    handle: size
+    field: common.size
+    config:
+      instructions: 'The size in which the HTML should be displayed.'
+  -
+    handle: tailwind
+    field:
+      default: false
+      display: 'Load Tailwind CSS'
+      type: toggle
+      icon: toggle
+      listable: hidden
+      instructions_position: below
+      read_only: false
+      instructions: 'Uses the Play CDN and JIT. Utilities will scoped under `tw-utility`.'
+  -
+    handle: html
+    field:
+      theme: material
+      mode: htmlmixed
+      mode_selectable: false
+      indent_type: spaces
+      indent_size: 2
+      key_map: default
+      line_numbers: true
+      line_wrapping: true
+      display: Code
+      type: code
+      icon: code
+      localizable: true
+      listable: hidden
+      instructions_position: below
+      read_only: false
+      validate:
+        - required
+  -
+    handle: caption
+    field:
+      input_type: text
+      type: text
+      localizable: true
+      listable: hidden
+      display: Caption

@@ -42,11 +42,6 @@ fields:
           fields:
             -
               import: code
-        code_rendered:
-          display: 'Code rendered'
-          fields:
-            -
-              import: code_rendered
         dot_label:
           display: 'Dot label'
           fields:
@@ -57,6 +52,11 @@ fields:
           fields:
             -
               import: figure
+        html:
+          display: 'HTML'
+          fields:
+            -
+              import: html
         pull_quote:
           display: 'Pull quote'
           fields:

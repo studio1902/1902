@@ -68,6 +68,8 @@ return [
     'show_all'                          => 'Show all',
     'availability'                      => 'Available starting :month',
     'pricing'                           => 'Projects starting from :amount',
+    'run_code'                          => 'Render code',
+    'run_code_explainer'                => 'I accept that this exposes my IP address to a non EU company.',
 
     // Pagination
     'next'                              => 'Next',
