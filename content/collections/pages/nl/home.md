@@ -3,7 +3,7 @@ id: home
 blueprint: page
 title: Home
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1653490488
+updated_at: 1653562056
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -89,9 +89,9 @@ page_builder:
     tag: h2
     background_text_position: start
     text_position: center
-    animation: knive.json
     text_size: small
     size: small
+    animation: knive.json
     audio: chopping-veggies.mp3
   -
     type: journal_entry
