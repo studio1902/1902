@@ -12,7 +12,7 @@
 >
     <button
         @click.prevent="mobileNavOpen = !mobileNavOpen"
-        class="fixed shadow bottom-0 right-0 z-40 flex space-x-2 items-center mr-3 mb-safe py-2 pl-5 pr-3 rounded-full bg-white dark:bg-neutral focus:outline-none focus-visible:ring-2 ring-primary dark:ring-secondary ring-offset-2"
+        class="fixed shadow bottom-0 right-0 z-20 flex space-x-2 items-center mr-3 mb-safe py-2 pl-5 pr-3 rounded-full bg-white dark:bg-neutral focus:outline-none focus-visible:ring-2 ring-primary dark:ring-secondary ring-offset-2"
         :aria-label="
         mobileNavOpen
             ? '{{ trans:strings.nav_close }}'
@@ -21,7 +21,7 @@
         :aria-expanded="mobileNavOpen"
     >
         <span
-            class="relative z-10 uppercase tracking-wide text-lg motion-safe:transition-colors"
+            class="relative z-30 uppercase tracking-wide text-lg motion-safe:transition-colors"
             :class="{ 'text-white': mobileNavOpen, 'text-neutral dark:text-white': !mobileNavOpen }"
             x-text="mobileNavOpen ? '{{ trans:strings.close }}' : '{{ trans:strings.menu }}'"
         ></span>
@@ -38,7 +38,7 @@
     </button>
 
     <div
-        class="fixed inset-0 z-10 p-6 pr-4 flex flex-col justify-between space-y-8 bg-white dark:bg-neutral motion-safe:transition-all motion-safe:duration-700"
+        class="fixed inset-0 z-20 p-6 pr-4 flex flex-col justify-between space-y-8 bg-white dark:bg-neutral motion-safe:transition-all motion-safe:duration-700"
         x-show="mobileNavOpen"
         x-transition:enter="ease-out"
         x-transition:enter-start="[clip-path:circle(0%_at_85vw_90vh)]"
