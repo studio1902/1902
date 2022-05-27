@@ -21,15 +21,18 @@
 
     <div
         x-data="{
+            {{# Todo: make this a store #}}
             twCDNConsent: $persist(false).as('twCDNConsent').using(sessionStorage),
-            html: '',
+            html: '' ,
             loadTailwind() {
-                let tailwind = document.createElement('script')
-                tailwind.src = 'https://cdn.tailwindcss.com'
-                $root.appendChild(tailwind)
-                let config = document.createElement('script')
-                config.innerHTML = 'tailwind.config={prefix:\'tw-\'}'
-                tailwind.onload = () => { $root.appendChild(config) }
+                {{ once }}
+                    let tailwind = document.createElement('script')
+                    tailwind.src = 'https://cdn.tailwindcss.com'
+                    $root.appendChild(tailwind)
+                    let config = document.createElement('script')
+                    config.innerHTML = 'tailwind.config={prefix:\'tw-\'}'
+                    tailwind.onload = () => { $root.appendChild(config) }
+                {{ /once }}
             }
         }"
         x-effect="twCDNConsent && (html = '{{ html | entities | add_slashes | sanitize | collapse_whitespace }}') && loadTailwind()"

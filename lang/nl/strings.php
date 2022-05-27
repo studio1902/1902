@@ -69,7 +69,7 @@ return [
     'availability'                      => 'Beschikbaar vanaf :month',
     'pricing'                           => 'Projecten starten vanaf :amount',
     'run_code'                          => 'Render code',
-    'run_code_explainer'                => 'Ik accepteer dat dit mijn IP-adres deelt met een bedrijf buiten de EU.',
+    'run_code_explainer'                => 'Ik accepteer dat dit mijn IP-adres deel met een bedrijf buiten de EU.',
 
     // Pagination
     'next'                              => 'Volgende',
