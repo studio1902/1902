@@ -34,7 +34,7 @@ return [
     'theme_toggle_system'               => 'Gebruik systeemvoorkeur.',
     'theme_toggle_dark_short'           => 'Donker',
     'theme_toggle_light_short'          => 'Licht',
-    'theme_toggle_system_short'         => 'Systeem',
+    'theme_toggle_system_short'         => 'Auto',
     'theme_toggle_toggle_close'         => 'Sluit donkere-modus-selector.',
     'theme_toggle_toggle_open'          => 'Open donkere-modus-selector.',
 
