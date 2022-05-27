@@ -43,7 +43,7 @@
                         tailwind.src = 'https://cdn.tailwindcss.com'
                         $root.appendChild(tailwind)
                         let config = document.createElement('script')
-                        config.innerHTML = 'tailwind.config={prefix:\'tw-\'}'
+                        config.innerHTML = 'tailwind.config={prefix:\'tw-\',fontFamily:{sans:[\'BreveSansText\'],title:[\'BreveDisplay\']}}'
                         tailwind.onload = () => { $root.appendChild(config) }
                     {{ /once }}
                 }

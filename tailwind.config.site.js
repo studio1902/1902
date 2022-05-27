@@ -71,13 +71,7 @@ module.exports = {
     },
     // Remove the font families you don't want to use.
     fontFamily: {
-      mono: [
-        // Use a custom mono font for this site by changing 'Anonymous' to the
-        // font name you want and uncommenting the following line.
-        // 'Anonymous',
-        ...defaultTheme.fontFamily.mono,
-      ],
-      sans: [
+      body: [
         // Use a custom sans serif font for this site by changing 'Gaultier' to the
         // font name you want and uncommenting the following line.
         'BreveSansText',
@@ -136,8 +130,8 @@ module.exports = {
             // Set sans, serif or mono stack with optional custom font as default.
             //--------------------------------------------------------------------------
             // fontFamily: theme('fontFamily.mono'),
-            fontFamily: theme('fontFamily.sans'),
-            fontWeight: theme('fontWeight.light'),
+            fontFamily: `${theme('fontFamily.body')} !important`,
+            fontWeight: `${theme('fontWeight.light')} !important`,
             // fontFamily: theme('fontFamily.serif'),
         },
       })
