@@ -18,11 +18,23 @@
     "
 >
     {{ partial:components/title_bar }}
+    {{ if tailwind }}
+        {{ once }}
+            <script>
+                document.addEventListener('alpine:init', () => {
+                    Alpine.store('twCDNConsent', {
+                        value: Alpine.$persist(false).as('twCDNConsent').using(sessionStorage),
+                        set(value) {
+                            this.value = value
+                        }
+                    })
+                })
+            </script>
+        {{ /once }}
+    {{ /if }}
 
     <div
         x-data="{
-            {{# Todo: make this a store #}}
-            twCDNConsent: $persist(false).as('twCDNConsent').using(sessionStorage),
             html: '' ,
             loadTailwind() {
                 {{ once }}
@@ -35,15 +47,16 @@
                 {{ /once }}
             }
         }"
-        x-effect="twCDNConsent && (html = '{{ html | entities | add_slashes | sanitize | collapse_whitespace }}') && loadTailwind()"
+        x-effect="$store.twCDNConsent.value && (html = '{{ html | entities | add_slashes | sanitize | collapse_whitespace }}') && loadTailwind()"
+        x-init="console.log($store.twCDNConsent.value)"
         class="border border-primary dark:border-secondary"
     >
         <div x-html="html">
         </div>
-        <div x-show="!twCDNConsent" x-transition.opacity class="w-full h-44 p-6 flex flex-col justify-center items-center space-y-4 bg-black/10">
+        <div x-show="!$store.twCDNConsent.value" class="w-full h-44 p-6 flex flex-col justify-center items-center space-y-4 bg-black/10">
             <button
                 class="relative py-2 px-3 border border-primary dark:border-secondary bg-primary dark:bg-secondary text-white focus:outline-none focus-visible:ring-4 ring-primary ring-offset-2 dark:ring-offset-neutral dark:ring-secondary motion-safe:transition group"
-                @click="twCDNConsent = true"
+                @click="$store.twCDNConsent.set(true)"
             >
                 <span class="uppercase tracking-wider">{{ trans:strings.run_code }}</span>
                 <div class="absolute inset-0 py-2 px-3 bg-white dark:bg-neutral text-primary dark:text-secondary [clip-path:circle(20%_at_-20%_130%)] group-hover:[clip-path:circle(180%_at_-20%_130%)] motion-safe:transition-all" aria-hidden="true">
