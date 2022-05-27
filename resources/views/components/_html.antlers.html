@@ -66,10 +66,19 @@
                 >
                     <span class="uppercase tracking-wider">{{ trans:strings.run_code }}</span>
                     <div class="absolute inset-0 py-2 px-3 bg-white dark:bg-neutral text-primary dark:text-secondary [clip-path:circle(20%_at_-20%_130%)] group-hover:[clip-path:circle(180%_at_-20%_130%)] motion-safe:transition-all" aria-hidden="true">
-                        <span class="text-primary dark:text-secondary uppercase tracking-wider">{{ trans:strings.run_code }}</span>
+                        <span class="text-primary dark:text-secondary uppercase tracking-wider">
+                            {{ trans:strings.run_code }}
+                        </span>
                     </div>
                 </button>
-                {{ partial:typography/title as="{ as or 'span' }" content="{ trans:strings.run_code_explainer }" }}
+                <div>
+                    {{ partial:typography/title as="{ as or 'span' }" content="{ trans:strings.run_code_explainer }" }}
+                    {{ if configuration:privacy_statement_type == 'entry' }}
+                        <a class="font-medium text-xs uppercase tracking-wider not-prose leading-snug text-primary dark:text-secondary underline" href="{{ configuration:privacy_statement_entry:url }}">{{ trans:strings.cookie_learn_more }}</a>
+                    {{ elseif configuration:privacy_statement_type == 'pdf' }}
+                        <a class="font-medium text-xs uppercase tracking-wider not-prose leading-snug text-primary dark:text-secondary underline" href="{{ configuration:privacy_statement_asset }}" target="_blank">{{ trans:strings.cookie_learn_more }}</a>
+                    {{ /if }}
+                </div>
             </div>
         {{ /if }}
     </div>

@@ -69,7 +69,7 @@ return [
     'availability'                      => 'Available starting :month',
     'pricing'                           => 'Projects starting from :amount',
     'run_code'                          => 'Render code',
-    'run_code_explainer'                => 'I accept that this exposes my IP address to a non EU company.',
+    'run_code_explainer'                => 'I agree that my submitted data is being collected and stored.',
 
     // Pagination
     'next'                              => 'Next',
