@@ -4,6 +4,32 @@
 #}}
 
 <!-- /journal/show.antlers.html -->
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "{{ permalink }}"
+        },
+        "headline": "{{ title }}",
+        "image": "{{ config:app:url }}{{ image }}",
+        "datePublished": "{{ date format="Y-m-d\TH:i:s" }}",
+        "author": {
+            "@type": "Person",
+            "name": "{{ author:namne }}"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Merkactivisten"{{ if seo:organization_logo }},
+            "logo": {
+                "@type": "ImageObject",
+                "url": "{{ config:app:url }}{{ glide:seo:organization_logo width='336' height='336' fit='contain' }}"
+            }{{ /if }}
+        }
+    }
+</script>
+
 <main class="outer-grid" id="content" {{ locale != language ?= 'lang="{ language }"'}}>
     {{ partial:components/_journal_entry_introduction }}
 
