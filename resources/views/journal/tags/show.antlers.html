@@ -1,0 +1,14 @@
+{{#
+	@name Journal tags show
+	@desc The Journal tags show template.
+#}}
+
+<!-- /journal/tags/show.antlers.html -->
+{{ entries paginate="5" }}
+    <ul>
+        {{ results }}
+            <li><a href="{{ url }}">{{ title }}</a></li>
+        {{ /results }}
+    </ul>
+{{ /entries }}
+<!-- End: /journal/tags/show.antlers.html -->
