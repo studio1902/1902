@@ -14,7 +14,7 @@ class FilterJournal extends Component
     public $tag;
     public $site_handle;
 
-    protected $paginationTheme = 'simple-tailwind';
+    protected $paginationTheme = 'paginator';
     protected $queryString = [
         'tag',
         'page' => [
