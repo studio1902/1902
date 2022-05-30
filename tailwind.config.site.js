@@ -185,7 +185,19 @@ module.exports = {
         },
         'pre code.torchlight .line-number, pre code.torchlight .summary-caret': {
           marginRight: '1rem',
-        }
+        },
+        'select': {
+          backgroundImage: `url("${svgToDataUri(
+            `<svg viewBox="0 0 15 10" xmlns="http://www.w3.org/2000/svg"><path d="M13.458.922l1.329 1.494-6.706 5.961-.623.701-.084-.074-.082.074-.624-.701-6.705-5.961L1.292.922l6.082 5.406z" fill="${theme('colors.neutral.DEFAULT')}" fill-rule="nonzero"/></svg>`
+          )}")`,
+          backgroundSize: '.75em .75em',
+        },
+        '.dark select': {
+          backgroundImage: `url("${svgToDataUri(
+            `<svg viewBox="0 0 15 10" xmlns="http://www.w3.org/2000/svg"><path d="M13.458.922l1.329 1.494-6.706 5.961-.623.701-.084-.074-.082.074-.624-.701-6.705-5.961L1.292.922l6.082 5.406z" fill="${theme('colors.white')}" fill-rule="nonzero"/></svg>`
+          )}")`,
+          backgroundSize: '.75em .75em',
+        },
       }
       addComponents(components)
     }),
