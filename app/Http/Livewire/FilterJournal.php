@@ -58,7 +58,7 @@ class FilterJournal extends Component
 
         $journal_entries = $query
             ->orderBy('date', 'desc')
-            ->paginate(2);
+            ->paginate(10);
 
         return $this->withPagination('journal_entries', $journal_entries);
     }

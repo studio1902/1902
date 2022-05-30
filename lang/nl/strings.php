@@ -47,6 +47,8 @@ return [
     'journal'                           => 'Journal',
     'journal_all'                       => 'Alle artikelen',
     'journal_by'                        => 'door',
+    'journal_tag'                       => 'Onderwerp',
+    'journal_all_tags'                  => 'Alle onderwerpen',
 
     // Language picker
     'language'                          => 'Bezoek de website in het :language',
