@@ -1,8 +1,8 @@
 <div class="grid gap-12 md:gap-16 lg:gap-24">
     <form class="fluid-container relative -mb-4 md:-mb-8 lg:-mb-20" wire:submit.prevent="">
-        <fieldset class="flex items-center space-x-4">
-            <label for="tag" class="font-normal">{{ trans:strings.journal_tag }}:</label>
-            <select class="bg-neutral-light dark:bg-neutral-light/10 focus-visible:border-primary dark:focus-visible:border-secondary focus:outline-none focus:ring-0 motion-safe:transition caret-primary" wire:model="tag" name="tag" id="tag">
+        <fieldset class="flex flex-col items-start space-y-3">
+            <label for="tag" class="font-medium text-neutral dark:text-white text-xs uppercase tracking-wider">{{ trans:strings.journal_tag }}:</label>
+            <select class="bg-neutral-light border-neutral-light dark:border-neutral-light/10 dark:bg-neutral-light/10 focus-visible:border-primary dark:focus-visible:border-secondary focus:outline-none focus:ring-0 motion-safe:transition caret-primary" wire:model="tag" name="tag" id="tag">
                 <option value="">{{ trans:strings.journal_all_tags }}</option>
                 {{ taxonomy:tags }}
                     <option value="{{ slug }}">{{ title }}</option>
