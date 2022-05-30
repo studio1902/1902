@@ -27,7 +27,7 @@
             {{ inactive_classes = 'flex space-x-1 items-baseline font-medium text-neutral dark:text-white opacity-30 leading-none underline underline-offset-4 decoration-dotted decoration-2 decoration-neutral dark:decoration-white' }}
             {{ location_classes = 'text-sm font-medium text-neutral dark:text-white' }}
 
-            <nav class="md:px-8 flex justify-center items-baseline space-x-8">
+            <nav aria-label="Pagination" class="md:px-8 flex justify-center items-baseline space-x-8">
                 {{ if prev_page }}
                     <a class="{{ active_classes }}" href="{{ prev_page }}">< {{ trans:strings.previous }}</a>
                 {{ else }}
