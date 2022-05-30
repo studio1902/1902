@@ -29,8 +29,8 @@ page_builder:
     background_text_position: center
     type: index_content
     enabled: true
-og_image: '-og-1653395174.png'
-twitter_image: '-twitter-1653395174.png'
+og_image: '-og-1653946828.png'
+twitter_image: '-twitter-1653946828.png'
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
 updated_at: 1653556499
 ---
