@@ -88,6 +88,13 @@ Dump your .env values here with sensitive data removed.
 
 ## NGINX config
 
+For Livewire and static caching add this to the nginx config:
+```
+location ^~ /livewire {
+    try_files $uri $uri/ /index.php?$query_string;
+}
+```
+
 Add the following to your NGINX config __inside the server block__ enable static resource caching:
 ```
 expires $expires;

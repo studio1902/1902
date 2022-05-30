@@ -1,0 +1,30 @@
+<div>
+    <form wire:submit.prevent="">
+        <fieldset class="">
+            <label for="tag" class="">Tag</label>
+            <select class="" wire:model="tag" name="tag" id="tag">
+                <option value="">All</option>
+                {{ taxonomy:tags }}
+                    <option value="{{ slug }}">{{ title }}</option>
+                {{ /taxonomy:tags }}
+            </select>
+        </fieldset>
+    </form>
+
+    {{ if journal_entries }}
+        {{ journal_entries }}
+            {{ scope:journal_entry }}
+                {{ partial:components/journal_entry }}
+            {{ /scope:journal_entry }}
+        {{ /journal_entries }}
+
+        <div class="">
+            {{ links }}
+        </div>
+    {{ else }}
+        <div class="fluid-container text-center">
+            {{ trans:strings.no_results }}
+        </div>
+    {{ /if }}
+
+</div>

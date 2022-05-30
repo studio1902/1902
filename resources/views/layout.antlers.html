@@ -14,6 +14,7 @@
         <script src="{{ mix src='/js/site.js' }}" defer></script>
         {{ partial:snippets/seo }}
         {{ partial:snippets/browser_appearance }}
+        {{ stack:head }}
     </head>
     <body class="flex flex-col min-h-screen text-base bg-white dark:bg-neutral selection:bg-primary dark:selection:bg-secondary selection:text-white">
         {{ partial:snippets/noscript }}
@@ -23,6 +24,7 @@
         {{ partial:layout/header }}
         {{ template_content }}
         {{ partial:layout/footer }}
+        {{ stack:footer }}
     </body>
 </html>
 <!-- End: /layout.antlers.html -->

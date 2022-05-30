@@ -3,6 +3,13 @@
 	@desc The Journal index template.
 #}}
 
+{{ push:head }}
+    {{ livewire:styles }}
+{{ /push:head }}
+{{ push:footer }}
+    {{ livewire:scripts }}
+{{ /push:footer }}
+
 <!-- /journal/index.antlers.html -->
 <main class="outer-grid" id="content">
     {{ page_builder scope="block" }}
@@ -12,21 +19,7 @@
 
 {{ section:index_content }}
     <!-- /journal/index.antlers.html -->
-    {{ collection:journal sort="date:desc" paginate="true" limit="10" as="items" }}
-        {{ unless no_results }}
-            {{ items }}
-                {{ scope:journal_entry }}
-                    {{ partial:components/journal_entry }}
-                {{ /scope:journal_entry }}
-            {{ /items }}
-        {{ else }}
-            <div class="fluid-container text-center">
-                {{ trans:strings.no_results }}
-            </div>
-        {{ /unless }}
-
-        {{ partial:components/pagination class="fluid-container" }}
-    {{ /collection:journal }}
+    {{ livewire:filter-journal :site_handle="site:handle" }}
     <!-- End: /journal/index.antlers.html -->
 {{ /section:index_content }}
 <!-- End: /journal/index.antlers.html -->
