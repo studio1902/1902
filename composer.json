@@ -10,6 +10,7 @@
     "type": "project",
     "require": {
         "php": "^7.3 || ^8.0",
+        "cweagans/composer-patches": "^1.7",
         "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
@@ -34,12 +35,18 @@
         "sort-packages": true,
         "allow-plugins": {
             "composer/package-versions-deprecated": true,
-            "pixelfear/composer-dist-plugin": true
+            "pixelfear/composer-dist-plugin": true,
+            "cweagans/composer-patches": true
         }
     },
     "extra": {
         "laravel": {
             "dont-discover": []
+        },
+        "patches": {
+            "statamic/cms": {
+                "Fix time picker on dated collections": "patches/5870.diff"
+            }
         }
     },
     "autoload": {

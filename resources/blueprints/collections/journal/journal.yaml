@@ -15,6 +15,15 @@ sections:
           validate:
             - required
       -
+        handle: description
+        field: common.text_plain
+        config:
+          display: Description
+          instructions: 'For use in the RSS feed.'
+          instructions_position: below
+          validate:
+            - required
+      -
         import: page_builder
   seo:
     display: SEO
@@ -81,13 +90,16 @@ sections:
             - required
           display: Date
           mode: single
-          time_enabled: false
+          time_enabled: true
           time_required: false
           earliest_date: '2021-01-01'
           full_width: false
           inline: false
           columns: 1
           rows: 1
+          instructions_position: above
+          read_only: false
+          time_seconds_enabled: false
       -
         handle: tags
         field:

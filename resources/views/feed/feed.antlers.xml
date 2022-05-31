@@ -5,14 +5,14 @@
       <link>{{ site:url }}</link>
       <description>Readeable bites about web development.</description>
       <language>en-us</language>
-      <lastBuildDate>Tue, 10 Jun 2003 09:41:01 GMT</lastBuildDate>
+      <lastBuildDate>{{ now iso_format="ddd, DD MMM GGGG HH:mm:ss UTC" }}</lastBuildDate>
       <webMaster>info@1902.studio</webMaster>
       {{ collection:journal sort="date:desc" limit="50" }}
         <item>
             <title>{{ title }}</title>
-            <link>{{ url }}</link>
-            <description><![CDATA[ ]]></description>
-            <pubDate>{{ date iso_format="ddd, DD MMM GGGG HH:mm:ss UTC" }}</pubDate>
+            <link>{{ permalink }}</link>
+            <description>{{ description }}</description>
+            <pubDate>{{ date iso_format="ddd, DD MMM GGGG hh:mm:ss UTC" }}</pubDate>
         </item>
       {{ /collection:journal }}
    </channel>
