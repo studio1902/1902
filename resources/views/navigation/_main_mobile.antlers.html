@@ -91,15 +91,16 @@
                             <ul
                                 x-show="subnavOpen"
                                 x-ref="subnav"
-                                class="flex flex-col items-stretch space-y-2"
+                                class="flex flex-col items-stretch space-y-1 mb-4"
                                 x-collapse
                                 x-cloak
                             >
                                 {{ children }}
                                     <li class="{{ first ?= 'mt-2' }}">
                                         <a
-                                            class="block py-2 whitespace-nowrap font-medium underline underline-offset-4 decoration-primary dark:decoration-secondary decoration-dotted decoration-2 {{ is_current || is_parent ? 'text-primary dark:text-secondary' : 'text-neutral dark:text-white hover:text-primary dark:hover:text-secondary' }} focus:outline-none focus-visible:ring-2 ring-primary dark:ring-secondary"
-                                            href="{{ url }}">
+                                            class="block py-2 whitespace-nowrap font-medium text-lg underline underline-offset-4 decoration-primary dark:decoration-secondary decoration-dotted decoration-2 {{ is_current || is_parent ? 'text-primary dark:text-secondary' : 'text-neutral dark:text-white hover:text-primary dark:hover:text-secondary' }} focus:outline-none focus-visible:ring-2 ring-primary dark:ring-secondary"
+                                            href="{{ url }}"
+                                        >
                                             {{ title }}
                                         </a>
                                     </li>

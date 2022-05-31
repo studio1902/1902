@@ -8,7 +8,7 @@
     {{ if featured }}
         <span class="uppercase text-sm font-medium {{ color or 'text-primary dark:text-secondary' }} tracking-wider">{{ trans:strings.projects_featured }}<span aria-hidden="true"> \</span></span>
     {{ /if }}
-    <h2 {{ if generate_id }}:id="$id('project-title')" {{ /if}} class="md:max-w-[calc(85%-4rem)] text-4xl md:text-5xl uppercase tracking-wider {{ color or 'text-primary dark:text-secondary' }}">
+    <h2 {{ if generate_id }}:id="$id('project-title')" {{ /if}} class="{{ max_width !== false ?= 'md:max-w-[calc(85%-4rem)]' }} text-4xl md:text-5xl uppercase tracking-wider {{ color or 'text-primary dark:text-secondary' }}">
         {{ project:sub_title }}
     </h2>
 </div>

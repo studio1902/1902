@@ -8,12 +8,12 @@
     {{ if featured }}
         <span class="uppercase text-sm font-medium {{ color or 'text-primary dark:text-secondary' }} tracking-wider">{{ trans:strings.journal }}<span aria-hidden="true"> \</span></span>
     {{ /if }}
-    <h2 {{ if generate_id }}:id="$id('project-title')"{{ /if}} class="md:max-w-[calc(85%-4rem)] text-4xl md:text-5xl uppercase tracking-wider {{ color or 'text-primary dark:text-secondary' }}">
+    <h2 {{ if generate_id }}:id="$id('project-title')"{{ /if}} class="{{ max_width !== false ?= 'md:max-w-[calc(85%-4rem)]' }} text-4xl md:text-5xl uppercase tracking-wider {{ color or 'text-primary dark:text-secondary' }}">
         {{ journal_entry:title }}
     </h2>
 </div>
 <div class="flex flex-col items-start md:flex-row gap-6 md:gap-16">
-    <ul class="md:max-w-[calc(85%-4rem)] inline-flex md:justify-end flex-wrap uppercase text-sm font-medium {{ color or 'text-primary dark:text-secondary' }} tracking-wider">
+    <ul class="{{ max_width !== false ?= 'md:max-w-[calc(85%-4rem)]' }} inline-flex md:justify-end flex-wrap uppercase text-sm font-medium {{ color or 'text-primary dark:text-secondary' }} tracking-wider">
         {{ journal_entry:tags as="tags" }}
             {{ tags }}
                 <li class="ml-[.5ch]">{{ title }}{{ unless last }}<span aria-hidden="true">, </span>{{ /unless }}</li>
