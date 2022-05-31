@@ -55,7 +55,7 @@ return [
 
     'exclude' => [
         '/sitemap.xml',
-        '/feed/journal'
+        '/feed*'
     ],
 
     /*
