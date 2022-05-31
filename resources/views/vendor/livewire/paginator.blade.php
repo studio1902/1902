@@ -1,5 +1,5 @@
-<div>
-    @if ($paginator->hasPages())
+@if ($paginator->hasPages())
+    <div>
         @php $active_classes = "p-1 -m-1 rounded flex space-x-1 items-baseline font-medium text-neutral dark:text-white focus:outline-none focus-visible:ring ring-primary dark:ring-secondary leading-none underline underline-offset-4 decoration-dotted decoration-2 decoration-primary dark:decoration-secondary hover:text-primary hover:dark:text-secondary motion-safe:transition cursor-pointer" @endphp
         @php $inactive_classes = "flex space-x-1 items-baseline font-medium text-neutral dark:text-white opacity-30 leading-none underline underline-offset-4 decoration-dotted decoration-2 decoration-neutral dark:decoration-white" @endphp
         @php $location_classes = "text-sm font-medium text-neutral dark:text-white" @endphp
@@ -17,5 +17,5 @@
                 <span class="{{ $inactive_classes }}">{!! __('strings.next') !!}</span>
             @endif
         </nav>
-    @endif
-</div>
+    </div>
+@endif
