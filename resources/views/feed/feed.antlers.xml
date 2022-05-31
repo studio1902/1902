@@ -1,5 +1,5 @@
 {{ xml_header }}
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom:">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
    <channel>
       <title>{{ config:app:name }} Journal</title>
       <link>{{ config:app:url }}</link>
@@ -7,14 +7,13 @@
       <description>Readeable bites about web development.</description>
       <language>en-us</language>
       <lastBuildDate>{{ now iso_format="ddd, DD MMM GGGG HH:mm:ss UT" }}</lastBuildDate>
-      <webMaster>info@1902.studio (Rob de Kort)</webMaster>
       {{ collection:journal sort="date:desc" limit="50" }}
         <item>
             <title>{{ title }}</title>
             <link>{{ permalink }}</link>
             <guid isPermaLink="true">{{ permalink }}</guid>
             <description>{{ description }}</description>
-            <pubDate>{{ date iso_format="ddd, DD MMM GGGG hh:mm:ss UTC" }}</pubDate>
+            <pubDate>{{ date iso_format="ddd, DD MMM GGGG hh:mm:ss UT" }}</pubDate>
         </item>
       {{ /collection:journal }}
    </channel>
