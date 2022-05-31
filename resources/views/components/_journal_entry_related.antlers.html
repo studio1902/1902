@@ -4,8 +4,15 @@
 #}}
 
 <!-- /components/_journal_entry_random.antlers.html -->
-{{ collection:journal as="posts" limit="1" taxonomy:tags="{ tags | option_list }" :id:isnt="id"  }}
-    {{ posts }}
+{{ collection:journal as="post" limit="1" :taxonomy:tags="tags" sort="random" :id:isnt="id" }}
+    {{ unless post }}
+        {{ post = { collection:journal limit="1" sort="random" :id:isnt="page:id" } }}
+        {{ background_text = ['More','to','read'] }}
+    {{ else }}
+        {{ background_text = ['Related','content'] }}
+    {{ /unless }}
+
+    {{ post }}
         <section
             x-data=""
             x-id="['entry-title']"
@@ -13,7 +20,7 @@
         >
             <a
                 href="{{ url }}"
-                class="relative md:col-span-8 xl:col-span-6 border border-b-0 md:border-b border-primary dark:border-secondary p-6 pb-12 md:p-8 flex flex-col gap-y-8 justify-between focus:outline-none focus-visible:ring-2 ring-offset-2 ring-offset-white dark:ring-offset-neutral ring-primary dark:ring-secondary group"
+                class="relative md:col-span-8 lg:col-span-6 border border-b-0 md:border-b border-primary dark:border-secondary p-6 pb-12 md:p-8 flex flex-col gap-y-8 justify-between focus:outline-none focus-visible:ring-2 ring-offset-2 ring-offset-white dark:ring-offset-neutral ring-primary dark:ring-secondary group"
                 :aria-labelledby="$id('entry-title')"
                 draggable="false"
             >
@@ -29,9 +36,8 @@
                 </div>
             </a>
 
-            {{ background_text = ['More','to','read'] }}
             {{ partial:components/background_text background_text_position="start" }}
         </section>
-    {{ /posts }}
+    {{ /post }}
 {{ /collection:journal }}
 <!-- End: /components/_journal_entry_random.antlers.html -->
