@@ -42,8 +42,6 @@ fields:
         projects: empty
   -
     handle: text
-    field: common.text_plain
-  -
-    import: buttons
+    field: common.text_basic
   -
     import: background_text

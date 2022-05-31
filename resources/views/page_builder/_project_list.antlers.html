@@ -18,11 +18,9 @@
 
         {{ partial:components/project_list class="md:col-span-8 flex flex-col justify-start" }}
 
-        <article class="md:col-span-4">
-            {{ text ?= { partial:typography/p :content="text" } }}
-
-            {{ partial:components/buttons }}
-        </article>
+        {{ partial:typography/prose as="article" class="md:col-span-4" }}
+            {{ block:text }}
+        {{ /partial:typography/prose }}
     </div>
 
     {{ partial:components/background_text }}

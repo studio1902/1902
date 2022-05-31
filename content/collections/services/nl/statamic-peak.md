@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1653557842
+updated_at: 1654016163
 teaser: 'Mijn bijdrage aan de open-source-gemeenschap, een complete starter kit voor ontwikkelaars uit de Statamic Community. Gratis.'
 introduction: 'Crowdsource non-disclosure agreement. MVP creative pitch venture startup low hanging fruit hypotheses customer strategy iPad partnership social proof. deployment. Long tail success entrepreneur network effects android. deployment.'
 page_builder:
@@ -146,13 +146,41 @@ page_builder:
       - 4b4b9b6a-508f-4d18-8b35-3e53db6a2066
       - 3a39cb30-08b0-42db-85c9-bcffc5aa7d71
       - 524c0aa8-af38-4f99-8068-6c03bb2a3243
-    text: 'Al mijn Statamic websites zijn gebouwd met behulp van Peak.'
-    buttons:
+    text:
       -
-        label: 'Bekijk meer projecten'
-        target_blank: false
-        link_type: entry
-        entry: 7eb87293-600d-404b-8519-2c4a2ebc9e51
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Al mijn Statamic websites zijn gebouwd met behulp van Peak. Ook deze website. Bekijk hier '
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'https://github.com/studio1902/1902'
+                  rel: noopener
+                  target: _blank
+                  title: null
+            text: 'de source'
+          -
+            type: text
+            text: .
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::7eb87293-600d-404b-8519-2c4a2ebc9e51'
+                  rel: noopener
+                  target: null
+                  title: null
+            text: 'Bekijk meer projecten'
     background_text:
       - Have
       - a
@@ -239,7 +267,7 @@ page_builder:
       - Why
       - 'tell me'
       - why
-    background_text_position: end
+    background_text_position: start
     type: article
     enabled: true
 og_image: statamic-peak-og-1653127434.png

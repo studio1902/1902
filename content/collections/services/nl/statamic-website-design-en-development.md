@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1653553949
+updated_at: 1654016199
 teaser: 'Ik ontwerp en bouw toegankelijke websites die presteren en gebruiksvriendelijk zijn.'
 introduction: 'Crowdsource non-disclosure agreement. MVP creative pitch venture startup low hanging fruit hypotheses customer strategy iPad partnership social proof. deployment. Long tail success entrepreneur network effects android. deployment.'
 page_builder:
@@ -139,12 +139,32 @@ page_builder:
     background_text_position: center
     type: project_list
     enabled: true
-    title: 'Projecten'
+    title: Projecten
     limit: 3
-    text: 'Je gaat het pas snappen als je het ziet.'
+    text:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Je gaat het pas snappen als je het ziet.'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::7eb87293-600d-404b-8519-2c4a2ebc9e51'
+                  rel: noopener
+                  target: null
+                  title: null
+            text: 'Bekijk meer projecten'
     buttons:
       -
-        label: Meer projecten
+        label: 'Meer projecten'
         target_blank: false
         link_type: entry
         entry: 7eb87293-600d-404b-8519-2c4a2ebc9e51

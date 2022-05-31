@@ -131,12 +131,32 @@ page_builder:
     background_text_position: center
     type: project_list
     enabled: true
-    title: 'Projects'
+    title: Projects
     limit: 3
-    text: 'You''ll get it when you see it.'
+    text:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'You''ll get it when you see it.'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::af12cb2b-6ad9-4b0c-b5ef-ab4d336a7bf5'
+                  rel: noopener
+                  target: null
+                  title: null
+            text: 'View more projects'
     buttons:
       -
-        label: More projects
+        label: 'More projects'
         target_blank: false
         link_type: entry
         entry: 7eb87293-600d-404b-8519-2c4a2ebc9e51
@@ -167,5 +187,5 @@ page_builder:
 og_image: website-design-development-og-1653395329.png
 twitter_image: website-design-development-twitter-1653395329.png
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1653553940
+updated_at: 1654016219
 ---

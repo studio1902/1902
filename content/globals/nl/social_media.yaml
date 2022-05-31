@@ -10,7 +10,7 @@ social_media:
     type: twitter
     enabled: true
   -
-    handle: studio1902/1902
+    handle: studio1902
     prefix: 'https://www.github.com/'
     type: github
     enabled: true

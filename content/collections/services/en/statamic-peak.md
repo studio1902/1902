@@ -128,7 +128,41 @@ page_builder:
       - 4b4b9b6a-508f-4d18-8b35-3e53db6a2066
       - 3a39cb30-08b0-42db-85c9-bcffc5aa7d71
       - 0acd0189-4728-4b93-9412-3fcb52fb7964
-    text: 'All my Statamic sites have been built using Peak'
+    text:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'All my Statamic sites have been built using Peak, including this website. View '
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'https://github.com/studio1902/1902'
+                  rel: noopener
+                  target: _blank
+                  title: null
+            text: 'the source'
+          -
+            type: text
+            text: ' here.'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'statamic://entry::af12cb2b-6ad9-4b0c-b5ef-ab4d336a7bf5'
+                  rel: noopener
+                  target: null
+                  title: null
+            text: 'View more projects'
     buttons:
       -
         label: 'View more projects'
@@ -222,5 +256,5 @@ page_builder:
 og_image: '-og-1653395332.png'
 twitter_image: '-twitter-1653395332.png'
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1653557894
+updated_at: 1654016146
 ---
