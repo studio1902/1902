@@ -24,6 +24,12 @@ Route::statamic('/sitemap.xml', 'sitemap/sitemap', [
     'content_type' => 'application/xml'
 ]);
 
+// The Sitemap route to the RSS feed.
+Route::statamic('/feed', 'feed/feed', [
+    'layout' => null,
+    'content_type' => 'application/xml'
+]);
+
 // The Manifest route to the manifest.json
 Route::statamic('/site.webmanifest', 'manifest/manifest', [
     'layout' => null,
