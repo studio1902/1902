@@ -26,7 +26,7 @@ Route::statamic('/sitemap.xml', 'sitemap/sitemap', [
 ]);
 
 // The Sitemap route to the RSS feed.
-Route::statamic('/feed', 'feed/feed', [
+Route::statamic('/feed/journal', 'feed/feed', [
     'layout' => null,
     'content_type' => 'application/xml'
 ])->middleware(SetLocaleToEnglish::class);
