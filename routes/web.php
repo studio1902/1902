@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\DynamicToken;
+use App\Http\Middleware\SetLocaleToEnglish;
 use Illuminate\Support\Facades\Route;
 use Statamic\Facades\Site;
 
@@ -28,7 +29,7 @@ Route::statamic('/sitemap.xml', 'sitemap/sitemap', [
 Route::statamic('/feed', 'feed/feed', [
     'layout' => null,
     'content_type' => 'application/xml'
-]);
+])->middleware(SetLocaleToEnglish::class);
 
 // The Manifest route to the manifest.json
 Route::statamic('/site.webmanifest', 'manifest/manifest', [
