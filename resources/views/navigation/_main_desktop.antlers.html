@@ -5,7 +5,7 @@
 
 <!-- /navigation/_main_desktop.antlers.html -->
 <nav class="hidden md:block" aria-label="{{ trans:strings.main_navigation }}">
-    <ul class="flex items-center space-x-4 lg:space-x-6 xl:space-x-12">
+    <ul class="flex items-center space-x-6 lg:space-x-8 xl:space-x-12">
         {{ nav:main max_depth="2" include_home="false" }}
             <li
                 {{ if children }}
@@ -36,7 +36,7 @@
                 class="relative leading-none"
             >
                 <a
-                    class="relative z-10 py-1 px-2 -my-1 -mx-2 flex items-center rounded-full font-medium text-base uppercase tracking-widest text-neutral dark:text-white focus:outline-none focus-visible:ring-2 ring-primary dark:ring-secondary group transition-none {{ is_current || is_parent ?= 'after:absolute after:z-behind after:h-[3px] after:-inset-x-0 after:bg-primary dark:after:bg-secondary' }}"
+                    class="relative z-10 py-1 px-2 -my-1 -mx-2 flex items-center rounded-full font-medium text-sm lg:text-base uppercase tracking-wider lg:tracking-widest text-neutral dark:text-white focus:outline-none focus-visible:ring-2 ring-primary dark:ring-secondary group transition-none {{ is_current || is_parent ?= 'after:absolute after:z-behind after:h-[3px] after:-inset-x-0 after:bg-primary dark:after:bg-secondary' }}"
                     {{ if children }}
                         href="#"
                         @click.prevent="toggle()"
