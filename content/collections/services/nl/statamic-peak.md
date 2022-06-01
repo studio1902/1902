@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1654016163
+updated_at: 1654114525
 teaser: 'Mijn bijdrage aan de open-source-gemeenschap, een complete starter kit voor ontwikkelaars uit de Statamic Community. Gratis.'
 introduction: 'Crowdsource non-disclosure agreement. MVP creative pitch venture startup low hanging fruit hypotheses customer strategy iPad partnership social proof. deployment. Long tail success entrepreneur network effects android. deployment.'
 page_builder:
@@ -144,8 +144,8 @@ page_builder:
     title: 'Gebouwd met Peak'
     projects:
       - 4b4b9b6a-508f-4d18-8b35-3e53db6a2066
+      - 773327c6-7f7d-434d-a69d-21ba4946a2b2
       - 3a39cb30-08b0-42db-85c9-bcffc5aa7d71
-      - 524c0aa8-af38-4f99-8068-6c03bb2a3243
     text:
       -
         type: paragraph
