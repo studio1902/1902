@@ -19,3 +19,64 @@ redirects:
     url_old: /blog/
     entry: b5a546e9-818b-47a5-8fbf-2ce91a8f2e7c
     response: '301'
+  -
+    url_old: /werk/willemjacob/
+    entry: 7eb87293-600d-404b-8519-2c4a2ebc9e51
+    response: '301'
+  -
+    url_old: /werk/zeilklippers/
+    response: '301'
+  -
+    url_old: /werk/bureaubegeleidingskunst/
+    response: '301'
+  -
+    url_old: /werk/milk/
+    response: '301'
+  -
+    url_old: /werk/klimaatadaptatiegroningen/
+    response: '301'
+  -
+    url_old: /werk/eilandhopper/
+    response: '301'
+  -
+    url_old: /werk/campingreitdiep/
+    response: '301'
+  -
+    url_old: /werk/machinerichtlijn/
+    response: '301'
+  -
+    url_old: /werk/nutricalculator/
+    response: '301'
+  -
+    url_old: /werk/onderzoekrouw/
+    response: '301'
+  -
+    url_old: /werk/linkbundle/
+    response: '301'
+  -
+    url_old: /werk/nienkedeboer/
+    response: '301'
+  -
+    url_old: /werk/omkejan/
+    response: '301'
+  -
+    url_old: /werk/trigonus/
+    response: '301'
+  -
+    url_old: /werk/corusadvies/
+    response: '301'
+  -
+    url_old: /werk/waltec/
+    response: '301'
+  -
+    url_old: /werk/eensamen050/
+    response: '301'
+  -
+    url_old: /werk/semperphi/
+    response: '301'
+  -
+    url_old: /werk/jouwdagelijksekost/
+    response: '301'
+  -
+    url_old: /werk/zorgmetvlijt/
+    response: '301'
