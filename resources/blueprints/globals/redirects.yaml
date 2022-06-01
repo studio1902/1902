@@ -32,6 +32,11 @@ sections:
                 display: 'New URL'
                 instructions: 'Select the new URL'
                 width: 33
+                collections:
+                  - pages
+                  - services
+                  - journal
+                  - projects
             -
               handle: response
               field:
@@ -59,3 +64,5 @@ sections:
           listable: hidden
           localizable: true
           add_row: 'Add redirect'
+          instructions_position: above
+          read_only: false
