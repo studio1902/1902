@@ -54,6 +54,8 @@ return [
     */
 
     'exclude' => [
+        '/pagina-niet-gevonden',
+        '/page-not-found',
         '/site.webmanifest',
         '/sitemap.xml',
         '/feed*'
