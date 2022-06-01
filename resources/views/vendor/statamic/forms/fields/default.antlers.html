@@ -1,7 +1,7 @@
 {{# Bind custom error classses when there is a validation error with the field. #}}
 <!-- /vendor/statamic/forms/fields/default.antlers.html -->
 <input
-    class="w-full bg-neutral-light dark:bg-neutral-light/10 focus-visible:border-primary dark:focus-visible:border-secondary focus:outline-none focus:ring-0 motion-safe:transition caret-primary"
+    class="w-full text-neutral dark:text-white bg-neutral-light dark:bg-neutral-light/10 focus-visible:border-primary dark:focus-visible:border-secondary focus:outline-none focus:ring-0 motion-safe:transition caret-primary dark:caret-secondary"
     :class="{ 'border-red-600 focus-visible:border-red-600': errors.{{ handle }}, 'border-neutral-light': !errors.{{ handle }}  }"
     id="{{ handle }}"
     name="{{ handle }}"
