@@ -1,1 +1,21 @@
-{  }
+redirects:
+  -
+    url_old: /werk/
+    entry: 7eb87293-600d-404b-8519-2c4a2ebc9e51
+    response: '301'
+  -
+    url_old: /werk/mam/
+    entry: 4fe7aca0-1743-4a3f-9745-cbae6d76b6b4
+    response: '301'
+  -
+    url_old: /studio/partners/
+    entry: 784b5e43-4c28-43b1-9771-6f7b35c51826
+    response: '301'
+  -
+    url_old: /studio/
+    entry: 784b5e43-4c28-43b1-9771-6f7b35c51826
+    response: '301'
+  -
+    url_old: /blog/
+    entry: b5a546e9-818b-47a5-8fbf-2ce91a8f2e7c
+    response: '301'
