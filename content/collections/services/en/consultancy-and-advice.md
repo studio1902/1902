@@ -6,7 +6,7 @@ teaser: 'I would like to visit your team to share my knowledge, sharing is carin
 page_builder:
   -
     title: 'Talks & consultancy'
-    text: 'In the past 15 years I have made just about every mistake in the programming process. Now I know which choices are the right ones. Although I specialize in Statamic, there are more tools I use. I am happy to tell your organization or team all about it, so that you can also make even better websites.'
+    text: 'In the past 15 years I have made just about every mistake in the programming process. Now I know which choices are the right ones. Although I specialize in Statamic, there are more tools I use. I am happy to tell your organization or team all about it, so that you can make better websites as well.'
     type: introduction
     enabled: true
   -
@@ -60,5 +60,5 @@ page_builder:
 og_image: talks-consultancy-og-1653395331.png
 twitter_image: talks-consultancy-twitter-1653395331.png
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1653557056
+updated_at: 1654124559
 ---
