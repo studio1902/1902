@@ -25,58 +25,233 @@ redirects:
     response: '301'
   -
     url_old: /werk/zeilklippers/
+    entry: 7eb87293-600d-404b-8519-2c4a2ebc9e51
     response: '301'
   -
     url_old: /werk/bureaubegeleidingskunst/
+    entry: 7eb87293-600d-404b-8519-2c4a2ebc9e51
     response: '301'
   -
     url_old: /werk/milk/
+    entry: 7eb87293-600d-404b-8519-2c4a2ebc9e51
     response: '301'
   -
     url_old: /werk/klimaatadaptatiegroningen/
+    entry: 7eb87293-600d-404b-8519-2c4a2ebc9e51
     response: '301'
   -
     url_old: /werk/eilandhopper/
+    entry: 7eb87293-600d-404b-8519-2c4a2ebc9e51
     response: '301'
   -
     url_old: /werk/campingreitdiep/
+    entry: 7eb87293-600d-404b-8519-2c4a2ebc9e51
     response: '301'
   -
     url_old: /werk/machinerichtlijn/
+    entry: 7eb87293-600d-404b-8519-2c4a2ebc9e51
     response: '301'
   -
     url_old: /werk/nutricalculator/
+    entry: 7eb87293-600d-404b-8519-2c4a2ebc9e51
     response: '301'
   -
     url_old: /werk/onderzoekrouw/
+    entry: 7eb87293-600d-404b-8519-2c4a2ebc9e51
     response: '301'
   -
     url_old: /werk/linkbundle/
+    entry: 7eb87293-600d-404b-8519-2c4a2ebc9e51
     response: '301'
   -
     url_old: /werk/nienkedeboer/
+    entry: 7eb87293-600d-404b-8519-2c4a2ebc9e51
     response: '301'
   -
     url_old: /werk/omkejan/
+    entry: 7eb87293-600d-404b-8519-2c4a2ebc9e51
     response: '301'
   -
     url_old: /werk/trigonus/
+    entry: 7eb87293-600d-404b-8519-2c4a2ebc9e51
     response: '301'
   -
     url_old: /werk/corusadvies/
+    entry: 7eb87293-600d-404b-8519-2c4a2ebc9e51
     response: '301'
   -
     url_old: /werk/waltec/
+    entry: 7eb87293-600d-404b-8519-2c4a2ebc9e51
     response: '301'
   -
     url_old: /werk/eensamen050/
+    entry: 7eb87293-600d-404b-8519-2c4a2ebc9e51
     response: '301'
   -
     url_old: /werk/semperphi/
+    entry: 7eb87293-600d-404b-8519-2c4a2ebc9e51
     response: '301'
   -
     url_old: /werk/jouwdagelijksekost/
+    entry: 7eb87293-600d-404b-8519-2c4a2ebc9e51
     response: '301'
   -
     url_old: /werk/zorgmetvlijt/
+    entry: 7eb87293-600d-404b-8519-2c4a2ebc9e51
+    response: '301'
+  -
+    url_old: /werk/codegorilla/
+    entry: 3a39cb30-08b0-42db-85c9-bcffc5aa7d71
+    response: '301'
+  -
+    url_old: /werk/gewoonjelle/
+    entry: 7eb87293-600d-404b-8519-2c4a2ebc9e51
+    response: '301'
+  -
+    url_old: /werk/ndw/
+    entry: 7eb87293-600d-404b-8519-2c4a2ebc9e51
+    response: '301'
+  -
+    url_old: /werk/praktijkkremer/
+    entry: 7eb87293-600d-404b-8519-2c4a2ebc9e51
+    response: '301'
+  -
+    url_old: /werk/type/website/
+    entry: 7eb87293-600d-404b-8519-2c4a2ebc9e51
+    response: '301'
+  -
+    url_old: /werk/duurzaam-baflo/
+    entry: 7eb87293-600d-404b-8519-2c4a2ebc9e51
+    response: '301'
+  -
+    url_old: /blog/tag/bedrijf/
+    entry: b5a546e9-818b-47a5-8fbf-2ce91a8f2e7c
+    response: '301'
+  -
+    url_old: /werk/gepetto-hout/
+    entry: 7eb87293-600d-404b-8519-2c4a2ebc9e51
+    response: '301'
+  -
+    url_old: /werk/type/drukwerk/
+    entry: 7eb87293-600d-404b-8519-2c4a2ebc9e51
+    response: '301'
+  -
+    url_old: /werk/twa-architecten/
+    entry: 7eb87293-600d-404b-8519-2c4a2ebc9e51
+    response: '301'
+  -
+    url_old: /werk/terra-leerlingvolgysteem/
+    entry: 7eb87293-600d-404b-8519-2c4a2ebc9e51
+    response: '301'
+  -
+    url_old: /blog/tag/wordpress/
+    entry: b5a546e9-818b-47a5-8fbf-2ce91a8f2e7c
+    response: '301'
+  -
+    url_old: /blog/tag/servicecontract/
+    entry: b5a546e9-818b-47a5-8fbf-2ce91a8f2e7c
+    response: '301'
+  -
+    url_old: /blog/tag/klanten/
+    entry: b5a546e9-818b-47a5-8fbf-2ce91a8f2e7c
+    response: '301'
+  -
+    url_old: /werk/anorexiaonderzoek-nl/
+    entry: 7eb87293-600d-404b-8519-2c4a2ebc9e51
+    response: '301'
+  -
+    url_old: /werk/geboortekaartje-mare/
+    entry: 7eb87293-600d-404b-8519-2c4a2ebc9e51
+    response: '301'
+  -
+    url_old: /blog/tag/cms/
+    entry: b5a546e9-818b-47a5-8fbf-2ce91a8f2e7c
+    response: '301'
+  -
+    url_old: /werk/promotiemateriaal-blijf/
+    entry: 7eb87293-600d-404b-8519-2c4a2ebc9e51
+    response: '301'
+  -
+    url_old: /blog/tag/developers/
+    entry: b5a546e9-818b-47a5-8fbf-2ce91a8f2e7c
+    response: '301'
+  -
+    url_old: /werk/promotiemateriaal-drup/
+    entry: 7eb87293-600d-404b-8519-2c4a2ebc9e51
+    response: '301'
+  -
+    url_old: /werk/promotiemateriaal-golf/
+    entry: 7eb87293-600d-404b-8519-2c4a2ebc9e51
+    response: '301'
+  -
+    url_old: /blog/tag/statamic/
+    entry: b5a546e9-818b-47a5-8fbf-2ce91a8f2e7c
+    response: '301'
+  -
+    url_old: /blog/tag/webdevelopment/
+    entry: b5a546e9-818b-47a5-8fbf-2ce91a8f2e7c
+    response: '301'
+  -
+    url_old: /blog/tag/webdesign/
+    entry: b5a546e9-818b-47a5-8fbf-2ce91a8f2e7c
+    response: '301'
+  -
+    url_old: /blog/tag/trellis/
+    entry: b5a546e9-818b-47a5-8fbf-2ce91a8f2e7c
+    response: '301'
+  -
+    url_old: /blog/een-nieuwe-start/
+    entry: b5a546e9-818b-47a5-8fbf-2ce91a8f2e7c
+    response: '301'
+  -
+    url_old: /blog/tag/digital-ocean/
+    entry: b5a546e9-818b-47a5-8fbf-2ce91a8f2e7c
+    response: '301'
+  -
+    url_old: /werk/promotiemateriaal-net-hamlet/
+    entry: 7eb87293-600d-404b-8519-2c4a2ebc9e51
+    response: '301'
+  -
+    url_old: /blog/tag/user-experience/
+    entry: b5a546e9-818b-47a5-8fbf-2ce91a8f2e7c
+    response: '301'
+  -
+    url_old: /blog/tag/in-english/
+    entry: b5a546e9-818b-47a5-8fbf-2ce91a8f2e7c
+    response: '301'
+  -
+    url_old: /werk/hanne-low-poly/
+    entry: 7eb87293-600d-404b-8519-2c4a2ebc9e51
+    response: '301'
+  -
+    url_old: /blog/statamic-als-alternatief-voor-wordpress/
+    entry: b5a546e9-818b-47a5-8fbf-2ce91a8f2e7c
+    response: '301'
+  -
+    url_old: /blog/de-beveiliging-van-jouw-website/
+    entry: b5a546e9-818b-47a5-8fbf-2ce91a8f2e7c
+    response: '301'
+  -
+    url_old: /blog/de-avg-en-jouw-website/
+    entry: b5a546e9-818b-47a5-8fbf-2ce91a8f2e7c
+    response: '301'
+  -
+    url_old: /blog/je-website-in-een-keer-online/
+    entry: b5a546e9-818b-47a5-8fbf-2ce91a8f2e7c
+    response: '301'
+  -
+    url_old: /blog/met-deze-software-maak-ik-websites/
+    entry: a397a0da-af80-4d0a-b398-f415fd9dd847
+    response: '301'
+  -
+    url_old: /blog/wat-heb-ik-aan-een-servicecontract/
+    entry: b5a546e9-818b-47a5-8fbf-2ce91a8f2e7c
+    response: '301'
+  -
+    url_old: /blog/responsive-images-with-statamic-tailwind-and-glide/
+    entry: 4a16240e-8399-4201-a27a-71642abd8bec
+    response: '301'
+  -
+    url_old: /werk/dekinderacademie/
+    entry: 7eb87293-600d-404b-8519-2c4a2ebc9e51
     response: '301'
