@@ -50,8 +50,10 @@ trackers_local: false
 trackers_staging: false
 trackers_production: true
 use_google_site_verification: false
-use_fathom: false
-fathom_use_custom_domain: false
+use_fathom: true
+fathom_use_custom_domain: true
+fathom: HRTZTRYO
+fathom_custom_script_url: 'https://twentyfive-skillful.1902.studio/script.js'
 use_cloudflare_web_analytics: false
 tracker_type: none
 anonymize_ip: false
