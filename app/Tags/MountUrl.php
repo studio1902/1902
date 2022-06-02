@@ -3,7 +3,9 @@
 namespace App\Tags;
 
 use Statamic\Facades\Collection;
+use Statamic\Facades\Site;
 use Statamic\Tags\Tags;
+use Illuminate\Support\Facades\App;
 
 class MountUrl extends Tags
 {
@@ -18,7 +20,7 @@ class MountUrl extends Tags
         * Get the collection name from the tag
         */
         $collectionName  = $this->params->get('from');
-        $collection = Collection::findByHandle($collectionName);
-        return ($collection)? $collection->url() : null;
+        $collection = Collection::find($collectionName);
+        return ($collection) ? $collection->url(Site::current()->handle()) : null;
     }
 }
