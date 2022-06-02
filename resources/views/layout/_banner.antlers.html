@@ -1,0 +1,25 @@
+{{#
+	@name Banner
+	@desc The sites optional banner rendered on each page.
+#}}
+
+<!-- /layout/_banner.antlers.html -->
+{{ if banner:use_banner }}
+    <section
+        x-data="{ visible: $persist(true).using(sessionStorage).as('bannerVisible') }"
+        x-show="visible"
+        class="w-full h-auto py-3 bg-primary dark:bg-secondary"
+        x-cloak
+    >
+        <div class="fluid-container flex justify-between items-center space-x-4">
+            {{ partial:typography/prose_inverted as="article" }}
+                {{ banner:text }}
+            {{ /partial:typography/prose_inverted }}
+
+            <button class="p-1 -m-1 rounded focus:outline-none focus-visible:ring-2 ring-white" @click="visible = false">
+                {{ svg:close class="w-4 h-4 text-white fill-current" }}
+            </button>
+        </div>
+    </section>
+{{ /if  }}
+<!-- End: /layout/_banner.antlers.html -->
