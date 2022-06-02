@@ -127,6 +127,16 @@ page_builder:
             target_blank: false
             link_type: url
             url: 'https://hetzner.com'
+      -
+        title: 'Fathom Analytics'
+        text: 'An alternative for the invasive Google Analytics. Gather statistics legally without cookie banner and without sacrificing your visitors privacy.'
+        icon: tools/fathom-logo.svg
+        buttons:
+          -
+            label: usefathom.com
+            link_type: url
+            target_blank: true
+            url: 'https://usefathom.com'
   -
     background_text_position: center
     type: project_list
@@ -187,5 +197,5 @@ page_builder:
 og_image: website-design-development-og-1653395329.png
 twitter_image: website-design-development-twitter-1653395329.png
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1654016219
+updated_at: 1654174646
 ---
