@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1653556104
+updated_at: 1654201686
 template: projects/index
 page_builder:
   -
@@ -30,7 +30,7 @@ page_builder:
     type: title_and_text
     enabled: true
     background_text:
-      - 'Work I''m'
+      - "Work I'm"
       - 'proud of'
     animation: fire.json
     audio: fire-burning.mp3
