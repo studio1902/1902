@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1654016199
+updated_at: 1654174588
 teaser: 'Ik ontwerp en bouw toegankelijke websites die presteren en gebruiksvriendelijk zijn.'
 introduction: 'Crowdsource non-disclosure agreement. MVP creative pitch venture startup low hanging fruit hypotheses customer strategy iPad partnership social proof. deployment. Long tail success entrepreneur network effects android. deployment.'
 page_builder:
@@ -135,6 +135,16 @@ page_builder:
             target_blank: false
             link_type: url
             url: 'https://hetzner.com'
+      -
+        title: 'Fathom Analytics'
+        text: 'Een alternatief voor het invasieve Google Analytics. Vergaar op een legale manier statistieken zonder cookie banner en zonder de privacy van je bezoekers op te geven.'
+        icon: tools/fathom-logo.svg
+        buttons:
+          -
+            label: usefathom.com
+            link_type: url
+            target_blank: true
+            url: 'https://usefathom.com'
   -
     background_text_position: center
     type: project_list
