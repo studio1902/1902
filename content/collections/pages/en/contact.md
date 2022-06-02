@@ -20,7 +20,7 @@ page_builder:
             text: 'Got enthusiastic or have a pressing question? Mail or call me, then you will hear from me! Be sure to follow me on Twitter, too, because that''s where you''ll find current, work-related news (or cynical tweets).'
     text_position: start
     text_size: small
-    animation: fire.json
+    animation: campfire.json
     playback_speed: 1.0
     loop: false
     intersect: true
@@ -39,5 +39,5 @@ page_builder:
 og_image: '-og-1653395170.png'
 twitter_image: '-twitter-1653395170.png'
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1653466919
+updated_at: 1654194469
 ---

@@ -3,7 +3,7 @@ id: home
 blueprint: page
 title: Home
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1653562056
+updated_at: 1654194527
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -38,7 +38,7 @@ page_builder:
     animation: fire.json
     loop: false
     intersect: true
-    playback_speed: 0.4
+    playback_speed: 1.0
     background_text:
       - Hot
       - Hot
@@ -91,8 +91,8 @@ page_builder:
     text_position: center
     text_size: small
     size: small
-    animation: knive.json
-    audio: chopping-veggies.mp3
+    animation: accessiblity.json
+    audio: keyboard.mp3
   -
     type: journal_entry
     enabled: true

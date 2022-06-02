@@ -30,7 +30,7 @@ page_builder:
     animation: fire.json
     loop: false
     intersect: true
-    playback_speed: 0.4
+    playback_speed: 1.0
     background_text:
       - Hot
       - Hot
@@ -81,10 +81,10 @@ page_builder:
     tag: h2
     background_text_position: start
     text_position: center
-    animation: knive.json
+    animation: accessiblity.json
     text_size: small
     size: small
-    audio: chopping-veggies.mp3
+    audio: keyboard.mp3
   -
     type: journal_entry
     enabled: true
@@ -184,5 +184,5 @@ seo_description: 'Bespoke and accessible websites. Studio 1902 is home of Rob de
 og_image: '-og-1653395172.png'
 twitter_image: '-twitter-1653395172.png'
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1654163588
+updated_at: 1654194522
 ---
