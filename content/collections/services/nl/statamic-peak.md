@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1654114525
+updated_at: 1654164424
 teaser: 'Mijn bijdrage aan de open-source-gemeenschap, een complete starter kit voor ontwikkelaars uit de Statamic Community. Gratis.'
 introduction: 'Crowdsource non-disclosure agreement. MVP creative pitch venture startup low hanging fruit hypotheses customer strategy iPad partnership social proof. deployment. Long tail success entrepreneur network effects android. deployment.'
 page_builder:
@@ -224,7 +224,7 @@ page_builder:
                 label: Docs
                 link_type: url
                 target_blank: true
-                url: 'https://peak.1902.nl'
+                url: 'https://peak.1902.studio'
               -
                 label: Discord
                 link_type: url

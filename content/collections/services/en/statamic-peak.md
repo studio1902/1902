@@ -212,12 +212,17 @@ page_builder:
                 label: Docs
                 link_type: url
                 target_blank: true
-                url: 'https://peak.1902.nl'
+                url: 'https://peak.1902.studio'
               -
                 label: Discord
                 link_type: url
                 target_blank: true
                 url: 'https://discord.com/invite/sW7KXWaucH'
+              -
+                label: Screencast
+                link_type: url
+                target_blank: true
+                url: 'https://www.youtube.com/watch?v=79Ist1HrHoA'
       -
         type: heading
         attrs:
@@ -256,5 +261,5 @@ page_builder:
 og_image: '-og-1653395332.png'
 twitter_image: '-twitter-1653395332.png'
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1654114549
+updated_at: 1654164437
 ---
