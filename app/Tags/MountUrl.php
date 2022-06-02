@@ -5,7 +5,6 @@ namespace App\Tags;
 use Statamic\Facades\Collection;
 use Statamic\Facades\Site;
 use Statamic\Tags\Tags;
-use Illuminate\Support\Facades\App;
 
 class MountUrl extends Tags
 {
