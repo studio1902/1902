@@ -5,7 +5,7 @@
 
 <!-- /components/_project_overview.antlers.html -->
 <div class="relative fluid-container grid md:grid-cols-12 mt-24">
-    {{ client:logo ?= { svg src="{ client:logo }" class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-[150%] h-20 w-auto max-w-full { color or 'text-neutral dark:text-white' } fill-current-cascade" } }}
+    {{ client:logo ?= { svg src="{ client:logo }" class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-[150%] h-20 w-auto max-w-[12rem] { color or 'text-neutral dark:text-white' } fill-current-cascade" } }}
 
     <article class="flex flex-col space-y-8 md:pr-40 md:col-span-7 md:col-start-1 md:row-span-3 md:row-start-1 p-8 md:p-12 bg-primary dark:bg-secondary">
         {{ partial:typography/h2 color="text-white" content="{ trans:strings.projects_overview }" }}
