@@ -10,6 +10,7 @@
     "type": "project",
     "require": {
         "php": "^7.3 || ^8.0",
+        "cweagans/composer-patches": "^1.7",
         "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
@@ -41,6 +42,11 @@
     "extra": {
         "laravel": {
             "dont-discover": []
+        },
+        "patches": {
+            "statamic/cms": {
+                "Fix time picker on dated collections": "patches/5870.diff"
+            }
         }
     },
     "autoload": {
