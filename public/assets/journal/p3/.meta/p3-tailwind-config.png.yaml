@@ -1,6 +1,7 @@
-data: {  }
+data:
+  alt: 'The tailwind configuration when using P3 colors'
 size: 240339
-last_modified: 1654252242
+last_modified: 1654254090
 width: 1736
 height: 1276
 mime_type: image/png
