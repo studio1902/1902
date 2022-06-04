@@ -10,6 +10,8 @@ preferences:
       after_save: continue_editing
     projects:
       after_save: continue_editing
+    journal:
+      after_save: continue_editing
   taxonomies:
     tools:
       after_save: create_another
