@@ -53,7 +53,7 @@
 
                                     {{# Display error label when there is a validation error with the name field. #}}
                                     <template x-if="errors.{{ handle }}">
-                                        <span class="text-red-800 text-sm font-bold" :id="id" x-text="errors.{{ handle}}"></span>
+                                        <span class="text-red-800 dark:text-red-500 text-sm font-bold" :id="id" x-text="errors.{{ handle}}"></span>
                                     </template>
                                 </div>
 
