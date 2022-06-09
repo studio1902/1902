@@ -45,7 +45,7 @@
 
     {{ if mount_link }}
         <aside class="md:col-span-5 md:row-start-4 md:col-start-8 place-self-end flex flex-col justify-center items-end pt-4 pb-10 h-20">
-            {{ partial:components/button label="{ trans:strings.projects_all }" link_type="url" url="{%mount:projects}" }}
+            {{ partial:components/button label="{ trans:strings.projects_all }" link_type="url" url="{mount_url:projects}" }}
         </aside>
     {{ /if }}
 

@@ -12,7 +12,7 @@
 
         <nav class="font-medium text-xs uppercase tracking-wider text-primary dark:text-secondary">
             {{ tags }}
-                <a href="{{ %mount:journal }}?tag={{ slug }}" class="p-1 -m-1 rounded hover:underline focus:outline-none focus-visible:ring ring-primary dark:ring-secondary">{{ title }}</a>{{ unless last }}, {{ /unless }}
+                <a href="{{ mount_url:journal }}?tag={{ slug }}" class="p-1 -m-1 rounded hover:underline focus:outline-none focus-visible:ring ring-primary dark:ring-secondary">{{ title }}</a>{{ unless last }}, {{ /unless }}
             {{ /tags }}
         </nav>
     </aside>
