@@ -2,11 +2,11 @@
 
 namespace App\Providers;
 
-use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\View;
-use Statamic\Statamic;
+use Illuminate\Support\ServiceProvider;
 use Statamic\Facades\GlobalSet;
 use Statamic\Fieldtypes\Section;
+use Statamic\Statamic;
 
 class AppServiceProvider extends ServiceProvider
 {

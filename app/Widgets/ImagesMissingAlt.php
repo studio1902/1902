@@ -4,9 +4,9 @@ namespace App\Widgets;
 
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Cache;
-use Statamic\Widgets\Widget;
 use Statamic\Facades\Asset;
-use \Statamic\Facades\AssetContainer;
+use Statamic\Facades\AssetContainer;
+use Statamic\Widgets\Widget;
 
 class ImagesMissingAlt extends Widget
 {
@@ -19,7 +19,7 @@ class ImagesMissingAlt extends Widget
     {
         $expiration = Carbon::now()->addMinutes($this->config('expiry', 0));
 
-        $assets = Cache::remember('widgets::ImagesMissingAlt', $expiration, function() {
+        $assets = Cache::remember('widgets::ImagesMissingAlt', $expiration, function () {
             return Asset::query()
                 ->where('container', $this->config('container', 'assets'))
                 ->whereNull('alt')
