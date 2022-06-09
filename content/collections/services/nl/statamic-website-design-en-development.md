@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1654612705
+updated_at: 1654804146
 teaser: 'Ik ontwerp en bouw toegankelijke websites die presteren en gebruiksvriendelijk zijn.'
 introduction: 'Crowdsource non-disclosure agreement. MVP creative pitch venture startup low hanging fruit hypotheses customer strategy iPad partnership social proof. deployment. Long tail success entrepreneur network effects android. deployment.'
 page_builder:
@@ -132,7 +132,7 @@ page_builder:
         buttons:
           -
             label: hetzner.com
-            target_blank: false
+            target_blank: true
             link_type: url
             url: 'https://hetzner.com'
       -
@@ -145,6 +145,16 @@ page_builder:
             link_type: url
             target_blank: true
             url: 'https://usefathom.com'
+      -
+        title: Sketch
+        text: 'Mijn favoriete designtool voor het maken van digitale ontwerpen en prototypes.'
+        icon: tools/sketch-logo.svg
+        buttons:
+          -
+            label: sketch.com
+            link_type: url
+            target_blank: true
+            url: 'https://sketch.com'
   -
     background_text_position: center
     type: project_list

@@ -124,7 +124,7 @@ page_builder:
         buttons:
           -
             label: hetzner.com
-            target_blank: false
+            target_blank: true
             link_type: url
             url: 'https://hetzner.com'
       -
@@ -137,6 +137,16 @@ page_builder:
             link_type: url
             target_blank: true
             url: 'https://usefathom.com'
+      -
+        title: Sketch
+        text: 'My design tool of choice for creating digital designs and prototypes.'
+        icon: tools/sketch-logo.svg
+        buttons:
+          -
+            label: sketch.com
+            link_type: url
+            target_blank: true
+            url: 'https://sketch.com'
   -
     background_text_position: center
     type: project_list
@@ -197,5 +207,5 @@ page_builder:
 og_image: website-design-development-og-1653395329.png
 twitter_image: website-design-development-twitter-1653395329.png
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1654612741
+updated_at: 1654804160
 ---
