@@ -3,8 +3,8 @@
 namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
-use Illuminate\Support\Str;
 use Illuminate\Support\Facades\File;
+use Illuminate\Support\Str;
 use Statamic\Console\RunsInPlease;
 use Statamic\Facades\Config;
 use Statamic\Support\Arr;
@@ -16,41 +16,41 @@ class AddBlock extends Command
     use RunsInPlease;
 
     /**
-    * The name of the console command.
-    *
-    * @var string
-    */
+     * The name of the console command.
+     *
+     * @var string
+     */
     protected $name = 'peak:add-block';
 
-     /**
+    /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = "Add a page builder block.";
+    protected $description = 'Add a page builder block.';
 
-     /**
+    /**
      * The block name.
      *
      * @var string
      */
     protected $block_name = '';
 
-     /**
+    /**
      * The block filename.
      *
      * @var string
      */
     protected $filename = '';
 
-     /**
+    /**
      * The block instructions.
      *
      * @var string
      */
     protected $instructions = '';
 
-     /**
+    /**
      * Execute the console command.
      *
      * @return bool|null
@@ -129,9 +129,9 @@ class AddBlock extends Command
             'instructions' => $this->instructions,
             'fields' => [
                 [
-                    'import' => $this->filename
-                ]
-            ]
+                    'import' => $this->filename,
+                ],
+            ],
         ];
 
         $existingSets = Arr::get($fieldset, 'fields.0.field.sets');

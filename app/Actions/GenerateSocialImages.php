@@ -10,9 +10,10 @@ use Statamic\Globals\GlobalSet;
 
 class GenerateSocialImages extends Action
 {
-    public $available_collections = array();
+    public $available_collections = [];
 
-    public function __construct() {
+    public function __construct()
+    {
         if (GlobalSet::findByHandle('seo')->inDefaultSite()->get('use_social_image_generation') && GlobalSet::findByHandle('seo')->inDefaultSite()->get('social_images_collections')) {
             $this->available_collections = GlobalSet::findByHandle('seo')->inDefaultSite()->get('social_images_collections');
         }
@@ -21,7 +22,7 @@ class GenerateSocialImages extends Action
     /**
      * Determine if the current thing is an entry and if it's opted in to the auto generation config (global).
      *
-     * @return boolean
+     * @return bool
      */
     public function visibleTo($item)
     {
@@ -31,14 +32,14 @@ class GenerateSocialImages extends Action
     /**
      * Determine if the current user is allowed to run this action.
      *
-     * @return boolean
+     * @return bool
      */
     public function authorize($user, $item)
     {
         return $user->can('edit', $item);
     }
 
-     /**
+    /**
      * Run the action
      *
      * @return void

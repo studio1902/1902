@@ -3,8 +3,8 @@
 namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
-use Illuminate\Support\Str;
 use Illuminate\Support\Facades\File;
+use Illuminate\Support\Str;
 use Statamic\Console\RunsInPlease;
 use Statamic\Facades\Config;
 use Statamic\Support\Arr;
@@ -16,34 +16,34 @@ class AddSet extends Command
     use RunsInPlease;
 
     /**
-    * The name of the console command.
-    *
-    * @var string
-    */
+     * The name of the console command.
+     *
+     * @var string
+     */
     protected $name = 'peak:add-set';
 
-     /**
+    /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = "Add an Article (Bard) set.";
+    protected $description = 'Add an Article (Bard) set.';
 
-     /**
+    /**
      * The set name.
      *
      * @var string
      */
     protected $set_name = '';
 
-     /**
+    /**
      * The set filename.
      *
      * @var string
      */
     protected $filename = '';
 
-     /**
+    /**
      * Execute the console command.
      *
      * @return bool|null
@@ -120,9 +120,9 @@ class AddSet extends Command
             'display' => $this->set_name,
             'fields' => [
                 [
-                    'import' => $this->filename
-                ]
-            ]
+                    'import' => $this->filename,
+                ],
+            ],
         ];
 
         $existingSets = Arr::get($fieldset, 'fields.0.field.sets');

@@ -12,15 +12,17 @@ class FilterJournal extends Component
     use WithPagination;
 
     public $tag;
+
     public $site_handle;
 
     protected $paginationTheme = 'paginator';
+
     protected $queryString = [
         'tag',
         'page' => [
             'except' => 1,
-            'as' => 'p'
-        ]
+            'as' => 'p',
+        ],
     ];
 
     // Set current site language.
@@ -52,7 +54,7 @@ class FilterJournal extends Component
             ->where('locale', $this->site_handle);
 
         // Filter on tag
-        if (!empty($this->tag)) {
+        if (! empty($this->tag)) {
             $query->whereTaxonomyIn(["tags::{$this->tag}"]);
         }
 

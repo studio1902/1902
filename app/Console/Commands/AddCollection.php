@@ -3,35 +3,35 @@
 namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
-use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\File;
+use Illuminate\Support\Str;
 use Statamic\Console\RunsInPlease;
 use Statamic\Facades\Config;
 use Statamic\Facades\Entry;
 use Statamic\Support\Arr;
-use Symfony\Component\Yaml\Yaml;
 use Stringy\StaticStringy as Stringy;
+use Symfony\Component\Yaml\Yaml;
 
 class AddCollection extends Command
 {
     use RunsInPlease;
 
     /**
-    * The name of the console command.
-    *
-    * @var string
-    */
+     * The name of the console command.
+     *
+     * @var string
+     */
     protected $name = 'peak:add-collection';
 
-     /**
+    /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = "Add a collection.";
+    protected $description = 'Add a collection.';
 
-     /**
+    /**
      * The collection name.
      *
      * @var string
@@ -52,7 +52,7 @@ class AddCollection extends Command
      */
     protected $public = false;
 
-     /**
+    /**
      * The collection route.
      *
      * @var string
@@ -150,7 +150,7 @@ class AddCollection extends Command
      */
     protected $permissions = true;
 
-     /**
+    /**
      * Execute the console command.
      *
      * @return bool|null
@@ -190,11 +190,21 @@ class AddCollection extends Command
             $this->createCollection();
             $this->createDirectory("resources/blueprints/collections/{$this->filename}");
             $this->createBlueprint();
-            if ($this->index || $this->show) $this->createDirectory("resources/views/{$this->filename}");
-            if ($this->index) $this->createIndexTemplate();
-            if ($this->index) $this->setIndexTemplate($this->mount);
-            if ($this->show) $this->createShowTemplate();
-            if ($this->permissions) $this->grantPermissionsToEditor();
+            if ($this->index || $this->show) {
+                $this->createDirectory("resources/views/{$this->filename}");
+            }
+            if ($this->index) {
+                $this->createIndexTemplate();
+            }
+            if ($this->index) {
+                $this->setIndexTemplate($this->mount);
+            }
+            if ($this->show) {
+                $this->createShowTemplate();
+            }
+            if ($this->permissions) {
+                $this->grantPermissionsToEditor();
+            }
         } catch (\Exception $e) {
             return $this->error($e->getMessage());
         }
@@ -228,8 +238,7 @@ class AddCollection extends Command
             ->where('status', 'published')
             ->orderBy('title', 'asc')
             ->get()
-            ->map(fn($entry) =>
-               "{$entry->get('title')} [{$entry->id()}]"
+            ->map(fn ($entry) => "{$entry->get('title')} [{$entry->id()}]"
             )
             ->toArray();
     }
@@ -253,7 +262,7 @@ class AddCollection extends Command
             ->replace('{{ dated }}', ($this->dated) ? 'true' : 'false')
             ->replace('{{ date_past }}', $this->date_past)
             ->replace('{{ date_future }}', $this->date_future)
-            ->replace('{{ template }}', $this->show ? "{$this->filename}/show" : 'default' )
+            ->replace('{{ template }}', $this->show ? "{$this->filename}/show" : 'default')
             ->replace('{{ mount }}', $this->mount);
 
         File::put(base_path("content/collections/{$this->filename}.yaml"), $contents);
