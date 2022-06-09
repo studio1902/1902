@@ -23,7 +23,6 @@ export_paths:
   - app/Jobs/GenerateSocialImagesJob.php
   - app/Listeners/GenerateFavicons.php
   - app/Providers/EventServiceProvider.php
-  - app/Tags/MountUrl.php
   - app/Widgets/ImagesMissingAlt.php
   - CHANGELOG.md
   - content
