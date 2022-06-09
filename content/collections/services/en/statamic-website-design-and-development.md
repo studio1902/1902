@@ -149,7 +149,7 @@ page_builder:
         content:
           -
             type: text
-            text: 'You''ll get it when you see it.'
+            text: "You'll get it when you see it."
       -
         type: paragraph
         content:
@@ -190,12 +190,12 @@ page_builder:
         content:
           -
             type: text
-            text: 'A bit of ethical accountability to the people: I reduce the CO₂ emissions of my websites by reducing assets and keeping the bandwidth of a page visit as low as possible. I have a big focus on usability and accessibility. At the same time, I understand that websites must perform well to contribute to marketing goals. Fortunately, managing your website is a piece of cake, because I know how you can use Statamic for this. That also applies to front-end development: I like to create that extra animation or that effect that benefits the User Interface.'
+            text: "I reduce the CO₂ emissions of my websites by reducing assets and keeping the bandwidth of a page visit as low as possible. Next to that, I think user privacy is one of the most important things. That's why I have two principles: I believe in not tracking user behaviour and in complying with the GDPR. I also have a big focus on usability and accessibility. At the same time, I understand that websites must perform well to contribute to marketing goals. Fortunately, managing your website is a piece of cake, because I know how you can use Statamic for this. That also applies to front-end development: I like to create that extra animation or that effect that benefits the User Interface.\_"
     type: article
     enabled: true
     background_text_position: start
 og_image: website-design-development-og-1653395329.png
 twitter_image: website-design-development-twitter-1653395329.png
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1654174646
+updated_at: 1654612741
 ---

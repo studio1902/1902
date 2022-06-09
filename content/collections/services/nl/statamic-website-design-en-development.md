@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1654174588
+updated_at: 1654612705
 teaser: 'Ik ontwerp en bouw toegankelijke websites die presteren en gebruiksvriendelijk zijn.'
 introduction: 'Crowdsource non-disclosure agreement. MVP creative pitch venture startup low hanging fruit hypotheses customer strategy iPad partnership social proof. deployment. Long tail success entrepreneur network effects android. deployment.'
 page_builder:
@@ -201,7 +201,7 @@ page_builder:
         content:
           -
             type: text
-            text: 'Een stukje ethische verantwoording naar de mensen toe: ik verlaag de CO₂ -uitstoot van mijn websites door assets te verkleinen en bandbreedte van een paginabezoek zo laag mogelijk te houden. Ook houd ik altijd focus op gebruiksvriendelijkheid en toegankelijkheid. Tegelijk snap ik dat websites goed moeten presteren om bij te dragen aan marketingdoelen. Gelukkig is het beheer van je website een peuleschil, omdat ik weet hoe je Statamic hiervoor kan inzetten. Dat geldt ook voor front end development: ik maak graag die extra animatie of dat effect dat de User Interface ten goede komt.'
+            text: "Ik verlaag de CO₂ -uitstoot van mijn websites door assets te verkleinen en bandbreedte van een paginabezoek zo laag mogelijk te houden. Daarnaast vind ik privacy van gebruikers echt een van de belangrijkste dingen. Daarom heb ik twee principes: ik geloof in het niet-tracken van gebruikers en in het naleven van de GDPR (privacywetgeving). Ook houd ik altijd focus op gebruiksvriendelijkheid en toegankelijkheid. Tegelijk snap ik dat websites goed moeten presteren om bij te dragen aan marketingdoelen. Gelukkig is het beheer van je website een peuleschil, omdat ik weet hoe je Statamic hiervoor kan inzetten. Dat geldt ook voor front end development: ik maak graag die extra animatie of dat effect dat de User Interface ten goede komt.\_"
     type: article
     enabled: true
     background_text_position: start
