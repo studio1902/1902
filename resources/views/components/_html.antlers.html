@@ -48,7 +48,7 @@
                     {{ /once }}
                 }
             }"
-            x-effect="$store.twCDNConsent.value && (html = '{{ html | entities | add_slashes | sanitize | collapse_whitespace }}') && loadTailwind()"
+            x-effect="$store.twCDNConsent.value && (html = '{{ html | add_slashes | entities | sanitize | collapse_whitespace }}') && loadTailwind()"
         {{ else }}
             x-data="{
                 html: '{{ html | entities | add_slashes | sanitize | collapse_whitespace }}'
