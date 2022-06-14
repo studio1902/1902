@@ -6,17 +6,6 @@ fields:
     config:
       instructions: 'The size in which the HTML should be displayed.'
   -
-    handle: tailwind
-    field:
-      default: false
-      display: 'Load Tailwind CSS'
-      type: toggle
-      icon: toggle
-      listable: hidden
-      instructions_position: below
-      read_only: false
-      instructions: 'Uses the Play CDN and JIT. Utilities will scoped under `tw-utility`.'
-  -
     handle: html
     field:
       theme: material
@@ -33,6 +22,7 @@ fields:
       localizable: true
       listable: hidden
       instructions_position: below
+      instructions: 'Uses the Play CDN and JIT. Utilities will scoped under `tw-utility`.'
       read_only: false
       validate:
         - required

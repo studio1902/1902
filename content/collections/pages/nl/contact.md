@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1654194459
+updated_at: 1655193532
 page_builder:
   -
     title: 'Een warm onthaal'
@@ -39,7 +39,7 @@ page_builder:
             text: Twitter
           -
             type: text
-            text: ', want daar vind je actueel, werkgerelateerd nieuws (of cynische tweets).'
+            text: .
     text_position: start
     text_size: small
     animation: campfire.json

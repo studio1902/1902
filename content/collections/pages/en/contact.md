@@ -31,7 +31,7 @@ page_builder:
             text: Twitter
           -
             type: text
-            text: ", too, because that's where you'll find current, work-related news (or cynical tweets)."
+            text: .
     text_position: start
     text_size: small
     animation: campfire.json
@@ -53,5 +53,5 @@ page_builder:
 og_image: '-og-1653395170.png'
 twitter_image: '-twitter-1653395170.png'
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1654368854
+updated_at: 1655193537
 ---

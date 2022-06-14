@@ -18,70 +18,87 @@
     "
 >
     {{ partial:components/title_bar }}
-    {{ if tailwind }}
-        {{ once }}
-            <script>
-                document.addEventListener('alpine:init', () => {
-                    Alpine.store('twCDNConsent', {
-                        value: Alpine.$persist(false).as('twCDNConsent').using(sessionStorage),
-                        set(value) {
-                            this.value = value
-                        }
-                    })
-                })
-            </script>
-        {{ /once }}
-    {{ /if }}
 
     <div
-        {{ if tailwind }}
-            x-data="{
-                html: '' ,
-                loadTailwind() {
-                    {{ once }}
-                        let tailwind = document.createElement('script')
-                        tailwind.src = 'https://cdn.tailwindcss.com'
-                        $root.appendChild(tailwind)
-                        let config = document.createElement('script')
-                        config.textContent = 'tailwind.config={prefix:\'tw-\',corePlugins:{preflight:false}}'
-                        tailwind.onload = () => { $root.appendChild(config) }
-                    {{ /once }}
-                }
-            }"
-            x-effect="$store.twCDNConsent.value && (html = '{{ html | add_slashes | entities | sanitize | collapse_whitespace }}') && loadTailwind()"
-        {{ else }}
-            x-data="{
-                html: '{{ html | entities | add_slashes | sanitize | collapse_whitespace }}'
-            }"
-        {{ /if }}
+        x-data="html('{{ html | add_slashes | entities | collapse_whitespace }}')"
+        x-bind="root"
         class="border border-primary dark:border-secondary"
+        x-cloak
     >
-        <div x-html="html">
+        <div x-bind="result">
         </div>
-        {{ if tailwind }}
-            <div x-show="!$store.twCDNConsent.value" class="w-full h-44 p-6 flex flex-col justify-center items-center space-y-4 bg-black/10">
-                <button
-                    class="relative py-2 px-3 border border-primary dark:border-secondary bg-primary dark:bg-secondary text-white focus:outline-none focus-visible:ring-4 ring-primary ring-offset-2 dark:ring-offset-neutral dark:ring-secondary motion-safe:transition group"
-                    @click="$store.twCDNConsent.set(true)"
-                >
-                    <span class="uppercase tracking-wider">{{ trans:strings.run_code }}</span>
-                    <div class="absolute inset-0 py-2 px-3 bg-white dark:bg-neutral text-primary dark:text-secondary [clip-path:circle(20%_at_-20%_130%)] group-hover:[clip-path:circle(180%_at_-20%_130%)] motion-safe:transition-all" aria-hidden="true">
-                        <span class="text-primary dark:text-secondary uppercase tracking-wider">
-                            {{ trans:strings.run_code }}
-                        </span>
-                    </div>
-                </button>
-                <div>
-                    {{ partial:typography/title as="{ as or 'span' }" content="{ trans:strings.run_code_explainer }" }}
-                    {{ if configuration:privacy_statement_type == 'entry' }}
-                        <a class="font-medium text-xs uppercase tracking-wider not-prose leading-snug text-primary dark:text-secondary underline" href="{{ configuration:privacy_statement_entry:url }}">{{ trans:strings.cookie_learn_more }}</a>
-                    {{ elseif configuration:privacy_statement_type == 'pdf' }}
-                        <a class="font-medium text-xs uppercase tracking-wider not-prose leading-snug text-primary dark:text-secondary underline" href="{{ configuration:privacy_statement_asset }}" target="_blank">{{ trans:strings.cookie_learn_more }}</a>
-                    {{ /if }}
+
+        <div x-bind="consent" class="w-full h-44 p-6 flex flex-col justify-center items-center space-y-4 bg-black/10">
+            <button x-bind="button" class="relative py-2 px-3 border border-primary dark:border-secondary bg-primary dark:bg-secondary text-white focus:outline-none focus-visible:ring-4 ring-primary ring-offset-2 dark:ring-offset-neutral dark:ring-secondary motion-safe:transition group">
+                <span class="uppercase tracking-wider">{{ trans:strings.run_code }}</span>
+                <div class="absolute inset-0 py-2 px-3 bg-white dark:bg-neutral text-primary dark:text-secondary [clip-path:circle(20%_at_-20%_130%)] group-hover:[clip-path:circle(180%_at_-20%_130%)] motion-safe:transition-all" aria-hidden="true">
+                    <span class="text-primary dark:text-secondary uppercase tracking-wider">
+                        {{ trans:strings.run_code }}
+                    </span>
                 </div>
+            </button>
+            <div>
+                {{ partial:typography/title as="{ as or 'span' }" content="{ trans:strings.run_code_explainer }" }}
+                {{ if configuration:privacy_statement_type == 'entry' }}
+                    <a class="font-medium text-xs uppercase tracking-wider not-prose leading-snug text-primary dark:text-secondary underline" href="{{ configuration:privacy_statement_entry:url }}">{{ trans:strings.cookie_learn_more }}</a>
+                {{ elseif configuration:privacy_statement_type == 'pdf' }}
+                    <a class="font-medium text-xs uppercase tracking-wider not-prose leading-snug text-primary dark:text-secondary underline" href="{{ configuration:privacy_statement_asset }}" target="_blank">{{ trans:strings.cookie_learn_more }}</a>
+                {{ /if }}
             </div>
-        {{ /if }}
+        </div>
     </div>
+
     {{ partial:typography/caption as="figcaption" }}
+
+    {{ once }}
+        <script>
+            document.addEventListener('alpine:init', () => {
+                Alpine.store('twCDNConsent', {
+                    value: Alpine.$persist(false).as('twCDNConsent').using(sessionStorage),
+                    set(value) {
+                        this.value = value
+                    }
+                })
+            })
+
+            document.addEventListener('alpine:initializing', () => {
+                Alpine.data('html', (html) => {
+                    return {
+                        html: '' ,
+                        root: {
+                            ['x-effect']() {
+                                this.$store.twCDNConsent.value
+                                && (this.html = html)
+                                && this.loadTailwind()
+                            }
+                        },
+                        consent: {
+                            ['x-show']() {
+                                return !this.$store.twCDNConsent.value
+                            }
+                        },
+                        button: {
+                            ['@click']() {
+                                this.$store.twCDNConsent.set(true)
+                            }
+                        },
+                        result: {
+                            ['x-html']() {
+                                return this.html
+                            }
+                        },
+                        loadTailwind() {
+                            let tailwind = document.createElement('script')
+                            tailwind.src = 'https://cdn.tailwindcss.com'
+                            this.$root.appendChild(tailwind)
+                            let config = document.createElement('script')
+                            config.textContent = 'tailwind.config={prefix:\'tw-\',corePlugins:{preflight:false}}'
+                            tailwind.onload = () => { this.$root.appendChild(config) }
+                        }
+                    }
+                })
+            })
+        </script>
+    {{ /once }}
 </div>
 <!-- End: /components/_html.antlers.html -->
