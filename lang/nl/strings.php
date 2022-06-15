@@ -65,7 +65,7 @@ return [
 
     // Other
     'no_results'                        => 'Er zijn momenteel geen resultaten.',
-    'no_script'                         => 'Deze website vereist Javascript.',
+    'no_script'                         => 'Deze website vereist Javascript om sommige onderdelen goed te laten functioneren.',
     'home'                              => 'Ga naar de homepage.',
     'show_all'                          => 'Toon alles',
     'availability'                      => 'Beschikbaar vanaf :month',
