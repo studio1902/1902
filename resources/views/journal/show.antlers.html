@@ -22,7 +22,7 @@
         },
         "publisher": {
             "@type": "Organization",
-            "name": "Merkactivisten"{{ if seo:organization_logo }},
+            "name": "{{ config:app:name }}"{{ if seo:organization_logo }},
             "logo": {
                 "@type": "ImageObject",
                 "url": "{{ config:app:url }}{{ glide:seo:organization_logo width='336' height='336' fit='contain' }}"
