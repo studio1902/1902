@@ -6,10 +6,11 @@
 <!-- /snippets/_noscript.antlers.html -->
 <noscript>
     <style>
-        [x-cloak] {
-            display: revert !important;
+        nav ul [x-cloak],
+        nav ul li ul {
+            display: block !important;
         }
     </style>
-    <p class="relative z-50 py-3 px-4 bg-gray-100 border-b border-gray-200 text-center font-bold text-xs text-gray-600">{{ trans:strings.no_script }}</p>
+    <p class="relative z-50 py-3 px-4 bg-primary text-center font-bold text-white">{{ trans:strings.no_script }}</p>
 </noscript>
 <!-- End: /snippets/_noscript.antlers.html -->
