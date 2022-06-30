@@ -10,7 +10,6 @@
     "type": "project",
     "require": {
         "php": "^8.0",
-        "cweagans/composer-patches": "^1.7",
         "doublethreedigital/blaze": "^1.2",
         "guzzlehttp/guzzle": "^7.2",
         "jonassiewertsen/statamic-livewire": "^2.9",
@@ -41,11 +40,6 @@
     "extra": {
         "laravel": {
             "dont-discover": []
-        },
-        "patches": {
-            "statamic/cms": {
-                "Fix time picker on dated collections": "patches/5870.diff"
-            }
         }
     },
     "autoload": {
