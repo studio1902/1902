@@ -4,7 +4,7 @@ This is the source code of [1902.studio](https://1902.studio). It's built using 
 
 ## License
 * Statamic is paid software and his it's own [commerical license](https://github.com/statamic/cms/blob/3.3/LICENSE.md).
-* Statamic Peak is open source and falls under the [MIT license](https://github.com/studio1902/statamic-peak/blob/main/LICENSE).
+* Statamic Peak is open source and falls under the [GNU General Public License v3.0](https://github.com/studio1902/statamic-peak/blob/main/LICENSE).
 * The content, design and source code of this website falls under [exclusive copyright](https://choosealicense.com/no-permission/).
 
 ## Credits
