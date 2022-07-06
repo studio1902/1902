@@ -13,7 +13,7 @@
         "doublethreedigital/blaze": "^1.2",
         "guzzlehttp/guzzle": "^7.2",
         "jonassiewertsen/statamic-livewire": "^2.9",
-        "laravel/framework": "^9.17",
+        "laravel/framework": "^9.19.0",
         "laravel/tinker": "^2.7",
         "spatie/browsershot": "^3.54",
         "statamic/cms": "^v3.3.0",

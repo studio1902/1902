@@ -5,7 +5,6 @@
 /public/img/
 /public/static/
 /storage/*.key
-/storage/torchlight
 /vendor
 .env
 .env.backup
@@ -16,6 +15,4 @@ Homestead.yaml
 npm-debug.log
 yarn-error.log
 # Comment the following lines if you don't compile your assets on the server:
-/public/js/
-/public/css/
-/public/mix-manifest.json
+/public/build/

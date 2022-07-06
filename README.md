@@ -14,7 +14,7 @@ The website was designed by [Merkactivisten](https://merkactivisten.nl) in colla
 
 1. run `composer install`
 2. run `php please make:user`
-3. run `npm i` && `npm run watch` (or `npm run dev`)
+3. run `npm i` && `npm run dev`
 
 ## Environment file contents
 
@@ -195,7 +195,7 @@ git pull origin main
 composer install --no-interaction --prefer-dist --optimize-autoloader --no-dev
 
 npm ci
-npm run production
+npm run build
 php{SITE_PHP_VERSION} artisan cache:clear
 php{SITE_PHP_VERSION} artisan config:cache
 php{SITE_PHP_VERSION} artisan route:cache
@@ -224,7 +224,7 @@ git pull origin main
 $FORGE_COMPOSER install --no-interaction --prefer-dist --optimize-autoloader --no-dev
 
 npm ci
-npm run production
+npm run build
 $FORGE_PHP artisan cache:clear
 $FORGE_PHP artisan config:cache
 $FORGE_PHP artisan route:cache

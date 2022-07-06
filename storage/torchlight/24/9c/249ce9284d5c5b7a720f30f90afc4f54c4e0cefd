@@ -1,0 +1,23 @@
+1655975740a:5:{s:7:"wrapped";s:1062:"<pre><code data-theme='cobalt2' data-lang='
+        @switch($mode)
+            @case(&#39;handlebars&#39;)
+                antlers
+                @break
+            @case(&#39;htmlmixed&#39;)
+                html
+                @break
+            @default
+                $mode
+        @endswitch
+    ' class='torchlight' style='background-color: #193549; --theme-selection-background: #027dff;'><!-- Syntax highlighted by torchlight.dev --><div class='line'><span style="color:#aaa; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">1</span><span style="color: #fff;">&#39;mapbox&#39; =&gt; [</span></div><div class='line'><span style="color:#aaa; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">2</span><span style="color: #fff;">    &#39;key&#39; =&gt; env(&#39;MAPBOX_KEY&#39;),</span></div><div class='line'><span style="color:#aaa; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">3</span><span style="color: #fff;">]</span></div></code></pre>";s:11:"highlighted";s:651:"<!-- Syntax highlighted by torchlight.dev --><div class='line'><span style="color:#aaa; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">1</span><span style="color: #fff;">&#39;mapbox&#39; =&gt; [</span></div><div class='line'><span style="color:#aaa; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">2</span><span style="color: #fff;">    &#39;key&#39; =&gt; env(&#39;MAPBOX_KEY&#39;),</span></div><div class='line'><span style="color:#aaa; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">3</span><span style="color: #fff;">]</span></div>";s:6:"styles";s:65:"background-color: #193549; --theme-selection-background: #027dff;";s:7:"classes";s:10:"torchlight";s:5:"attrs";a:2:{s:10:"data-theme";s:7:"cobalt2";s:9:"data-lang";s:260:"
+        @switch($mode)
+            @case(&#39;handlebars&#39;)
+                antlers
+                @break
+            @case(&#39;htmlmixed&#39;)
+                html
+                @break
+            @default
+                $mode
+        @endswitch
+    ";}}
