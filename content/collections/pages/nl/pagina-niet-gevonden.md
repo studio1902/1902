@@ -33,17 +33,17 @@ page_builder:
     playback_speed: 1.0
     loop: false
     intersect: true
-    audio: cat-purring.mp3
     background_text_position: start
     type: title_and_text
     enabled: true
+    audio: cat-purring.mp3
 seo_noindex: true
 seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: b40458fa-e73a-4f88-bfa1-570cd54b72e0
-updated_at: 1653555634
+updated_at: 1655216566
 footer_animation: 91a1c315-982e-46e1-b7c1-2ab98eae9aa0
 og_image: pagina-niet-gevonden-og-1654766468.png
 twitter_image: pagina-niet-gevonden-twitter-1654766468.png
