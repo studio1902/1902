@@ -11,8 +11,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="robots" content="noindex">
         <title>Social Images - {{ get_content:id }}{{ title }}{{ /get_content:id }}</title>
-        <link rel="stylesheet" href="{{ mix src='css/site.css' }}">
-        <script src="{{ mix src='/js/site.js' }}" defer></script>
+        {{ vite src="resources/css/site.css|resources/js/site.js" }}
         <style>
             .phpdebugbar { display: none !important; }
         </style>
