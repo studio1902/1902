@@ -4,6 +4,7 @@
 /public/vendor/statamic
 /public/img/
 /public/static/
+/storage/torchlight/
 /storage/*.key
 /vendor
 .env
