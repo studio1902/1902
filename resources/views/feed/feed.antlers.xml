@@ -7,7 +7,7 @@
       <description>Readeable bites about web development.</description>
       <language>en-us</language>
       <lastBuildDate>{{ now iso_format="ddd, DD MMM GGGG HH:mm:ss UT" }}</lastBuildDate>
-      {{ collection:journal sort="date:desc" limit="50" }}
+      {{ collection:journal sort="date:desc" limit="50" taxonomy:tags="{tag}" }}
         <item>
             <title>{{ title }}</title>
             <link>{{ permalink }}</link>

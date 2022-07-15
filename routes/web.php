@@ -31,6 +31,12 @@ Route::statamic('/feed/journal', 'feed/feed', [
     'content_type' => 'application/xml',
 ])->middleware(SetLocaleToEnglish::class);
 
+// The Sitemap tag route to the RSS feed.
+Route::statamic('/feed/journal/{tag}', 'feed/feed', [
+    'layout' => null,
+    'content_type' => 'application/xml',
+])->middleware(SetLocaleToEnglish::class);
+
 // The Manifest route to the manifest.json
 Route::statamic('/site.webmanifest', 'manifest/manifest', [
     'layout' => null,
